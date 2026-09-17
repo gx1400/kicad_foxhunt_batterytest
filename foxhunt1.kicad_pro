@@ -485,10 +485,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "gx_lib"
+      "kicad_gx_library"
     ],
     "pinned_symbol_libs": [
-      "_gxLib"
+      "kicad_gx_library"
     ]
   },
   "meta": {
@@ -615,12 +615,114 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manf",
+          "name": "Manf",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mating MPN",
+          "name": "Mating MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Newark PN",
+          "name": "Newark PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Newark URL",
+          "name": "Newark URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PROD_ID",
+          "name": "PROD_ID",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Packaging",
+          "name": "Packaging",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field10",
+          "name": "Field10",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey PN",
+          "name": "Digikey PN",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -680,7 +782,7 @@
         "uuid": "3d6550a2-e270-4933-ae60-80fad37ae8d9"
       }
     ],
-    "used_designators": "L1-2,BT1-2,#PWR1-39,TP1-4,R1-13,JP1-10,J1-4,F1-3,Q1-5,U1-7,D1-2,C1-23,SW1,#FLG1-12,TH1",
+    "used_designators": "D1-2,U1-7,C1-25,SW1,TH1,#FLG1-12,L1-2,#PWR1-42,BT1-2,R1-15,TP1-4,JP1-12,J1-4,Q1-5,F1-3",
     "variants": []
   },
   "sheets": [

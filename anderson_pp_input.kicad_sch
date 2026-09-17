@@ -1377,7 +1377,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "_gxLib:LM74610"
+		(symbol "kicad_gx_library:LM74610"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3098,7 +3098,7 @@
 				)
 			)
 		)
-		(property "Footprint" "gx_lib:MCCQ-122"
+		(property "Footprint" "kicad_gx_library:Fuse_MCCQ-122"
 			(at 73.66 81.788 90)
 			(hide yes)
 			(show_name no)
@@ -3349,7 +3349,7 @@
 				)
 			)
 		)
-		(property "Footprint" "gx_lib:Anderson_PP25_RA_1377g12-bk"
+		(property "Footprint" "kicad_gx_library:Connector_Anderson_PP25_RA_1377g12-bk"
 			(at 39.37 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3587,7 +3587,7 @@
 		)
 	)
 	(symbol
-		(lib_id "_gxLib:LM74610")
+		(lib_id "kicad_gx_library:LM74610")
 		(at 148.59 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -3599,7 +3599,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ec00e20-22d8-48ef-bf76-a2c1ed5a9929")
 		(property "Reference" "U4"
-			(at 162.56 100.2598 0)
+			(at 165.1 97.7198 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3609,7 +3609,7 @@
 			)
 		)
 		(property "Value" "LM74610"
-			(at 148.59 78.74 0)
+			(at 165.1 100.2598 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
