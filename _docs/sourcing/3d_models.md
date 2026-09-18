@@ -12,7 +12,7 @@ only thing available.**
 
 | Part | Footprint | Status |
 |---|---|---|
-| Anderson Powerpole connector (J3, 1377G12-BK) | `kicad_gx_library:Connector_Anderson_PP25_RA_1377g12-bk` | **Already present**, and already compliant with the STEP/IGES policy — `libs/kicad_gx_library/3dmodels/GX.3dshapes/Anderson_PP25_1377G12_Housing.igs` and `Anderson_PP_15-45_Std.step`. Footprint doesn't reference them yet (manual linking step, out of scope here). |
+| Anderson Powerpole connector (J3, 1377G12-BK) | `kicad_gx_library:Connector_Anderson_PP25_RA_1377g12-bk` | **Already present**, and already compliant with the STEP/IGES policy — `pcb/libs/kicad_gx_library/3dmodels/GX.3dshapes/Anderson_PP25_1377G12_Housing.igs` and `Anderson_PP_15-45_Std.step`. Footprint doesn't reference them yet (manual linking step, out of scope here). |
 | Chilisin inductor (L3/L4, MHCI06030-3R3M-R8) | `kicad_gx_library:L_Chilisin_MHCI06030` | **Already linked** to a stock KiCad model (`.step`) — footprint's own `(model ...)` block points at `${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Chilisin_BMRA00040415.step`. Compliant, nothing to do. |
 | 8205A dual-FET (Q2) | `digikey-kicad-library:SOT23-6L` | Standard SOT-23-6 package — **`/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step`** confirmed present on disk. Compliant, nothing to do. |
 | MAX17320 (U2, QFN-24-1EP 4x4mm EP2.1x2.1mm) | `Package_DFN_QFN:TQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm` | **Verified present**: `/usr/share/kicad/3dmodels/Package_DFN_QFN.3dshapes/Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step` (exact EP-size match) and a generic `HVQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step` in the same folder. |

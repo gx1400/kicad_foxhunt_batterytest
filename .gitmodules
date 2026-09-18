@@ -1,9 +1,9 @@
 [submodule "libs/kicad_gx_library"]
-	path = libs/kicad_gx_library
+	path = pcb/libs/kicad_gx_library
 	url = https://github.com/gx1400/kicad_gx_library.git
 [submodule "libs/digikey-kicad-library"]
-	path = libs/digikey-kicad-library
+	path = pcb/libs/digikey-kicad-library
 	url = https://github.com/Digi-Key/digikey-kicad-library.git
 [submodule "libs/SparkFun-KiCad-Libraries"]
-	path = libs/SparkFun-KiCad-Libraries
+	path = pcb/libs/SparkFun-KiCad-Libraries
 	url = https://github.com/sparkfun/SparkFun-KiCad-Libraries.git

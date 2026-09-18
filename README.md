@@ -12,13 +12,15 @@ Custom amateur radio fox hunt (hidden transmitter) controller, aimed at being a 
 
 ## Setup
 
-This project depends on three external symbol/footprint libraries, vendored as git submodules under `libs/` so the project is self-contained and doesn't require any machine-specific KiCad library setup. Project-level `sym-lib-table` and `fp-lib-table` files reference them via `${KIPRJMOD}`, so they resolve automatically once the submodules are checked out — no manual library registration needed.
+All KiCad design files live under [`pcb/`](pcb/) — project file, schematics, PCB, and the vendored libraries. This project depends on three external symbol/footprint libraries, vendored as git submodules under `pcb/libs/` so the project is self-contained and doesn't require any machine-specific KiCad library setup. Project-level `sym-lib-table` and `fp-lib-table` files reference them via `${KIPRJMOD}`, so they resolve automatically once the submodules are checked out — no manual library registration needed.
 
 Clone with submodules:
 
 ```sh
 git clone --recurse-submodules https://github.com/gx1400/kicad_foxhunt_batterytest.git
 ```
+
+The KiCad project file is at `pcb/foxhunt1.kicad_pro`.
 
 Or, if already cloned:
 

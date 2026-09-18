@@ -5,9 +5,17 @@ actual hardware design (power architecture, MAX17320 config, regulation stages).
 This file is about how the *project and tooling* are set up, and rules learned the
 hard way this session.
 
+## Repo layout
+
+- All KiCad design files (project, schematics, PCB, lib tables, vendored libraries,
+  `project_library/`) live under `pcb/`. The KiCad project file is `pcb/foxhunt1.kicad_pro`
+  — point Konnect's `open_project` at that path, not the repo root.
+- `_docs/` (design/sourcing docs) and this file stay at the repo root.
+- `src/` is reserved for the future PlatformIO firmware project.
+
 ## Repo / library setup
 
-- Three non-standard libraries are vendored as git submodules under `libs/`:
+- Three non-standard libraries are vendored as git submodules under `pcb/libs/`:
   `kicad_gx_library` (gx1400's own), `digikey-kicad-library`, `SparkFun-KiCad-Libraries`.
   Clone with `git clone --recurse-submodules`, or `git submodule update --init --recursive`
   on an existing clone.
@@ -23,17 +31,17 @@ hard way this session.
 ## Schematic hierarchy — root filename is load-bearing
 
 - This project uses KiCad 10's `top_level_sheets` feature. Current structure:
-  `foxhunt1.kicad_sch` (root, titled "Power") → `Battery 18650 Input`,
+  `pcb/foxhunt1.kicad_sch` (root, titled "Power") → `Battery 18650 Input`,
   `Battery_PowerPole_Input`, `Power Regulation` (all proper sub-sheets, not
   siblings). The battery/12V ORing-FET combining circuit lives directly in the
   root sheet since that's the actual merge point.
 - **The root schematic file MUST be named `<project-name>.kicad_sch`** — i.e.
-  `foxhunt1.kicad_sch` — even though KiCad 10 itself doesn't require this anymore.
-  Konnect's (the MCP plugin) project-ownership resolution is hard-coded to the
-  pre-KiCad-10 convention (`crates/konnect-core/src/tools/mod.rs`): it computes
-  the expected root as `<project>.kicad_pro` → `<project>.kicad_sch` and refuses
-  to run ERC or several other hierarchy-aware tools if that file is missing or
-  named anything else, with a confusing "cannot establish unique project
+  `foxhunt1.kicad_sch` (in `pcb/`) — even though KiCad 10 itself doesn't require
+  this anymore. Konnect's (the MCP plugin) project-ownership resolution is
+  hard-coded to the pre-KiCad-10 convention (`crates/konnect-core/src/tools/mod.rs`):
+  it computes the expected root as `<project>.kicad_pro` → `<project>.kicad_sch` and
+  refuses to run ERC or several other hierarchy-aware tools if that file is missing
+  or named anything else, with a confusing "cannot establish unique project
   ownership" error. **Do not rename the root sheet away from `foxhunt1.kicad_sch`**,
   no matter what it's titled inside KiCad. This is a Konnect limitation, not a
   KiCad one — native KiCad ERC works fine either way.
@@ -70,7 +78,7 @@ Board-wide DRC floors are set: `min_clearance`/`min_trace_width` = 0.15mm,
 constraints). Don't let `Default` netclass silently allow anything below these.
 
 **⚠️ `net_settings` (netclasses + DRC floors) has been silently wiped once
-already** by the KiCad GUI saving a stale in-memory copy of `foxhunt1.kicad_pro`
+already** by the KiCad GUI saving a stale in-memory copy of `pcb/foxhunt1.kicad_pro`
 over Konnect's on-disk edits — the GUI had the project open from before the
 netclasses existed, and closing/saving it clobbered them back to just `Default`.
 **Whenever creating/editing netclasses or design rules via Konnect: confirm

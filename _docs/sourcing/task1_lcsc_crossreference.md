@@ -45,7 +45,7 @@ convention directly on each sheet so it doesn't get re-flagged later.
       otherwise needs real sourcing data.
 - [ ] **Add a sheet note documenting the capacitor-voltage-is-a-minimum convention** (see above),
       so it isn't mistaken for a defect in a future review:
-  - [ ] `foxhunt1.kicad_sch`
+  - [ ] `pcb/foxhunt1.kicad_sch`
   - [ ] `battery_18650_input.kicad_sch`
   - [ ] `battery_powerpole_input.kicad_sch`
   - [ ] `power_regulation.kicad_sch`
