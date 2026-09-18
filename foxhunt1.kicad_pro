@@ -762,18 +762,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "power_input.kicad_sch",
-        "name": "Power",
+        "filename": "foxhunt1.kicad_sch",
+        "name": "foxhunt1",
         "uuid": "8399ba4b-9428-480d-8b65-76cf154b97a5"
       }
     ],
-    "used_designators": "Q1-9,F1-3,C1-27,D1-2,U1-7,U10,SW1,TH1,#FLG1-14,L1-2,BT1-2,#PWR1-46,TP1-4,R1-15,JP1-12,JP19-21,J1-4",
+    "used_designators": "D1-2,U1-7,U10,C1-27,SW1,TH1,#FLG1-14,L1-2,#PWR1-46,BT1-2,R1-15,TP1-4,JP1-12,JP19-21,J1-4,Q1-9,F1-3",
     "variants": []
   },
   "sheets": [
     [
       "8399ba4b-9428-480d-8b65-76cf154b97a5",
-      "Power"
+      "foxhunt1"
     ],
     [
       "93aec68c-bafb-4e6c-8f29-f98db072943a",

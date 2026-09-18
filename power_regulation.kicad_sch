@@ -827,7 +827,7 @@
 					)
 				)
 			)
-			(property "Footprint" "PCM_SparkFun-Resistor:R_0603_1608Metric"
+			(property "Footprint" "SparkFun-Resistor:R_0603_1608Metric"
 				(at 0 -4.572 0)
 				(show_name no)
 				(do_not_autoplace no)

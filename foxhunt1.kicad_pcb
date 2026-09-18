@@ -144,7 +144,7 @@
 		(property ki_fp_filters "SolderJumper*Open*")
 		(path "/97dbd23c-e514-4ce5-844f-a535007f7112")
 		(sheetname "/")
-		(sheetfile "power_input.kicad_sch")
+		(sheetfile "foxhunt1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -939,7 +939,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c9cafb8e-215c-456a-98dd-d802860484be")
 		(sheetname "/")
-		(sheetfile "power_input.kicad_sch")
+		(sheetfile "foxhunt1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2516,7 +2516,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/a930c539-0442-411e-857e-de80ed99bda0")
 		(sheetname "/")
-		(sheetfile "power_input.kicad_sch")
+		(sheetfile "foxhunt1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3825,7 +3825,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/6b54874f-d3ed-4f2d-bd92-c740cb543f91")
 		(sheetname "/")
-		(sheetfile "power_input.kicad_sch")
+		(sheetfile "foxhunt1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5668,7 +5668,7 @@
 		(property ki_fp_filters "SolderJumper*Open*")
 		(path "/642e9ed8-160a-4190-9d5a-6f3340e501fb")
 		(sheetname "/")
-		(sheetfile "power_input.kicad_sch")
+		(sheetfile "foxhunt1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8041,7 +8041,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/06036d68-e8ba-4829-bcb4-1b36b0738a8e")
 		(sheetname "/")
-		(sheetfile "power_input.kicad_sch")
+		(sheetfile "foxhunt1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12441,7 +12441,7 @@
 		)
 		(path "/03856f3a-f3f0-46e3-a462-c208a911e85f")
 		(sheetname "/")
-		(sheetfile "power_input.kicad_sch")
+		(sheetfile "foxhunt1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16852,7 +16852,7 @@
 		)
 		(path "/10ac4a56-06f6-44ec-be50-ff7cad953e22")
 		(sheetname "/")
-		(sheetfile "power_input.kicad_sch")
+		(sheetfile "foxhunt1.kicad_sch")
 		(units
 			(unit
 				(name "A")
