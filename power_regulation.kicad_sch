@@ -3954,7 +3954,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Vishay/dcrcwe3_series_generic.pdf"
 			(at 255.27 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -4047,7 +4047,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C909845.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM31CZ71C226ME15L.pdf"
 			(at 149.86 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4173,7 +4173,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C84376.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0710KL.pdf"
 			(at 116.84 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -4454,7 +4454,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C228015.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/AC0603FR-0768K1L.pdf"
 			(at 123.19 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -4578,7 +4578,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C84376.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0710KL.pdf"
 			(at 77.47 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -5336,7 +5336,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C77055.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
 			(at 218.44 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -5462,7 +5462,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C909845.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM31CZ71C226ME15L.pdf"
 			(at 165.1 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -5666,7 +5666,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C77055.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
 			(at 113.03 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5790,7 +5790,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C84376.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0710KL.pdf"
 			(at 76.2 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5994,7 +5994,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C84376.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0710KL.pdf"
 			(at 115.57 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -6197,7 +6197,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps563201.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/TI/TPS563201DDCR.pdf"
 			(at 91.44 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6333,7 +6333,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Advanced_Monolithic_Systems/AMS1117-3.3.pdf"
 			(at 210.82 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -6696,7 +6696,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C77055.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
 			(at 38.1 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -6822,7 +6822,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5260805.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/JARSON/XT1C220M0506.pdf"
 			(at 231.14 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -7183,7 +7183,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps563201.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/TI/TPS563201DDCR.pdf"
 			(at 90.17 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -7399,7 +7399,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C237493.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM21BZ71E106KE15L.pdf"
 			(at 67.31 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -7522,7 +7522,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Vishay/dcrcwe3_series_generic.pdf"
 			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -7613,7 +7613,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C108294.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Chilisin/MHCI06030-3R3M-R8.pdf"
 			(at 138.43 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -7817,7 +7817,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C77055.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
 			(at 214.63 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8099,7 +8099,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C77055.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
 			(at 194.31 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8305,7 +8305,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C77055.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
 			(at 39.37 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -8430,7 +8430,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1085.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/HANSCHIP_semiconductor/LM1085IS-5.0RG.pdf"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8639,7 +8639,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C77055.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
 			(at 114.3 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -9155,7 +9155,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C77055.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
 			(at 193.04 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -9357,7 +9357,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C108294.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Chilisin/MHCI06030-3R3M-R8.pdf"
 			(at 137.16 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9717,7 +9717,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C237493.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM21BZ71E106KE15L.pdf"
 			(at 55.88 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -9840,7 +9840,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C483162.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0746K4L.pdf"
 			(at 124.46 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -9966,7 +9966,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5260805.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/JARSON/XT1C220M0506.pdf"
 			(at 228.6 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -10252,7 +10252,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C909845.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM31CZ71C226ME15L.pdf"
 			(at 163.83 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -10378,7 +10378,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C237493.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM21BZ71E106KE15L.pdf"
 			(at 68.58 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -10504,7 +10504,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C237493.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM21BZ71E106KE15L.pdf"
 			(at 54.61 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -10708,7 +10708,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C909845.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM31CZ71C226ME15L.pdf"
 			(at 148.59 66.04 0)
 			(hide yes)
 			(show_name no)

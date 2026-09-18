@@ -1788,7 +1788,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C148219.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Littelfuse/SMAJ18A.pdf"
 			(at 100.33 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -1913,7 +1913,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.farnell.com/datasheets/2133308.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/PHOENIX_CONTACT/MCV_1_5__2-GF-3_81.pdf"
 			(at 57.15 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2308,7 +2308,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.farnell.com/datasheets/3815375.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/MULTICOMP_PRO/MCCQ-122.pdf"
 			(at 91.44 80.01 0)
 			(hide yes)
 			(show_name no)
