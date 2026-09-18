@@ -43,3 +43,9 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+# Local MCP server config
+.mcp.json
+
+# Local kicad-jlcpcb-tools cache
+jlcpcb/
