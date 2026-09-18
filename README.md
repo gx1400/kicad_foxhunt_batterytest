@@ -6,6 +6,24 @@ Custom amateur radio fox hunt (hidden transmitter) controller. Built around an E
 
 This document covers the power/battery management hardware design (`foxhunt1.kicad_sch`) as worked out so far.
 
+## Setup
+
+This project depends on three external symbol/footprint libraries, vendored as git submodules under `libs/` so the project is self-contained and doesn't require any machine-specific KiCad library setup. Project-level `sym-lib-table` and `fp-lib-table` files reference them via `${KIPRJMOD}`, so they resolve automatically once the submodules are checked out — no manual library registration needed.
+
+Clone with submodules:
+
+```sh
+git clone --recurse-submodules https://github.com/gx1400/kicad_foxhunt_batterytest.git
+```
+
+Or, if already cloned:
+
+```sh
+git submodule update --init --recursive
+```
+
+Everything else (standard KiCad libraries: `Device`, `power`, `Resistor_SMD`, etc.) ships with any stock KiCad 10 install — no extra setup required.
+
 ## Power Architecture Overview
 
 Two independent power sources feed the board, combined safely before regulation:

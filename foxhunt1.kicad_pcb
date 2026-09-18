@@ -3513,7 +3513,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "DigikeyGithub:SOT23-6L"
+	(footprint "digikey-kicad-library:SOT23-6L"
 		(layer "F.Cu")
 		(uuid "47052f91-c660-408f-9981-27d8b5f7230b")
 		(at 145.54 112.575)
