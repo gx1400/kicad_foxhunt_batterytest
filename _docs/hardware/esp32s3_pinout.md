@@ -72,7 +72,7 @@ pins), not silicon requirements. Easy to reshuffle.
 |---|---|---|---|
 | 1 | GND | Ground plane | |
 | 2 | 3V3 | `+3.3V` rail | |
-| 3 | EN | Reset circuit: 10kΩ pull-up to 3V3 + 1µF to GND (power-on delay) + manual RESET button to GND | Standard practice |
+| 3 | EN | Reset circuit: 10kΩ pull-up to 3V3 + 1µF to GND (power-on delay) + manual RESET button to GND + auto-reset transistor from the USB-UART bridge's DTR line (§ MCU in controller_platform.md) | Standard practice |
 | 4 | IO4 | Forward-power detector output (ADC, level readback) | **ADC1** channel — deliberately not ADC2; ADC2 is unreliable while WiFi is active. Paired with a comparator fault-flag on IO41 (pin 34) — see §4.8 in README for the dual-path design |
 | 5 | IO5 | GPS PPS input | Interrupt-capable, precise edge capture |
 | 6 | IO6 | SA818S UART — MCU TX → SA818 RXD | UART2 (software-assigned) |
@@ -96,7 +96,7 @@ pins), not silicon requirements. Easy to reshuffle.
 | 24 | IO47 | I2S DOUT → audio DAC | MCLK not reserved yet — add only if the chosen DAC needs it |
 | 25 | IO48 | Power-latch hold (MCU output, open-drain) | Diode-ORed with button + PCF8563 INT at the soft-latch enable node (§4.1) |
 | 26 | IO45 | **Reserved / NC** | Strapping pin (VDD_SPI voltage), leave floating for default (3.3V) behavior |
-| 27 | IO0 | BOOT button (pull to GND) | Strapping pin (boot mode). **Needed because native-USB-only has no USB-bridge DTR/RTS auto-reset** — manual BOOT+RESET buttons are the simple hardware fallback for entering download mode |
+| 27 | IO0 | BOOT button (pull to GND) + auto-reset transistor from the USB-UART bridge's RTS line | Strapping pin (boot mode). Manual BOOT+RESET buttons stay as the fallback when the bridge isn't plugged in; the bridge's RTS/DTR pair drives the standard two-transistor auto-reset circuit for one-command `esptool`/PlatformIO uploads |
 | 28 | IO35 | — | Not available (internal PSRAM) |
 | 29 | IO36 | — | Not available (internal PSRAM) |
 | 30 | IO37 | — | Not available (internal PSRAM) |
@@ -105,8 +105,8 @@ pins), not silicon requirements. Easy to reshuffle.
 | 33 | IO40 (MTDO) | WS2812/RGB status LED data (MCU output) | Same as above |
 | 34 | IO41 (MTDI) | Forward-power comparator output (input, digital) | Fault-flag path: same diode detector as IO4, through a comparator (e.g. LM393-class) against a fixed threshold — reliable "antenna fault, near-zero power leaving" detection independent of ADC noise/averaging |
 | 35 | IO42 (MTMS) | *Spare* | Free headroom |
-| 36 | RXD0 | Debug console UART0 RX (header) | Fallback console independent of native USB |
-| 37 | TXD0 | Debug console UART0 TX (header) | |
+| 36 | RXD0 | USB-UART bridge (CP2102N-class) TX → MCU RX | Own USB connector, separate from native USB — see § MCU in controller_platform.md |
+| 37 | TXD0 | MCU TX → USB-UART bridge RX | |
 | 38 | IO2 | MAX17320 ALRT (input, interrupt) | |
 | 39 | IO1 | PCF8563 INT/alarm (input, interrupt) | Separate from that same INT line's direct hardware path into the power-latch wake-OR (§4.1) — MCU also wants to read it directly once awake |
 | 40 | GND | Ground plane | |
@@ -116,6 +116,6 @@ pins), not silicon requirements. Easy to reshuffle.
 
 1. **GPS is UART-only** (no I2C) — simpler, and UART is the standard/expected interface for NMEA/UBX streams. Flag if you wanted I2C instead for some reason.
 2. **I2S MCLK not reserved** — deferred until the actual DAC part is chosen; some I2S DACs don't need it, some do. The one remaining spare pin (IO42, #35) is available for it if needed later.
-3. **BOOT/RESET buttons (§4.4/pin 27) are still recommended even with JTAG-over-USB available.** JTAG debug access and download-mode auto-reset are two different things — auto-reset-into-bootloader over the native USB Serial/JTAG peripheral is supported by esptool/ESP-IDF but has known version-dependent quirks, so the manual buttons stay as reliable fallback rather than being removed.
+3. **Resolved: added a second USB connector for a USB-UART bridge** (CP2102N-class, own port, DTR/RTS auto-reset into EN/IO0), instead of relying solely on native-USB auto-reset-into-bootloader — see § MCU in controller_platform.md for why (native-USB CDC re-enumerates on every reset, and its auto-reset has known version-dependent quirks). BOOT/RESET buttons stay regardless, as the fallback when the bridge isn't plugged in.
 
 35 of 36 available GPIOs assigned; **IO42 (pin 35) is the only pin still genuinely spare** — headroom for whatever comes up during layout/bring-up.

@@ -25,11 +25,16 @@ UART+I2C, PPS output, external active antenna via **SMA connector** (not an inte
 
 ## MCU — ESP32-S3-WROOM-1-N8R8
 
-Module (not bare chip) — this board already has one RF section to get right (SA818S); a second self-laid-out antenna-matching problem on the MCU's WiFi/BLE radio isn't worth it for this revision. N8R8 (8MB flash + 8MB PSRAM) — PSRAM matters more than extra flash for the concurrent WiFi + audio buffering + SD card workload. **Native USB** (no USB-UART bridge chip) for programming/debug. **BLE enabled** alongside WiFi — free with the same radio, gives a lower-power/faster-handshake alternative to the WiFi captive portal for the "found" log.
+Module (not bare chip) — this board already has one RF section to get right (SA818S); a second self-laid-out antenna-matching problem on the MCU's WiFi/BLE radio isn't worth it for this revision. N8R8 (8MB flash + 8MB PSRAM) — PSRAM matters more than extra flash for the concurrent WiFi + audio buffering + SD card workload. **BLE enabled** alongside WiFi — free with the same radio, gives a lower-power/faster-handshake alternative to the WiFi captive portal for the "found" log.
 
 Full pin-by-pin plan: [esp32s3_pinout.md](esp32s3_pinout.md).
 
-**JTAG comes free over the same USB-C connector** — ESP32-S3's native USB includes a built-in USB Serial/JTAG peripheral (CDC serial + full OpenOCD-compatible debug access, simultaneously, no extra pins). No separate JTAG header needed. BOOT/RESET buttons are still included regardless, since JTAG debug access and auto-reset-into-bootloader are different capabilities — the latter has known version-dependent quirks over native USB, so the manual buttons stay as a reliable fallback.
+**JTAG comes free over the native USB-C connector** — ESP32-S3's native USB includes a built-in USB Serial/JTAG peripheral (CDC serial + full OpenOCD-compatible debug access, simultaneously, no extra pins). No separate JTAG header needed. BOOT/RESET buttons are still included regardless as a manual fallback.
+
+**Two USB connectors, not a hub chip: native USB direct to the module, plus a separate USB-UART bridge on its own port.** Considered mirroring Espressif's newer DevKitC-1 reference design (single USB-C → onboard USB hub chip → both a USB-UART bridge and the module's native USB), but that pattern earns its keep on a retail dev board where connector count matters to strangers unfamiliar with the board. Here it just adds a hub IC, its own layout/power budget, and another thing that can fail, for no benefit this project needs. Two small connectors is cheaper and simpler:
+
+- **Native USB-C** — direct to IO19/IO20 (USB_D-/D+), as before: JTAG, native USB CDC, and esptool flashing.
+- **USB-UART bridge (CP2102N-class), own connector** — solves two real annoyances with native-USB-only boards during active firmware iteration: (1) the native USB CDC device re-enumerates on every reset/flash cycle, which drops/delays the serial monitor and can eat early boot log lines; a UART bridge's virtual COM port stays enumerated across ESP32-S3 resets. (2) auto-reset-into-bootloader over native USB has known version-dependent quirks (esptool/OS-driver dependent) — a real bridge's DTR/RTS auto-reset into EN/IO0 (the standard two-transistor circuit) is reliable and well-established. Manual BOOT/RESET buttons remain as the ultimate fallback either way (e.g. no bridge cable plugged in).
 
 ## Audio / PTT path (shared by onboard SA818S and external HT)
 
