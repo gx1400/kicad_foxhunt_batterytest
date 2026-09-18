@@ -69,6 +69,16 @@ Board-wide DRC floors are set: `min_clearance`/`min_trace_width` = 0.15mm,
 `min_via_drill` = 0.3mm, `min_via_size` = 0.5mm (matches configured JLCPCB fab
 constraints). Don't let `Default` netclass silently allow anything below these.
 
+**⚠️ `net_settings` (netclasses + DRC floors) has been silently wiped once
+already** by the KiCad GUI saving a stale in-memory copy of `foxhunt1.kicad_pro`
+over Konnect's on-disk edits — the GUI had the project open from before the
+netclasses existed, and closing/saving it clobbered them back to just `Default`.
+**Whenever creating/editing netclasses or design rules via Konnect: confirm
+KiCad has the project fully closed first (`open_project` → `open_board_count: 0`
+and no stale IPC session), do the edits, verify with `get_netclasses`, and
+commit immediately** — don't leave netclass edits sitting uncommitted while
+there's any chance the GUI reopens the project and re-saves over them.
+
 ## Design conventions (see README for full rationale)
 
 - **GND vs GNDREF are deliberately separate nets**, bridged only by the current-
@@ -87,11 +97,18 @@ constraints). Don't let `Default` netclass silently allow anything below these.
 
 - **Live IPC to KiCad doesn't support `GetOpenDocuments`** in this KiCad 10.0.6 +
   Konnect 0.12.0 combination. Any tool that needs to check what's open in the
-  live GUI (`get_component_list`, `find_component`, `update_pcb_from_schematic`,
-  `run_erc`/`get_nets_list` when the board is open, etc.) will fail with
-  `AS_UNHANDLED`. **Workaround: ask the user to close the board/project in the
-  KiCad GUI**, confirm via `open_project` (should report `open_board_count: 0`),
-  then the same tool works via the closed-file fallback path.
+  live GUI (`get_component_list`, `find_component`, `run_erc`/`get_nets_list`
+  when the board is open, etc.) will fail with `AS_UNHANDLED`. **Workaround: ask
+  the user to close the board/project in the KiCad GUI**, confirm via
+  `open_project` (should report `open_board_count: 0`), then the same tool works
+  via the closed-file fallback path.
+- **`update_pcb_from_schematic` is the one exception — it's live-IPC-only with
+  no closed-file fallback.** It fails both when the board is open (IPC conflict)
+  and when it's closed (no IPC to talk to at all). There is no way to trigger a
+  schematic→PCB net/footprint sync from Konnect in this environment. When net
+  labels or footprints change in the schematic, ask the user to run KiCad's own
+  **Tools → Update PCB from Schematic (F8)** natively, then re-verify from
+  Konnect's side afterward.
 - **`reload_server` is needed after directly editing `settings.json`** (e.g.
   `jlcpcb_db_path`) — the running Konnect process doesn't pick up config file
   changes on its own. Pass `allow_same_version=true` for a same-version reload.
