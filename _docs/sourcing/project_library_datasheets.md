@@ -2,7 +2,7 @@
 
 Datasheets for every placed-component part that is **not** one of the 4 symbols in
 `libs/kicad_gx_library/` (those are documented separately in
-`_docs/kicad_gx_library_datasheets.md`). Files live under `project_library/datasheets/`,
+`_docs/sourcing/kicad_gx_library_datasheets.md`). Files live under `project_library/datasheets/`,
 organized into per-manufacturer subfolders. All schematic `Datasheet` fields below use the
 `${KIPRJMOD}`-relative path convention.
 
