@@ -73,7 +73,7 @@ pins), not silicon requirements. Easy to reshuffle.
 | 1 | GND | Ground plane | |
 | 2 | 3V3 | `+3.3V` rail | |
 | 3 | EN | Reset circuit: 10kΩ pull-up to 3V3 + 1µF to GND (power-on delay) + manual RESET button to GND | Standard practice |
-| 4 | IO4 | Forward-power detector output (ADC) | **ADC1** channel — deliberately not ADC2; ADC2 is unreliable while WiFi is active, which is exactly when you want a TX-power reading |
+| 4 | IO4 | Forward-power detector output (ADC, level readback) | **ADC1** channel — deliberately not ADC2; ADC2 is unreliable while WiFi is active. Paired with a comparator fault-flag on IO41 (pin 34) — see §4.8 in README for the dual-path design |
 | 5 | IO5 | GPS PPS input | Interrupt-capable, precise edge capture |
 | 6 | IO6 | SA818S UART — MCU TX → SA818 RXD | UART2 (software-assigned) |
 | 7 | IO7 | SA818S UART — MCU RX ← SA818 TXD | UART2 (software-assigned) |
@@ -101,9 +101,9 @@ pins), not silicon requirements. Easy to reshuffle.
 | 29 | IO36 | — | Not available (internal PSRAM) |
 | 30 | IO37 | — | Not available (internal PSRAM) |
 | 31 | IO38 | Push button (input, wake-capable) | General board button — distinct from the BOOT button on IO0 |
-| 32 | IO39 (MTCK) | Heartbeat LED (MCU output) **or** JTAG TCK | Shared — see open question below |
-| 33 | IO40 (MTDO) | WS2812/RGB status LED data (MCU output) **or** JTAG TDO | Shared — see open question below |
-| 34 | IO41 (MTDI) | *Spare* | Free headroom |
+| 32 | IO39 (MTCK) | Heartbeat LED (MCU output) | No JTAG-header tradeoff here — ESP32-S3's native USB has a built-in USB Serial/JTAG peripheral, full OpenOCD-compatible debug access over the same USB-C connector, no separate header needed |
+| 33 | IO40 (MTDO) | WS2812/RGB status LED data (MCU output) | Same as above |
+| 34 | IO41 (MTDI) | Forward-power comparator output (input, digital) | Fault-flag path: same diode detector as IO4, through a comparator (e.g. LM393-class) against a fixed threshold — reliable "antenna fault, near-zero power leaving" detection independent of ADC noise/averaging |
 | 35 | IO42 (MTMS) | *Spare* | Free headroom |
 | 36 | RXD0 | Debug console UART0 RX (header) | Fallback console independent of native USB |
 | 37 | TXD0 | Debug console UART0 TX (header) | |
@@ -114,8 +114,8 @@ pins), not silicon requirements. Easy to reshuffle.
 
 ## Open judgment calls (flagging, not blocking)
 
-1. **Pins 32/33 (MTCK/MTDO) double as heartbeat + RGB LED *or* an optional JTAG header.** Populating a JTAG header would be genuinely useful for firmware bring-up debugging beyond log/print statements, but costs those two LEDs the pins while a probe's connected. Fine to leave as proposed (LEDs win, JTAG omitted) unless you want the header.
-2. **GPS is UART-only** (no I2C) — simpler, and UART is the standard/expected interface for NMEA/UBX streams. Flag if you wanted I2C instead for some reason.
-3. **I2S MCLK not reserved** — deferred until the actual DAC part is chosen; some I2S DACs don't need it, some do. The two spare pins (IO41/IO42, #34-35) are available for it if needed later.
+1. **GPS is UART-only** (no I2C) — simpler, and UART is the standard/expected interface for NMEA/UBX streams. Flag if you wanted I2C instead for some reason.
+2. **I2S MCLK not reserved** — deferred until the actual DAC part is chosen; some I2S DACs don't need it, some do. The one remaining spare pin (IO42, #35) is available for it if needed later.
+3. **BOOT/RESET buttons (§4.4/pin 27) are still recommended even with JTAG-over-USB available.** JTAG debug access and download-mode auto-reset are two different things — auto-reset-into-bootloader over the native USB Serial/JTAG peripheral is supported by esptool/ESP-IDF but has known version-dependent quirks, so the manual buttons stay as reliable fallback rather than being removed.
 
-34 of 36 available GPIOs assigned; **IO41 and IO42 (pins 34-35) are genuinely spare** — headroom for whatever comes up during layout/bring-up.
+35 of 36 available GPIOs assigned; **IO42 (pin 35) is the only pin still genuinely spare** — headroom for whatever comes up during layout/bring-up.

@@ -128,13 +128,20 @@ This is one shared subsystem serving two destinations, not two separate designs:
 - **SD card: SPI mode**, not SDIO. No audio *recording* planned, and audio *playback* (voice IDs, custom clips) is a light, bufferable workload (~32KB/s for 16kHz/16-bit mono) well within SPI-mode throughput — SDIO's speed and extra GPIO cost isn't needed.
 - **Config storage: I2C EEPROM** (e.g. AT24C32D-class, 32Kbit), not FRAM — FRAM (FM24C/MB85RC families) isn't available in JLCPCB's catalog, and EEPROM's ~1M write-cycle life is a non-issue for settings that change occasionally (schedule, frequency, TX power, tone), not continuously. Lives on the same I2C bus as the RTC/fuel-gauge, independent of the SD card, so critical operating parameters survive a missing/corrupt card.
 
-### 4.7 Onboard charging — none (data-only USB)
+### 4.7 Onboard charging — none; USB powers logic only, via an isolated path
 
-Investigated: TI **BQ25792** (I2C-configurable 1-4S buck-boost charger, in stock at JLCPCB) can charge the 2S1P pack directly from 5V USB without PD negotiation (internally boosts as needed) — a real, buildable option, not ruled out for cost/feasibility reasons. Decided against it for this revision anyway; charging stays external/separate as originally designed. USB-C is present for programming/debug only.
+**No battery charging.** Investigated: TI **BQ25792** (I2C-configurable 1-4S buck-boost charger, in stock at JLCPCB) can charge the 2S1P pack directly from 5V USB without PD negotiation (internally boosts as needed) — a real, buildable option, not ruled out for cost/feasibility reasons. Decided against it for this revision anyway; charging stays external/separate as originally designed.
 
-### 4.8 RF power sensing — forward power only
+**USB VBUS is not left electrically dangling, though** — every USB connection carries 5V on VBUS regardless of intent, and if that were wired straight into the 3.3V rail or VRAW it would fight the battery-derived supply whenever both are present (e.g. flashing firmware on a board that's already powered — a completely normal case for a board that'll be reflashed constantly during bring-up). So there's a small dedicated path: **VBUS → a 3.3V LDO (reusing AMS1117-3.3, already the part chosen for the main 3.3V rail) → a Schottky diode → the shared 3.3V rail.** The main regulation's 3.3V LDO output connects to that same shared rail directly, with no diode in series — asymmetric on purpose. If it had a diode too, the main rail would drop by the diode's forward voltage during *every* normal battery-powered run, not just when USB is present. With the diode only on the USB leg: whenever battery power is present, the main regulator's tightly-regulated output sits at or above the USB-LDO's output, which naturally reverse-biases (blocks) the USB diode with no active switching needed — no backfeed, full clean 3.3V preserved. When only USB is present (no battery), the diode conducts and the USB-LDO supplies the rail. This lets the board be flashed/debugged from USB alone on the bench with no battery connected, without any risk when both sources are live at once. Sized for logic-only loads (MCU + peripherals) — not intended to power the SA818S PA at TX current.
 
-Simple diode detector on the antenna line into an ADC pin, forward power only (no reflected/SWR) for this revision. Serves double duty: basic antenna-fault detection (nothing leaving = probably an open/damaged antenna) during unattended multi-hour operation, and closes the loop on "variable TX power" — otherwise the PWM-based power setting is open-loop and unverified.
+### 4.8 RF power sensing — forward power only, dual-path (ADC + comparator)
+
+Simple diode detector on the antenna line, forward power only (no reflected/SWR) for this revision. The detector's output feeds two parallel paths rather than just an ADC:
+
+- **ADC1 (IO4)** — actual power-level readback, for calibration/verification of "variable TX power" (otherwise the PWM-based power setting is open-loop and unverified). Deliberately ADC1, not ADC2 — ADC2 is unreliable while WiFi is active.
+- **Comparator (e.g. LM393-class) → digital GPIO (IO41)** — a fast, software-independent fault flag ("near-zero power leaving, probably an open/damaged antenna"). Reference threshold set via a resistor divider off 3.3V (exact values TBD during detector circuit design). Added specifically because a comparator's digital HIGH/LOW is far more noise-immune near an active RF PA than trying to resolve a precise analog level — the ADC path stays for the number you actually want (power level), the comparator adds a robust independent trip you can trust without relying on ADC averaging/timing.
+
+This is the same pattern used in commercial RF gear: fast comparator trip for fault/protection, slower ADC readout for the calibrated value.
 
 ### 4.9 Status indication
 
