@@ -145,12 +145,6 @@
 		(path "/97dbd23c-e514-4ce5-844f-a535007f7112")
 		(sheetname "/")
 		(sheetfile "foxhunt1.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -349,7 +343,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "79bedf4d-57bf-4120-9d51-ff49cba2f5fe")
+			(uuid "c16706b7-e811-4213-b0cf-34ada7b5b65c")
 			(effects
 				(font
 					(size 1 1)
@@ -413,12 +407,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/44b4d5c3-9cf9-4055-b2e8-15897164d28f")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -479,7 +467,7 @@
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
-			(net "Net-(JP12-A)")
+			(net "/Battery 18650 Input/BATT_PCKP")
 			(pintype "passive")
 			(uuid "31ee46b3-35e9-4e42-ab2d-454e49f8151b")
 		)
@@ -563,12 +551,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/8fc6275a-8057-4803-8f06-e790a154dd26")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -691,7 +673,7 @@
 			(at 0.725 0)
 			(size 0.3 0.3)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(JP10-B)")
+			(net "/Power Regulation/3V3_BUCK_VIN")
 			(pinfunction "B_2")
 			(pintype "passive")
 			(zone_connect 2)
@@ -771,12 +753,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/b2b26082-5818-4c37-9164-fa690b6bf7fd")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -872,19 +848,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "c3824e60-a020-4aec-8938-e40441e457e1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -940,12 +904,6 @@
 		(path "/c9cafb8e-215c-456a-98dd-d802860484be")
 		(sheetname "/")
 		(sheetfile "foxhunt1.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1082,19 +1040,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "21c07b3b-c344-4f5d-8437-424571e0cecf")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1150,12 +1096,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/a2d895e4-df0d-40f8-b6ba-fcca6fe5419c")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1216,7 +1156,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP13-B)")
+			(net "/Power Regulation/5V_LDO_VIN")
 			(pintype "passive")
 			(uuid "506850a6-280b-41e0-b4dd-cb657907f4bc")
 		)
@@ -1296,7 +1236,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ba1257d3-e131-4c2f-a5c7-cdde86b1d012")
+			(uuid "7ce0ae44-e653-4fac-8ee4-67f38cd6c76f")
 			(effects
 				(font
 					(size 1 1)
@@ -1321,12 +1261,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/65fd8aec-059e-466d-ac63-3938c7d2577d")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1523,12 +1457,6 @@
 		(path "/2ab23dca-9a56-4bf0-a3cb-cbd54d881a74/8321fc90-b7a8-4aaf-97e1-fd81e9608534")
 		(sheetname "/Battery_PowerPole_Input/")
 		(sheetfile "battery_powerpole_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1619,7 +1547,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.15)
-			(net "Net-(J3-Pin_1)")
+			(net "/Battery_PowerPole_Input/12V_RAW")
 			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "26d7c9f4-eb21-48b2-8b3d-d28a7268e140")
@@ -1688,19 +1616,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "inductor/SMD"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ec92a7f8-46cb-4329-97d5-89e1e0991a55")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MPN" "MHCI06030-3R3M-R8"
+		(property "KiLib_Generator" "MHCI06030-3R3M-R8"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1756,12 +1672,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/6a97c583-59f3-4a4a-82f9-a19051511680")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1981,7 +1891,7 @@
 			(size 2.35 3.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.166667)
-			(net "Net-(JP14-A)")
+			(net "/Power Regulation/3V3_BUCK_OUT")
 			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "48cdd9ba-56c1-4724-9709-74b2dabccee0")
@@ -2049,11 +1959,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "package/TO_SOT/SMD"
+		(property "KiLib_Generator" "TO-263-3L"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "2b35da24-7137-46fa-a617-b09265b2ba44")
+			(uuid "97bc3476-6ebf-490d-b9db-430d5651d776")
 			(effects
 				(font
 					(size 1 1)
@@ -2100,29 +2011,10 @@
 				)
 			)
 		)
-		(property "Package" "TO-263-3L"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "97bc3476-6ebf-490d-b9db-430d5651d776")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "TO?220* TO?263*")
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/8acc0a8b-d793-4d88-9648-6640fbfc8644")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2374,7 +2266,7 @@
 			(size 4.6 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.227273)
-			(net "Net-(JP15-B)")
+			(net "/Power Regulation/5V_LDO_OUT")
 			(pinfunction "VO_2")
 			(pintype "power_out")
 			(uuid "a0abf62c-7aa3-439c-9edc-225f95ea85d0")
@@ -2384,7 +2276,7 @@
 			(size 9.4 10.8)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.026596)
-			(net "Net-(JP15-B)")
+			(net "/Power Regulation/5V_LDO_OUT")
 			(pinfunction "VO_2")
 			(pintype "power_out")
 			(uuid "ad29abb1-5476-4129-a60c-856e0f872942")
@@ -2394,7 +2286,7 @@
 			(size 4.6 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.227273)
-			(net "Net-(JP13-B)")
+			(net "/Power Regulation/5V_LDO_VIN")
 			(pinfunction "VI_3")
 			(pintype "power_in")
 			(uuid "86bb7898-6f34-4d3b-8ee7-39181689fb9a")
@@ -2466,7 +2358,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "53d23ddf-113c-450d-99ca-fb2e0c63ff31")
+			(uuid "7fc09a34-6dcf-4447-8a51-012da7d44fb9")
 			(effects
 				(font
 					(size 1 1)
@@ -2517,12 +2409,6 @@
 		(path "/a930c539-0442-411e-857e-de80ed99bda0")
 		(sheetname "/")
 		(sheetfile "foxhunt1.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2891,12 +2777,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/d4012a9d-4b7d-437e-9695-c5663041fdbd")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.03 -0.4)
@@ -3086,7 +2966,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(JP15-B)")
+			(net "/Power Regulation/5V_LDO_OUT")
 			(pinfunction "B_2")
 			(pintype "passive")
 			(uuid "ec0ee905-0d66-4c7f-8003-6df288970ef9")
@@ -3143,19 +3023,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "d1dff68f-48e7-4f3b-b14f-63e96af3fb1b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3211,12 +3079,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/e769c4d8-5455-48ec-aeff-a6192a0c957d")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3361,12 +3223,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/8979ba2a-110b-4a1c-8f8f-c8929ae7b94c")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -3465,7 +3321,7 @@
 			(at -0.725 0)
 			(size 0.3 0.3)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(JP13-A)")
+			(net "/Power Regulation/5V_BUCK_OUT")
 			(pinfunction "A_1")
 			(pintype "passive")
 			(zone_connect 2)
@@ -3489,7 +3345,7 @@
 			(at 0.725 0)
 			(size 0.3 0.3)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(JP13-B)")
+			(net "/Power Regulation/5V_LDO_VIN")
 			(pinfunction "B_2")
 			(pintype "passive")
 			(zone_connect 2)
@@ -3561,19 +3417,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "bcdba35e-8cf2-4624-a37b-a8a594fea849")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3629,12 +3473,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/74f4004e-7ffb-476c-983b-8bca97fd1336")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3695,7 +3533,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP15-B)")
+			(net "/Power Regulation/5V_LDO_OUT")
 			(pintype "passive")
 			(uuid "21513877-fe91-44d9-8d59-8b9c867a6430")
 		)
@@ -3775,7 +3613,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "3c906241-ea76-4bf3-b08f-031931fe5177")
+			(uuid "9b64d8f2-154f-4fe2-8aef-9d80a82231f2")
 			(effects
 				(font
 					(size 1 1)
@@ -3826,12 +3664,6 @@
 		(path "/6b54874f-d3ed-4f2d-bd92-c740cb543f91")
 		(sheetname "/")
 		(sheetfile "foxhunt1.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4192,19 +4024,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "b849edc2-e364-49a7-91b2-ca38bdb691e0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4260,12 +4080,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/019f5ea7-bb3b-4283-bd26-748fd1ccb110")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4326,7 +4140,7 @@
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "Net-(JP14-A)")
+			(net "/Power Regulation/3V3_BUCK_OUT")
 			(pintype "passive")
 			(uuid "f88a97a2-a396-40fe-8981-64961afe4f19")
 		)
@@ -4402,11 +4216,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "c110ec68-2c0f-4ab0-b9ec-35c0aff15437")
+			(uuid "a9fbf040-08a5-4d7f-9f26-3d8d5a28e26e")
 			(effects
 				(font
 					(size 1 1)
@@ -4420,19 +4235,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "de5b7d23-6cce-4bc8-b80e-7ebf055c038f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a9fbf040-08a5-4d7f-9f26-3d8d5a28e26e")
 			(effects
 				(font
 					(size 1 1)
@@ -4470,12 +4272,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/a016f800-b025-4084-b273-135d86ef8bbf")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4612,11 +4408,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "f46070ae-0a92-48ed-ba3e-a50396d4adb1")
+			(uuid "d332a9da-272f-4372-a801-fdf7fe575c24")
 			(effects
 				(font
 					(size 1 1)
@@ -4630,19 +4427,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eb967519-722a-4b1e-8067-def20eb75494")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d332a9da-272f-4372-a801-fdf7fe575c24")
 			(effects
 				(font
 					(size 1 1)
@@ -4680,12 +4464,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/62295567-2498-4cbc-9468-7b95df3b804a")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4826,7 +4604,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "9a846a4e-6783-4bd4-a1dc-42eb09a4270a")
+			(uuid "76afaa01-ee3d-413d-91ae-83f643c35b4d")
 			(effects
 				(font
 					(size 1 1)
@@ -4877,12 +4655,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/a2407590-934c-4adc-8e6d-79643ee2cd54")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5243,19 +5015,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "06968503-8fc1-48e1-9bf0-7750b9f490a2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5311,12 +5071,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/89bec5c1-4168-4541-a3ed-9052d7856b0c")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5377,7 +5131,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP10-B)")
+			(net "/Power Regulation/3V3_BUCK_VIN")
 			(pintype "passive")
 			(uuid "e1b92eee-388f-4df0-aec4-8a2f0297b951")
 		)
@@ -5461,12 +5215,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/5088f223-c582-44b0-83a4-f146e0916b47")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -5565,7 +5313,7 @@
 			(at -0.725 0)
 			(size 0.3 0.3)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(JP15-B)")
+			(net "/Power Regulation/5V_LDO_OUT")
 			(pinfunction "A_1")
 			(pintype "passive")
 			(zone_connect 2)
@@ -5669,12 +5417,6 @@
 		(path "/642e9ed8-160a-4190-9d5a-6f3340e501fb")
 		(sheetname "/")
 		(sheetfile "foxhunt1.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -5873,7 +5615,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c16a7482-9e6a-4248-8ed2-84563416beb7")
+			(uuid "f6762e6e-5631-4e04-96d7-23618ec4aab6")
 			(effects
 				(font
 					(size 1 1)
@@ -5898,12 +5640,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/00082c9a-d077-4c3f-9fe0-0a6b3342c0f7")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6053,11 +5789,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(property "KiLib_Generator" "RT1206BRD07150RL"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "49ca5b02-aae8-493d-8e75-d911e54a7fbc")
+			(uuid "0f6d072b-c900-4bea-9712-8d54fca2ffda")
 			(effects
 				(font
 					(size 1 1)
@@ -6104,29 +5841,10 @@
 				)
 			)
 		)
-		(property "MPN" "RT1206BRD07150RL"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0f6d072b-c900-4bea-9712-8d54fca2ffda")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/cde6bfbf-925a-4796-9409-f099fc1b68a8")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6271,12 +5989,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/06176510-bb33-4b12-bedc-9edf51694472")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -6399,7 +6111,7 @@
 			(at 0.725 0)
 			(size 0.3 0.3)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(JP9-B)")
+			(net "/Power Regulation/5V_BUCK_VIN")
 			(pinfunction "B_2")
 			(pintype "passive")
 			(zone_connect 2)
@@ -6471,11 +6183,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "bf5530b5-d0b3-40e7-82f0-abc78e2563a1")
+			(uuid "4de7fd54-bc4b-440b-8915-78e32cbef5da")
 			(effects
 				(font
 					(size 1 1)
@@ -6489,19 +6202,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d6fc7cca-402c-4b16-b95a-6700abb7ec75")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4de7fd54-bc4b-440b-8915-78e32cbef5da")
 			(effects
 				(font
 					(size 1 1)
@@ -6539,12 +6239,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/651664b5-7232-43cb-8f4a-be555606c2c5")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6685,7 +6379,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "33b4c8ea-839d-426c-aaac-e5b6b46e93c7")
+			(uuid "19fd8ee0-2925-429e-a437-319c11349e9a")
 			(effects
 				(font
 					(size 1 1)
@@ -6749,12 +6443,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/08e3fbb4-e8a2-4a37-9ebc-22afbb562e9a")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6815,7 +6503,7 @@
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
-			(net "Net-(JP10-B)")
+			(net "/Power Regulation/3V3_BUCK_VIN")
 			(pintype "passive")
 			(uuid "062b171a-3c6d-4f74-80bd-2ba30f58e303")
 		)
@@ -6895,7 +6583,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c8e553df-ac2d-49d4-a412-654a0a89a518")
+			(uuid "6c208f17-f586-4509-8570-5986a43039b2")
 			(effects
 				(font
 					(size 1 1)
@@ -6959,12 +6647,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/37eb7ea3-b4d8-4221-aa5c-45fba2ea31e6")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "5" "1" "2" "6" "4")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7207,7 +6889,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP10-B)")
+			(net "/Power Regulation/3V3_BUCK_VIN")
 			(pinfunction "VIN_3")
 			(pintype "power_in")
 			(uuid "c814817f-213a-4339-a9db-d24c726b67ce")
@@ -7305,11 +6987,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "capacitor/SMD/elec_round"
+		(property "KiLib_Generator" "SMD,D5xL5.7mm "
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "9320c68d-58a7-450a-94fd-e5870111f459")
+			(uuid "b4aff5da-bbc5-4613-ba9b-7c70b0dd56f0")
 			(effects
 				(font
 					(size 1 1)
@@ -7356,29 +7039,10 @@
 				)
 			)
 		)
-		(property "Package" "SMD,D5xL5.7mm "
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b4aff5da-bbc5-4613-ba9b-7c70b0dd56f0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "C_*")
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/d0b1958a-3b2a-4b16-ba45-878032ba46cb")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7688,7 +7352,7 @@
 			(size 2.775 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
-			(net "Net-(JP15-B)")
+			(net "/Power Regulation/5V_LDO_OUT")
 			(pintype "passive")
 			(uuid "7cd1cba4-9c4e-4118-ad20-8e4487197d1b")
 		)
@@ -7768,7 +7432,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "a2af1e6d-2e4e-4a24-981a-c47f1ee0ff8a")
+			(uuid "cad14f29-aeaa-47a6-9462-330f88006b58")
 			(effects
 				(font
 					(size 1 1)
@@ -7832,12 +7496,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/2f02900b-f49e-4e10-9e82-4f8f4ee34b03")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7974,19 +7632,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "cafcab41-0b5b-432e-add8-de56a2e5b7da")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8042,12 +7688,6 @@
 		(path "/06036d68-e8ba-4829-bcb4-1b36b0738a8e")
 		(sheetname "/")
 		(sheetfile "foxhunt1.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8192,12 +7832,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/20b5d58e-a3e4-4ab3-a00b-72ec07c75835")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -8296,7 +7930,7 @@
 			(at -0.725 0)
 			(size 0.3 0.3)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(JP16-B)")
+			(net "/Power Regulation/3V3_LDO_OUT")
 			(pinfunction "A_1")
 			(pintype "passive")
 			(zone_connect 2)
@@ -8396,7 +8030,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "18f034c0-6aeb-4ff0-9c16-cc7b88d8ec20")
+			(uuid "84be4cbc-39f9-4e6c-b267-54e3cc37370d")
 			(effects
 				(font
 					(size 1 1)
@@ -8447,12 +8081,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/e57ca0b0-eae3-4851-9c03-61319f2e9383")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8513,7 +8141,7 @@
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
-			(net "Net-(JP12-A)")
+			(net "/Battery 18650 Input/BATT_PCKP")
 			(pintype "passive")
 			(uuid "2c12d707-584d-4763-8d42-23c9c2e5e8ea")
 		)
@@ -8593,7 +8221,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "3309e286-81f4-4ed3-ac21-6533702bf14e")
+			(uuid "d17df0e4-b0c7-4b07-bcc2-4086375ea2df")
 			(effects
 				(font
 					(size 1 1)
@@ -8657,12 +8285,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/587f1434-a1ef-4dca-b344-2754e8f1676c")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "5" "1" "2" "6" "4")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8905,7 +8527,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP9-B)")
+			(net "/Power Regulation/5V_BUCK_VIN")
 			(pinfunction "VIN_3")
 			(pintype "power_in")
 			(uuid "9f9f4db2-710b-44c4-8d04-65678d0a86cd")
@@ -9003,19 +8625,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "c834c21f-1067-448d-b227-36cf21207668")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9071,12 +8681,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/64051929-fcb5-45f4-9471-77fa18b0595e")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9137,7 +8741,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP9-B)")
+			(net "/Power Regulation/5V_BUCK_VIN")
 			(pintype "passive")
 			(uuid "f484d329-8187-4daf-9c3c-9a23e2d9837a")
 		)
@@ -9217,7 +8821,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "47c3974b-4366-4fd6-b71d-eb932aee984a")
+			(uuid "6b332140-ff9e-4082-8936-c554e0862594")
 			(effects
 				(font
 					(size 1 1)
@@ -9294,12 +8898,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/6e9c8778-3f26-4b41-9ea1-daae5c25a0fa")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9436,11 +9034,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "801b3fa0-3342-42a4-b57e-a7d72bd6c9f8")
+			(uuid "724ca379-faf9-430d-a5e1-16d442e082d2")
 			(effects
 				(font
 					(size 1 1)
@@ -9474,19 +9073,6 @@
 				)
 			)
 		)
-		(property "Manf" "muRata"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "724ca379-faf9-430d-a5e1-16d442e082d2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Package" "0805"
 			(at 0 0 0)
 			(unlocked yes)
@@ -9504,12 +9090,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/7b33a567-4dff-44f9-8cb9-6e146ac5d828")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9646,11 +9226,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "battery"
+		(property "KiLib_Generator" "MPD (Memory Protection Devices)"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "1299a444-ba38-4f2c-b283-a6f038a57477")
+			(uuid "0a84ed68-c413-4745-94af-a3c098edbe90")
 			(effects
 				(font
 					(size 1 1)
@@ -9697,19 +9278,6 @@
 				)
 			)
 		)
-		(property "Manf" "MPD (Memory Protection Devices)"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0a84ed68-c413-4745-94af-a3c098edbe90")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "MPN" "BH-18650-PC"
 			(at 0 0 0)
 			(unlocked yes)
@@ -9739,12 +9307,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/7d2763ba-a686-49e7-ad71-d80fc70ed228")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9942,19 +9504,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "60b2dc2a-e405-444c-9216-d763631417e6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10010,12 +9560,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/f50066a7-db57-4c81-8f43-8aa07ad450b8")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10076,7 +9620,7 @@
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "Net-(JP13-A)")
+			(net "/Power Regulation/5V_BUCK_OUT")
 			(pintype "passive")
 			(uuid "a45b46c6-b4fe-4bb9-9f1b-5cc0e0544266")
 		)
@@ -10152,19 +9696,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "693649a9-8881-44e7-b013-aa0908319ea5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10220,12 +9752,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/5f5d69c0-a686-4809-97f2-fedd581ae216")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10362,19 +9888,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "587a4b3c-4610-4fdf-b62f-1348dca9b7ab")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10430,12 +9944,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/c54a2e7c-a213-4d43-8ea6-5d5ff3635f9e")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10496,7 +10004,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP10-B)")
+			(net "/Power Regulation/3V3_BUCK_VIN")
 			(pintype "passive")
 			(uuid "ddd5fe46-0d9c-4c43-82b2-366543b98c34")
 		)
@@ -10626,12 +10134,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/d0e7b0b4-67c3-439b-9086-55eba4020a20")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "6" "5" "4")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10837,7 +10339,7 @@
 			(at 0.95 1.15)
 			(size 0.6 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(JP12-A)")
+			(net "/Battery 18650 Input/BATT_PCKP")
 			(pinfunction "S2_3")
 			(pintype "passive")
 			(uuid "ec7b4825-81cb-445d-993e-3d6530aaa42c")
@@ -10925,7 +10427,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "82894730-1cd2-4505-aa35-581236426286")
+			(uuid "2a75ed22-9965-4515-96be-8423bfa282d3")
 			(effects
 				(font
 					(size 1 1)
@@ -10988,14 +10490,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/b2a7ae9c-a992-4123-839f-ec34c55541ba")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1" "24" "23" "22" "21" "10" "16" "18" "19" "25" "11" "20"
-					"3" "15" "4" "14" "6" "5" "12" "17" "13" "7" "9" "8"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11751,11 +11245,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "35bdba9d-bf82-4c40-a244-76cb492c60ac")
+			(uuid "d7e10778-0226-4df1-b9a3-f000d103913d")
 			(effects
 				(font
 					(size 1 1)
@@ -11769,19 +11264,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e6bf3c46-6d17-43e2-87ff-73cc80928c49")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d7e10778-0226-4df1-b9a3-f000d103913d")
 			(effects
 				(font
 					(size 1 1)
@@ -11819,12 +11301,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/6429a143-5008-469b-bbc6-05af49d9fa44")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11961,11 +11437,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(property "KiLib_Generator" "C228015"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "9d12302e-d6bc-4dd4-a713-6c4d2d7b7173")
+			(uuid "30809a62-d341-421a-bc32-538a87313894")
 			(effects
 				(font
 					(size 1 1)
@@ -12012,29 +11489,10 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C228015"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "30809a62-d341-421a-bc32-538a87313894")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/083c5ac5-3599-4d06-b7dd-74ed76fb61d8")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -12098,7 +11556,7 @@
 			(size 0.46 0.4)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP13-A)")
+			(net "/Power Regulation/5V_BUCK_OUT")
 			(pintype "passive")
 			(uuid "c1b98040-dae3-42fd-97b7-9e959a8bc378")
 		)
@@ -12169,7 +11627,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "7f4920fb-ef8d-4f8a-9f29-05e51537b08b")
+			(uuid "383fc6a1-2029-4266-8ce2-ab1e87bdaa4c")
 			(effects
 				(font
 					(size 1 1)
@@ -12233,12 +11691,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/026de4f8-0a2c-48b5-b753-4de9e248bb96")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12379,7 +11831,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b334aa17-9c83-4be2-a728-433107260651")
+			(uuid "819d3a82-3a2b-48c4-945d-b0ec8fc6c6e0")
 			(effects
 				(font
 					(size 1 1)
@@ -12442,12 +11894,6 @@
 		(path "/03856f3a-f3f0-46e3-a462-c208a911e85f")
 		(sheetname "/")
 		(sheetfile "foxhunt1.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "4" "3" "6" "7" "2" "1" "8" "5")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12868,12 +12314,6 @@
 		(path "/2ab23dca-9a56-4bf0-a3cb-cbd54d881a74/692be2dc-ad51-4028-bad0-ddca2ae7af40")
 		(sheetname "/Battery_PowerPole_Input/")
 		(sheetfile "battery_powerpole_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13140,19 +12580,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "c0470652-958b-49ec-ae16-80e63bc011f7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13208,12 +12636,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/9258af5a-78a1-4560-91b2-6dc060dd28ac")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13350,19 +12772,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "69d75bb7-cc37-4a3a-ad70-a73a6e727ecc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13418,12 +12828,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/4ca0a788-8c5b-4522-a49c-85dfc5b295bc")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13484,7 +12888,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP9-B)")
+			(net "/Power Regulation/5V_BUCK_VIN")
 			(pintype "passive")
 			(uuid "a72b4fc2-d818-41dc-9ecc-df8534d91c5b")
 		)
@@ -13564,7 +12968,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "7421e1c9-1c75-41a4-9c51-e861b796235a")
+			(uuid "67227c8e-c92f-46c6-81b9-a1eee3e850e8")
 			(effects
 				(font
 					(size 1 1)
@@ -13628,12 +13032,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/28800d2b-0ff7-4b3e-a27b-76b56778095c")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13694,7 +13092,7 @@
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
-			(net "Net-(JP9-B)")
+			(net "/Power Regulation/5V_BUCK_VIN")
 			(pintype "passive")
 			(uuid "4c4c0884-bf3a-41b7-afe2-11e88c6f6c8c")
 		)
@@ -13770,11 +13168,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "capacitor/SMD/elec_round"
+		(property "KiLib_Generator" "SMD,D5xL5.7mm "
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "e1c65754-ef57-42f7-a0c6-bc0bedd89a6b")
+			(uuid "9547be6f-9c94-448d-9fce-95acb074f8d2")
 			(effects
 				(font
 					(size 1 1)
@@ -13821,29 +13220,10 @@
 				)
 			)
 		)
-		(property "Package" "SMD,D5xL5.7mm "
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9547be6f-9c94-448d-9fce-95acb074f8d2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "C_*")
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/4e1c5e5a-4edc-4990-b281-78b655815004")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14153,7 +13533,7 @@
 			(size 2.775 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
-			(net "Net-(JP16-B)")
+			(net "/Power Regulation/3V3_LDO_OUT")
 			(pintype "passive")
 			(uuid "9c5c4385-0edd-4bfd-ad18-05002940fd3f")
 		)
@@ -14229,19 +13609,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "0a6e0405-06de-451c-af1a-21fd81548d8b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14297,12 +13665,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/e435c6c1-03f3-4ae5-8276-0f7d9c85ab45")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14363,7 +13725,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP10-B)")
+			(net "/Power Regulation/3V3_BUCK_VIN")
 			(pintype "passive")
 			(uuid "337d3414-33ee-430b-a781-aba39748a6bf")
 		)
@@ -14439,19 +13801,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "connector/PhoenixContact"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "cde42c6e-f927-4b66-a9d0-f33ba68cadf5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "PHOENIX CONTACT"
+		(property "KiLib_Generator" "PHOENIX CONTACT"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14507,12 +13857,6 @@
 		(path "/2ab23dca-9a56-4bf0-a3cb-cbd54d881a74/6d67bc41-2ae8-4ca5-a8cd-124741b6e4b6")
 		(sheetname "/Battery_PowerPole_Input/")
 		(sheetfile "battery_powerpole_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15128,7 +14472,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.138889)
-			(net "Net-(J3-Pin_1)")
+			(net "/Battery_PowerPole_Input/12V_RAW")
 			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "16e3498d-6cab-4cfd-9bb4-7c87787aa8f1")
@@ -15266,12 +14610,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/1979a3dd-bfca-464f-8fc2-0e79b3919518")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15487,19 +14825,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "2ed5a5d5-f164-48ff-9c36-8e58cbd5a238")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15555,12 +14881,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/2238ffd3-9670-43cd-a3a4-2c19b9396393")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15621,7 +14941,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP16-B)")
+			(net "/Power Regulation/3V3_LDO_OUT")
 			(pintype "passive")
 			(uuid "3b22f8c7-f0ab-483c-aa02-4e1cf9931eb0")
 		)
@@ -15697,19 +15017,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "176c2cc6-3395-4ace-8b69-8013500283bc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15765,12 +15073,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/8104dd7a-8cf1-4be1-892d-3f335e508435")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15831,7 +15133,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP14-B)")
+			(net "/Power Regulation/3V3_LDO_VIN")
 			(pintype "passive")
 			(uuid "940324c0-a5aa-4142-8ecf-995e390c8fe8")
 		)
@@ -15907,19 +15209,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "782c89f9-c8fa-44bd-b59c-7bf507302dcf")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15975,12 +15265,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/e54012b6-138e-4d65-8c5c-0fd2d32c9cc2")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16041,7 +15325,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP9-B)")
+			(net "/Power Regulation/5V_BUCK_VIN")
 			(pintype "passive")
 			(uuid "92b85f59-73dc-4bc1-a44b-e717cdaad546")
 		)
@@ -16164,12 +15448,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/9dc0a79e-cbef-4de7-b42b-3b9426107086")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "4" "2" "3")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16522,12 +15800,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/3a083f80-bff1-4c5e-946e-0d9a6ed9d952")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16698,7 +15970,7 @@
 			(size 2 1.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP16-B)")
+			(net "/Power Regulation/3V3_LDO_OUT")
 			(pinfunction "VO_2")
 			(pintype "power_out")
 			(uuid "fa97bc13-de5b-426c-be9d-b058a9324719")
@@ -16708,7 +15980,7 @@
 			(size 2 3.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP16-B)")
+			(net "/Power Regulation/3V3_LDO_OUT")
 			(pinfunction "VO_2")
 			(pintype "power_out")
 			(uuid "50a984e7-4f7f-4d0d-92b8-4ff4bbb699b0")
@@ -16718,7 +15990,7 @@
 			(size 2 1.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(JP14-B)")
+			(net "/Power Regulation/3V3_LDO_VIN")
 			(pinfunction "VI_3")
 			(pintype "power_in")
 			(uuid "5c499735-de57-4c24-92a2-14d95690652d")
@@ -16790,7 +16062,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c5267835-d582-4982-bbc9-72a269b67a7e")
+			(uuid "3573cab6-22a3-4302-9bc7-3c545361899e")
 			(effects
 				(font
 					(size 1 1)
@@ -16853,12 +16125,6 @@
 		(path "/10ac4a56-06f6-44ec-be50-ff7cad953e22")
 		(sheetname "/")
 		(sheetfile "foxhunt1.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "4" "3" "6" "7" "2" "1" "8" "5")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17227,12 +16493,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/3708d71c-6e4e-4cdc-b448-72e87c041dc0")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -17331,7 +16591,7 @@
 			(at -0.725 0)
 			(size 0.3 0.3)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(JP12-A)")
+			(net "/Battery 18650 Input/BATT_PCKP")
 			(pinfunction "A_1")
 			(pintype "passive")
 			(zone_connect 2)
@@ -17435,12 +16695,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/104c8003-bba1-4df3-8c3e-3376fd731f00")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.03 -0.4)
@@ -17630,7 +16884,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(JP16-B)")
+			(net "/Power Regulation/3V3_LDO_OUT")
 			(pinfunction "B_2")
 			(pintype "passive")
 			(uuid "9115e865-e88b-4135-8013-fa8c521586a9")
@@ -17687,19 +16941,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "inductor/SMD"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "35beb17d-9392-4eae-81db-1fc45561fc4e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MPN" "MHCI06030-3R3M-R8"
+		(property "KiLib_Generator" "MHCI06030-3R3M-R8"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17755,12 +16997,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/ac787192-fd93-4246-ac99-a31d97c70f21")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17980,7 +17216,7 @@
 			(size 2.35 3.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.166667)
-			(net "Net-(JP13-A)")
+			(net "/Power Regulation/5V_BUCK_OUT")
 			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "70606d52-6f2d-4892-a7f9-36cc261d1d90")
@@ -18056,12 +17292,6 @@
 		(path "/2ab23dca-9a56-4bf0-a3cb-cbd54d881a74/71798f8f-42c0-4c13-aa1f-10007be56540")
 		(sheetname "/Battery_PowerPole_Input/")
 		(sheetfile "battery_powerpole_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -18100,7 +17330,7 @@
 			(at 0 0)
 			(size 1.5 1.5)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(J3-Pin_1)")
+			(net "/Battery_PowerPole_Input/12V_RAW")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "ac753d7d-fc7e-4202-bd9f-1dccdc414fb8")
@@ -18217,12 +17447,6 @@
 		(path "/2ab23dca-9a56-4bf0-a3cb-cbd54d881a74/92416764-7f49-4812-a940-9e5cf4d62647")
 		(sheetname "/Battery_PowerPole_Input/")
 		(sheetfile "battery_powerpole_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -18266,7 +17490,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.15)
-			(net "Net-(J3-Pin_1)")
+			(net "/Battery_PowerPole_Input/12V_RAW")
 			(pintype "passive")
 			(uuid "4e0fb708-0bfa-46f5-9105-a33bb52f0a9c")
 		)
@@ -18277,7 +17501,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.15)
-			(net "Net-(J3-Pin_1)")
+			(net "/Battery_PowerPole_Input/12V_RAW")
 			(pintype "passive")
 			(uuid "46b99696-1a8a-4c3c-bbb6-46bc5e62bdc8")
 		)
@@ -18363,12 +17587,6 @@
 		(path "/2ab23dca-9a56-4bf0-a3cb-cbd54d881a74/e6e41b15-f6b8-468e-9881-f399d32825b8")
 		(sheetname "/Battery_PowerPole_Input/")
 		(sheetfile "battery_powerpole_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -18563,11 +17781,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(property "KiLib_Generator" "RT1206BRD07150RL"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "8d21b721-e8f8-4eec-baef-8624cb60c435")
+			(uuid "b4329ede-1664-430d-aa45-a19bbeba2092")
 			(effects
 				(font
 					(size 1 1)
@@ -18601,29 +17820,10 @@
 				)
 			)
 		)
-		(property "MPN" "RT1206BRD07150RL"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b4329ede-1664-430d-aa45-a19bbeba2092")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/b4127902-8017-495f-b1bc-4afa45d349d2")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18760,19 +17960,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "c7df413f-5cbb-4230-ba4a-1b5861d6faf5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18828,12 +18016,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/223bea76-1845-45ed-9bda-ca3d6e0f8e56")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18894,7 +18076,7 @@
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "Net-(JP14-A)")
+			(net "/Power Regulation/3V3_BUCK_OUT")
 			(pintype "passive")
 			(uuid "1b9049b7-c21b-4d54-9c76-336ea0ee14c9")
 		)
@@ -18978,12 +18160,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/54f38e2b-3737-4dd5-a2f1-ef0974484d90")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -19083,7 +18259,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "d9f3ed03-3ff1-455b-9f55-bd36b3a80b02")
+			(uuid "b480b1db-def8-4a28-909f-de51af67b2a5")
 			(effects
 				(font
 					(size 1 1)
@@ -19147,12 +18323,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/cdec43e8-b870-4a34-a830-d2cb613a3c33")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19222,7 +18392,7 @@
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
-			(net "Net-(JP14-A)")
+			(net "/Power Regulation/3V3_BUCK_OUT")
 			(pintype "passive")
 			(uuid "ddaabe01-7f9b-439f-8a9f-4bb2c1859d15")
 		)
@@ -19297,12 +18467,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/0f11c57a-1d6a-4b88-9c37-3d00ea3bc1a2")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -19401,7 +18565,7 @@
 			(at -0.725 0)
 			(size 0.3 0.3)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(JP14-A)")
+			(net "/Power Regulation/3V3_BUCK_OUT")
 			(pinfunction "A_1")
 			(pintype "passive")
 			(zone_connect 2)
@@ -19425,7 +18589,7 @@
 			(at 0.725 0)
 			(size 0.3 0.3)
 			(layers "F.Cu" "F.Mask")
-			(net "Net-(JP14-B)")
+			(net "/Power Regulation/3V3_LDO_VIN")
 			(pinfunction "B_2")
 			(pintype "passive")
 			(zone_connect 2)
@@ -19497,11 +18661,12 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "battery"
+		(property "KiLib_Generator" "MPD (Memory Protection Devices)"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "913fb8f5-9e6b-4ee4-ac2e-d2f2d298eac4")
+			(uuid "6349ef61-2e54-4a73-a28c-36f85140928d")
 			(effects
 				(font
 					(size 1 1)
@@ -19561,19 +18726,6 @@
 				)
 			)
 		)
-		(property "Manf" "MPD (Memory Protection Devices)"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6349ef61-2e54-4a73-a28c-36f85140928d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "MPN" "BH-18650-PC"
 			(at 0 0 0)
 			(unlocked yes)
@@ -19590,12 +18742,6 @@
 		(path "/93aec68c-bafb-4e6c-8f29-f98db072943a/22434bb6-3cb7-443d-b647-692fcd330a72")
 		(sheetname "/Battery 18650 Input/")
 		(sheetfile "battery_18650_input.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19793,19 +18939,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "d011a160-a287-480a-a25f-5b451471bc50")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19861,12 +18995,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/e179f6c3-6587-483a-8e86-ffc206e6184a")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19927,7 +19055,7 @@
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "Net-(JP13-A)")
+			(net "/Power Regulation/5V_BUCK_OUT")
 			(pintype "passive")
 			(uuid "9d6ecb8d-7155-4c77-999a-8a336798ebed")
 		)
@@ -20003,19 +19131,7 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ee8c27bd-4d67-4bb4-8eda-e838dcbbd410")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manf" "muRata"
+		(property "KiLib_Generator" "muRata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20071,12 +19187,6 @@
 		(path "/6b26933d-31f5-4b32-8734-ae256b78a843/27c59997-a85c-4e40-95ad-ed6a281a1837")
 		(sheetname "/Power Regulation/")
 		(sheetfile "power_regulation.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
