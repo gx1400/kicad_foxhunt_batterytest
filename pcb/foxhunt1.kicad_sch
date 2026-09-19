@@ -7,7 +7,17 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 85.09 96.52) (xy 115.57 96.52)
+			(xy 93.98 55.88) (xy 93.98 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03ccf31c-094b-42f9-b0cd-cc52f698ca41")
+	)
+	(wire
+		(pts
+			(xy 135.89 93.98) (xy 166.37 93.98)
 		)
 		(stroke
 			(width 0)
@@ -17,7 +27,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 82.55) (xy 115.57 82.55)
+			(xy 135.89 80.01) (xy 166.37 80.01)
 		)
 		(stroke
 			(width 0)
@@ -27,7 +37,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 46.99) (xy 115.57 46.99)
+			(xy 78.74 44.45) (xy 166.37 44.45)
 		)
 		(stroke
 			(width 0)
@@ -37,7 +47,17 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 77.47) (xy 115.57 77.47)
+			(xy 78.74 55.88) (xy 93.98 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65f9f48d-98c3-40e6-aa3f-6cebf96f1247")
+	)
+	(wire
+		(pts
+			(xy 135.89 74.93) (xy 166.37 74.93)
 		)
 		(stroke
 			(width 0)
@@ -47,7 +67,17 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 99.06) (xy 115.57 99.06)
+			(xy 104.14 76.2) (xy 86.36 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ccf6e3c-8904-44f8-863f-2f3f402d1b63")
+	)
+	(wire
+		(pts
+			(xy 135.89 96.52) (xy 166.37 96.52)
 		)
 		(stroke
 			(width 0)
@@ -57,7 +87,37 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 41.91) (xy 115.57 41.91)
+			(xy 86.36 76.2) (xy 86.36 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96989e0d-9410-497c-b4b3-ac095766cd40")
+	)
+	(wire
+		(pts
+			(xy 86.36 58.42) (xy 78.74 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac40b10a-e8e6-4a42-ac70-3bcaef81744c")
+	)
+	(wire
+		(pts
+			(xy 93.98 73.66) (xy 104.14 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd95c87b-e0e1-4242-96d3-c2363a8147ea")
+	)
+	(wire
+		(pts
+			(xy 78.74 39.37) (xy 166.37 39.37)
 		)
 		(stroke
 			(width 0)
@@ -67,7 +127,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 80.01) (xy 115.57 80.01)
+			(xy 135.89 77.47) (xy 166.37 77.47)
 		)
 		(stroke
 			(width 0)
@@ -77,7 +137,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 85.09) (xy 85.09 85.09)
+			(xy 166.37 82.55) (xy 135.89 82.55)
 		)
 		(stroke
 			(width 0)
@@ -87,7 +147,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 52.07) (xy 115.57 52.07)
+			(xy 78.74 49.53) (xy 166.37 49.53)
 		)
 		(stroke
 			(width 0)
@@ -134,7 +194,7 @@
 			)
 		)
 		(pin "BMS_ALRT" output
-			(at 78.74 41.91 0)
+			(at 78.74 39.37 0)
 			(uuid "a3708c2a-509a-41a7-9b54-bd9a299dbb83")
 			(effects
 				(font
@@ -144,7 +204,7 @@
 			)
 		)
 		(pin "BMS_SCL" input
-			(at 78.74 46.99 0)
+			(at 78.74 44.45 0)
 			(uuid "2d3da9bd-133b-4cdc-ba37-c2d5a127d50b")
 			(effects
 				(font
@@ -154,7 +214,7 @@
 			)
 		)
 		(pin "BMS_SDA" bidirectional
-			(at 78.74 52.07 0)
+			(at 78.74 49.53 0)
 			(uuid "6d3b948b-9d02-40fc-af79-317fa4a43399")
 			(effects
 				(font
@@ -192,7 +252,7 @@
 		)
 	)
 	(sheet
-		(at 115.57 35.56)
+		(at 166.37 33.02)
 		(size 44.45 73.66)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -208,7 +268,7 @@
 		)
 		(uuid "617e4003-f89e-4d51-9dfb-cf31f0818925")
 		(property "Sheetname" "mcu-esp32"
-			(at 115.57 34.8484 0)
+			(at 166.37 32.3084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -219,7 +279,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu-esp32.kicad_sch"
-			(at 115.57 109.8046 0)
+			(at 166.37 107.2646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -230,7 +290,7 @@
 			)
 		)
 		(pin "MCU_I2C_SCL" output
-			(at 115.57 46.99 180)
+			(at 166.37 44.45 180)
 			(uuid "db46284e-0153-43e3-a1e7-841f8772c44f")
 			(effects
 				(font
@@ -240,7 +300,7 @@
 			)
 		)
 		(pin "MCU_I2C_SDA" bidirectional
-			(at 115.57 52.07 180)
+			(at 166.37 49.53 180)
 			(uuid "d19ccdb9-1b33-4ef4-b906-5115a04bcb7f")
 			(effects
 				(font
@@ -250,7 +310,7 @@
 			)
 		)
 		(pin "BMS_ALRT" input
-			(at 115.57 41.91 180)
+			(at 166.37 39.37 180)
 			(uuid "098b2925-b88f-4af0-9f8d-e20fe5e7d9fa")
 			(effects
 				(font
@@ -260,7 +320,7 @@
 			)
 		)
 		(pin "MCU_USB_UART_BOOT" output
-			(at 115.57 80.01 180)
+			(at 166.37 77.47 180)
 			(uuid "8060ad25-c9a6-44b0-a849-6dfc7595be26")
 			(effects
 				(font
@@ -270,7 +330,7 @@
 			)
 		)
 		(pin "MCU_USB_UART_EN" output
-			(at 115.57 77.47 180)
+			(at 166.37 74.93 180)
 			(uuid "c2d88a7a-149a-4215-a114-b66d9e19645e")
 			(effects
 				(font
@@ -280,7 +340,7 @@
 			)
 		)
 		(pin "MCU_USB_UART_RXD" input
-			(at 115.57 85.09 180)
+			(at 166.37 82.55 180)
 			(uuid "1f87f4bd-61be-4cdd-9b59-5c6bf9392c1b")
 			(effects
 				(font
@@ -290,7 +350,7 @@
 			)
 		)
 		(pin "MCU_USB_UART_TXD" output
-			(at 115.57 82.55 180)
+			(at 166.37 80.01 180)
 			(uuid "862bc492-6f82-43c5-ad90-7c6ba54f55da")
 			(effects
 				(font
@@ -300,7 +360,7 @@
 			)
 		)
 		(pin "MCU_USB_D+" bidirectional
-			(at 115.57 96.52 180)
+			(at 166.37 93.98 180)
 			(uuid "481a04b7-b55a-4478-8e4b-e4fe725d3a72")
 			(effects
 				(font
@@ -310,7 +370,7 @@
 			)
 		)
 		(pin "MCU_USB_D-" bidirectional
-			(at 115.57 99.06 180)
+			(at 166.37 96.52 180)
 			(uuid "38bed8e8-23cb-4baf-ac3b-f967a64f7a7d")
 			(effects
 				(font
@@ -328,7 +388,7 @@
 		)
 	)
 	(sheet
-		(at 53.34 73.66)
+		(at 104.14 71.12)
 		(size 31.75 29.21)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -344,7 +404,7 @@
 		)
 		(uuid "97991d87-aeba-471b-8b55-fc9d012290ca")
 		(property "Sheetname" "USB-C"
-			(at 53.34 72.9484 0)
+			(at 104.14 70.4084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -355,7 +415,7 @@
 			)
 		)
 		(property "Sheetfile" "usbc-programming-uart.kicad_sch"
-			(at 53.34 103.4546 0)
+			(at 104.14 100.9146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -366,7 +426,7 @@
 			)
 		)
 		(pin "MCU_EN_RESET" input
-			(at 85.09 77.47 0)
+			(at 135.89 74.93 0)
 			(uuid "964c93ab-7f3e-4470-95e5-bc59b97ecad8")
 			(effects
 				(font
@@ -376,7 +436,7 @@
 			)
 		)
 		(pin "MCU_IO0_BOOT" input
-			(at 85.09 80.01 0)
+			(at 135.89 77.47 0)
 			(uuid "1b4a4409-00b1-4fee-b722-a20d11cca22b")
 			(effects
 				(font
@@ -386,7 +446,7 @@
 			)
 		)
 		(pin "USB_UART_RXD" input
-			(at 85.09 82.55 0)
+			(at 135.89 80.01 0)
 			(uuid "ee0af369-6154-4943-abfd-ba7532524994")
 			(effects
 				(font
@@ -396,7 +456,7 @@
 			)
 		)
 		(pin "USB_UART_TXD" output
-			(at 85.09 85.09 0)
+			(at 135.89 82.55 0)
 			(uuid "628a5ece-2a06-4dca-b8a3-4d184f62e4e3")
 			(effects
 				(font
@@ -406,7 +466,7 @@
 			)
 		)
 		(pin "USB_3.3V" output
-			(at 53.34 81.28 180)
+			(at 104.14 73.66 180)
 			(uuid "538e032e-2008-443f-861f-18288b7c65f4")
 			(effects
 				(font
@@ -416,7 +476,7 @@
 			)
 		)
 		(pin "USB_5V" output
-			(at 53.34 78.74 180)
+			(at 104.14 76.2 180)
 			(uuid "78f66add-5835-483f-a55a-8e0187e1fd35")
 			(effects
 				(font
@@ -426,7 +486,7 @@
 			)
 		)
 		(pin "USB_MCU_D+" bidirectional
-			(at 85.09 96.52 0)
+			(at 135.89 93.98 0)
 			(uuid "0cbbff65-14a9-400e-8ffc-54e424ca5061")
 			(effects
 				(font
@@ -436,7 +496,7 @@
 			)
 		)
 		(pin "USB_MCU_D-" bidirectional
-			(at 85.09 99.06 0)
+			(at 135.89 96.52 0)
 			(uuid "1cfa2803-a5a0-40b5-910a-d7f442e8d02b")
 			(effects
 				(font
