@@ -31,10 +31,12 @@ hard way this session.
 ## Schematic hierarchy — root filename is load-bearing
 
 - This project uses KiCad 10's `top_level_sheets` feature. Current structure:
-  `pcb/foxhunt1.kicad_sch` (root, titled "Power") → `Battery 18650 Input`,
-  `Battery_PowerPole_Input`, `Power Regulation` (all proper sub-sheets, not
-  siblings). The battery/12V ORing-FET combining circuit lives directly in the
-  root sheet since that's the actual merge point.
+  `pcb/foxhunt1.kicad_sch` (bare root, no title) → three top-level sibling
+  sheets: `Power`, `mcu-esp32`, `USB-C Programming UART`. `Power`
+  (`power.kicad_sch`) is itself a sub-sheet, not the root — it holds the
+  battery/12V ORing-FET combining circuit (the actual merge point) and in turn
+  has its own children: `Battery 18650 Input`, `Battery_PowerPole_Input`,
+  `Power Regulation`.
 - **The root schematic file MUST be named `<project-name>.kicad_sch`** — i.e.
   `foxhunt1.kicad_sch` (in `pcb/`) — even though KiCad 10 itself doesn't require
   this anymore. Konnect's (the MCP plugin) project-ownership resolution is
@@ -90,8 +92,11 @@ there's any chance the GUI reopens the project and re-saves over them.
 ## Design conventions (see README for full rationale)
 
 - **GND vs GNDREF are deliberately separate nets**, bridged only by the current-
-  sense resistor R3. Don't "fix" an apparent GND/GNDREF split — it's intentional
-  (makes the shunt actually measure current instead of being bypassed).
+  sense resistor R4 (0.0025Ω shunt, in `battery_18650_input.kicad_sch`). Don't
+  "fix" an apparent GND/GNDREF split — it's intentional (makes the shunt actually
+  measure current instead of being bypassed). Note: R3 in the same sheet is an
+  unrelated 150Ω inter-cell balance resistor — verify by net, not just by
+  reference designator, since these drift after renumbering.
 - **Decoupling caps are placed at the point of use, often past an isolation
   jumper**, not on the literal named rail. An automated "rail X has no
   decoupling" finding is often a false positive from this pattern — trace the

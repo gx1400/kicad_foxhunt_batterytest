@@ -1507,6 +1507,28 @@
 		)
 		(uuid "f6b8eef9-669f-4ab3-bc8b-22a2dfff75de")
 	)
+	(hierarchical_label "USB_3.3V_IN"
+		(shape input)
+		(at 35.56 166.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5550fd28-8e21-4fb6-8314-70943715b224")
+	)
+	(hierarchical_label "USB_5V_IN"
+		(shape input)
+		(at 35.56 163.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c0e11af-88cc-43d6-b98a-25939cdc75ea")
+	)
 	(hierarchical_label "BMS_ALRT"
 		(shape output)
 		(at 64.77 50.8 0)
@@ -2654,10 +2676,30 @@
 				(justify left)
 			)
 		)
+		(pin "BATT_3.3V_REG" output
+			(at 224.79 46.99 180)
+			(uuid "500655f8-10d2-4b34-a8c3-aefa46c9995d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BATT_5V_REG" output
+			(at 224.79 49.53 180)
+			(uuid "e8b0072c-bde5-44c4-bb29-3b5a008c057d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(page "9")
+					(page "5")
 				)
 			)
 		)

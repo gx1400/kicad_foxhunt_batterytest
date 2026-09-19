@@ -517,10 +517,17 @@
         "wire_width": 6
       },
       {
+        "name": "Digital_USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
         "clearance": 0.2,
         "name": "Power_3V3_1A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3,
         "tuning_profile": "",
@@ -531,7 +538,7 @@
         "clearance": 0.2,
         "name": "Power_5V_2A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.8,
         "tuning_profile": "",
@@ -542,7 +549,7 @@
         "clearance": 0.2,
         "name": "Power_Combined_3A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.4,
         "tuning_profile": "",
@@ -860,7 +867,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
-      "hop_over_size_choice": 0,
+      "hop_over_size_choice": 2,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -893,7 +900,7 @@
         "uuid": "8399ba4b-9428-480d-8b65-76cf154b97a5"
       }
     ],
-    "used_designators": "J1-8,JP1-12,JP19-41,Q1-13,F1-7,C1-35,C38-67,U1-18,D1-4,SW1-2,TH1-3,#FLG1-42,L1-2,L5-8,BT1-6,#PWR1-100,TP1-8,R1-41",
+    "used_designators": "TH1-3,#FLG1-42,L1-2,L5-8,Y1,#PWR1-100,BT1-6,R1-41,TP1-8,JP1-12,JP19-41,J1-8,Q1-13,F1-7,C1-67,U1-18,D1-4,SW1-2",
     "variants": []
   },
   "sheets": [
@@ -914,16 +921,16 @@
       "Battery_PowerPole_Input"
     ],
     [
+      "c018545d-e009-44ea-af7b-4949ceaf3d2e",
+      "Power Regulation"
+    ],
+    [
       "617e4003-f89e-4d51-9dfb-cf31f0818925",
       "mcu-esp32"
     ],
     [
       "97991d87-aeba-471b-8b55-fc9d012290ca",
-      "USB-C Programming UART"
-    ],
-    [
-      "c018545d-e009-44ea-af7b-4949ceaf3d2e",
-      "Power Regulation"
+      "USB-C"
     ]
   ],
   "text_variables": {},
