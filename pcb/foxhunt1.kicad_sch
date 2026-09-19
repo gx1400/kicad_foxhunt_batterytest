@@ -27,6 +27,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 53.34) (xy 166.37 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07b0590e-eb7a-44f3-87eb-b7c21da4f9b8")
+	)
+	(wire
+		(pts
 			(xy 135.89 80.01) (xy 166.37 80.01)
 		)
 		(stroke
@@ -243,6 +253,16 @@
 				(justify right)
 			)
 		)
+		(pin "PWR_ON_BATTERY" output
+			(at 78.74 53.34 0)
+			(uuid "7962ccc0-2477-477b-bea5-22fe8444c8ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5"
@@ -372,6 +392,16 @@
 		(pin "MCU_USB_D-" bidirectional
 			(at 166.37 96.52 180)
 			(uuid "38bed8e8-23cb-4baf-ac3b-f967a64f7a7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO_IN_ON_BATT" input
+			(at 166.37 53.34 180)
+			(uuid "768f0d3d-82ff-42ff-9def-105a8f20c8ca")
 			(effects
 				(font
 					(size 1.27 1.27)

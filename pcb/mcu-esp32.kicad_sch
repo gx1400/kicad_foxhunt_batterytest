@@ -1241,6 +1241,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "DO NOT CONNECT"
 		(exclude_from_sim no)
@@ -1256,7 +1371,13 @@
 		(at 146.05 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dbb5534b-bbd8-4bf3-91d7-2fcf13b73a4d")
+		(uuid "259a1a12-b2af-4764-bc81-aba2861eb2ba")
+	)
+	(junction
+		(at 146.05 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6adf6c31-44fa-453b-8d74-60a1317ec96c")
 	)
 	(no_connect
 		(at 194.31 144.78)
@@ -1326,6 +1447,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 62.23) (xy 146.05 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c7eef73-cb43-4a80-a95e-fd10a8e20fa0")
+	)
+	(wire
+		(pts
 			(xy 191.77 81.28) (xy 194.31 81.28)
 		)
 		(stroke
@@ -1333,6 +1464,16 @@
 			(type default)
 		)
 		(uuid "451421ea-5002-4625-bb02-c829d2f831d1")
+	)
+	(wire
+		(pts
+			(xy 90.17 104.14) (xy 100.33 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d9d7fff-8d21-40ed-a275-2228173598ba")
 	)
 	(wire
 		(pts
@@ -1353,6 +1494,16 @@
 			(type default)
 		)
 		(uuid "708ed58f-6a9d-4217-b7b9-3403182ee1ef")
+	)
+	(wire
+		(pts
+			(xy 146.05 53.34) (xy 146.05 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80860b65-8145-42f7-a5b8-0930033c87d6")
 	)
 	(wire
 		(pts
@@ -1406,17 +1557,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 55.88) (xy 146.05 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c09ce1b8-42af-411d-ba2c-50fbb080417b")
-	)
-	(wire
-		(pts
-			(xy 146.05 58.42) (xy 146.05 76.2)
+			(xy 146.05 58.42) (xy 146.05 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1552,6 +1693,17 @@
 			(justify left)
 		)
 		(uuid "e4b2fe35-8f5a-4e50-9564-a0eaa8685af5")
+	)
+	(hierarchical_label "IO_IN_ON_BATT"
+		(shape input)
+		(at 90.17 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e719e494-b17f-49dc-b0b3-172501c4bd11")
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
@@ -1875,6 +2027,163 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 146.05 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47e5cdba-33cb-4948-816f-4434ff33093c")
+		(property "Reference" "#PWR012"
+			(at 146.05 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 146.05 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 146.05 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "749a967c-a626-46ec-8c0f-986921011c17")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 146.05 62.23 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "524a8144-c8e2-4119-9491-07e63fd0870c")
+		(property "Reference" "#FLG014"
+			(at 144.145 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 142.24 62.2299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 146.05 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ea28c4ec-8a80-4f91-bce5-b96221c61110")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
+					(reference "#FLG014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 152.4 60.96 0)
 		(unit 1)
@@ -1995,85 +2304,6 @@
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
 					(reference "C47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 146.05 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cdf492f3-7fca-4ea6-b214-3fe20e295308")
-		(property "Reference" "#PWR038"
-			(at 146.05 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 146.05 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 146.05 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d3304be2-a732-4f11-a387-c1ffe4fdc6b3")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR038")
 					(unit 1)
 				)
 			)
