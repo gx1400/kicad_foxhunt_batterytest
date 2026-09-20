@@ -20,14 +20,22 @@ Value/MPN/Manufacturer mismatches found against real LCSC data** across every pa
 
 ## Open items
 
-- [ ] **The shunt resistor's footprint still doesn't match its sourced part's brand.** Currently
-      **R13** (was R11, then R4, now R13 — this is the 0.0025Ω current-sense shunt on the battery
-      GND/GNDREF path, identify by function not designator). Footprint
-      `R_Shunt_Vishay_WSK2512_6332Metric_T2.21mm` implies Vishay WSK2512 pad geometry; sourced
-      part is Milliohm `HoJLR2512-3W-2.5mR-1%` (LCSC `C2904234`). Verify Milliohm's actual pad
-      dimensions match before fab.
+None currently open — see below, the last remaining item was resolved this pass.
 
 ## Resolved since last pass (2026-09-19)
+
+- **The shunt resistor's footprint/manufacturer mismatch (R13, the 0.0025Ω current-sense shunt —
+  was R11, then R4, then R13 across three renumbering passes; identify by function, not
+  designator).** No longer borrowing the generic `R_Shunt_Vishay_WSK2512_6332Metric_T2.21mm`
+  library footprint. Replaced with a purpose-built footprint
+  (`kicad_gx_library:RES-SMD_L6.4-W3.2-R2512_Sense4Pin`) matching the actual sourced part
+  (Milliohm `HoJLR2512-3W-2.5mR-1%`, LCSC `C2904234`, 2512 case). Verified the raw `.kicad_mod`
+  directly: correct 4-pad Kelvin-sense layout (force pads 1/4 at 2×3.3mm, sense pads 2/3 at
+  0.5×0.5mm sitting at the edge of their respective force pad) with
+  `(net_tie_pad_groups "1,2" "3,4")` so DRC doesn't flag the intentional pad-group ties as shorts.
+  Worth a final sanity check that the 2×3.3mm force-pad dimensions match Milliohm's own datasheet,
+  but the manufacturer-mismatch risk itself is gone now that this isn't a generic Vishay-library
+  footprint.
 
 - **U1, U2, U3 field naming**: normalized from `easyeda2kicad`'s defaults (`Manufacturer`,
   `LCSC Part`) to this project's convention (`Manf`, `LCSC Part #`) — verified via fresh netlist,

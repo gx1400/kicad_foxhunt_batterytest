@@ -1649,16 +1649,6 @@
 		)
 		(uuid "12d1109e-6857-47ee-adfe-a8dade1e605f")
 	)
-	(text "Icorms = (Vout * (Vin - Vout)) / (sqrt(12) * Vin * Lo * fsw)\n = 4.2 * (14.4 - 4.2) / (3.464 * 14.4 * 3.3e-6 * 588e3)\n = 0.443A"
-		(exclude_from_sim no)
-		(at 226.568 124.714 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "177c7fff-49e6-407b-9952-88e5c9171619")
-	)
 	(text "6V Intermediate Power"
 		(exclude_from_sim no)
 		(at 94.234 130.048 0)
@@ -1679,9 +1669,9 @@
 		)
 		(uuid "22aebaba-11a1-4b1a-983a-1a33e37a565c")
 	)
-	(text "Vout = 0.768 (1 + R1/R2) <= R2=10k\n4.3 = 0.768(1+R1/10k) \n=> R1 = 46k\n=> R2 = 10k\n\nL = 3.3uH typ from Table 7-2"
+	(text "Vout = 0.768 (1 + R1/R2) <= R2=10k\n4.7 = 0.768(1+R1/10k) \n=> R1 = 51.2k => 52.3k\n=> R2 = 10k\n= 4.78V\n\nL = 3.3uH typ from Table 7-2"
 		(exclude_from_sim no)
-		(at 168.91 108.966 0)
+		(at 172.72 110.998 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1689,6 +1679,18 @@
 			)
 		)
 		(uuid "2835d5e2-644b-43e0-91fc-e1a0e0a4d473")
+	)
+	(text "6.6V Calculations\n----------------"
+		(exclude_from_sim no)
+		(at 198.628 17.018 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "2876d24b-6a09-431c-8254-128329c0b047")
 	)
 	(text "(Ref C9)"
 		(exclude_from_sim no)
@@ -1720,17 +1722,6 @@
 		)
 		(uuid "34305b1e-0327-4e12-8bcf-4c7b33924788")
 	)
-	(text "Vout = 0.768 (1 + R1/R2) <= R2=10k\n6 = 0.768(1+R1/10k) \n=> R1 = 68.1k\n=> R2 = 10k\n\nL = 3.3uH typ from Table 7-2"
-		(exclude_from_sim no)
-		(at 163.322 27.178 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-		)
-		(uuid "57db3b42-a15c-49bc-b6e2-1be23405ba14")
-	)
 	(text "(Ref C2)"
 		(exclude_from_sim no)
 		(at 61.976 153.924 0)
@@ -1761,6 +1752,16 @@
 		)
 		(uuid "7dd27a21-a7c5-43bc-8fce-963bdde83656")
 	)
+	(text "Icorms = (Vout * (Vin - Vout)) / (sqrt(12) * Vin * Lo * fsw)\n = 6.6 * (14.4 - 6.6) / (3.464 * 14.4 * 3.3e-6 * 588e3)\n = 0.531A"
+		(exclude_from_sim no)
+		(at 221.488 45.212 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "805c61bb-7014-42e3-bbe2-b33068d89da3")
+	)
 	(text "(Ref R2)"
 		(exclude_from_sim no)
 		(at 113.03 157.734 0)
@@ -1771,7 +1772,7 @@
 		)
 		(uuid "84b5225b-80f7-4bfc-bab6-60e43ad4759b")
 	)
-	(text "**6V**"
+	(text "**6.6V**"
 		(exclude_from_sim no)
 		(at 155.448 59.69 0)
 		(effects
@@ -1781,7 +1782,7 @@
 		)
 		(uuid "84bc70a6-b6bf-4d90-bf07-e68a3998de09")
 	)
-	(text "4.3V Calculations\n----------------"
+	(text "4.7V Calculations\n----------------"
 		(exclude_from_sim no)
 		(at 190.246 93.98 0)
 		(effects
@@ -1802,16 +1803,6 @@
 			)
 		)
 		(uuid "96effc34-669b-4e11-bea9-5520742160f1")
-	)
-	(text "Icorms = (Vout * (Vin - Vout)) / (sqrt(12) * Vin * Lo * fsw)\n = 6 * (14.4 - 6) / (3.464 * 14.4 * 3.3e-6 * 588e3)\n = 0.521A"
-		(exclude_from_sim no)
-		(at 222.25 46.482 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a03dd27c-b8ea-4764-ab64-876d602efda9")
 	)
 	(text "(Ref C3)"
 		(exclude_from_sim no)
@@ -1843,17 +1834,6 @@
 		)
 		(uuid "aaa6f6b5-ae66-4f6e-b82d-b9b07ba33482")
 	)
-	(text "fsw = 588kHz from Section 5-5 or ~600kHz from Tables 5-6\n\nIIp-p = (Vout/Vinmax) * ((Vinmax - Vout) / (Lo * fSw))\n = (4.3/14.4) * ((14.4 -4.3) / (3.3e-6 * 588e3))\n = 0.299 * (10/1 / 1.9404) = 1.556A\n\nIIpk = Io + IIp-p/2\n     = 1 + (1.556/2) = 1.77A\n\nILO = sqrt(Io^2 + (1/12)(IIp-p)^2) = 1.12A"
-		(exclude_from_sim no)
-		(at 222.25 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-		)
-		(uuid "aacc481b-a2b8-4d9d-9b14-feb2dcf6bba9")
-	)
 	(text "(Ref C9)"
 		(exclude_from_sim no)
 		(at 170.434 69.596 0)
@@ -1863,17 +1843,6 @@
 			)
 		)
 		(uuid "ad83a23b-fb0b-4ee3-8f62-dc6a60c876c4")
-	)
-	(text "fsw = 588kHz from Section 5-5 or ~600kHz from Tables 5-6\n\nIIp-p = (Vout/Vinmax) * ((Vinmax - Vout) / (Lo * fSw))\n = (6/14.4) * ((14.4 -6) / (3.3e-6 * 588e3))\n = 0.416 * (8.4 / 1.9404) = 1.8A\n\nIIpk = Io + IIp-p/2\n     = 2 + (1.8/2) = 2.9A\n\nILO = sqrt(Io^2 + (1/12)(IIp-p)^2) = 2.066"
-		(exclude_from_sim no)
-		(at 220.98 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-		)
-		(uuid "b4cbae52-9dfa-4177-a2d6-bb7e9997ad10")
 	)
 	(text "(Ref C7)"
 		(exclude_from_sim no)
@@ -1895,6 +1864,17 @@
 		)
 		(uuid "d26bddc3-2e34-49c3-a404-8b18b3abef98")
 	)
+	(text "fsw = 588kHz from Section 5-5 or ~600kHz from Tables 5-6\n\nIIp-p = (Vout/Vinmax) * ((Vinmax - Vout) / (Lo * fSw))\n = (6.6/14.4) * ((14.4 -6.6) / (3.3e-6 * 588e3))\n = 0.458 * (7.8 / 1.9404) = 1.84A\n\nIIpk = Io + IIp-p/2\n     = 2 + (1.84/2) = 2.92A\n\nILO = sqrt(Io^2 + (1/12)(IIp-p)^2) = 2.07"
+		(exclude_from_sim no)
+		(at 209.55 30.226 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "dfeab00d-b40f-48bc-af09-9abf65e4aa19")
+	)
 	(text "(Ref C7)"
 		(exclude_from_sim no)
 		(at 123.19 63.5 0)
@@ -1904,6 +1884,17 @@
 			)
 		)
 		(uuid "e9837b9f-fe27-408b-ba24-cf7e8562b6de")
+	)
+	(text "Vout = 0.768 (1 + R1/R2) <= R2=10k\n6.6 = 0.768(1+R1/10k) \n=> R1 = 76k -> 76.8k\n=> R2 = 10k\n\nL = 3.3uH typ from Table 7-2"
+		(exclude_from_sim no)
+		(at 155.956 32.766 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "ed615a89-6c99-4976-aa39-3b52546f4953")
 	)
 	(text "3.3V rail:\n\nBuck pre-regulator: second TPS563201, set to ~4.3V @ 1A intermediate output\nLDO cleanup stage: LM1085-3.3 (fixed 3.3V, 3A rated), taking the 4.3V intermediate down to a clean 3.3V"
 		(exclude_from_sim no)
@@ -1915,7 +1906,7 @@
 		)
 		(uuid "f757bec9-71f3-4178-9ab8-4ff8a3ca1a33")
 	)
-	(text "**4.3V**"
+	(text "**4.78V**"
 		(exclude_from_sim no)
 		(at 156.718 137.16 0)
 		(effects
@@ -1934,18 +1925,6 @@
 			)
 		)
 		(uuid "fc416090-c0af-46d6-9b5d-7e9c865243f7")
-	)
-	(text "6V Calculations\n----------------"
-		(exclude_from_sim no)
-		(at 190.754 16.256 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "ff203ba5-d2d9-4880-9323-abbb935374dc")
 	)
 	(junction
 		(at 34.29 143.51)
@@ -4234,7 +4213,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 106.934 153.416 90)
 			(hide yes)
 			(show_name no)
@@ -4245,7 +4224,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0710KL.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RT0603BRD0710KL.pdf"
 			(at 107.95 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -4256,7 +4235,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
 			(at 107.95 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -4267,7 +4246,7 @@
 				)
 			)
 		)
-		(property "Package" "0805"
+		(property "Package" "0603"
 			(at 107.95 153.67 90)
 			(hide yes)
 			(show_name no)
@@ -4289,7 +4268,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C84376"
+		(property "LCSC Part #" "C95204"
 			(at 107.95 153.67 90)
 			(hide yes)
 			(show_name no)
@@ -4300,7 +4279,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-0710KL"
+		(property "MPN" "RT0603BRD0710KL"
 			(at 107.95 153.67 90)
 			(hide yes)
 			(show_name no)
@@ -4505,7 +4484,7 @@
 				)
 			)
 		)
-		(property "Value" "68.1k"
+		(property "Value" "76.8k"
 			(at 122.174 73.406 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4515,7 +4494,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 121.666 72.136 90)
 			(hide yes)
 			(show_name no)
@@ -4526,7 +4505,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/AC0603FR-0768K1L.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RT0603BRD0776K8L.pdf"
 			(at 121.92 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4537,7 +4516,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 76.8kΩ ±0.1% 100mW 0603"
 			(at 121.92 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4548,7 +4527,7 @@
 				)
 			)
 		)
-		(property "MPN" "AC0603FR-0768K1L"
+		(property "MPN" "RT0603BRD0776K8L"
 			(at 121.92 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4581,7 +4560,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C228015"
+		(property "LCSC Part #" "C705795"
 			(at 121.92 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -5977,7 +5956,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 105.664 75.946 90)
 			(hide yes)
 			(show_name no)
@@ -5999,7 +5978,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
 			(at 106.68 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6010,7 +5989,7 @@
 				)
 			)
 		)
-		(property "Package" "0805"
+		(property "Package" "0603"
 			(at 106.68 76.2 90)
 			(hide yes)
 			(show_name no)
@@ -6032,7 +6011,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C84376"
+		(property "LCSC Part #" "C95204"
 			(at 106.68 76.2 90)
 			(hide yes)
 			(show_name no)
@@ -6043,7 +6022,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-0710KL"
+		(property "MPN" "RT0603BRD0710KL"
 			(at 106.68 76.2 90)
 			(hide yes)
 			(show_name no)
@@ -9899,7 +9878,7 @@
 				)
 			)
 		)
-		(property "Value" "46.4k"
+		(property "Value" "52.3k"
 			(at 123.19 150.876 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9909,7 +9888,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 122.936 149.606 90)
 			(hide yes)
 			(show_name no)
@@ -9920,7 +9899,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0746K4L.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0751K1L.pdf"
 			(at 123.19 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9931,7 +9910,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 52.3kΩ ±0.1% 100mW 0603"
 			(at 123.19 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9942,7 +9921,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-0746K4L"
+		(property "MPN" "RT0603BRD0752K3L"
 			(at 123.19 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9964,7 +9943,7 @@
 				)
 			)
 		)
-		(property "Package" "0805"
+		(property "Package" "0603"
 			(at 123.19 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9975,7 +9954,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C483162"
+		(property "LCSC Part #" "C861462"
 			(at 123.19 148.59 0)
 			(hide yes)
 			(show_name no)
