@@ -1,23 +1,32 @@
-# Controller & Peripheral Platform (Planned)
+# Controller & Peripheral Platform
 
-Design decisions for the controller section, worked out before schematic capture begins. Nothing in this section exists in the schematic yet — see [Open Items](open_items.md) for the path from here to a buildable revision. Target capabilities: audio/voice TX, CW ID keying, variable-duration/interval blipping, variable TX power, APRS TX with GPS (dithered position optional), randomized CTCSS tone, frequency hopping, a WiFi/BLE "found" log, RTC-scheduled precise-interval TX, and schedulable mode changes (e.g. more frequent TX the longer a fox goes unfound).
+Design decisions for the controller section. **Two subsections below — Power sequencing
+and Timekeeping — are now implemented in the schematic** (`power.kicad_sch`'s soft-latch
+stage and the `Peripherals` sheet's PCF8563 circuit); everything else in this doc is still
+planning-only. See [Open Items](open_items.md) for what's left. Target capabilities:
+audio/voice TX, CW ID keying, variable-duration/interval blipping, variable TX power, APRS
+TX with GPS (dithered position optional), randomized CTCSS tone, frequency hopping, a
+WiFi/BLE "found" log, RTC-scheduled precise-interval TX, and schedulable mode changes
+(e.g. more frequent TX the longer a fox goes unfound).
 
-## Power sequencing — discrete soft-latch
+## Power sequencing — discrete soft-latch (implemented)
 
-MAX17320 protects/fuel-gauges the battery but doesn't gate system power — that's a separate circuit. A discrete P-FET soft-latch sits between VRAW and the 3.3V/5V regulators' input:
+MAX17320 protects/fuel-gauges the battery but doesn't gate system power — that's a separate circuit. A P-FET soft-latch (Q5, AO3407A — picked over AO3401A for its ±20V Vgs rating, comfortably covering VRAW's 7–14.4V swing with no gate-clamp zener needed) sits between VRAW and Power Regulation's input, gated by the shared wake node:
 
-- Button press (or RTC alarm) pulls the latch enable line, powering the board on.
-- The MCU immediately self-latches by driving the enable line itself; the button then reads as a normal input.
-- To power off, the MCU does its shutdown housekeeping and releases the latch — true zero-current off, not MCU sleep.
-- **Wake sources are diode-ORed** into the enable line: button press *and* the PCF8563's open-drain alarm/interrupt output can each independently power the board up from full-off. This is what lets scheduled TX cycles happen without keeping the MCU awake (and draining the battery) between transmissions.
+- **Wake sources are wire-ORed** (not literally diode-ORed — see below) onto one active-low node, pulled up to VRAW through R29 (1MΩ, sized to keep standby bleed in the single-digit µA range across VRAW's full voltage span rather than something that would meaningfully shorten shelf life): the power button (SW3), the RTC interrupt chain, and the MCU's own latch-hold output. Any of them pulling the node toward GND turns Q5 on.
+- **MCU self-latch:** GPIO48 (open-drain intent, 3.3V logic) drives Q6 (BSS138) as a voltage-isolating buffer — GPIO48 can never be exposed to VRAW's up-to-14.4V swing, only ever sees 0–3.3V on its own side. Q6 pulls the wake node low to hold power on; releasing it (firmware shutdown housekeeping) lets R29 pull the node back to VRAW and the system goes fully dark — true zero-current off, not MCU sleep. (A hold-to-power-off UX and a firmware-independent hardware force-off are still open — see [Open Items](open_items.md).)
+- **RTC wake path:** PCF8563's `INT` is open-drain **active-low**, not active-high, and its own absolute max voltage rating (6.5V) is well under VRAW's range — so it can't be wired to the wake node directly either. The actual chain is `INT` → Q8 (AO3407A, a small 3.3V-domain inverter so the *sense* comes out right — INT low asserts, not releases) → Q7 (BSS138, the same voltage-isolating role as Q6) → wake node. R30 (10k) is INT's own pull-up; R31 (100k) holds Q7's gate at a defined low/off state whenever Q8 isn't actively driving it. This is more circuitry than "diode-ORed" implies, but the earlier plan's instinct was right — INT genuinely can't touch the high-voltage node without protection.
+- Bench-test provision: JP24 (`usbc-programming-uart.kicad_sch`) can exclude USB from both TPS2121 rail muxes, so the whole sleep/wake cycle is testable on the bench with a debug USB cable still attached (see [regulation.md](regulation.md) for why gating downstream of the muxes instead was rejected — it would leave the bucks/LDOs always powered, defeating the standby-current point).
 
-## Timekeeping — PCF8563 RTC
+## Timekeeping — PCF8563 RTC (implemented)
 
-**PCF8563** (I2C, external 32.768kHz crystal), not DS3231. DS3231's integrated TCXO gives better standalone accuracy (±2ppm) and needs no external crystal, but costs ~15-20x more (~$9-10.50 vs. ~$0.50 at JLCPCB) for a benefit this design doesn't need — accuracy is maintained instead by periodically disciplining the RTC from GPS whenever it has a fix, and drift over a single unattended event is forgiving either way.
+**PCF8563** (I2C, external 32.768kHz crystal — NDK NX3215SA-32.768K-STD-MUA-9, 9pF, matching the datasheet's CL=8pF characterization condition better than a 12.5pF part would), not DS3231. DS3231's integrated TCXO gives better standalone accuracy (±2ppm) and needs no external crystal, but costs ~15-20x more (~$9-10.50 vs. ~$0.50 at JLCPCB) for a benefit this design doesn't need — accuracy is maintained instead by periodically disciplining the RTC from GPS whenever it has a fix, and drift over a single unattended event is forgiving either way. PCF8563 has an integrated OSCO-side load capacitor, so no discrete load-cap pair is needed — just an optional DNP trim cap (C43) on OSCI if fine-tuning ever proves necessary.
 
-Backup: **coin cell only** (CR20xx holder), no supercap option for the RTC specifically — a supercap can't hold time across the months/years this board may sit idle between events (self-discharges in days-to-weeks), where a coin cell holds ~10 years. Losing RTC time after long storage is an accepted, low-consequence tradeoff (resolved for free by GPS resync at next power-up).
+Backup: **coin cell** (CR2032, BT3), diode-ORed at VDD with the main 3.3V rail (D2/D3, Nexperia BAS116 — genuinely low-leakage, ~3pA typical, verified against its own datasheet rather than assumed, since ordinary diode reverse leakage can be comparable to or exceed the RTC's own nanoamp-class backup draw). No supercap option for the RTC specifically — a supercap can't hold time across the months/years this board may sit idle between events (self-discharges in days-to-weeks), where a coin cell holds ~10 years. Losing RTC time after long storage is an accepted, low-consequence tradeoff (resolved for free by GPS resync at next power-up).
 
-PCF8563 is single-supply (no automatic VBAT switchover pin like DS3231) — backup requires an external diode-OR at VDD combining the main 3.3V rail and the coin cell, each through **low-leakage diodes** specifically (ordinary diode reverse leakage can be comparable to or exceed the RTC's own nanoamp-class backup draw).
+**Firmware note:** `CLKOUT` defaults to *enabled* (32.768kHz) at power-on per the register reset table (`CLKOUT_control`, address `0Dh`, bit `FE`) — unused in this design (left unconnected), but firmware must explicitly disable it (`FE=0`) or the RTC's backup current roughly doubles (500–750nA → 950–1700nA per the datasheet) for a pin nothing listens to.
+
+I2C bus (`PERIPH_SDA`/`PERIPH_SCL`, shared with the MAX17320 fuel gauge and — once built — the EEPROM) has its one pull-up pair (R32/R33, 10k to 3.3V) on the `mcu-esp32` sheet, not duplicated per device.
 
 ## GPS — u-blox MAX-M10S
 

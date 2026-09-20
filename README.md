@@ -36,8 +36,8 @@ Two independent power sources feed the board, combined safely before regulation,
 
 ```
 18650 pack ──[MAX17320 protector]── +7.5V ──┐
-                                              ├─[ORing FETs]── VRAW ──┬─[Buck+LDO]── 5V  (SA818S)
-12–14.5V input ──[fuse]── +12V ──────────────┘                       └─[Buck+LDO]── 3.3V (ESP32-S3, GPS)
+                                              ├─[TPS2121 VCOMP]── VRAW ──[soft-latch FET]──┬─[Buck+LDO]── 5V  (SA818S)
+12–14.5V input ──[fuse]── +12V ──────────────┘                                            └─[Buck+LDO]── 3.3V (ESP32-S3, GPS)
 ```
 
 Full detail (battery protection, dual-input combining, regulation, the whole planned controller/peripheral platform, BOM sourcing, and open items) lives in **[`_docs/`](_docs/README.md)**.

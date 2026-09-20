@@ -20,7 +20,14 @@ Value/MPN/Manufacturer mismatches found against real LCSC data** across every pa
 
 ## Open items
 
-None currently open — see below, the last remaining item was resolved this pass.
+- [ ] **Re-run the full audit** (`_agent_tasks/bom_property_audit.md`) against the current
+  component set — the VRAW soft-latch and PCF8563 RTC circuits added ~15 new real parts
+  since the last formal pass (Q5/Q8 AO3407A, Q6/Q7 BSS138, D2/D3 Nexperia BAS116LT1G, BT3
+  CR2032, U14 PCF8563T/5 `C7440`, Y2 NDK NX3215SA-32.768K-STD-MUA-9 `C519280`, R29–R33,
+  C43, JP24, SW3). Each was individually checked against its real datasheet/LCSC listing
+  during design (not fabricated placeholders), but none have been through this doc's
+  formal tool-assisted audit workflow yet — worth confirming footprint/manufacturer
+  consistency the same way as everything below, rather than trusting ad hoc verification.
 
 ## Resolved since last pass (2026-09-19)
 

@@ -9,11 +9,17 @@ These two sources are **fully isolated from each other on the charge path** — 
 
 ```
 18650 pack ──[MAX17320 protector]── +7.5V ──┐
-                                              ├─[ORing FETs]── VRAW ──┬─[Buck+LDO]── 5V  (SA818S)
-12–14.5V input ──[fuse]── +12V ──────────────┘                       └─[Buck+LDO]── 3.3V (ESP32-S3, GPS)
+                                              ├─[TPS2121 VCOMP]── VRAW ──[soft-latch FET]──┬─[Buck+LDO]── 5V  (SA818S)
+12–14.5V input ──[fuse]── +12V ──────────────┘                                            └─[Buck+LDO]── 3.3V (ESP32-S3, GPS)
 ```
+
+The soft-latch stage (button/RTC-alarm/MCU-latch, gating VRAW before it reaches
+regulation) is the mechanism behind the RTC-scheduled wake/sleep behavior described in
+[controller_platform.md](controller_platform.md#power-sequencing--discrete-soft-latch) —
+implemented, not just planned, as of the RTC peripheral work.
 
 See:
 - [Battery protection & fuel gauge (MAX17320)](battery_protection.md)
 - [Dual-input power combining](power_input_combining.md)
 - [Regulation — VRAW → 5V and 3.3V rails](regulation.md)
+- [Controller & peripheral platform — soft-latch, RTC](controller_platform.md)

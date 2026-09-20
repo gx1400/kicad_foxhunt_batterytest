@@ -12,11 +12,14 @@
 
 ## Ground domain split (GND vs. GNDREF)
 
-Two separate ground nets, bridged **only** by the current-sense resistor (R3):
+Two separate ground nets, bridged **only** by the current-sense resistor (R13 — this
+resistor has been renumbered twice already during re-annotation passes, most recently
+from R4; identify it by function/value (0.0025Ω Kelvin-sense shunt), not designator,
+before trusting any reference to it here or elsewhere):
 
 - **GNDREF** (battery-referenced island): U1's GND pin, CSP, battery negative terminal, IN/CP/REG2/REG3-area bypass caps.
 - **GND** (system-referenced): CSN, all downstream regulator grounds, output-side bypass caps.
 
-This split is what makes R3 actually measure current rather than being bypassed by a parallel ground path. Confirmed correct in the current netlist.
+This split is what makes R13 actually measure current rather than being bypassed by a parallel ground path. Confirmed correct in the current netlist.
 
 *Don't "fix" an apparent GND/GNDREF split if you spot it during review — it's intentional.*
