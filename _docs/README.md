@@ -14,6 +14,7 @@ drill into whichever subsystem you need.
 - [Regulation — VRAW → 5V/3.3V rails, downstream loads](hardware/regulation.md)
 - [Controller & peripheral platform](hardware/controller_platform.md) — VRAW soft-latch and PCF8563 RTC implemented; GPS, MCU, audio/PTT, storage, USB power, RF sensing, status LEDs, TX safety, frequency/tone plan, LoRa (skipped), enclosure still planned, not yet in the schematic
 - [ESP32-S3 pinout & interconnect plan](hardware/esp32s3_pinout.md)
+- [I2C bus — devices & addresses](hardware/i2c_bus.md)
 - [Open items / next steps](hardware/open_items.md) — living checklist
 
 ## Sourcing (`sourcing/`)

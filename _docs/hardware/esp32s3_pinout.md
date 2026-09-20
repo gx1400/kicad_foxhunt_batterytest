@@ -81,10 +81,10 @@ pins), not silicon requirements. Easy to reshuffle.
 | 9 | IO16 | 74HC123 retrigger/"kick" pulse (MCU output) | Extends the 2-min hardware TX-timeout while a legitimate TX continues |
 | 10 | IO17 (U1TXD) | GPS module RXD | UART1, matches datasheet's own U1TXD label |
 | 11 | IO18 (U1RXD) | GPS module TXD | UART1 |
-| 12 | IO8 | I2C SDA | Shared bus: PCF8563 RTC, MAX17320 fuel gauge, AT24C32D EEPROM |
+| 12 | IO8 | I2C SDA | Shared bus: PCF8563 RTC (`0x51`), MAX17320 fuel gauge (`0x36` main / `0x0B` NVM), AT24C32D EEPROM (`0x50`), and an I2C GPIO expander (PCF8574/PCA9555-class, `0x20`–`0x27`) for the TX-active and heartbeat LEDs — see pins 15 and 32 |
 | 13 | IO19 | **USB_D-** | Native USB, fixed pin |
 | 14 | IO20 | **USB_D+** | Native USB, fixed pin |
-| 15 | IO3 | TX-active LED (MCU output) | Strapping pin (JTAG source, default floating) — floating default is undisturbed by a normal LED-drive load, safe to reuse |
+| 15 | IO3 | *Spare* (freed) | Was TX-active LED; moved to the I2C GPIO expander (pin 12) — a register write is plenty for an on/off indicator, no need to spend a native GPIO on it. Strapping pin (JTAG source, default floating), still fine to reuse for something else later |
 | 16 | IO46 | **Reserved / NC** | Strapping pin (boot mode + ROM log), leave floating for default boot behavior |
 | 17 | IO9 | I2C SCL | Shared bus, see pin 12 |
 | 18 | IO10 (FSPICS0) | SD card CS | |
@@ -100,11 +100,11 @@ pins), not silicon requirements. Easy to reshuffle.
 | 28 | IO35 | — | Not available (internal PSRAM) |
 | 29 | IO36 | — | Not available (internal PSRAM) |
 | 30 | IO37 | — | Not available (internal PSRAM) |
-| 31 | IO38 | Push button (input, wake-capable) | General board button — distinct from the BOOT button on IO0 |
-| 32 | IO39 (MTCK) | Heartbeat LED (MCU output) | No JTAG-header tradeoff here — ESP32-S3's native USB has a built-in USB Serial/JTAG peripheral, full OpenOCD-compatible debug access over the same USB-C connector, no separate header needed |
+| 31 | IO38 | Power button, 2nd pole (input) | DPST power button's second pole — first pole is the hardware wake path at the VRAW latch (§ Power sequencing in controller_platform.md), independent of the MCU; this pole is a plain 3.3V-pulled-up GPIO the MCU polls to time a hold-to-power-off press. Was documented as a generic "board button" placeholder; now assigned |
+| 32 | IO39 (MTCK) | *Spare* (freed) | Was heartbeat LED; moved to the I2C GPIO expander (pin 12), same reasoning as pin 15 — a ~1Hz blink is trivial over I2C. No JTAG-header tradeoff either way — ESP32-S3's native USB has a built-in USB Serial/JTAG peripheral, full OpenOCD-compatible debug access over the same USB-C connector, no separate header needed |
 | 33 | IO40 (MTDO) | WS2812/RGB status LED data (MCU output) | Same as above |
 | 34 | IO41 (MTDI) | Forward-power comparator output (input, digital) | Fault-flag path: same diode detector as IO4, through a comparator (e.g. LM393-class) against a fixed threshold — reliable "antenna fault, near-zero power leaving" detection independent of ADC noise/averaging |
-| 35 | IO42 (MTMS) | *Spare* | Free headroom |
+| 35 | IO42 (MTMS) | `IO_IN_ON_BATT` (input) | Status tap off the TPS2121 rail muxes — tells firmware whether the board is currently running on battery or USB, e.g. to gate whether a power-off attempt should even try (no point releasing the latch while USB keeps the rails up regardless). Already wired in the schematic; this row previously and incorrectly called it spare |
 | 36 | RXD0 | USB-UART bridge (CP2102N-class) TX → MCU RX | Own USB connector, separate from native USB — see § MCU in controller_platform.md |
 | 37 | TXD0 | MCU TX → USB-UART bridge RX | |
 | 38 | IO2 | MAX17320 ALRT (input, interrupt) | |
@@ -115,7 +115,9 @@ pins), not silicon requirements. Easy to reshuffle.
 ## Open judgment calls (flagging, not blocking)
 
 1. **GPS is UART-only** (no I2C) — simpler, and UART is the standard/expected interface for NMEA/UBX streams. Flag if you wanted I2C instead for some reason.
-2. **I2S MCLK not reserved** — deferred until the actual DAC part is chosen; some I2S DACs don't need it, some do. The one remaining spare pin (IO42, #35) is available for it if needed later.
+2. **I2S MCLK not reserved** — deferred until the actual DAC part is chosen; some I2S DACs don't need it, some do. IO3 or IO39 (both freed by moving their LEDs to the I2C expander, see below) are available for it if needed later.
 3. **Resolved: added a second USB connector for a USB-UART bridge** (CP2102N-class, own port, DTR/RTS auto-reset into EN/IO0), instead of relying solely on native-USB auto-reset-into-bootloader — see § MCU in controller_platform.md for why (native-USB CDC re-enumerates on every reset, and its auto-reset has known version-dependent quirks). BOOT/RESET buttons stay regardless, as the fallback when the bridge isn't plugged in.
+4. **Resolved: TX-active and heartbeat LEDs moved off native GPIOs onto an I2C GPIO expander** (pins 15 and 32, freed) — both are pure "write a register, forget about it" signals with no timing requirement, the textbook case for an expander instead of spending scarce native pins. The WS2812/RGB status LED (pin 33) stays native — it needs a real serial protocol with strict bit timing (RMT peripheral), which a static-register expander can't produce.
+5. **`IO42` was incorrectly listed as spare** in an earlier pass of this doc — it's actually already wired to `IO_IN_ON_BATT`, added after this table was first written and never back-filled here. Caught by cross-checking the live schematic rather than trusting this doc; worth remembering that this table can drift out of sync with the actual `.kicad_sch` files and should be spot-checked, not assumed current.
 
-35 of 36 available GPIOs assigned; **IO42 (pin 35) is the only pin still genuinely spare** — headroom for whatever comes up during layout/bring-up.
+34 of 36 available GPIOs assigned; **IO3 (pin 15) and IO39 (pin 32) are genuinely spare** — freed by moving the TX-active and heartbeat LEDs to an I2C GPIO expander — headroom for whatever comes up during layout/bring-up.

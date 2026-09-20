@@ -75,7 +75,9 @@ This is the same pattern used in commercial RF gear: fast comparator trip for fa
 
 **Hardware debug LEDs** (footprints reserved, DNP by default — populate only for bench bring-up) at key power-section nodes: battery-protected output (`PWR_18650`), `+12V` (post-fuse), `PWR_IN_SELECT` (post-ORing), `5V_BUCK_OUT`, `3V3_BUCK_OUT`. **Exception:** the final `+3.3V` rail LED is hard-populated (always on) — it's the one purely passive "logic power present" indicator, since no MCU-driven LED can report anything if 3.3V never came up in the first place.
 
-**MCU-driven status LEDs:** a dedicated TX-active LED (own GPIO, not folded into a color code — RF safety/awareness deserves an unambiguous indicator), a dedicated heartbeat LED (brief periodic blink, not solid, to confirm firmware is running without a continuous-draw cost), and one RGB/WS2812 LED encoding GPS search/lock, fault conditions (battery critical, antenna fault, SD error), and found-log mode active (WiFi/BLE on).
+**MCU-driven status LEDs:** a dedicated TX-active LED (not folded into a color code — RF safety/awareness deserves an unambiguous indicator), a dedicated heartbeat LED (brief periodic blink, not solid, to confirm firmware is running without a continuous-draw cost), and one RGB/WS2812 LED encoding GPS search/lock, fault conditions (battery critical, antenna fault, SD error), and found-log mode active (WiFi/BLE on).
+
+**TX-active and heartbeat LEDs live behind an I2C GPIO expander (PCF8574/PCA9555-class), not native GPIOs.** Both are pure "write a register, forget about it" signals — no timing requirement, just occasional on/off or a slow blink — the textbook case for freeing scarce native pins onto the already-present I2C bus instead. This is what freed IO3 and IO39 back to spare in `esp32s3_pinout.md`. The RGB/WS2812 LED stays on its own native GPIO regardless — it needs a real serial protocol with strict bit timing (RMT peripheral), which a static-register expander can't produce.
 
 ## TX safety — watchdog + independent hardware PTT timeout
 
