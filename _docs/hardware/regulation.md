@@ -4,14 +4,20 @@ Two **independent** buck (TPS563201) + linear-LDO cascades, rather than one shar
 
 | | 5V rail (→ SA818S) | 3.3V rail (→ ESP32-S3, GPS) |
 |---|---|---|
-| Buck stage | TPS563201, 6V intermediate | TPS563201, 4.3V intermediate |
+| Buck stage | TPS563201, 6.67V intermediate | TPS563201, 4.78V intermediate |
 | Inductor | 3.3µH (Chilisin MHCI06030-3R3M-R8) | 3.3µH (same part) |
-| Feedback (R_top / R_bottom) | 68.1kΩ / 10kΩ | 46.4kΩ / 10kΩ |
+| Feedback (R_top / R_bottom) | 76.8kΩ / 10kΩ, both ±0.1% thin film (Yageo RT0603, matched tolerance) | 52.3kΩ / 10kΩ, both ±0.1% thin film (Yageo RT0603, matched tolerance) |
 | Output caps | 2× 22µF/16V X7R ceramic | 2× 22µF/16V X7R ceramic |
 | LDO | LM1085-5.0 | AMS1117-3.3 |
 | LDO output cap | 22µF/16V **aluminum electrolytic** (~200mΩ ESR) | 0.1µF ceramic + 22µF/16V aluminum electrolytic (~200mΩ ESR) |
 | Design current | 2A (SA818S TX peak ~750mA + margin) | 1A (real worst-case ~470mA) |
-| Peak inductor current | ~2.9A | ~1.8A |
+| Peak inductor current | ~2.92A | ~1.82A |
+| Inductor RMS current | ~2.07A | ~1.11A |
+| Output cap ripple current | ~0.531A | ~0.475A |
+
+**Intermediate voltages were bumped up from the original 6V/4.3V targets** (68.1k/46.4k dividers) after checking LDO dropout margin — LM1085's dropout is 1.5V max (spec'd over the full current range) and AMS1117's is 1.3V max but only *up to 0.8A* (this rail runs 1A, where the datasheet only says dropout "will be higher," no number given). At 6V/4.3V the 5V rail had just 1.0V of raw headroom — under the LM1085's own spec — so both dividers were recalculated for 0.768V·(1+R_top/R_bottom) against actual TPS563201 reference voltage and re-sourced as precision (±0.1%) matched-tolerance pairs rather than the original 1% singles, so the divider itself no longer adds meaningfully to the output-voltage error budget.
+
+**Margin is still tight, worst case:** at the buck's own ±2% feedback tolerance, the 5V rail's worst-case low intermediate (~6.53V) leaves only ~30mV over the LM1085's 1.5V max dropout spec. The 3.3V rail's actual dropout at its full 1A load is not given in the AMS1117 datasheet (only characterized to 0.8A) — current-limit is spec'd as low as 900mA at a 1.5V differential, which suggests dropout at 1A isn't trivially small. **Bench-verify both rails hold regulation at full rated current before trusting these margins in the field.**
 
 **Note on LDO output caps:** both LM1085 and AMS1117 rely on the output cap's ESR for loop stability (opposite requirement from the buck stage's low-ESR-ceramic-friendly D-CAP2 topology) — a low-ESR ceramic reused from the buck section risks oscillation. Aluminum electrolytics in the ~100–300mΩ ESR range satisfy both LDOs' requirements.
 

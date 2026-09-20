@@ -47,6 +47,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 100.33) (xy 58.42 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "284bf6e2-cb01-4193-a933-a2fcf595e6a6")
+	)
+	(wire
+		(pts
 			(xy 78.74 44.45) (xy 166.37 44.45)
 		)
 		(stroke
@@ -64,6 +74,26 @@
 			(type default)
 		)
 		(uuid "65f9f48d-98c3-40e6-aa3f-6cebf96f1247")
+	)
+	(wire
+		(pts
+			(xy 50.8 113.03) (xy 50.8 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b3c0489-84b8-4bfe-b095-a4b5f0f62a82")
+	)
+	(wire
+		(pts
+			(xy 54.61 113.03) (xy 50.8 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb7b739-81cc-4d23-acf1-bdf5af695f55")
 	)
 	(wire
 		(pts
@@ -117,6 +147,36 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 105.41) (xy 166.37 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad06a6f0-bc8a-4e1a-8e25-0cde5ad552cc")
+	)
+	(wire
+		(pts
+			(xy 54.61 139.7) (xy 54.61 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5f9d3f2-9252-4990-84aa-fb24fc84e06b")
+	)
+	(wire
+		(pts
+			(xy 120.65 146.05) (xy 166.37 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf5846c6-85fb-4317-8990-8162fb53545e")
+	)
+	(wire
+		(pts
 			(xy 93.98 73.66) (xy 104.14 73.66)
 		)
 		(stroke
@@ -167,7 +227,7 @@
 	)
 	(sheet
 		(at 44.45 35.56)
-		(size 34.29 24.13)
+		(size 34.29 64.77)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -193,7 +253,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 44.45 60.2746 0)
+			(at 44.45 100.9146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -263,6 +323,26 @@
 				(justify right)
 			)
 		)
+		(pin "MCU_OUT_PWR_LATCH" input
+			(at 58.42 100.33 270)
+			(uuid "1062023c-c025-49e7-bb9a-476533ab07fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RTC_PWR_INTERRUPT" input
+			(at 50.8 100.33 270)
+			(uuid "4f838d6b-992c-4553-8a45-202a86303c48")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5"
@@ -273,7 +353,7 @@
 	)
 	(sheet
 		(at 166.37 33.02)
-		(size 44.45 73.66)
+		(size 44.45 128.27)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -299,7 +379,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu-esp32.kicad_sch"
-			(at 166.37 107.2646 0)
+			(at 166.37 161.8746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -402,6 +482,26 @@
 		(pin "IO_IN_ON_BATT" input
 			(at 166.37 53.34 180)
 			(uuid "768f0d3d-82ff-42ff-9def-105a8f20c8ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MCU_IN_RTC_INT_ALARM" input
+			(at 166.37 146.05 180)
+			(uuid "63da840f-9fb5-4028-bd45-e87a717ed136")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MCU_OUT_LATCH_EN_OUTPUT" output
+			(at 166.37 105.41 180)
+			(uuid "61807c81-7c83-4d7e-8c34-13358887c38d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -539,6 +639,72 @@
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5"
 					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 49.53 139.7)
+		(size 71.12 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "be75080d-eece-47db-bf9a-20f8f91d5133")
+		(property "Sheetname" "Peripherals"
+			(at 49.53 138.9884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 49.53 175.8446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RTC_OUT_INTERRUPT_LATCH" output
+			(at 54.61 139.7 90)
+			(uuid "859260ef-1544-4b24-8d08-6fb9a50aa412")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RTC_OUT_MCU_INT_ALRM" output
+			(at 120.65 146.05 0)
+			(uuid "f8beb6d6-5e34-4ea9-85d1-8d43aa3e22b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5"
+					(page "8")
 				)
 			)
 		)

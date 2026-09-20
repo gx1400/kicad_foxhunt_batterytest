@@ -1,0 +1,30 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "db6ae0ab-449f-4e81-9acd-98a0bccce7d9")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "RTC_OUT_INTERRUPT_LATCH"
+		(shape output)
+		(at 49.53 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "12173a84-aea0-48ee-9b8e-52439e16ca95")
+	)
+	(hierarchical_label "RTC_OUT_MCU_INT_ALRM"
+		(shape output)
+		(at 82.55 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cb7ff81e-ae9f-4809-913f-46b9c08c167f")
+	)
+)
