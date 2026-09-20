@@ -3218,6 +3218,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "050dee93-a934-4681-845f-33cf751b30e5")
 	)
@@ -3248,6 +3249,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "08886a9d-f933-459a-b4af-e0e17ea24285")
 	)
@@ -3258,6 +3260,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "09ecc70d-7ae7-473a-9766-c383e8df03f8")
 	)
@@ -3288,6 +3291,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "0ed9f270-93bd-4111-b13d-bcd8919aeb17")
 	)
@@ -3548,6 +3552,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "430f06e4-ff6c-437a-8909-1980086891d3")
 	)
@@ -3598,6 +3603,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "4b071b72-4af8-4690-87e3-9a0be8160cff")
 	)
@@ -3608,6 +3614,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "4c125015-4927-439f-8d00-9cc30b4717f9")
 	)
@@ -3618,6 +3625,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "55afc3d4-f797-47df-9930-a9ce831645eb")
 	)
@@ -3638,6 +3646,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "59247442-fc43-41c2-8267-7fa6c41f047b")
 	)
@@ -3758,6 +3767,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "75a7caab-4328-4369-8e13-b48570bea288")
 	)
@@ -3798,6 +3808,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "81ff565c-ddee-4cf9-80a7-763c833aed60")
 	)
@@ -3898,6 +3909,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "9489895d-9c4d-4e71-80ca-9b6f2dd3dec1")
 	)
@@ -3968,6 +3980,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "a1a30380-8701-4c8b-b878-e742117a0c44")
 	)
@@ -4048,6 +4061,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "bff9d979-3e71-4ddd-b0e6-ac6289246bca")
 	)
@@ -4108,6 +4122,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "d03d6f84-d916-4bd2-9c53-1eeba199980b")
 	)
@@ -4128,6 +4143,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "d93ce48e-5190-4043-ad87-cbcdf31116ba")
 	)
@@ -4188,6 +4204,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "e0bfd497-024c-410f-8978-14bcb5e3b827")
 	)
@@ -4228,6 +4245,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 140 0 1)
 		)
 		(uuid "ee04eb3f-15a9-4fef-ba93-8e285464afb3")
 	)
@@ -4335,6 +4353,11 @@
 		)
 		(uuid "cd03da89-6ad1-4f6d-8e77-8a2e76a82dde")
 	)
+  (text "R13: intentional GND/GNDREF split for current sensing — do not bridge elsewhere"
+    (at 152.4 139.7 0)
+    (effects (font (size 1 1) (italic yes) (color 255 140 0 1)) (justify top))
+    (uuid "eabee338-7de2-40b8-9200-805403578f5e")
+  )
 	(symbol
 		(lib_id "power:GNDREF")
 		(at 180.34 102.87 0)
