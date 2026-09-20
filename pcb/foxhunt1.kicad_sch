@@ -17,6 +17,12 @@
 		(color 0 0 0 0)
 		(uuid "2ead257e-28b5-4644-b207-f250341a0f8a")
 	)
+	(junction
+		(at 50.8 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6c8347e-6a31-4f33-8d62-2fcaf1385a23")
+	)
 	(wire
 		(pts
 			(xy 135.89 60.96) (xy 166.37 60.96)
@@ -66,16 +72,6 @@
 			(type default)
 		)
 		(uuid "267ff968-fadd-40cd-a379-d7f42e6b7c18")
-	)
-	(wire
-		(pts
-			(xy 58.42 100.33) (xy 58.42 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "284bf6e2-cb01-4193-a933-a2fcf595e6a6")
 	)
 	(wire
 		(pts
@@ -129,7 +125,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 113.03) (xy 50.8 100.33)
+			(xy 50.8 113.03) (xy 50.8 105.41)
 		)
 		(stroke
 			(width 0)
@@ -179,7 +175,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 105.41) (xy 166.37 105.41)
+			(xy 50.8 105.41) (xy 166.37 105.41)
 		)
 		(stroke
 			(width 0)
@@ -226,6 +222,16 @@
 			(type default)
 		)
 		(uuid "d28d93a4-0b71-42f5-80d7-bc63b3a3b51e")
+	)
+	(wire
+		(pts
+			(xy 50.8 105.41) (xy 50.8 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df89e8a1-4c41-4edb-9d91-d3d41b9920d3")
 	)
 	(wire
 		(pts
@@ -345,19 +351,9 @@
 				(justify right)
 			)
 		)
-		(pin "MCU_OUT_PWR_LATCH" input
-			(at 58.42 100.33 270)
-			(uuid "1062023c-c025-49e7-bb9a-476533ab07fc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RTC_PWR_INTERRUPT" input
+		(pin "PWR_LATCH" input
 			(at 50.8 100.33 270)
-			(uuid "4f838d6b-992c-4553-8a45-202a86303c48")
+			(uuid "dd18f1d9-8727-49fb-8d30-cde498fcad3e")
 			(effects
 				(font
 					(size 1.27 1.27)

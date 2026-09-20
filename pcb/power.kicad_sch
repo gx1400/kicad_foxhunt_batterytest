@@ -2505,12 +2505,6 @@
 		(uuid "78841a4e-ab94-4996-830b-d84c64e84f06")
 	)
 	(junction
-		(at 200.66 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90f25654-3230-4cd4-a044-dd693b73451c")
-	)
-	(junction
 		(at 224.79 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2976,7 +2970,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 52.07) (xy 200.66 54.61)
+			(xy 200.66 52.07) (xy 200.66 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3616,16 +3610,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 54.61) (xy 200.66 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a6fe2c6-36be-45e6-80d3-8ce2b8a85322")
-	)
-	(wire
-		(pts
 			(xy 64.77 67.31) (xy 67.31 67.31)
 		)
 		(stroke
@@ -4096,16 +4080,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 54.61) (xy 200.66 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6ad6a59-cd76-4de9-b52f-48fc12818e81")
-	)
-	(wire
-		(pts
 			(xy 100.33 88.9) (xy 100.33 97.79)
 		)
 		(stroke
@@ -4368,7 +4342,7 @@
 		)
 		(uuid "72917c99-7077-453a-87a6-43dbdffcd5ae")
 	)
-	(hierarchical_label "MCU_OUT_PWR_LATCH"
+	(hierarchical_label "PWR_LATCH"
 		(shape input)
 		(at 204.47 52.07 0)
 		(effects
@@ -4378,17 +4352,6 @@
 			(justify left)
 		)
 		(uuid "785423ca-f9d3-4857-8fc8-8ddec39facfc")
-	)
-	(hierarchical_label "RTC_PWR_INTERRUPT"
-		(shape input)
-		(at 204.47 54.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "823ae152-dde3-4ec8-bdb8-a16df50372e1")
 	)
 	(hierarchical_label "BMS_SCL"
 		(shape input)
