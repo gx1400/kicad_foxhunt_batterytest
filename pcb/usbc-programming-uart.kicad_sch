@@ -3276,6 +3276,12 @@
 		(uuid "46b2e2c9-4379-4e53-948a-9cf65b7afc23")
 	)
 	(junction
+		(at 215.9 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52e09117-459f-444b-a556-2b710705c474")
+	)
+	(junction
 		(at 100.33 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4285,7 +4291,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 25.4) (xy 223.52 25.4)
+			(xy 195.58 25.4) (xy 215.9 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4652,6 +4658,16 @@
 			(type default)
 		)
 		(uuid "f10cb96b-849a-4d36-a275-c212160c862b")
+	)
+	(wire
+		(pts
+			(xy 215.9 25.4) (xy 223.52 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1a1a24c-58cf-46bd-b3f7-33757628b214")
 	)
 	(wire
 		(pts
@@ -9413,6 +9429,84 @@
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/97991d87-aeba-471b-8b55-fc9d012290ca"
 					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 215.9 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e069f9fd-78f9-4922-bb3c-d8d8e6e53208")
+		(property "Reference" "#FLG021"
+			(at 215.9 23.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 215.9 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 215.9 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6585c230-8ea0-4655-bdb5-3ba8693f45aa")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/97991d87-aeba-471b-8b55-fc9d012290ca"
+					(reference "#FLG021")
 					(unit 1)
 				)
 			)
