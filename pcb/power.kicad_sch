@@ -1814,6 +1814,16 @@
 		)
 		(uuid "66680a30-d1f1-4e83-994f-70d317ae4e55")
 	)
+	(text "ILM = 65.2 / (RILM ^ 0.861)\n = 3.5A @ 30.1k"
+		(exclude_from_sim no)
+		(at 150.114 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "78e4a988-c1b8-483e-867b-f5b4c9e92c7e")
+	)
 	(junction
 		(at 97.79 50.8)
 		(diameter 0)
@@ -3319,7 +3329,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00af595a-9c58-4a45-9292-4030ee4df3d4")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR02"
 			(at 91.44 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -3379,7 +3389,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR076")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3396,7 +3406,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "08a40856-63ba-4921-8f5c-106c1b3840e9")
-		(property "Reference" "R22"
+		(property "Reference" "R4"
 			(at 110.998 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3502,7 +3512,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R22")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -3520,7 +3530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bd6f59e-2b3f-499d-9ac8-a1be087210c6")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR024"
 			(at 158.75 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3580,7 +3590,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR036")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -3597,7 +3607,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "113d417c-d67f-443e-99ea-c204f46a05f4")
-		(property "Reference" "R16"
+		(property "Reference" "R1"
 			(at 97.536 42.418 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3703,7 +3713,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R16")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3721,7 +3731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13af5065-6ed1-4e91-afa1-b9addfd70f11")
-		(property "Reference" "JP3"
+		(property "Reference" "JP2"
 			(at 71.12 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3783,7 +3793,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP3")
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -3800,7 +3810,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1b1d765d-fb68-4eec-902e-7b5e185f3f8f")
-		(property "Reference" "C41"
+		(property "Reference" "C2"
 			(at 133.604 127.762 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3908,7 +3918,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "C41")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -3926,7 +3936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d95a1de-6b7c-4b9e-bfcd-f7e1490bb638")
-		(property "Reference" "JP21"
+		(property "Reference" "JP1"
 			(at 71.12 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3946,7 +3956,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
 			(at 71.12 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -3988,7 +3998,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP21")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -4005,7 +4015,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "20e0de52-d6ad-4b0e-b589-7ee5863d3755")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR06"
 			(at 107.95 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4065,7 +4075,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR068")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4082,7 +4092,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "25b04f05-f4bb-453c-b9e2-f937f5005256")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR07"
 			(at 107.95 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -4142,7 +4152,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR072")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4160,7 +4170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e4ce04e-091f-47d1-8a5d-d07a5c1edf20")
-		(property "Reference" "JP22"
+		(property "Reference" "JP5"
 			(at 113.03 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4180,7 +4190,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
 			(at 113.03 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4222,7 +4232,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP22")
+					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -4239,7 +4249,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2e803fb2-03aa-4945-8367-c561c5d3642c")
-		(property "Reference" "#FLG016"
+		(property "Reference" "#FLG04"
 			(at 92.075 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4300,7 +4310,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#FLG016")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -4318,7 +4328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f770fe7-69cb-478d-90ae-296049f343de")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR017"
 			(at 137.16 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -4378,7 +4388,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR085")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -4395,7 +4405,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "389fda92-f89f-4534-89d1-7f477d8ada8e")
-		(property "Reference" "R26"
+		(property "Reference" "R5"
 			(at 134.112 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4415,7 +4425,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 129.794 176.276 90)
 			(hide yes)
 			(show_name no)
@@ -4426,7 +4436,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C137745.pdf"
 			(at 130.81 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -4437,7 +4447,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 30.1kΩ ±1% 100mW 0603"
 			(at 130.81 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -4448,7 +4458,7 @@
 				)
 			)
 		)
-		(property "Manf" "YAGE"
+		(property "Manf" "YAGEO"
 			(at 130.81 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -4459,7 +4469,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RC0603FR-0730K1L"
 			(at 130.81 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -4470,7 +4480,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C137745"
 			(at 130.81 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -4501,7 +4511,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R26")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4518,7 +4528,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a83b7ee-9f94-416d-bc88-97a6f6bd1f41")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR03"
 			(at 86.36 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -4578,7 +4588,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR077")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4596,7 +4606,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "565068bd-2a03-4643-a546-cb914286883d")
-		(property "Reference" "U12"
+		(property "Reference" "U3"
 			(at 127 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4638,7 +4648,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2.8-V to 22-V Priority Power MUX with Seamless Switchover"
 			(at 127 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -4649,7 +4659,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TI"
+		(property "Manf" "TI"
 			(at 127 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4671,7 +4681,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C485916"
+		(property "LCSC Part #" "C485916"
 			(at 127 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -4754,7 +4764,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "U12")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -4771,7 +4781,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5844c222-f01d-4bfd-8e3b-00d03828238b")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR011"
 			(at 115.57 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -4831,7 +4841,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR067")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -4849,7 +4859,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63cb889a-0ac8-465a-9bc1-b9c1fd79bfd5")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR019"
 			(at 142.24 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4909,7 +4919,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR063")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -4927,7 +4937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "694fa8f0-ec08-4088-a797-88ac449b5b16")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR025"
 			(at 207.01 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -4987,7 +4997,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR086")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -5004,7 +5014,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72ab740d-c9dd-453e-aa1e-19c819543cef")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR01"
 			(at 85.09 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -5064,7 +5074,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR065")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5082,7 +5092,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "754548a1-6b13-4212-b2ac-48b3df056d35")
-		(property "Reference" "R27"
+		(property "Reference" "R6"
 			(at 139.7 156.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5190,7 +5200,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R27")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -5208,7 +5218,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75f2469b-3ecf-4b2c-92d4-6b3e1d793238")
-		(property "Reference" "JP13"
+		(property "Reference" "JP4"
 			(at 72.39 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5270,7 +5280,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP13")
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -5287,7 +5297,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77d905d7-bfe2-4185-b535-70bcb532064f")
-		(property "Reference" "C42"
+		(property "Reference" "C1"
 			(at 117.094 174.752 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5395,7 +5405,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "C42")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -5413,7 +5423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "795d9c06-7f80-427a-85b0-1e8713ac9e81")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR026"
 			(at 207.01 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -5473,7 +5483,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR087")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5491,7 +5501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e281142-bf71-41e2-b21c-853e5a60b8e7")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR014"
 			(at 127 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -5551,7 +5561,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR035")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5569,7 +5579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "824007b0-d076-40ed-881d-1080b5b1931b")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR020"
 			(at 144.78 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5629,7 +5639,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR082")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -5647,7 +5657,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82bbff3e-7ace-4657-9dac-7ae920e63712")
-		(property "Reference" "U1"
+		(property "Reference" "U4"
 			(at 218.44 129.4698 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5762,7 +5772,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "U1")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -5780,7 +5790,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85a585ca-bdbc-425a-ab5c-b20538758b22")
-		(property "Reference" "JP1"
+		(property "Reference" "JP6"
 			(at 113.03 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5842,7 +5852,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP1")
+					(reference "JP6")
 					(unit 1)
 				)
 			)
@@ -5860,7 +5870,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8953624b-54be-4735-b1ba-c50080ae751a")
-		(property "Reference" "#FLG019"
+		(property "Reference" "#FLG02"
 			(at 73.66 102.235 0)
 			(hide yes)
 			(show_name no)
@@ -5920,7 +5930,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#FLG019")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -5938,7 +5948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8993df57-365e-4851-a1c5-0fa5cbdb1a62")
-		(property "Reference" "JP20"
+		(property "Reference" "JP3"
 			(at 72.39 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5958,7 +5968,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
 			(at 72.39 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6000,7 +6010,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP20")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -6018,7 +6028,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f79c071-f4af-4507-b2ac-1c4942efe96b")
-		(property "Reference" "#FLG018"
+		(property "Reference" "#FLG01"
 			(at 73.66 95.885 0)
 			(hide yes)
 			(show_name no)
@@ -6078,7 +6088,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#FLG018")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -6095,7 +6105,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "91393f0d-f3da-4509-94fa-581e1858eba9")
-		(property "Reference" "R15"
+		(property "Reference" "R3"
 			(at 104.648 37.846 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6201,7 +6211,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R15")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -6217,9 +6227,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "94b1313b-c265-42a2-af24-02022c46f0b9")
-		(property "Reference" "R24"
-			(at 154.178 59.69 0)
+		(uuid "a55c0064-c539-494a-b93d-4d105e5e135a")
+		(property "Reference" "R8"
+			(at 154.432 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6228,8 +6238,8 @@
 				)
 			)
 		)
-		(property "Value" "51.1k"
-			(at 154.94 61.722 0)
+		(property "Value" "30.1k"
+			(at 155.448 61.976 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6238,7 +6248,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 150.114 60.706 90)
 			(hide yes)
 			(show_name no)
@@ -6249,7 +6259,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C861457.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C137745.pdf"
 			(at 151.13 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6260,7 +6270,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 30.1kΩ ±1% 100mW 0603"
 			(at 151.13 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6282,7 +6292,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD0751K1L"
+		(property "MPN" "RC0603FR-0730K1L"
 			(at 151.13 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6293,7 +6303,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C861457"
+		(property "LCSC Part #" "C137745"
 			(at 151.13 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6316,15 +6326,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "149afd34-c94f-4d5e-b4f6-8593c080130e")
+			(uuid "926dcf1a-1caa-4904-a793-f6c8154642ef")
 		)
 		(pin "2"
-			(uuid "95b07c78-d0ab-449e-b59d-bba8b11000d5")
+			(uuid "1ead1c7c-6ccf-4494-be39-fe1d2e944f78")
 		)
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R24")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -6341,7 +6351,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a79f9135-cbaa-4e95-ae26-ad0ff57fa23d")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR04"
 			(at 96.52 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -6401,7 +6411,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR078")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -6419,7 +6429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a978d324-37b2-401c-bf8f-b1f2f266cb0c")
-		(property "Reference" "#FLG021"
+		(property "Reference" "#FLG03"
 			(at 81.28 149.225 0)
 			(hide yes)
 			(show_name no)
@@ -6479,7 +6489,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#FLG021")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -6497,7 +6507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0a0e707-f62c-48b6-b9ef-b905f8ea028e")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR018"
 			(at 138.43 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -6557,7 +6567,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR074")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6574,7 +6584,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b847008d-15e1-494d-92fc-f34e875fad95")
-		(property "Reference" "C39"
+		(property "Reference" "C3"
 			(at 137.414 59.182 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6682,7 +6692,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "C39")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -6699,7 +6709,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b8df7270-0542-4350-814c-5011d4cfcee4")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR08"
 			(at 102.87 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6759,7 +6769,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR073")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -6776,7 +6786,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bddf5cb7-e6a5-4224-a6af-2d769356c7fb")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR09"
 			(at 113.03 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -6836,7 +6846,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR071")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6854,7 +6864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be8cc638-11da-4ab0-bac4-2bd987b63f9b")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR023"
 			(at 152.4 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -6914,7 +6924,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR084")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -6932,7 +6942,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6eb5243-0ac1-404a-8a2f-a358495a051d")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR016"
 			(at 130.81 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -6992,7 +7002,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR081")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7010,7 +7020,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c985e53d-3c86-4bf6-99bb-ead33a418a62")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR021"
 			(at 147.32 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -7070,7 +7080,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR075")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -7087,7 +7097,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb0008fa-b90d-43c6-8e06-20a054b8e948")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR013"
 			(at 123.19 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -7147,7 +7157,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR070")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7164,7 +7174,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d70d5471-80e4-415d-b263-6924e151f9f8")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR010"
 			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -7224,7 +7234,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR066")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7241,7 +7251,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8f6f4c7-a814-4508-9b4c-743d01a05b89")
-		(property "Reference" "#FLG020"
+		(property "Reference" "#FLG06"
 			(at 118.11 155.575 0)
 			(hide yes)
 			(show_name no)
@@ -7301,7 +7311,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#FLG020")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -7319,7 +7329,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df32f81a-85de-491f-9374-fea670416c92")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR012"
 			(at 121.92 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -7379,7 +7389,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR080")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -7397,7 +7407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df336917-6e05-4635-8c95-cfe3e3644723")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR015"
 			(at 129.54 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -7457,7 +7467,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR083")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7474,7 +7484,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dfbfafc4-a011-4dbe-828a-eeba045ae43a")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR05"
 			(at 106.68 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -7534,7 +7544,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR079")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7552,7 +7562,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e63178e8-dca2-49db-afd0-85827390af9c")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR022"
 			(at 151.13 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -7612,7 +7622,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR064")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -7630,7 +7640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7da2c5e-51f3-4ff8-a5c6-cd0ff7580740")
-		(property "Reference" "U13"
+		(property "Reference" "U2"
 			(at 123.19 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7672,7 +7682,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2.8-V to 22-V Priority Power MUX with Seamless Switchover"
 			(at 123.19 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -7683,7 +7693,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TI"
+		(property "Manf" "TI"
 			(at 123.19 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7705,7 +7715,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C485916"
+		(property "LCSC Part #" "C485916"
 			(at 123.19 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -7788,7 +7798,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "U13")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -7805,7 +7815,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ead8592c-3636-440b-a9da-3cc6facc253b")
-		(property "Reference" "R25"
+		(property "Reference" "R7"
 			(at 150.876 129.032 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7825,7 +7835,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 146.304 129.286 90)
 			(hide yes)
 			(show_name no)
@@ -7836,7 +7846,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C862291.pdf"
 			(at 147.32 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7847,7 +7857,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 80.6kΩ ±0.1% 100mW 0603"
 			(at 147.32 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7858,7 +7868,7 @@
 				)
 			)
 		)
-		(property "Manf" "YAGE"
+		(property "Manf" "YAGEO"
 			(at 147.32 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7869,7 +7879,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RT0603BRE0780K6L"
 			(at 147.32 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7880,7 +7890,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C862291"
 			(at 147.32 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7911,7 +7921,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R25")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7929,7 +7939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0bb92f8-551c-4e42-956d-9b3c238b6f64")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG05"
 			(at 100.33 32.385 0)
 			(hide yes)
 			(show_name no)
@@ -7989,7 +7999,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#FLG01")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -8006,7 +8016,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f1b73eb4-4d13-41f6-9930-7ac4ab3edc7d")
-		(property "Reference" "R23"
+		(property "Reference" "R2"
 			(at 103.632 52.832 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8112,7 +8122,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R23")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8130,7 +8140,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f255c100-9832-4790-8071-95b869913917")
-		(property "Reference" "R28"
+		(property "Reference" "R9"
 			(at 154.94 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8238,7 +8248,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R28")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -8256,7 +8266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fab3e5ba-5de0-4942-bfd5-0e764df4db77")
-		(property "Reference" "U14"
+		(property "Reference" "U1"
 			(at 106.68 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8298,7 +8308,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2.8-V to 22-V Priority Power MUX with Seamless Switchover"
 			(at 106.68 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -8309,7 +8319,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TI"
+		(property "Manf" "TI"
 			(at 106.68 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -8331,7 +8341,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C485916"
+		(property "LCSC Part #" "C485916"
 			(at 106.68 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -8414,7 +8424,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "U14")
+					(reference "U1")
 					(unit 1)
 				)
 			)

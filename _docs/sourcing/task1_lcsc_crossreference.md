@@ -1,59 +1,53 @@
-# Task 1 — LCSC / MPN / Manufacturer Cross-Reference
+# BOM / LCSC Cross-Reference — Results
 
-Verification method: every component's recorded `LCSC Part #` field was looked up against the
-real JLCPCB catalog (`get_jlcpcb_part`), and the returned MPN + manufacturer compared against
-what's recorded in the schematic's own `MPN`/`Manf` fields. 26 unique LCSC part numbers cover
-54 of the 126 placed component instances (the rest are power symbols, jumpers, test points, and
-a handful of non-LCSC-sourced parts — not applicable to this method).
+Verification method: see [`_agent_tasks/bom_property_audit.md`](../../_agent_tasks/bom_property_audit.md).
+Re-run after any significant schematic change — reference designators on this project have
+already churned across three renumbering passes, so treat every designator below as a snapshot
+of this date, not a durable identifier.
 
-**Result: 25 of 26 verify cleanly** (MPN + manufacturer match exactly, allowing standard
-company-name abbreviations — TI/Texas Instruments, muRata/Murata Electronics, AOS/Alpha & Omega
-Semiconductor, MAXIM/Analog Devices-Maxim).
+**Result: 93 of 126 real components have complete `Manf`/`MPN`/`LCSC Part #` data. Zero
+Value/MPN/Manufacturer mismatches found against real LCSC data** across every part checked.
 
-## Convention note
+## Fixed since the prior pass
 
-**Capacitor voltage ratings in the `Value` field are a minimum requirement, not the exact rating
-of the sourced part.** A part rated higher than the labeled value (e.g. a 50V-rated part used
-where the schematic says "25V") is expected and correct — it's not a defect and shouldn't be
-flagged as a mismatch in future review passes. This is why the checklist below does *not* list
-the 10 bypass-cap instances (C1,C2,C7,C8,C11,C15,C32,C33,C34,C35 — labeled `0.1u/25V`, actually
-sourced as a 50V-rated part) as something to fix; instead there's a task to document this
-convention directly on each sheet so it doesn't get re-flagged later.
+- **U13 (CH340C)**: now has Manf=WCH, MPN=CH340C, LCSC=`C84681` — verified correct.
+- **R7 (80.6k)**: Manf typo ("YAGE") corrected to YAGEO; MPN=`RT0603BRE0780K6L`, LCSC=`C862291` —
+  verified correct.
+- **R5, R8 (30.1k)**: both now complete, LCSC=`C137745` — verified correct.
+- **R14 (1k)**: LCSC=`C95781` now present.
+- **BT2**: now carries the same LCSC ID as BT1 (`C5339083`) instead of being blank — the "copy
+  over" is done, though see the standing exception below (that ID is still delisted).
 
-## Checklist
+## Open items
 
-- [ ] **U2 (MAX17320): blank `Value` field.** Set to `MAX17320` — this was already fixed once on
-      the old `U1` reference earlier in the project, and appears to have been lost during the
-      hierarchy restructure/renumbering to U2.
-- [ ] **R11: footprint names a manufacturer that doesn't match the sourced part.** Footprint is
-      `R_Shunt_Vishay_WSK2512_6332Metric_T2.21mm` (implies Vishay WSK2512 pad geometry), but the
-      recorded/sourced MPN is `HoJLR2512-3W-2.5mR-1%` by **Milliohm**, a different manufacturer.
-      Verify Milliohm's actual pad dimensions match the Vishay-based footprint before fab — if
-      they differ even slightly this is a real physical footprint mismatch, not just naming.
-- [ ] **U8: sourced part is a clone, not the original.** `LM1085IS-5.0RG` by HANSCHIP
-      semiconductor is a second-source part, not the original TI/onsemi LM1085. Probably fine
-      (same function/pinout is typical for these), but confirm datasheet specs (dropout, ESR
-      stability requirements per README §3) actually match before relying on it.
-- [ ] **BT1: LCSC Part # (`C5339083`) not found in JLCPCB's current catalog.** Delisted or stale —
-      verify on LCSC.com directly, or re-source.
-- [ ] **BT2: missing LCSC Part # entirely** (BT1, the same physical part, has one — see above).
-      Copy over once BT1 is resolved.
-- [ ] **R12: has an MPN (`RC0805FR-071KL`, Yageo) but no LCSC Part #.** Fillable — looks like a
-      real, findable Yageo part.
-- [ ] **R16, R7 (2W THT resistors): no MPN/Manf/LCSC at all**, just a SparkFun catalog ID
-      (`PROD_ID`). Not JLCPCB-verifiable as recorded — fine if intentionally SparkFun-sourced,
-      otherwise needs real sourcing data.
-- [ ] **Add a sheet note documenting the capacitor-voltage-is-a-minimum convention** (see above),
-      so it isn't mistaken for a defect in a future review:
-  - [ ] `pcb/foxhunt1.kicad_sch`
-  - [ ] `battery_18650_input.kicad_sch`
-  - [ ] `battery_powerpole_input.kicad_sch`
-  - [ ] `power_regulation.kicad_sch`
+- [ ] **The shunt resistor's footprint still doesn't match its sourced part's brand.** Currently
+      **R13** (was R11, then R4, now R13 — this is the 0.0025Ω current-sense shunt on the battery
+      GND/GNDREF path, identify by function not designator). Footprint
+      `R_Shunt_Vishay_WSK2512_6332Metric_T2.21mm` implies Vishay WSK2512 pad geometry; sourced
+      part is Milliohm `HoJLR2512-3W-2.5mR-1%` (LCSC `C2904234`). Verify Milliohm's actual pad
+      dimensions match before fab.
+
+## Resolved since last pass (2026-09-19)
+
+- **U1, U2, U3 field naming**: normalized from `easyeda2kicad`'s defaults (`Manufacturer`,
+  `LCSC Part`) to this project's convention (`Manf`, `LCSC Part #`) — verified via fresh netlist,
+  all three consistent (Manf=TI, LCSC Part #=C485916), `Source`/`Imported` traceability fields
+  preserved.
+- **Stage 1 ILM (R8, 30.1kΩ)**: confirmed intentional — was undersized at the prior 51.1kΩ for
+  the combined battery-side current across both downstream rails, per the same reasoning noted
+  in the last pass.
+
+## Standing exceptions (see the playbook for the full list/reasoning)
+
+- BT1/BT2: LCSC `C5339083` delisted, known and accepted.
+- The two 2W THT bleed resistors (currently R22/R23): intentionally SparkFun-sourced, not
+  JLCPCB-verifiable by design.
+- Capacitor voltage in `Value` is a minimum, not exact.
+- Standard company-name abbreviations (TI/Texas Instruments, etc.) are not mismatches.
+- Non-LCSC-sourced parts (F2, J1, J2, etc.) are fine as-is if self-consistent.
 
 ## Informational — no action needed
 
-- **J3, J4, F3** are sourced from Digikey/Newark/Mouser rather than LCSC — not verifiable against
-  the JLCPCB catalog by this method, but no internal inconsistency found in their own recorded
-  fields (MPN/Manf are self-consistent).
-- **25 of 26 LCSC-sourced parts verified clean** — see the full unique-part list and verification
-  detail in the conversation; not duplicated here since nothing needs fixing on them.
+- **F2, J1, J2**: Manf+MPN present and self-consistent (MULTICOMP PRO, Anderson Power Products,
+  PHOENIX CONTACT respectively), no LCSC Part# — legitimately non-LCSC-sourced.
+- **22 jumpers + 3 test points**: no sourcing fields, expected for generic mechanical parts.

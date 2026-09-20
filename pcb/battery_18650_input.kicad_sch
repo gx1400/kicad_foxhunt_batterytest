@@ -4347,7 +4347,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01581dda-1f24-4bad-8126-51f747f6b5a6")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR032"
 			(at 180.34 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -4407,7 +4407,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR06")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -4425,7 +4425,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07d9d87a-c19c-401c-bba2-74ce632c29b8")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR028"
 			(at 113.03 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -4485,7 +4485,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR02")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -4503,7 +4503,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a114c46-cb0f-4daa-bae3-1a9346573555")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG011"
 			(at 194.31 45.085 0)
 			(hide yes)
 			(show_name no)
@@ -4563,7 +4563,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#FLG06")
+					(reference "#FLG011")
 					(unit 1)
 				)
 			)
@@ -4707,7 +4707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19c5f934-d140-4802-ba7c-bd8300dc14a4")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR031"
 			(at 139.7 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -4767,7 +4767,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR05")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -4782,7 +4782,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "22434bb6-3cb7-443d-b647-692fcd330a72")
 		(property "Reference" "BT1"
@@ -4933,7 +4933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2aa0c480-b68e-4315-b486-0e9c2debcd52")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR033"
 			(at 187.96 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -4993,7 +4993,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR07")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -5010,7 +5010,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "321c9a20-9758-4692-a8fe-53df7b3763fb")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG08"
 			(at 122.555 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -5070,7 +5070,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#FLG03")
+					(reference "#FLG08")
 					(unit 1)
 				)
 			)
@@ -5088,7 +5088,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "379a1760-912f-4e90-b0f5-125abebb6650")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR029"
 			(at 118.11 127 0)
 			(hide yes)
 			(show_name no)
@@ -5148,7 +5148,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR03")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -5166,7 +5166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44b4d5c3-9cf9-4055-b2e8-15897164d28f")
-		(property "Reference" "R6"
+		(property "Reference" "R15"
 			(at 185.42 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5274,7 +5274,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R6")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -5292,7 +5292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45fd0067-9d18-46b8-8187-c661c8cb129a")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR035"
 			(at 208.28 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5352,7 +5352,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR09")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -5370,7 +5370,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "526153eb-32d2-483c-bcdf-9633c6bd7ded")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR027"
 			(at 72.39 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -5430,7 +5430,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR01")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -5653,7 +5653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62295567-2498-4cbc-9468-7b95df3b804a")
-		(property "Reference" "C7"
+		(property "Reference" "C8"
 			(at 196.85 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5761,7 +5761,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C7")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5779,7 +5779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6429a143-5008-469b-bbc6-05af49d9fa44")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 210.82 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5887,7 +5887,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -5905,7 +5905,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "651664b5-7232-43cb-8f4a-be555606c2c5")
-		(property "Reference" "C6"
+		(property "Reference" "C7"
 			(at 182.88 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6013,7 +6013,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -6030,7 +6030,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66603f86-58c2-447d-9066-06466209894c")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR030"
 			(at 125.73 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6090,7 +6090,155 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR04")
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 72.39 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "6ac1bcb6-d137-46c9-8f4c-33d1aabf4eb2")
+		(property "Reference" "BT2"
+			(at 76.2 102.2984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 76.2 104.8384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_MPD_BH-18650-PC"
+			(at 72.39 103.886 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5339083.pdf"
+			(at 72.39 103.886 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Battery holder -40℃~+180℃ 18650 Battery Holders, Clips, Contacts RoHS"
+			(at 72.39 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 72.39 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 72.39 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 72.39 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C5339083"
+			(at 72.39 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manf" "MPD (Memory Protection Devices)"
+			(at 72.39 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BH-18650-PC"
+			(at 72.39 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a0225b1-4206-4d22-a3ad-c747f6c509d2")
+		)
+		(pin "2"
+			(uuid "7d88d19d-8e89-43f6-a923-0c74944152ba")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
+					(reference "BT2")
 					(unit 1)
 				)
 			)
@@ -6107,7 +6255,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e9c8778-3f26-4b41-9ea1-daae5c25a0fa")
-		(property "Reference" "R1"
+		(property "Reference" "R10"
 			(at 87.63 70.866 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6224,7 +6372,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R1")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6242,7 +6390,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b33a567-4dff-44f9-8cb9-6e146ac5d828")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 118.11 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6350,155 +6498,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 72.39 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7d2763ba-a686-49e7-ad71-d80fc70ed228")
-		(property "Reference" "BT2"
-			(at 76.2 102.2984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery_Cell"
-			(at 76.2 104.8384 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Battery:BatteryHolder_MPD_BH-18650-PC"
-			(at 72.39 103.886 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5339083.pdf"
-			(at 72.39 103.886 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Battery holder -40℃~+180℃ 18650 Battery Holders, Clips, Contacts RoHS"
-			(at 72.39 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 72.39 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 72.39 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 72.39 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "MPD (Memory Protection Devices)"
-			(at 72.39 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "BH-18650-PC"
-			(at 72.39 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field10" ""
-			(at 72.39 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1bb1bccc-dbed-4558-80f7-1fc746bd6e85")
-		)
-		(pin "2"
-			(uuid "af7578e1-8870-4893-b9a1-d4c2facd5408")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "BT2")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6516,7 +6516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a012d7d-6c95-4ad0-a897-c233069cc1ec")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG09"
 			(at 133.35 45.085 0)
 			(hide yes)
 			(show_name no)
@@ -6576,7 +6576,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#FLG04")
+					(reference "#FLG09")
 					(unit 1)
 				)
 			)
@@ -6593,7 +6593,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9dc0a79e-cbef-4de7-b42b-3b9426107086")
-		(property "Reference" "R4"
+		(property "Reference" "R13"
 			(at 152.146 124.968 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6694,7 +6694,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R4")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -6712,7 +6712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a016f800-b025-4084-b273-135d86ef8bbf")
-		(property "Reference" "C3"
+		(property "Reference" "C4"
 			(at 105.41 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6820,7 +6820,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C3")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6839,7 +6839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2407590-934c-4adc-8e6d-79643ee2cd54")
-		(property "Reference" "Q3"
+		(property "Reference" "Q1"
 			(at 127 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6942,7 +6942,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "Q3")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -6960,7 +6960,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7f4508a-467e-4ce1-8c6e-cddb47a7b97f")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR034"
 			(at 194.31 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7020,7 +7020,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR08")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -7038,7 +7038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2a7ae9c-a992-4123-839f-ec34c55541ba")
-		(property "Reference" "U3"
+		(property "Reference" "U5"
 			(at 154.5433 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7214,7 +7214,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "U3")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -7310,7 +7310,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b4127902-8017-495f-b1bc-4afa45d349d2")
-		(property "Reference" "R2"
+		(property "Reference" "R11"
 			(at 87.63 78.486 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7405,7 +7405,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R2")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -7422,7 +7422,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cde6bfbf-925a-4796-9409-f099fc1b68a8")
-		(property "Reference" "R3"
+		(property "Reference" "R12"
 			(at 89.916 96.012 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7528,7 +7528,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R3")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -7546,7 +7546,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0e7b0b4-67c3-439b-9086-55eba4020a20")
-		(property "Reference" "Q4"
+		(property "Reference" "Q2"
 			(at 144.78 55.8799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7665,7 +7665,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "Q4")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -7683,7 +7683,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e57ca0b0-eae3-4851-9c03-61319f2e9383")
-		(property "Reference" "R5"
+		(property "Reference" "R14"
 			(at 173.99 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7727,7 +7727,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 1kΩ ±1% 125mW 0805"
 			(at 171.45 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -7771,6 +7771,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C95781"
+			(at 171.45 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c1ca5406-0f7c-4600-a59c-605af843aac2")
 		)
@@ -7780,7 +7791,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R5")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -7798,7 +7809,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6f59280-639a-4842-b742-aa3f451e07da")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG010"
 			(at 187.96 126.365 0)
 			(hide yes)
 			(show_name no)
@@ -7858,7 +7869,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#FLG05")
+					(reference "#FLG010")
 					(unit 1)
 				)
 			)
@@ -7876,7 +7887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e769c4d8-5455-48ec-aeff-a6192a0c957d")
-		(property "Reference" "C4"
+		(property "Reference" "C5"
 			(at 115.57 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7984,7 +7995,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C4")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -8002,7 +8013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8f0fb73-32c1-4902-b93d-94b150675dc0")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG07"
 			(at 66.04 83.185 0)
 			(hide yes)
 			(show_name no)
@@ -8062,7 +8073,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#FLG02")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
