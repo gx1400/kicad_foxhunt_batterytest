@@ -2223,6 +2223,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 96.52) (xy 100.33 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb98c4b7-9057-4ff5-bf50-f62ab9b119e4")
+	)
+	(wire
+		(pts
 			(xy 247.65 102.87) (xy 247.65 106.68)
 		)
 		(stroke
@@ -2295,6 +2305,17 @@
 			(justify left)
 		)
 		(uuid "65accb77-9c14-4c87-9953-7cdcef629f85")
+	)
+	(hierarchical_label "MCU_IN_IO_INT"
+		(shape input)
+		(at 90.17 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "93a109ee-8b46-4a8f-b8c3-835d0502c130")
 	)
 	(hierarchical_label "MCU_USB_UART_EN"
 		(shape output)

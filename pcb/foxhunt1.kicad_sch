@@ -39,6 +39,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 149.86) (xy 166.37 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d0a487a-1352-4d78-8adf-f860f67eb41e")
+	)
+	(wire
+		(pts
 			(xy 88.9 91.44) (xy 166.37 91.44)
 		)
 		(stroke
@@ -521,6 +531,16 @@
 				(justify left)
 			)
 		)
+		(pin "MCU_IN_IO_INT" input
+			(at 166.37 149.86 180)
+			(uuid "f85d83dd-7431-46cc-b6bf-82c5da0c68af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5"
@@ -726,6 +746,16 @@
 		(pin "PERIPH_SDA" bidirectional
 			(at 88.9 139.7 90)
 			(uuid "6c4b1bde-e503-466f-ba35-69a9a336e672")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PERIPH_IO_INT" output
+			(at 120.65 149.86 0)
+			(uuid "31c3c096-9045-480d-8514-746f25f71796")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -984,7 +984,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AMS1117-3.3"
+		(symbol "PCM_SparkFun-Regulator:LM1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1000,7 +1000,7 @@
 					)
 				)
 			)
-			(property "Value" "AMS1117-3.3"
+			(property "Value" "LM1117-3.3"
 				(at 0 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1011,8 +1011,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
+			(property "Footprint" "PCM_SparkFun-Semiconductor-Standard:SOT-223-3_TabPin2"
+				(at 0 -20.32 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1022,8 +1022,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-				(at 2.54 -6.35 0)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf"
+				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1033,7 +1033,49 @@
 					)
 				)
 			)
-			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, SOT-223"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "PROD_ID" "IC-26292"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "VMax" "15V"
+				(at 0 -10.16 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "IMax" "800mA"
+				(at 0 -12.7 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "SparkFun linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1044,7 +1086,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
+			(property "ki_fp_filters" "SOT?223*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1055,18 +1097,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AMS1117-3.3_0_1"
+			(symbol "LM1117-3.3_0_1"
 				(rectangle
 					(start -5.08 -5.08)
 					(end 5.08 1.905)
@@ -1079,7 +1110,7 @@
 					)
 				)
 			)
-			(symbol "AMS1117-3.3_1_1"
+			(symbol "LM1117-3.3_1_1"
 				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -6264,7 +6295,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:AMS1117-3.3")
+		(lib_id "PCM_SparkFun-Regulator:LM1117-3.3")
 		(at 208.28 138.43 0)
 		(unit 1)
 		(body_style 1)
@@ -6276,7 +6307,7 @@
 		(fields_autoplaced yes)
 		(uuid "3a083f80-bff1-4c5e-946e-0d9a6ed9d952")
 		(property "Reference" "U9"
-			(at 208.28 132.08 0)
+			(at 208.28 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6285,8 +6316,8 @@
 				)
 			)
 		)
-		(property "Value" "AMS1117-3.3"
-			(at 208.28 134.62 0)
+		(property "Value" "LM1117IMPX-3.3"
+			(at 208.28 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6295,8 +6326,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 208.28 133.35 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+			(at 208.28 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6306,8 +6337,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Advanced_Monolithic_Systems/AMS1117-3.3.pdf"
-			(at 210.82 144.78 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23984.pdf"
+			(at 208.28 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6317,7 +6348,18 @@
 				)
 			)
 		)
-		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+		(property "Description" "800-mA Low-Dropout Linear Regulator"
+			(at 208.28 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LM1117IMPX-3.3/NOPB"
 			(at 208.28 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -6328,7 +6370,7 @@
 				)
 			)
 		)
-		(property "MPN" "AMS1117-3.3"
+		(property "Manf" "TI"
 			(at 208.28 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -6339,18 +6381,7 @@
 				)
 			)
 		)
-		(property "Manf" "Advanced Monolithic Systems"
-			(at 208.28 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C6186"
+		(property "LCSC Part #" "C23984"
 			(at 208.28 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -6364,6 +6395,26 @@
 		(property "Package" "SOT-223"
 			(at 208.28 138.43 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VMax" "15V"
+			(at 208.28 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IMax" "800mA"
+			(at 208.28 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8329,7 +8380,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/HANSCHIP_semiconductor/LM1085IS-5.0RG.pdf"
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/lm1084.pdf"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8340,7 +8391,7 @@
 				)
 			)
 		)
-		(property "Description" "3A 25V Linear Regulator, Fixed Output 5.0V, TO-220/TO-263"
+		(property "Description" "5.5A, 29V linear regulator"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8351,7 +8402,7 @@
 				)
 			)
 		)
-		(property "Manf" "HANSCHIP semiconductor"
+		(property "Manf" "TI"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8373,7 +8424,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C5145336"
+		(property "LCSC Part #" "C2865978"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8384,7 +8435,7 @@
 				)
 			)
 		)
-		(property "Package" "TO-263-3L"
+		(property "Package" "DDPAK-3(TO-263-3)"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
