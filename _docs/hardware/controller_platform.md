@@ -54,6 +54,7 @@ This is one shared subsystem serving two destinations, not two separate designs:
 ## Storage — SD card + EEPROM
 
 - **SD card: SPI mode**, not SDIO. No audio *recording* planned, and audio *playback* (voice IDs, custom clips) is a light, bufferable workload (~32KB/s for 16kHz/16-bit mono) well within SPI-mode throughput — SDIO's speed and extra GPIO cost isn't needed.
+- **Connector: Molex 472192001** (LCSC `C164170`) — flip-top/hinged microSD socket, 8-pin SMD, no card-detect pin, 1.9mm height above board, ~13.7k units in stock. Hinged style over push-push specifically requested — easier to swap cards during bench bring-up than a push-push socket's insert-to-eject action.
 - **Config storage: I2C EEPROM** (e.g. AT24C32D-class, 32Kbit), not FRAM — FRAM (FM24C/MB85RC families) isn't available in JLCPCB's catalog, and EEPROM's ~1M write-cycle life is a non-issue for settings that change occasionally (schedule, frequency, TX power, tone), not continuously. Lives on the same I2C bus as the RTC/fuel-gauge, independent of the SD card, so critical operating parameters survive a missing/corrupt card.
 
 ## Onboard charging — none; USB powers logic only, via an isolated path
