@@ -5,19 +5,21 @@
 	(uuid "b9bb89d9-0926-4eee-a71b-bd2611b914b6")
 	(paper "A4")
 	(lib_symbols)
-	(wire
-		(pts
-			(xy 93.98 55.88) (xy 93.98 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03ccf31c-094b-42f9-b0cd-cc52f698ca41")
+	(junction
+		(at 85.09 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f4d88f9-3681-470d-9588-9c16b51d6d74")
+	)
+	(junction
+		(at 88.9 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ead257e-28b5-4644-b207-f250341a0f8a")
 	)
 	(wire
 		(pts
-			(xy 135.89 93.98) (xy 166.37 93.98)
+			(xy 135.89 60.96) (xy 166.37 60.96)
 		)
 		(stroke
 			(width 0)
@@ -27,7 +29,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 53.34) (xy 166.37 53.34)
+			(xy 78.74 80.01) (xy 166.37 80.01)
 		)
 		(stroke
 			(width 0)
@@ -37,7 +39,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 80.01) (xy 166.37 80.01)
+			(xy 88.9 91.44) (xy 166.37 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1462a18d-5d09-4e17-90a5-76563cb0e618")
+	)
+	(wire
+		(pts
+			(xy 135.89 46.99) (xy 166.37 46.99)
 		)
 		(stroke
 			(width 0)
@@ -57,7 +69,37 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 44.45) (xy 166.37 44.45)
+			(xy 78.74 91.44) (xy 88.9 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "303a55a2-3e00-452f-81e0-f3611ea7e4c2")
+	)
+	(wire
+		(pts
+			(xy 88.9 139.7) (xy 88.9 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60c1899f-56ae-4e16-a70b-a40b670c600a")
+	)
+	(wire
+		(pts
+			(xy 85.09 87.63) (xy 166.37 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62627eae-f804-4231-8da8-eef329053a4b")
+	)
+	(wire
+		(pts
+			(xy 78.74 87.63) (xy 85.09 87.63)
 		)
 		(stroke
 			(width 0)
@@ -67,7 +109,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 55.88) (xy 93.98 55.88)
+			(xy 78.74 40.64) (xy 104.14 40.64)
 		)
 		(stroke
 			(width 0)
@@ -97,7 +139,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 74.93) (xy 166.37 74.93)
+			(xy 85.09 87.63) (xy 85.09 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e8d3d4-3be3-49fc-8069-0ede78ed2022")
+	)
+	(wire
+		(pts
+			(xy 135.89 41.91) (xy 166.37 41.91)
 		)
 		(stroke
 			(width 0)
@@ -107,37 +159,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 76.2) (xy 86.36 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ccf6e3c-8904-44f8-863f-2f3f402d1b63")
-	)
-	(wire
-		(pts
-			(xy 135.89 96.52) (xy 166.37 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9049ceef-4aa6-4b7f-a06b-82034ca97fbc")
-	)
-	(wire
-		(pts
-			(xy 86.36 76.2) (xy 86.36 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96989e0d-9410-497c-b4b3-ac095766cd40")
-	)
-	(wire
-		(pts
-			(xy 86.36 58.42) (xy 78.74 58.42)
+			(xy 78.74 43.18) (xy 104.14 43.18)
 		)
 		(stroke
 			(width 0)
@@ -177,17 +199,17 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 73.66) (xy 104.14 73.66)
+			(xy 135.89 63.5) (xy 166.37 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd95c87b-e0e1-4242-96d3-c2363a8147ea")
+		(uuid "c374c009-a75f-4e11-8589-4234086806d2")
 	)
 	(wire
 		(pts
-			(xy 78.74 39.37) (xy 166.37 39.37)
+			(xy 78.74 83.82) (xy 166.37 83.82)
 		)
 		(stroke
 			(width 0)
@@ -197,7 +219,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 77.47) (xy 166.37 77.47)
+			(xy 135.89 44.45) (xy 166.37 44.45)
 		)
 		(stroke
 			(width 0)
@@ -207,23 +229,13 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 82.55) (xy 135.89 82.55)
+			(xy 135.89 49.53) (xy 166.37 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f3e9048f-77ae-4738-aebc-b5b321055fa4")
-	)
-	(wire
-		(pts
-			(xy 78.74 49.53) (xy 166.37 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "feab4b56-8b15-48cf-a4e1-8bdb63aca5e0")
 	)
 	(sheet
 		(at 44.45 35.56)
@@ -264,7 +276,7 @@
 			)
 		)
 		(pin "BMS_ALRT" output
-			(at 78.74 39.37 0)
+			(at 78.74 83.82 0)
 			(uuid "a3708c2a-509a-41a7-9b54-bd9a299dbb83")
 			(effects
 				(font
@@ -274,7 +286,7 @@
 			)
 		)
 		(pin "BMS_SCL" input
-			(at 78.74 44.45 0)
+			(at 78.74 87.63 0)
 			(uuid "2d3da9bd-133b-4cdc-ba37-c2d5a127d50b")
 			(effects
 				(font
@@ -284,7 +296,7 @@
 			)
 		)
 		(pin "BMS_SDA" bidirectional
-			(at 78.74 49.53 0)
+			(at 78.74 91.44 0)
 			(uuid "6d3b948b-9d02-40fc-af79-317fa4a43399")
 			(effects
 				(font
@@ -294,7 +306,7 @@
 			)
 		)
 		(pin "USB_3.3V_IN" input
-			(at 78.74 55.88 0)
+			(at 78.74 40.64 0)
 			(uuid "2025d300-248e-407b-9aec-5f27a60c05be")
 			(effects
 				(font
@@ -304,7 +316,7 @@
 			)
 		)
 		(pin "USB_5V_IN" input
-			(at 78.74 58.42 0)
+			(at 78.74 43.18 0)
 			(uuid "95a149db-12d5-4542-9ac4-e3c7d214f90b")
 			(effects
 				(font
@@ -314,7 +326,7 @@
 			)
 		)
 		(pin "PWR_ON_BATTERY" output
-			(at 78.74 53.34 0)
+			(at 78.74 80.01 0)
 			(uuid "7962ccc0-2477-477b-bea5-22fe8444c8ae")
 			(effects
 				(font
@@ -390,7 +402,7 @@
 			)
 		)
 		(pin "MCU_I2C_SCL" output
-			(at 166.37 44.45 180)
+			(at 166.37 87.63 180)
 			(uuid "db46284e-0153-43e3-a1e7-841f8772c44f")
 			(effects
 				(font
@@ -400,7 +412,7 @@
 			)
 		)
 		(pin "MCU_I2C_SDA" bidirectional
-			(at 166.37 49.53 180)
+			(at 166.37 91.44 180)
 			(uuid "d19ccdb9-1b33-4ef4-b906-5115a04bcb7f")
 			(effects
 				(font
@@ -410,7 +422,7 @@
 			)
 		)
 		(pin "BMS_ALRT" input
-			(at 166.37 39.37 180)
+			(at 166.37 83.82 180)
 			(uuid "098b2925-b88f-4af0-9f8d-e20fe5e7d9fa")
 			(effects
 				(font
@@ -420,7 +432,7 @@
 			)
 		)
 		(pin "MCU_USB_UART_BOOT" output
-			(at 166.37 77.47 180)
+			(at 166.37 44.45 180)
 			(uuid "8060ad25-c9a6-44b0-a849-6dfc7595be26")
 			(effects
 				(font
@@ -430,7 +442,7 @@
 			)
 		)
 		(pin "MCU_USB_UART_EN" output
-			(at 166.37 74.93 180)
+			(at 166.37 41.91 180)
 			(uuid "c2d88a7a-149a-4215-a114-b66d9e19645e")
 			(effects
 				(font
@@ -440,7 +452,7 @@
 			)
 		)
 		(pin "MCU_USB_UART_RXD" input
-			(at 166.37 82.55 180)
+			(at 166.37 49.53 180)
 			(uuid "1f87f4bd-61be-4cdd-9b59-5c6bf9392c1b")
 			(effects
 				(font
@@ -450,7 +462,7 @@
 			)
 		)
 		(pin "MCU_USB_UART_TXD" output
-			(at 166.37 80.01 180)
+			(at 166.37 46.99 180)
 			(uuid "862bc492-6f82-43c5-ad90-7c6ba54f55da")
 			(effects
 				(font
@@ -460,7 +472,7 @@
 			)
 		)
 		(pin "MCU_USB_D+" bidirectional
-			(at 166.37 93.98 180)
+			(at 166.37 60.96 180)
 			(uuid "481a04b7-b55a-4478-8e4b-e4fe725d3a72")
 			(effects
 				(font
@@ -470,7 +482,7 @@
 			)
 		)
 		(pin "MCU_USB_D-" bidirectional
-			(at 166.37 96.52 180)
+			(at 166.37 63.5 180)
 			(uuid "38bed8e8-23cb-4baf-ac3b-f967a64f7a7d")
 			(effects
 				(font
@@ -480,7 +492,7 @@
 			)
 		)
 		(pin "IO_IN_ON_BATT" input
-			(at 166.37 53.34 180)
+			(at 166.37 80.01 180)
 			(uuid "768f0d3d-82ff-42ff-9def-105a8f20c8ca")
 			(effects
 				(font
@@ -518,7 +530,7 @@
 		)
 	)
 	(sheet
-		(at 104.14 71.12)
+		(at 104.14 38.1)
 		(size 31.75 29.21)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -534,7 +546,7 @@
 		)
 		(uuid "97991d87-aeba-471b-8b55-fc9d012290ca")
 		(property "Sheetname" "USB-C"
-			(at 104.14 70.4084 0)
+			(at 104.14 37.3884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -545,7 +557,7 @@
 			)
 		)
 		(property "Sheetfile" "usbc-programming-uart.kicad_sch"
-			(at 104.14 100.9146 0)
+			(at 104.14 67.8946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -556,7 +568,7 @@
 			)
 		)
 		(pin "MCU_EN_RESET" input
-			(at 135.89 74.93 0)
+			(at 135.89 41.91 0)
 			(uuid "964c93ab-7f3e-4470-95e5-bc59b97ecad8")
 			(effects
 				(font
@@ -566,7 +578,7 @@
 			)
 		)
 		(pin "MCU_IO0_BOOT" input
-			(at 135.89 77.47 0)
+			(at 135.89 44.45 0)
 			(uuid "1b4a4409-00b1-4fee-b722-a20d11cca22b")
 			(effects
 				(font
@@ -576,7 +588,7 @@
 			)
 		)
 		(pin "USB_UART_RXD" input
-			(at 135.89 80.01 0)
+			(at 135.89 46.99 0)
 			(uuid "ee0af369-6154-4943-abfd-ba7532524994")
 			(effects
 				(font
@@ -586,7 +598,7 @@
 			)
 		)
 		(pin "USB_UART_TXD" output
-			(at 135.89 82.55 0)
+			(at 135.89 49.53 0)
 			(uuid "628a5ece-2a06-4dca-b8a3-4d184f62e4e3")
 			(effects
 				(font
@@ -596,7 +608,7 @@
 			)
 		)
 		(pin "USB_3.3V" output
-			(at 104.14 73.66 180)
+			(at 104.14 40.64 180)
 			(uuid "538e032e-2008-443f-861f-18288b7c65f4")
 			(effects
 				(font
@@ -606,7 +618,7 @@
 			)
 		)
 		(pin "USB_5V" output
-			(at 104.14 76.2 180)
+			(at 104.14 43.18 180)
 			(uuid "78f66add-5835-483f-a55a-8e0187e1fd35")
 			(effects
 				(font
@@ -616,7 +628,7 @@
 			)
 		)
 		(pin "USB_MCU_D+" bidirectional
-			(at 135.89 93.98 0)
+			(at 135.89 60.96 0)
 			(uuid "0cbbff65-14a9-400e-8ffc-54e424ca5061")
 			(effects
 				(font
@@ -626,7 +638,7 @@
 			)
 		)
 		(pin "USB_MCU_D-" bidirectional
-			(at 135.89 96.52 0)
+			(at 135.89 63.5 0)
 			(uuid "1cfa2803-a5a0-40b5-910a-d7f442e8d02b")
 			(effects
 				(font
@@ -694,6 +706,26 @@
 		(pin "RTC_OUT_MCU_INT_ALRM" output
 			(at 120.65 146.05 0)
 			(uuid "f8beb6d6-5e34-4ea9-85d1-8d43aa3e22b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PERIPH_SCL" input
+			(at 85.09 139.7 90)
+			(uuid "8aa5b9f0-9f60-47bb-9e8d-ab45d638ccbe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PERIPH_SDA" bidirectional
+			(at 88.9 139.7 90)
+			(uuid "6c4b1bde-e503-466f-ba35-69a9a336e672")
 			(effects
 				(font
 					(size 1.27 1.27)
