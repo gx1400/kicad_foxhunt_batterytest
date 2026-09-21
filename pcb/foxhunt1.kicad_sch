@@ -245,6 +245,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 74.93) (xy 166.37 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f338a127-685c-4163-9024-f38ba6749a27")
+	)
+	(wire
+		(pts
 			(xy 135.89 49.53) (xy 166.37 49.53)
 		)
 		(stroke
@@ -359,6 +369,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "POWER_PB_SIGNAL" output
+			(at 78.74 74.93 0)
+			(uuid "701e60d3-b302-474e-98f2-bf0591ec686a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -530,6 +550,16 @@
 		(pin "MCU_IN_IO_INT" input
 			(at 166.37 149.86 180)
 			(uuid "f85d83dd-7431-46cc-b6bf-82c5da0c68af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MCU_IN_PWR_BTN" input
+			(at 166.37 74.93 180)
+			(uuid "86ba9faf-d145-4565-80fb-0f06f219a10b")
 			(effects
 				(font
 					(size 1.27 1.27)
