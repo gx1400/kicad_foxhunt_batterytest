@@ -108,6 +108,27 @@ there's any chance the GUI reopens the project and re-saves over them.
 
 ## Known Konnect/KiCad tooling quirks (this environment)
 
+- **⚠️ A project-wide "Update Symbols from Library" in the KiCad GUI will silently
+  revert any per-instance `Datasheet`/`Footprint` override that isn't also reflected
+  in the underlying library symbol's own default.** Confirmed to have happened once
+  already, at real scale: 67 components' `Datasheet` fields (localized to a
+  project-relative path via the datasheet-localization task) reverted back to
+  remote URLs, and 5 components' `Footprint` fields reverted too — one of them
+  (a crystal) to a *physically different, wrong-size package*, not just a
+  differently-sourced-but-equivalent one. Root cause: only the 4 symbols that
+  live in `kicad_gx_library` had their library-level defaults corrected to match;
+  everything else (stock KiCad symbols, `PCM_SparkFun-*` symbols, etc.) only had
+  the correct value as a schematic-instance override, which is exactly what a
+  library resync overwrites. **Avoid running a project-wide symbol-library
+  update unless you've just deliberately changed a library symbol and want that
+  specific change to propagate** — it isn't a safe routine housekeeping action
+  here. If you do run one, re-check `Datasheet`/`Footprint` against
+  `_docs/sourcing/project_library_datasheets.md`,
+  `_docs/sourcing/kicad_gx_library_datasheets.md`, and
+  `_docs/sourcing/footprint_verification_log.md` afterward — those three docs are
+  independent of git history and were the only reliable way to detect the full
+  scope of the reversion after the fact.
+
 - **Live IPC to KiCad doesn't support `GetOpenDocuments`** in this KiCad 10.0.6 +
   Konnect 0.12.0 combination. Any tool that needs to check what's open in the
   live GUI (`get_component_list`, `find_component`, `run_erc`/`get_nets_list`
