@@ -12,7 +12,7 @@ drill into whichever subsystem you need.
 - [Battery protection & fuel gauge (MAX17320)](hardware/battery_protection.md)
 - [Dual-input power combining](hardware/power_input_combining.md)
 - [Regulation — VRAW → 5V/3.3V rails, downstream loads](hardware/regulation.md)
-- [Controller & peripheral platform](hardware/controller_platform.md) — VRAW soft-latch and PCF8563 RTC implemented; GPS, MCU, audio/PTT, storage, USB power, RF sensing, status LEDs, TX safety, frequency/tone plan, LoRa (skipped), enclosure still planned, not yet in the schematic
+- [Controller & peripheral platform](hardware/controller_platform.md) — VRAW soft-latch, PCF8563 RTC, PCA9555 I2C GPIO expander, WS2812 status LED, CAT24C32YI-GT3 EEPROM, SD card (SPI), MCU (ESP32-S3 + dual-USB), and USB power path implemented; GPS, audio/PTT, RF sensing, TX safety, frequency/tone plan, LoRa (skipped), enclosure still planned, not yet in the schematic
 - [ESP32-S3 pinout & interconnect plan](hardware/esp32s3_pinout.md)
 - [I2C bus — devices & addresses](hardware/i2c_bus.md)
 - [IC inventory & alternatives](hardware/ic_inventory.md) — every IC/module used or planned, LCSC MPN/price/stock, and 1-4 scored alternates per chip

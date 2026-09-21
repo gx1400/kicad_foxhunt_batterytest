@@ -58,8 +58,8 @@ ID that comes back not-found/delisted.
   completeness accounting, don't flag missing `LCSC Part #` as an error for these.
 - **BT1: LCSC Part# `C5339083` is delisted/not found in the JLCPCB catalog.** Known and accepted —
   don't re-flag as a "not found" defect until it's deliberately re-sourced.
-- **BT2: intentionally has no LCSC Part#.** Mirrors BT1 (the same physical part), which is itself
-  delisted — don't flag as a completeness gap.
+- **BT2: carries the same LCSC Part# as BT1 (`C5339083`)**, the known-delisted MPD BH-18650-PC
+  holder — this is correct/intentional (same physical part), not a completeness gap.
 - **The two 2W THT power resistors (bleed/pre-load resistors on the 5V/3.3V LDO outputs —
   R13/R14 as of the 2nd audit pass, R22/R23 as of the 3rd; check current designators each run,
   don't trust either pair blindly) are intentionally sourced via SparkFun's own catalog

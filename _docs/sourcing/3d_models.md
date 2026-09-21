@@ -18,7 +18,7 @@ only thing available.**
 | MAX17320 (U2, QFN-24-1EP 4x4mm EP2.1x2.1mm) | `Package_DFN_QFN:TQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm` | **Verified present**: `/usr/share/kicad/3dmodels/Package_DFN_QFN.3dshapes/Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step` (exact EP-size match) and a generic `HVQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step` in the same folder. |
 | LM74610 (U7/U10, VSSOP-8 3x3mm) | `Package_SO:VSSOP-8_3x3mm_P0.65mm` | **Verified present**: `/usr/share/kicad/3dmodels/Package_SO.3dshapes/VSSOP-8_3x3mm_P0.65mm.step` — exact match. |
 | TPS563201 (U1/U3, SOT-23-6) | `Package_TO_SOT_SMD:SOT-23-6` | Same stock model as the 8205A entry above — already covered. |
-| AMS1117-3.3 (U9, SOT-223-3) | `Package_TO_SOT_SMD:SOT-223-3_TabPin2` | **Verified present**: `/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-223.step` — generic 3-pin SOT-223 shape, correct stand-in. |
+| LM1117IMPX-3.3/NOPB (U9, U12 — swapped from AMS1117-3.3, SOT-223-3) | `Package_TO_SOT_SMD:SOT-223` | **Verified present**: `/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-223.step` — exact name match now (footprint changed to the plain `SOT-223` name as part of the part swap; previously a same-shape stand-in for a differently-named footprint). |
 | LM1085-5.0 (U8, TO-263-3) | `Package_TO_SOT_SMD:TO-263-3_TabPin2` | **Verified present**: `/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/TO-263-3_TabPin2.step` — exact match. |
 
 All 5 standard-package ICs from the original task list are confirmed (file paths checked directly

@@ -68,56 +68,67 @@ these are *my proposed* pin choices for layout tidiness (grouping related signal
 matching datasheet alt-function labels where convenient, e.g. SD card on the FSPI-labeled
 pins), not silicon requirements. Easy to reshuffle.
 
-| Pin # | Signal | Connects to | Notes |
-|---|---|---|---|
-| 1 | GND | Ground plane | |
-| 2 | 3V3 | `+3.3V` rail | |
-| 3 | EN | Reset circuit: 10kΩ pull-up to 3V3 + 1µF to GND (power-on delay) + manual RESET button to GND + auto-reset transistor from the USB-UART bridge's DTR line (§ MCU in controller_platform.md) | Standard practice |
-| 4 | IO4 | Forward-power detector output (ADC, level readback) | **ADC1** channel — deliberately not ADC2; ADC2 is unreliable while WiFi is active. Paired with a comparator fault-flag on IO41 (pin 34) — see §4.8 in README for the dual-path design |
-| 5 | IO5 | GPS PPS input | Interrupt-capable, precise edge capture |
-| 6 | IO6 | SA818S UART — MCU TX → SA818 RXD | UART2 (software-assigned) |
-| 7 | IO7 | SA818S UART — MCU RX ← SA818 TXD | UART2 (software-assigned) |
-| 8 | IO15 | SA818S/HT PTT-intent (MCU output) | Feeds one leg of the PTT AND-gate; other leg is the 74HC123 timeout output (§4.10 in README) |
-| 9 | IO16 | 74HC123 retrigger/"kick" pulse (MCU output) | Extends the 2-min hardware TX-timeout while a legitimate TX continues |
-| 10 | IO17 (U1TXD) | GPS module RXD | UART1, matches datasheet's own U1TXD label |
-| 11 | IO18 (U1RXD) | GPS module TXD | UART1 |
-| 12 | IO8 | I2C SDA | Shared bus: PCF8563 RTC (`0x51`), MAX17320 fuel gauge (`0x36` main / `0x0B` NVM), AT24C32D EEPROM (`0x50`), and an I2C GPIO expander (PCF8574/PCA9555-class, `0x20`–`0x27`) for the TX-active and heartbeat LEDs — see pins 15 and 32 |
-| 13 | IO19 | **USB_D-** | Native USB, fixed pin |
-| 14 | IO20 | **USB_D+** | Native USB, fixed pin |
-| 15 | IO3 | *Spare* (freed) | Was TX-active LED; moved to the I2C GPIO expander (pin 12) — a register write is plenty for an on/off indicator, no need to spend a native GPIO on it. Strapping pin (JTAG source, default floating), still fine to reuse for something else later |
-| 16 | IO46 | **Reserved / NC** | Strapping pin (boot mode + ROM log), leave floating for default boot behavior |
-| 17 | IO9 | I2C SCL | Shared bus, see pin 12 |
-| 18 | IO10 (FSPICS0) | SD card CS | |
-| 19 | IO11 (FSPID) | SD card MOSI (DI) | |
-| 20 | IO12 (FSPICLK) | SD card SCLK | |
-| 21 | IO13 (FSPIQ) | SD card MISO (DO) | |
-| 22 | IO14 | I2S BCLK → audio DAC | DAC part TBD (§4.5 in README) |
-| 23 | IO21 | I2S LRCLK/WS → audio DAC | |
-| 24 | IO47 | I2S DOUT → audio DAC | MCLK not reserved yet — add only if the chosen DAC needs it |
-| 25 | IO48 | Power-latch hold (MCU output, open-drain) | Diode-ORed with button + PCF8563 INT at the soft-latch enable node (§4.1) |
-| 26 | IO45 | **Reserved / NC** | Strapping pin (VDD_SPI voltage), leave floating for default (3.3V) behavior |
-| 27 | IO0 | BOOT button (pull to GND) + auto-reset transistor from the USB-UART bridge's RTS line | Strapping pin (boot mode). Manual BOOT+RESET buttons stay as the fallback when the bridge isn't plugged in; the bridge's RTS/DTR pair drives the standard two-transistor auto-reset circuit for one-command `esptool`/PlatformIO uploads |
-| 28 | IO35 | — | Not available (internal PSRAM) |
-| 29 | IO36 | — | Not available (internal PSRAM) |
-| 30 | IO37 | — | Not available (internal PSRAM) |
-| 31 | IO38 | Power button, 2nd pole (input) | DPST power button's second pole — first pole is the hardware wake path at the VRAW latch (§ Power sequencing in controller_platform.md), independent of the MCU; this pole is a plain 3.3V-pulled-up GPIO the MCU polls to time a hold-to-power-off press. Was documented as a generic "board button" placeholder; now assigned |
-| 32 | IO39 (MTCK) | *Spare* (freed) | Was heartbeat LED; moved to the I2C GPIO expander (pin 12), same reasoning as pin 15 — a ~1Hz blink is trivial over I2C. No JTAG-header tradeoff either way — ESP32-S3's native USB has a built-in USB Serial/JTAG peripheral, full OpenOCD-compatible debug access over the same USB-C connector, no separate header needed |
-| 33 | IO40 (MTDO) | WS2812/RGB status LED data (MCU output) | Same as above |
-| 34 | IO41 (MTDI) | Forward-power comparator output (input, digital) | Fault-flag path: same diode detector as IO4, through a comparator (e.g. LM393-class) against a fixed threshold — reliable "antenna fault, near-zero power leaving" detection independent of ADC noise/averaging |
-| 35 | IO42 (MTMS) | `IO_IN_ON_BATT` (input) | Status tap off the TPS2121 rail muxes — tells firmware whether the board is currently running on battery or USB, e.g. to gate whether a power-off attempt should even try (no point releasing the latch while USB keeps the rails up regardless). Already wired in the schematic; this row previously and incorrectly called it spare |
-| 36 | RXD0 | USB-UART bridge (CP2102N-class) TX → MCU RX | Own USB connector, separate from native USB — see § MCU in controller_platform.md |
-| 37 | TXD0 | MCU TX → USB-UART bridge RX | |
-| 38 | IO2 | MAX17320 ALRT (input, interrupt) | |
-| 39 | IO1 | PCF8563 INT/alarm (input, interrupt) | Separate from that same INT line's direct hardware path into the power-latch wake-OR (§4.1) — MCU also wants to read it directly once awake |
-| 40 | GND | Ground plane | |
-| 41 | EPAD | Ground plane | Thermal/ground pad, solder down |
+**Wired column (far right)** — cross-checked directly against the live `.kicad_sch` files
+(pin-level net trace, not assumed from this table), not just this doc's own stated intent.
+
+| Symbol | Meaning |
+|---|---|
+| ✅ | Wired — pin already lands on a real net in the schematic today |
+| *(blank)* | Planned — signal/subsystem doesn't exist in the schematic yet; this doc's assignment is a reservation, not a fact about current hardware |
+| ❓ | Not yet assigned — genuinely spare, no purpose decided |
+| ❌ | Do not connect — strapping pin or internally-reserved pin that must stay floating/unavailable, not a candidate for wiring |
+
+| Pin # | Signal | Connects to | Notes | Wired |
+|---|---|---|---|---|
+| 1 | GND | Ground plane | | ✅ |
+| 2 | 3V3 | `+3.3V` rail | | ✅ |
+| 3 | EN | Reset circuit: 10kΩ pull-up to 3V3 + 1µF to GND (power-on delay) + manual RESET button to GND + auto-reset transistor from the USB-UART bridge's DTR line (§ MCU in controller_platform.md) | Standard practice | ✅ |
+| 4 | IO4 | Forward-power detector output (ADC, level readback) | **ADC1** channel — deliberately not ADC2; ADC2 is unreliable while WiFi is active. Paired with a comparator fault-flag on IO41 (pin 34) — see §4.8 in README for the dual-path design | |
+| 5 | IO5 | GPS PPS input | Interrupt-capable, precise edge capture | |
+| 6 | IO6 | SA818S UART — MCU TX → SA818 RXD | UART2 (software-assigned) | |
+| 7 | IO7 | SA818S UART — MCU RX ← SA818 TXD | UART2 (software-assigned) | |
+| 8 | IO15 | SA818S/HT PTT-intent (MCU output) | Feeds one leg of the PTT AND-gate; other leg is the 74HC123 timeout output (§4.10 in README) | |
+| 9 | IO16 | 74HC123 retrigger/"kick" pulse (MCU output) | Extends the 2-min hardware TX-timeout while a legitimate TX continues | |
+| 10 | IO17 (U1TXD) | GPS module RXD | UART1, matches datasheet's own U1TXD label | |
+| 11 | IO18 (U1RXD) | GPS module TXD | UART1 | |
+| 12 | IO8 | I2C SDA | Shared bus: PCF8563 RTC (`0x51`), MAX17320 fuel gauge (`0x36` main / `0x0B` NVM), CAT24C32YI-GT3 EEPROM (`0x50`), and PCA9555PWR I2C GPIO expander (`0x20`) — all four placed and wired | ✅ |
+| 13 | IO19 | **USB_D-** | Native USB, fixed pin | ✅ |
+| 14 | IO20 | **USB_D+** | Native USB, fixed pin | ✅ |
+| 15 | IO3 | *Spare* (freed) | Was TX-active LED; moved to the I2C GPIO expander (pin 12) — a register write is plenty for an on/off indicator, no need to spend a native GPIO on it. Strapping pin (JTAG source, default floating), still fine to reuse for something else later | ❓ |
+| 16 | IO46 | **Reserved / NC** | Strapping pin (boot mode + ROM log), leave floating for default boot behavior | ❌ |
+| 17 | IO9 | I2C SCL | Shared bus, see pin 12 | ✅ |
+| 18 | IO10 (FSPICS0) | SD card CS (`Card1` pin 2, `CD/DAT3`) | No CS pull-up yet — see `open_items.md`, recommend 10kΩ to `+3.3V` per Espressif's SD pull-up spec | ✅ |
+| 19 | IO11 (FSPID) | SD card MOSI/DI (`Card1` pin 3, `CMD`) | `FSPID` = data-out-from-host per ESP32's SPI-flash-derived naming (D=MOSI, Q=MISO) — not obvious from the datasheet's own pin table | ✅ |
+| 20 | IO12 (FSPICLK) | SD card SCLK (`Card1` pin 5, `CLK`) | | ✅ |
+| 21 | IO13 (FSPIQ) | SD card MISO/DO (`Card1` pin 7, `DAT0`) | `DAT1`/`DAT2` (native-mode-only signals) correctly left unconnected — SPI mode doesn't use them | ✅ |
+| 22 | IO14 | I2S BCLK → audio DAC | DAC part TBD (§4.5 in README) | |
+| 23 | IO21 | I2S LRCLK/WS → audio DAC | | |
+| 24 | IO47 | I2S DOUT → audio DAC | MCLK not reserved yet — add only if the chosen DAC needs it | |
+| 25 | IO48 | Power-latch hold (MCU output, open-drain) | Diode-ORed with button + PCF8563 INT at the soft-latch enable node (§4.1) | ✅ |
+| 26 | IO45 | **Reserved / NC** | Strapping pin (VDD_SPI voltage), leave floating for default (3.3V) behavior | ❌ |
+| 27 | IO0 | BOOT button (pull to GND) + auto-reset transistor from the USB-UART bridge's RTS line | Strapping pin (boot mode). Manual BOOT+RESET buttons stay as the fallback when the bridge isn't plugged in; the bridge's RTS/DTR pair drives the standard two-transistor auto-reset circuit for one-command `esptool`/PlatformIO uploads | ✅ |
+| 28 | IO35 | — | Not available (internal PSRAM) | ❌ |
+| 29 | IO36 | — | Not available (internal PSRAM) | ❌ |
+| 30 | IO37 | — | Not available (internal PSRAM) | ❌ |
+| 31 | IO38 | Power button, 2nd pole (input) | DPST power button's second pole — first pole is the hardware wake path at the VRAW latch (§ Power sequencing in controller_platform.md), independent of the MCU; this pole is a plain 3.3V-pulled-up GPIO the MCU polls to time a hold-to-power-off press. Reserved in this doc but not yet wired in the schematic | |
+| 32 | IO39 (MTCK) | PCA9555 `INT` (`PERIPH_IO_INT`, input) | **Corrects an earlier version of this doc**, which called this pin spare/freed for a heartbeat LED that never materialized — live schematic trace shows it's actually wired to the I2C GPIO expander's own interrupt output, so firmware can be notified on any expander input change (DIP switches, buttons) instead of polling over I2C. No JTAG-header tradeoff either way — ESP32-S3's native USB has a built-in USB Serial/JTAG peripheral, full OpenOCD-compatible debug access over the same USB-C connector | ✅ |
+| 33 | IO40 (MTDO) | WS2812/RGB status LED data (MCU output) | D4, Worldsemi WS2812B-B/W. `DIN` wired to this pin; `DOUT` explicitly no-connect flagged (last/only LED in the chain, safe to leave floating per the part's own datasheet convention); local 0.1µF bypass cap (C52) | ✅ |
+| 34 | IO41 (MTDI) | Forward-power comparator output (input, digital) | Fault-flag path: same diode detector as IO4, through a comparator (e.g. LM393-class) against a fixed threshold — reliable "antenna fault, near-zero power leaving" detection independent of ADC noise/averaging | |
+| 35 | IO42 (MTMS) | `IO_IN_ON_BATT` (input) | Status tap off the TPS2121 rail muxes — tells firmware whether the board is currently running on battery or USB, e.g. to gate whether a power-off attempt should even try (no point releasing the latch while USB keeps the rails up regardless) | ✅ |
+| 36 | RXD0 | USB-UART bridge (CH340C) TX → MCU RX | Own USB connector, separate from native USB — see § MCU in controller_platform.md | ✅ |
+| 37 | TXD0 | MCU TX → USB-UART bridge RX | | ✅ |
+| 38 | IO2 | MAX17320 ALRT (input, interrupt) | | ✅ |
+| 39 | IO1 | PCF8563 INT/alarm (input, interrupt) | Separate from that same INT line's direct hardware path into the power-latch wake-OR (§4.1) — MCU also wants to read it directly once awake | ✅ |
+| 40 | GND | Ground plane | | ✅ |
+| 41 | EPAD | Ground plane | Thermal/ground pad, solder down | ✅ |
 
 ## Open judgment calls (flagging, not blocking)
 
 1. **GPS is UART-only** (no I2C) — simpler, and UART is the standard/expected interface for NMEA/UBX streams. Flag if you wanted I2C instead for some reason.
-2. **I2S MCLK not reserved** — deferred until the actual DAC part is chosen; some I2S DACs don't need it, some do. IO3 or IO39 (both freed by moving their LEDs to the I2C expander, see below) are available for it if needed later.
-3. **Resolved: added a second USB connector for a USB-UART bridge** (CP2102N-class, own port, DTR/RTS auto-reset into EN/IO0), instead of relying solely on native-USB auto-reset-into-bootloader — see § MCU in controller_platform.md for why (native-USB CDC re-enumerates on every reset, and its auto-reset has known version-dependent quirks). BOOT/RESET buttons stay regardless, as the fallback when the bridge isn't plugged in.
-4. **Resolved: TX-active and heartbeat LEDs moved off native GPIOs onto an I2C GPIO expander** (pins 15 and 32, freed) — both are pure "write a register, forget about it" signals with no timing requirement, the textbook case for an expander instead of spending scarce native pins. The WS2812/RGB status LED (pin 33) stays native — it needs a real serial protocol with strict bit timing (RMT peripheral), which a static-register expander can't produce.
+2. **I2S MCLK not reserved** — deferred until the actual DAC part is chosen; some I2S DACs don't need it, some do. IO3 (pin 15, still genuinely spare) is available for it if needed later — IO39 is no longer a candidate, see item 6.
+3. **Resolved: added a second USB connector for a USB-UART bridge** (CH340C, own port, DTR/RTS auto-reset into EN/IO0), instead of relying solely on native-USB auto-reset-into-bootloader — see § MCU in controller_platform.md for why (native-USB CDC re-enumerates on every reset, and its auto-reset has known version-dependent quirks). BOOT/RESET buttons stay regardless, as the fallback when the bridge isn't plugged in.
+4. **Partially resolved: an I2C GPIO expander (PCA9555PWR, `0x20`) is now placed and wired** — but its actual role landed differently than originally planned. The LEDs behind it (4x, on `IO1_0`–`IO1_3`) and buttons (4x onboard + 4x external JST breakouts, on `IO0_x`) are wired as **generic-purpose I/O**, not specifically assigned to "TX-active" and "heartbeat" roles in the schematic — that mapping is now a firmware/config decision, not a hardware one. **The WS2812/RGB status LED (pin 33, D4) is now placed and wired** — it needed a real serial protocol with strict bit timing (RMT peripheral), which a static-register expander can't produce, so it stayed on its own native GPIO as planned.
 5. **`IO42` was incorrectly listed as spare** in an earlier pass of this doc — it's actually already wired to `IO_IN_ON_BATT`, added after this table was first written and never back-filled here. Caught by cross-checking the live schematic rather than trusting this doc; worth remembering that this table can drift out of sync with the actual `.kicad_sch` files and should be spot-checked, not assumed current.
+6. **`IO39` was also incorrectly listed as spare**, same root cause as item 5 — live schematic trace shows it's wired to the PCA9555's own `INT` output (`PERIPH_IO_INT`), not freed for a heartbeat LED (see the pin table, pin 32). Only **IO3 (pin 15)** is actually spare right now.
 
-34 of 36 available GPIOs assigned; **IO3 (pin 15) and IO39 (pin 32) are genuinely spare** — freed by moving the TX-active and heartbeat LEDs to an I2C GPIO expander — headroom for whatever comes up during layout/bring-up.
+35 of 36 available GPIOs assigned a purpose; **IO3 (pin 15) is the only pin genuinely spare** — headroom for whatever comes up during layout/bring-up. Of those 35, cross-checking the live schematic (not just this doc) shows about half are actually wired today — see the **Wired** column in the table above for the pin-by-pin breakdown; the rest (SA818S UART/PTT, GPS, I2S audio, forward-power ADC/comparator, IO38 power-off) are still planning-only reservations.

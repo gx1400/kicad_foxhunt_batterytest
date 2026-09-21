@@ -21,13 +21,22 @@ Value/MPN/Manufacturer mismatches found against real LCSC data** across every pa
 ## Open items
 
 - [ ] **Re-run the full audit** (`_agent_tasks/bom_property_audit.md`) against the current
-  component set — the VRAW soft-latch and PCF8563 RTC circuits added ~15 new real parts
-  since the last formal pass (Q5/Q8 AO3407A, Q6/Q7 BSS138, D2/D3 Nexperia BAS116LT1G, BT3
-  CR2032, U14 PCF8563T/5 `C7440`, Y2 NDK NX3215SA-32.768K-STD-MUA-9 `C519280`, R29–R33,
-  C43, JP24, SW3). Each was individually checked against its real datasheet/LCSC listing
-  during design (not fabricated placeholders), but none have been through this doc's
-  formal tool-assisted audit workflow yet — worth confirming footprint/manufacturer
-  consistency the same way as everything below, rather than trusting ad hoc verification.
+  component set — two more waves of new real parts have landed since the last formal pass:
+  - VRAW soft-latch and PCF8563 RTC circuits (~15 parts): Q5/Q8 AO3407A, Q6/Q7 BSS138,
+    D2/D3 Nexperia BAS116LT1G, BT3 CR2032, U14 PCF8563T/5 `C7440`, Y2 NDK
+    NX3215SA-32.768K-STD-MUA-9 `C519280`, R29–R33, C43, JP24, SW3.
+  - Expansion-IO section (~20 parts): U15 PCA9555PWR `C2864778`, U16 CAT24C32YI-GT3
+    `C94264`, D7–D10 Kingbright LEDs (`C5569446`/`C5366382`/`C5879058`/`C5588998`),
+    R34–R42, SW4/SW7–SW10, J4–J7, JP27, C46–C49, C51.
+  - Also re-verify U9/U12 now carry TI `LM1117IMPX-3.3/NOPB` (`C23984`) — swapped from
+    AMS1117-3.3 since the last audit pass.
+  - D4 (WS2812B-B/W, Worldsemi, `C114586`) and its local bypass cap C52, on
+    `mcu-esp32.kicad_sch`.
+
+  Each was individually checked against its real datasheet/LCSC listing during design (not
+  fabricated placeholders), but none have been through this doc's formal tool-assisted
+  audit workflow yet — worth confirming footprint/manufacturer consistency the same way as
+  everything below, rather than trusting ad hoc verification.
 
 ## Resolved since last pass (2026-09-19)
 

@@ -38,7 +38,7 @@ Stage 1 (pre-regulation) │                     [replaces the 2× LM74610 pair]
 
 Stage 2 (post-regulation, 5V rail)          Stage 3 (post-regulation, 3.3V rail)
   IN1 (priority) ── BATT_5V_REG                IN1 (priority) ── BATT_3.3V_REG
-  IN2 ────────────── USB_5V (raw VBUS,          IN2 ────────────── USB_3.3V (AMS1117-3.3
+  IN2 ────────────── USB_5V (raw VBUS,          IN2 ────────────── USB_3.3V (LM1117-3.3
                       via CH334R hub)                              on the USB-C sheet)
   OUT ── SYSTEM_5V                              OUT ── SYSTEM_3.3V
   ST ── (see detect combiner below)             ST ── (see detect combiner below)

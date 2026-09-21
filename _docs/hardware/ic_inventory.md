@@ -21,16 +21,21 @@ function, a good call).
 | Logic AND gate (latch wake-OR support) | 1 | TI | SN74LVC1G08DBVR | SOT-23-5 | `C7666` | $0.049 (10+; MOQ 10) | 88,180 | U4 |
 | Buck converter, 5V/3.3V pre-regulation | 2 | TI | TPS563201DDCR | SOT-23-6 | `C116592` | $0.063 (10+; MOQ 10) | 73,660 | U6, U7 |
 | LDO, 5V rail cleanup | 1 | HANSCHIP Semiconductor | LM1085IS-5.0RG | TO-263-3 | `C5145336` | $0.30 (1pc) | 980 | U8 |
-| LDO, 3.3V rail cleanup + USB-side 3.3V | 2 | Advanced Monolithic Systems | AMS1117-3.3 | SOT-223-3 | `C6186` | $0.22 (5pc, MOQ 5) | 881,175 | U9, U12 |
+| LDO, 3.3V rail cleanup + USB-side 3.3V | 2 | TI | LM1117IMPX-3.3/NOPB | SOT-223-3 | `C23984` | $0.134 (1pc) | in stock | U9, U12 |
 | MCU module | 1 | Espressif | ESP32-S3-WROOM-1-N8R8 | RF module | `C2913201` | $5.04 (1pc) | 722 | U10 |
 | USB hub | 1 | WCH | CH334R | QSOP-16 | `C4154405` | $0.57 (1pc) | 19,833 | U11 |
 | USB-UART bridge | 1 | WCH | CH340C | SOIC-16 | `C84681` | $0.59 (1pc) | 106,811 | U13 |
 | RTC | 1 | NXP | PCF8563T/5,518 | SOIC-8 | `C7440` | $0.63 (1pc) | 13,425 | U14 |
+| I2C GPIO expander | 1 | TI | PCA9555PWR | TSSOP-24 | `C2864778` | $0.73 (1pc) | 14,239 | U15 |
+| I2C EEPROM (config storage) | 1 | onsemi | CAT24C32YI-GT3 | SOIC/TSSOP-8 | `C94264` | $0.187 (1pc) | in stock | U16 |
+| RGB status LED (WS2812-class) | 1 | Worldsemi | WS2812B-B/W | SMD5050-4P | `C114586` | $0.1042 (1pc) | 351,335 | D4 |
 
 **Flag on the LDO (U8):** HANSCHIP Semiconductor is a smaller Chinese manufacturer, not in
 the same reputation tier as the rest of this list — an existing pick from before this
 inventory pass, not something chosen against the stated brand preference. See the LDO —
-5V Rail section below for a same-price-tier, reputable-brand swap option.
+5V Rail section below for a same-price-tier, reputable-brand swap option. (The equivalent
+flag on the 3.3V LDO has since been resolved — swapped from AMS1117-3.3 to TI
+LM1117IMPX-3.3/NOPB.)
 
 ## Planned (chosen part, not yet placed)
 
@@ -39,8 +44,6 @@ inventory pass, not something chosen against the stated brand preference. See th
 | GPS/GNSS module | 1 | u-blox | MAX-M10S-00B | Module | `C4153167` | $9.81 (1pc) | 763 | Already the specifically-named part in `controller_platform.md`. |
 | VHF RF transceiver module | 1 (DNP) | G-NiceRF | SA818S-V | Module | — | — | — | **DNP — sourced outside LCSC**, not part of the JLCPCB assembly BOM. See below. |
 | I2S audio DAC | 1 | TI | PCM5102APWR | TSSOP-20 | `C107671` | $0.83 (1pc) | in stock | Chosen over NXP UDA1334ATS/N2,118 (~$0.70, also fine) for community/example-code support. |
-| I2C GPIO expander (status LEDs) | 1 | TI | PCA9555PWR | TSSOP-24 | `C2864778` | $0.73 (1pc) | 14,239 | Cheaper, better-stocked, and 16-bit vs. NXP PCF8574's 8-bit — clear win. |
-| I2C EEPROM (config storage) | 1 | Microchip | AT24C32D-SSHM-T | SOIC-8 | `C60583` | $0.154 (1pc) | in stock | Already the specifically-named part family; Microchip (ex-Atmel) is the canonical brand. |
 | Dual retriggerable monostable (TX-safety timeout) | 1 | Nexperia | 74HC123D,653 | SOIC-16 | `C5597` | $0.33 (5pc, MOQ 5) | 24,075 | Genuine dual-section part — needed, since one section is reserved for the hold-to-power-off hardware failsafe. |
 | Forward-power fault comparator | 1 | onsemi | LM393DR2G | SOIC-8 | `C7955` | $0.032 (1pc) | 209,190 | Cheapest, best-stocked, and a named-preferred brand — no tradeoff. |
 | PTT-keying optocoupler | 1 | *unconfirmed* | *(PC817-class, single-channel)* | SOP-4/DIP-4 | — | ~$0.02–0.06 | varies | Not finalized — see its own section below. |
@@ -138,13 +141,13 @@ USB-VBUS-derived logic-only 3.3V path.
 
 | | Manufacturer | MPN | Package | LCSC Part # | Price | Stock | Compat. |
 |---|---|---|---|---|---|---|---|
-| **Selected** | **Advanced Monolithic Systems** | **AMS1117-3.3** | **SOT-223-3** | **`C6186`** | **$0.22 (5pc)** | **881,175** | — |
-| Alt. 1 | TI | LM1117IMPX-3.3/NOPB | SOT-223-3 | `C23984` | $0.134 (1pc) | in stock | 6/6 — genuinely pin-to-pin and electrically compatible per TI's own datasheet (same SOT-223 1117-family pinout); cheaper *and* a more reputable brand. Best swap candidate in this whole doc. |
-| Alt. 2 | onsemi | NCP1117ST33T3G | SOT-223-3 | `C26537` | $0.099 (1pc) | in stock | 6/6 — same 1117-family drop-in pinout, cheaper still, onsemi is equally reputable. |
-| Alt. 3 | Richtek | RT9193 | **SOT-23-5** | — | — | — | 1/6 — different, smaller package; not a footprint match despite similar low-dropout function. |
+| **Selected (placed, U9/U12)** | **TI** | **LM1117IMPX-3.3/NOPB** | **SOT-223-3** | **`C23984`** | **$0.134 (1pc)** | **in stock** | — |
+| Former pick | Advanced Monolithic Systems | AMS1117-3.3 | SOT-223-3 | `C6186` | $0.22 (5pc) | 881,175 | 6/6 — genuinely pin-to-pin and electrically compatible with the current pick per TI's own datasheet (same SOT-223 1117-family pinout); kept here since it's still a valid fallback if TI stock ever tightens. |
+| Alt. 1 | onsemi | NCP1117ST33T3G | SOT-223-3 | `C26537` | $0.099 (1pc) | in stock | 6/6 — same 1117-family drop-in pinout, cheaper still, onsemi is equally reputable. |
+| Alt. 2 | Richtek | RT9193 | **SOT-23-5** | — | — | — | 1/6 — different, smaller package; not a footprint match despite similar low-dropout function. |
 
-**Bottom line:** this is the clearest "should probably swap" in the whole inventory — two
-reputable-brand, cheaper, genuinely pin-compatible options exist.
+**Bottom line:** resolved — swapped from AMS1117-3.3 to TI LM1117IMPX-3.3/NOPB on both
+U9 and U12, cheaper and a more reputable brand with no footprint change.
 
 ## MCU Module
 
@@ -241,31 +244,52 @@ Simple stereo I2S DAC for voice-ID/CW-tone audio, feeding the SA818S/HT MIC path
 | Alt. 1 | NXP | UDA1334ATS/N2,118 | Different package, similar pin-count | `C494494` | $0.70 | in stock | 3/6 — equally reputable brand, cheaper, same core I2S-DAC function — but a different physical package/pinout (not independently confirmed pin-identical), so likely a footprint change even though electrically a straightforward swap. |
 | Alt. 2 | TI | PCM5122 | Different, larger pinout | — | — | — | 2/6 — same family, more features (headphone amp, etc.) this design doesn't need, different pinout — not a drop-in. |
 
-## I2C GPIO Expander
+## RGB Status LED (WS2812-class)
 
-Drives the TX-active and heartbeat status LEDs from register writes instead of native
-GPIOs (see `esp32s3_pinout.md`).
+**Placed (D4).** Single addressable RGB LED, native GPIO (RMT peripheral, IO40/pin 33 —
+see `esp32s3_pinout.md`), not behind the I2C expander since it needs real serial-protocol
+bit timing a static register can't produce. `DOUT` explicitly no-connect flagged (only LED
+in the chain). Encodes GPS search/lock, fault conditions, and found-log mode active (see
+`controller_platform.md` § Status indication).
 
 | | Manufacturer | MPN | Package | LCSC Part # | Price | Stock | Compat. |
 |---|---|---|---|---|---|---|---|
-| **Selected** | **TI** | **PCA9555PWR** | **TSSOP-24** | **`C2864778`** | **$0.73** | **14,239** | — |
+| **Selected (placed, D4)** | **Worldsemi** | **WS2812B-B/W** | **SMD5050-4P** | **`C114586`** | **$0.1042** | **351,335** | — |
+| Alt. 1 | XINGLIGHT | XL-5050RGBC-2812B | SMD5050-4P | `C2843785` | $0.059 (10+) | 627,390 | 6/6 — same footprint and the same WS2812B protocol/timing (industry-standard clone), cheaper and even better-stocked — but Worldsemi is the originating manufacturer of the WS2812B part itself, so it's the more canonical pick even though this clone is a genuine drop-in. |
+| Alt. 2 | Worldsemi | WS2812B-V5/W | SMD5050-4P | `C2874885` | $0.0566 | 247,045 | 6/6 — same manufacturer, newer die revision (V5), same footprint/protocol — a slightly cheaper same-brand option if the -B/W's exact bin/revision doesn't matter. |
+
+**Bottom line:** Worldsemi WS2812B-B/W is the standard, most widely-supported pick for
+this exact part family (matches the huge base of existing WS2812B firmware
+libraries/timing tables); XINGLIGHT's clone is a legitimate cost-down if stock/price ever
+matters more than sticking with the originating manufacturer.
+
+## I2C GPIO Expander
+
+**Placed (U15).** Drives 4 general-purpose LEDs and 8 general-purpose switch inputs from
+register writes instead of native GPIOs (see `esp32s3_pinout.md` and `controller_platform.md`
+§ Status indication — the original TX-active/heartbeat-specific plan turned into a
+general-purpose expansion block; role assignment is now firmware's job).
+
+| | Manufacturer | MPN | Package | LCSC Part # | Price | Stock | Compat. |
+|---|---|---|---|---|---|---|---|
+| **Selected (placed, U15)** | **TI** | **PCA9555PWR** | **TSSOP-24** | **`C2864778`** | **$0.73** | **14,239** | — |
 | Alt. 1 | NXP | PCF8574T/3,518 | **SOIC-8**, 8-bit | `C7605` | $1.17 | 2,991 | 2/6 — half the I/O (8-bit vs. 16-bit), smaller/different package, pricier, and capped at 100kHz I2C — strictly worse on every axis for this use case. |
 | Alt. 2 | TI | PCA9535RGER | Different package (VQFN) | `C2873080` | *not priced this pass* | — | 4/6 — same 16-bit register model and TI brand, functionally near-identical to PCA9555 (minor pull-up-config register differences), but a different QFN footprint. |
 
 ## I2C EEPROM
 
-32Kbit config storage — schedule, frequency, TX power, tone settings — independent of
-the SD card.
+**Placed (U16).** 32Kbit config storage — schedule, frequency, TX power, tone settings —
+independent of the SD card.
 
 | | Manufacturer | MPN | Package | LCSC Part # | Price | Stock | Compat. |
 |---|---|---|---|---|---|---|---|
-| **Selected** | **Microchip** | **AT24C32D-SSHM-T** | **SOIC-8** | **`C60583`** | **$0.154** | in stock | — |
-| Alt. 1 | onsemi | CAT24C32YI-GT3 | SOIC-8 | `C94264` | $0.187 | in stock | 6/6 — the 24Cxx family pinout is an industry standard across every manufacturer; this is about as true a drop-in as exists in this whole document. |
+| **Selected (placed, U16)** | **onsemi** | **CAT24C32YI-GT3** | **TSSOP-8** | **`C94264`** | **$0.187** | in stock | — |
+| Alt. 1 | Microchip | AT24C32D-SSHM-T | SOIC-8 | `C60583` | $0.154 | in stock | 6/6 — originally-named part in the docs; the 24Cxx family pinout is an industry standard across every manufacturer, so this is a true drop-in either direction. |
 | Alt. 2 | STMicroelectronics | M24C32-FMN6TP | SOIC-8 | `C2061453` | $0.079 | in stock | 6/6 — same standard pinout, cheapest of the three, equally reputable brand. |
 
-**Bottom line:** all three are genuinely interchangeable; ST's is the cheapest if cost is
-the deciding factor, otherwise the Microchip pick (already the specifically-named part in
-the docs) is fine as-is.
+**Bottom line:** all three are genuinely interchangeable; the onsemi part is the one
+actually placed on the board. ST's is the cheapest if cost ever becomes the deciding
+factor.
 
 ## Dual Retriggerable Monostable (TX-safety timeout)
 
