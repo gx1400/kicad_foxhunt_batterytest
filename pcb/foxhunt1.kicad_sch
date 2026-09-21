@@ -27,6 +27,10 @@
 		(at 223.52 53.34)
 		(uuid "5303a52f-63ee-43b5-9d53-029b95d98961")
 	)
+	(no_connect
+		(at 223.52 55.88)
+		(uuid "8ab1fdf1-05f5-48f4-9e8e-64745e8d5851")
+	)
 	(wire
 		(pts
 			(xy 135.89 60.96) (xy 166.37 60.96)
@@ -86,6 +90,16 @@
 			(type default)
 		)
 		(uuid "17fa15e6-1e08-43b1-a10f-bdece551ed18")
+	)
+	(wire
+		(pts
+			(xy 223.52 55.88) (xy 227.33 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18cb648b-6ade-4d67-a542-b6d26b6f6410")
 	)
 	(wire
 		(pts
@@ -206,6 +220,16 @@
 			(type default)
 		)
 		(uuid "84f1da2c-71ef-48d0-a13f-63a885daafa9")
+	)
+	(wire
+		(pts
+			(xy 210.82 58.42) (xy 227.33 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93d08fdd-05b5-4254-9bbc-e9e7813b7388")
 	)
 	(wire
 		(pts
@@ -797,6 +821,16 @@
 				(justify right)
 			)
 		)
+		(pin "MCU_OUT_PTT" output
+			(at 210.82 58.42 0)
+			(uuid "578dc414-23d1-4813-b8d5-5c0ce9c08926")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5"
@@ -886,6 +920,26 @@
 		(pin "I2S_XSMT" input
 			(at 227.33 45.72 180)
 			(uuid "0940c769-a16c-4604-8710-68aa670a57e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_MIC_PTT" output
+			(at 227.33 55.88 180)
+			(uuid "faf564ad-7dbc-4d23-9c09-329e4003cae3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MCU_OUT_PTT" input
+			(at 227.33 58.42 180)
+			(uuid "7ff98b5a-2558-4780-bc60-a695a0790f4c")
 			(effects
 				(font
 					(size 1.27 1.27)

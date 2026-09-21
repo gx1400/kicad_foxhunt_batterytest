@@ -2963,6 +2963,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 91.44) (xy 100.33 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75509f5f-35e7-4c3d-adea-fd4bb287b59b")
+	)
+	(wire
+		(pts
 			(xy 264.16 127) (xy 264.16 135.89)
 		)
 		(stroke
@@ -3721,6 +3731,17 @@
 			(justify left)
 		)
 		(uuid "ef115524-66a8-4281-9b9d-2b283fe2dc6f")
+	)
+	(hierarchical_label "MCU_OUT_PTT"
+		(shape output)
+		(at 90.17 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f95249c2-fc26-49b8-a9fb-d0820548d80c")
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
