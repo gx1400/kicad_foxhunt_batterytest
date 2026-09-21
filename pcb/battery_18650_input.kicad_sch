@@ -4849,7 +4849,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5339083.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/MPD/BH-18650-PC.pdf"
 			(at 72.39 91.186 90)
 			(hide yes)
 			(show_name no)
@@ -6172,7 +6172,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5339083.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/MPD/BH-18650-PC.pdf"
 			(at 72.39 103.886 90)
 			(hide yes)
 			(show_name no)

@@ -4530,7 +4530,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C862232.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RT0603BRE075KL.pdf"
 			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -4731,7 +4731,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C862232.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RT0603BRE075KL.pdf"
 			(at 97.79 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4936,7 +4936,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C85973.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM1885C1H103JA01D.pdf"
 			(at 138.43 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -5529,7 +5529,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C137745.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0603FR-0730K1L.pdf"
 			(at 129.54 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -6490,7 +6490,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/AOS/AO3407A.pdf"
 			(at 172.72 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -6825,7 +6825,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C85973.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM1885C1H103JA01D.pdf"
 			(at 120.65 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -7183,7 +7183,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/TI/SN74LVC1G08DBVR.pdf"
 			(at 207.01 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7711,7 +7711,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C22912.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/UNI-ROYAL/0603WAF2372T5E.pdf"
 			(at 107.95 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8038,7 +8038,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C137745.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0603FR-0730K1L.pdf"
 			(at 151.13 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8474,7 +8474,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C85973.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM1885C1H103JA01D.pdf"
 			(at 142.24 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9884,7 +9884,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C862291.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RT0603BRE0780K6L.pdf"
 			(at 147.32 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -10085,7 +10085,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C22912.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/UNI-ROYAL/0603WAF2372T5E.pdf"
 			(at 104.14 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -10534,7 +10534,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C83916.pdf"
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Korean_Hroparts_Elec/K2-1102SP-A4SC-04.pdf"
 			(at 215.9 60.96 0)
 			(hide yes)
 			(show_name no)
