@@ -780,7 +780,7 @@
         "uuid": "8399ba4b-9428-480d-8b65-76cf154b97a5"
       }
     ],
-    "used_designators": "JP1-41,TP1-8,R1-53,J1-11,L1-3,L5-8,RV1,Y1-2,#PWR1-159,SW1-10,C1-68,Card1,D1-12,U1-18,F1-7,Q1-13,BT1-6,#FLG1-42,TH1-3",
+    "used_designators": "D1-12,U1-19,F1-7,Q1-13,J1-12,TH1-3,#FLG1-42,SW1-10,C1-70,Card1,R1-54,TP1-8,JP1-41,BT1-6,#PWR1-167,Y1-2,RV1,L1-3,L5-8",
     "variants": []
   },
   "sheets": [
@@ -823,6 +823,10 @@
     [
       "0c171942-64eb-4f5d-b37e-356ed65ec40c",
       "GPS"
+    ],
+    [
+      "249b6a5a-61a6-4c99-988d-ce75c47d35df",
+      "SA818S-V"
     ]
   ],
   "text_variables": {},

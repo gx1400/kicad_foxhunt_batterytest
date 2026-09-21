@@ -2003,6 +2003,127 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 137.16 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27734c66-0f37-48ab-9f97-f6087e314969")
 	)
 	(junction
 		(at 181.61 88.9)
@@ -2244,7 +2365,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 49.53) (xy 128.27 49.53)
+			(xy 146.05 49.53) (xy 137.16 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2421,6 +2542,16 @@
 			(type default)
 		)
 		(uuid "c59a6bd9-a656-4406-b446-92ba6b7d390d")
+	)
+	(wire
+		(pts
+			(xy 137.16 49.53) (xy 128.27 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbe5eed8-5b07-4d9c-ac9e-48992052b54c")
 	)
 	(wire
 		(pts
@@ -3567,6 +3698,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 137.16 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5994c765-f27e-4574-82df-a9c57bc73cfb")
+		(property "Reference" "#FLG022"
+			(at 137.16 47.625 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 137.16 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 137.16 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4ee0c9d-fd82-49f4-8632-1f532ea08327")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/0c171942-64eb-4f5d-b37e-356ed65ec40c"
+					(reference "#FLG022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "kicad_gx_library:BAS116LT1G")
 		(at 156.21 49.53 180)
 		(unit 1)
@@ -4109,7 +4318,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132134_Vertical"
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
 			(at 196.85 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4153,7 +4362,7 @@
 				)
 			)
 		)
-		(property "MPN" "132134"
+		(property "MPN" "132289"
 			(at 196.85 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4164,7 +4373,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C3174425"
+		(property "LCSC Part #" "C3172723"
 			(at 196.85 88.9 0)
 			(hide yes)
 			(show_name no)
