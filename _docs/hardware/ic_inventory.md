@@ -221,18 +221,28 @@ the alternates are strictly worse on at least two axes each.
 The onboard SA818S footprint (and the shared audio/PTT path also serving an external HT
 jack) — see `controller_platform.md`.
 
-**Status: DNP.** Confirmed not sourced through LCSC — this footprint won't be part of the
-JLCPCB assembly BOM. When this footprint is added to the schematic, place it with
-`(dnp yes)` from the start rather than defaulting to populated and fixing it later. No
-LCSC part number, price, or stock tracked here since it's out of scope for that supply
-chain; source directly from G-NiceRF or another channel outside this project's normal
-LCSC/JLCPCB flow.
+**Status: DNP, part locked in — 5x already purchased.** Confirmed not sourced through
+LCSC — this footprint won't be part of the JLCPCB assembly BOM. When this footprint is
+added to the schematic, place it with `(dnp yes)` from the start rather than defaulting
+to populated and fixing it later.
+
+**Re-confirmed 2026-09-21** after a fresh (bias-free) lifecycle/availability review across
+SA818S/SA818Pro/SA828/SA828Pro/SA868S — SA818S remained the right pick on its own merits
+(lowest current draw of the viable options, richest hobbyist tooling ecosystem, cheapest,
+and the architecture already has its own MCU driving the module over UART, so SA828's
+onboard multi-channel memory would be unused capability paid for at ~2x cost and higher
+current draw). Full comparison in this session's conversation history if revisited later.
+
+**Purchased**: 5x, from G-NiceRF's own official Tindie store
+(tindie.com/products/nicerf/sa818s-walkie-talkie-module-with-rda1846s-chip/), VHF variant
+(134–174MHz, matching this project's 2m fox-hunting band), $8.50/unit, real manufacturer-
+direct source (35 reviews, 1,632 orders on that listing at time of purchase).
 
 | | Manufacturer | MPN | Package | Notes |
 |---|---|---|---|---|
-| **Selected (DNP)** | **G-NiceRF** | **SA818S-V** | **Module** | Not sourced via LCSC — see status note above. |
+| **Selected (DNP), 5x purchased** | **G-NiceRF** | **SA818S-V** | **Module** | Not sourced via LCSC — see status note above. Real datasheet specs: 500mW/1W selectable output, 3.3–5.5V, ≤1µA sleep / 60mA RX / 450–750mA TX current, -124dBm sensitivity. |
 
-No alternates researched — moot while this stays DNP and outside the LCSC supply chain.
+No alternates researched further — decision re-confirmed and closed, see note above.
 
 ## I2S Audio DAC
 

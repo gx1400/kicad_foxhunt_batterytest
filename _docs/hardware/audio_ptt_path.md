@@ -105,18 +105,37 @@ divider ratio is a TBD depending on the DAC's actual output swing at whatever di
 gain firmware uses; needs bench-tuning against a real deviation measurement, not just a
 datasheet-derived guess.
 
-**Switching between SA818S and the external HT jack**: per `controller_platform.md`, this
-is meant to be "switchable/jumpered between the two," matching this project's established
-solder-jumper bench-isolation convention (JP-prefixed jumpers elsewhere). Planned
-approach: the DAC's filtered/attenuated output feeds a jumper (JPxx) that selects which
-destination actually receives it — not a permanent hard split to both, since driving two
-loads with one attenuator network would need the attenuator sized for the combined load
-and could cross-load the inactive path. Exact jumper topology is still open — worth
-deciding before layout whether this should be a simple 2-position jumper (SA818S sourced
-locally, choose the 3.5mm jack, or a Off leaf) or something the PCA9555 expander could
-switch under firmware control instead of a manual jumper (worth considering since the
-expander's spare I/O exists — see `controller_platform.md` § Status indication for what's
-already committed there).
+**Switching between SA818S and the external HT jack — superseded plan, 2026-09-21.**
+Earlier framing (jumper vs. PCA9555-controlled switch) is replaced by a simpler mechanical
+approach using the external jack itself:
+
+**External jack connector plan.** One standard 3.5mm TRS/TRRS jack (not the K1 module's own
+2-jack 3.5mm+2.5mm split — that split exists on the *radio* side; off-the-shelf "K1 to
+3.5mm" adapter cables, e.g. the BTECH one sold for Baofeng/Kenwood-style radios, bridge
+between a standard PC/phone-style 3.5mm plug and the radio's actual K1 socket, so this
+board only needs the standard-headset side). Real K1 pinout for reference (Wildtalk's
+documented reference; clone radios vary): radio's own 3.5mm jack is Tip=PTT (short to
+ground to transmit), Ring=Mic (radio provides phantom power), Sleeve=5V tap; radio's 2.5mm
+jack is Ground/Program/Speaker-out — not replicated here since this design doesn't need the
+speaker/program functions.
+
+**Planned wiring**: Tip = attenuated mic-level audio (shared with SA818S `MIC_IN`), Ring =
+PTT (shared with SA818S `PTT`), Sleeve = `GND`.
+
+**Switching mechanism: a jack with two independent normally-closed switch contacts**, not
+a jumper. Plugging in disconnects the SA818S from *both* the audio feed and the PTT feed
+simultaneously (one NC contact per conductor) — important because PTT is otherwise wired
+in parallel to both destinations, and without this, keying PTT while something's plugged in
+would transmit on both the SA818S and the external radio at once (harmless if the SA818S
+has no antenna connected, a real mutual-interference risk if it does). Look for a switched
+3.5mm jack part (e.g. Cliff/CUI parts marketed with "SW"/detect contacts) with enough
+independent switch poles for this. PTT is a direct short-to-ground per the real K1 spec —
+compatible with the already-planned optocoupler/relay-style PTT output (not a raw GPIO
+logic level), so the same PTT-keying hardware likely drives both destinations unmodified.
+
+**Open assumption**: routing the SA818S-tuned attenuator output to an arbitrary external
+radio assumes similar mic sensitivity — reasonable for most cheap HTs (similar electret-
+level inputs) but not verified against a specific target radio.
 
 **RX audio (the other direction)**: SA818S `AF_OUT` (pin 3) — typical 700mV amplitude,
 200Ω output impedance per its own datasheet — feeds an external amplifier (SA818S's
@@ -180,8 +199,9 @@ Real, open-source references worth reviewing before finalizing values:
   `OUTL` → `MIC_IN` — values worked out, not yet placed in the schematic. Exact trimmer
   setting needs a real bench deviation measurement once SA818S is placed, not just the
   calculated nominal target.
-- Switching mechanism between SA818S and external-HT jack — manual jumper vs.
-  PCA9555-controlled — for both the audio path and the PTT path.
+- External HT jack: pick a real switched 3.5mm TRS/TRRS part (two independent NC contacts,
+  one per audio/PTT conductor — see § 2) and verify it against a real datasheet, same rigor
+  as this project's other connector choices. Not yet sourced.
 - Confirm which ESP32-S3 GPIO drives `I2S_XSMT` (wired as a live net, not hard-tied —
   tie-off decision is resolved, just needs the specific pin documented here and in
   `esp32s3_pinout.md`).
