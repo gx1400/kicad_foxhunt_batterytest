@@ -4902,7 +4902,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 92.71 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -5139,7 +5139,7 @@
 				)
 			)
 		)
-		(property "Description" "PTC RESET FUSE 16V 500mA 0805"
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
 			(at 55.88 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -5535,7 +5535,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "TRANS NPN 40V 600mA SOT-23"
+		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
 			(at 119.38 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -5686,7 +5686,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 10uF 25V X7R 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 97.79 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -5866,7 +5866,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm"
+		(property "Footprint" "PCM_SparkFun-Clock:Crystal_SMD_5.0x3.2mm"
 			(at 93.98 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -5934,6 +5934,17 @@
 		)
 		(property "Package" "SMD2520-4P"
 			(at 93.98 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PROD_ID" "XTAL-"
+			(at 93.98 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6013,7 +6024,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 213.36 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -6341,7 +6352,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 247.65 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6443,7 +6454,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+		(property "Footprint" "PCM_SparkFun-Semiconductor-Standard:SOT-223-3_TabPin2"
 			(at 237.49 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -6454,7 +6465,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C23984.pdf"
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf"
 			(at 237.49 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6465,7 +6476,7 @@
 				)
 			)
 		)
-		(property "Description" "800-mA Low-Dropout Linear Regulator"
+		(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, SOT-223"
 			(at 237.49 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6532,6 +6543,17 @@
 		)
 		(property "IMax" "800mA"
 			(at 237.49 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PROD_ID" "IC-26292"
+			(at 237.49 48.26 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7255,7 +7277,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 1uF 50V X7R 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 135.89 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -7381,7 +7403,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 1uF 50V X7R 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 66.04 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7505,7 +7527,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 124.46 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -7787,7 +7809,7 @@
 				)
 			)
 		)
-		(property "Description" "SWITCH TACTILE SPST 250gf SMD"
+		(property "Description" "Push button switch, generic, two pins"
 			(at 114.3 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -7913,7 +7935,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 223.52 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8837,7 +8859,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 260.35 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8964,7 +8986,7 @@
 				)
 			)
 		)
-		(property "Description" "4-port USB HUB controller chip"
+		(property "Description" "USB HUB controller, QSOP-16"
 			(at 119.38 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -9135,7 +9157,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "TRANS NPN 40V 600mA SOT-23"
+		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
 			(at 119.38 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -9285,7 +9307,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 231.14 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -9566,7 +9588,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 41.91 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -9842,7 +9864,7 @@
 				)
 			)
 		)
-		(property "Description" "SWITCH TACTILE SPST 250gf SMD"
+		(property "Description" "Push button switch, generic, two pins"
 			(at 52.07 140.97 0)
 			(hide yes)
 			(show_name no)

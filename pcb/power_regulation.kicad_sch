@@ -4140,7 +4140,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 22uF 16V X7R 1206"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 149.86 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -4266,7 +4266,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
+		(property "Description" "Resistor, US symbol"
 			(at 107.95 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -4547,7 +4547,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 76.8kΩ ±0.1% 100mW 0603"
+		(property "Description" "Resistor, US symbol"
 			(at 121.92 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -5429,7 +5429,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 218.44 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -5555,7 +5555,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 22uF 16V X7R 1206"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 165.1 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -5759,7 +5759,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 113.03 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -6009,7 +6009,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
+		(property "Description" "Resistor, US symbol"
 			(at 106.68 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6326,7 +6326,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+		(property "Footprint" "PCM_SparkFun-Semiconductor-Standard:SOT-223-3_TabPin2"
 			(at 208.28 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -6337,7 +6337,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C23984.pdf"
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf"
 			(at 208.28 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -6348,7 +6348,7 @@
 				)
 			)
 		)
-		(property "Description" "800-mA Low-Dropout Linear Regulator"
+		(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, SOT-223"
 			(at 208.28 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -6415,6 +6415,17 @@
 		)
 		(property "IMax" "800mA"
 			(at 208.28 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PROD_ID" "IC-26292"
+			(at 208.28 161.29 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6811,7 +6822,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 38.1 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6937,7 +6948,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 231.14 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -7360,7 +7371,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 10uF 25V X7R 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 67.31 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -7574,7 +7585,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 3.3uH 6A 35mΩ SMD,7.3x6.6mm"
+		(property "Description" "Inductor"
 			(at 138.43 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -7778,7 +7789,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 214.63 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -8060,7 +8071,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 194.31 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8266,7 +8277,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 39.37 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -8380,7 +8391,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/lm1084.pdf"
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1085.pdf"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8391,7 +8402,7 @@
 				)
 			)
 		)
-		(property "Description" "5.5A, 29V linear regulator"
+		(property "Description" "3A 25V Linear Regulator, Fixed Output 5.0V, TO-220/TO-263"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8600,7 +8611,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 114.3 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -9276,7 +9287,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 193.04 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -9478,7 +9489,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 3.3uH 6A 35mΩ SMD,7.3x6.6mm"
+		(property "Description" "Inductor"
 			(at 137.16 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9838,7 +9849,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 10uF 25V X7R 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 55.88 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -9961,7 +9972,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 52.3kΩ ±0.1% 100mW 0603"
+		(property "Description" "Resistor, US symbol"
 			(at 123.19 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10087,7 +10098,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 228.6 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10373,7 +10384,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 22uF 16V X7R 1206"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 163.83 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10499,7 +10510,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 10uF 25V X7R 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 68.58 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -10625,7 +10636,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 10uF 25V X7R 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 54.61 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -10909,7 +10920,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 22uF 16V X7R 1206"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 148.59 76.2 0)
 			(hide yes)
 			(show_name no)

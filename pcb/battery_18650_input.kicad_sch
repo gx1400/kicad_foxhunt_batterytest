@@ -3029,6 +3029,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "R13: intentional GND/GNDREF split for current sensing — do not bridge elsewhere"
+		(exclude_from_sim no)
+		(at 152.4 139.7 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 255 140 0 1)
+			)
+			(justify top)
+		)
+		(uuid "eabee338-7de2-40b8-9200-805403578f5e")
+	)
 	(text_box "BATTS: RBAL4 => IBALMAX = VCELLMAX / (2 x RBAL+ RSWITCH)\nCELL1: RBAL1 => IBALMAX = VCELLMAX / (RBAL+ RSWITCH)\n\nRSWITCH = 9ohm typ\nVCELLMAX = 4.2V for 18650\nIBALMAX = 100mA => 50mA\n\nRBAL1 = 150ohm\nIBALMAX = 26mA\n= 105mW = use 1/4W 0805 minimum\n"
 		(exclude_from_sim no)
 		(at 78.74 130.6078 0)
@@ -4353,11 +4366,6 @@
 		)
 		(uuid "cd03da89-6ad1-4f6d-8e77-8a2e76a82dde")
 	)
-  (text "R13: intentional GND/GNDREF split for current sensing — do not bridge elsewhere"
-    (at 152.4 139.7 0)
-    (effects (font (size 1 1) (italic yes) (color 255 140 0 1)) (justify top))
-    (uuid "eabee338-7de2-40b8-9200-805403578f5e")
-  )
 	(symbol
 		(lib_id "power:GNDREF")
 		(at 180.34 102.87 0)
@@ -4852,7 +4860,7 @@
 				)
 			)
 		)
-		(property "Description" "Battery holder -40℃~+180℃ 18650 Battery Holders, Clips, Contacts RoHS"
+		(property "Description" "Single-cell battery"
 			(at 72.39 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -5594,7 +5602,7 @@
 				)
 			)
 		)
-		(property "Description" "THERMISTOR NTC 10kΩ 3380K 0402"
+		(property "Description" "Thermistor, temperature dependent resistor, US symbol"
 			(at 118.11 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -5720,7 +5728,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 470nF 10V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 194.31 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5846,7 +5854,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 470nF 10V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 208.28 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5972,7 +5980,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 470nF 10V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 180.34 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -6175,7 +6183,7 @@
 				)
 			)
 		)
-		(property "Description" "Battery holder -40℃~+180℃ 18650 Battery Holders, Clips, Contacts RoHS"
+		(property "Description" "Single-cell battery"
 			(at 72.39 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -6457,7 +6465,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 470nF 25V X7R 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 115.57 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6658,7 +6666,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 2.5mΩ ±1% 3W 2512"
+		(property "Description" "Shunt resistor with Kelvin connections, US symbol"
 			(at 152.4 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -6779,7 +6787,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 102.87 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6909,7 +6917,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "MOSFET N-CH 30V SOT-23-3L"
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 			(at 133.35 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -7750,7 +7758,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 1kΩ ±1% 125mW 0805"
+		(property "Description" "Resistor, US symbol"
 			(at 171.45 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -7954,7 +7962,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 113.03 95.25 0)
 			(hide yes)
 			(show_name no)

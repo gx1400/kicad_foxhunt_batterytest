@@ -2134,7 +2134,7 @@
 				)
 			)
 		)
-		(property "Description" "TVS DIODE 18VWM 29.2VC DO-214AC(SMA)"
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 18.0Vr, SMA(DO-214AC)"
 			(at 100.33 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2259,7 +2259,7 @@
 				)
 			)
 		)
-		(property "Description" "Wire-To-Board Connector, Flange, Through"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 57.15 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2463,7 +2463,7 @@
 				)
 			)
 		)
-		(property "Description" "TERM BLADE NON-GEND TIN"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 57.15 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2576,7 +2576,7 @@
 				)
 			)
 		)
-		(property "Description" "FUSEHOLDER, PCB MOUNT, MINI BLADE"
+		(property "Description" "Fuse"
 			(at 91.44 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2780,7 +2780,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF 50V X7R 0603"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 130.81 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2906,7 +2906,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 22uF 16V X7R 1206"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 116.84 96.52 0)
 			(hide yes)
 			(show_name no)
