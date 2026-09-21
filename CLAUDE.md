@@ -92,10 +92,11 @@ there's any chance the GUI reopens the project and re-saves over them.
 ## Design conventions (see README for full rationale)
 
 - **GND vs GNDREF are deliberately separate nets**, bridged only by the current-
-  sense resistor R4 (0.0025Ω shunt, in `battery_18650_input.kicad_sch`). Don't
-  "fix" an apparent GND/GNDREF split — it's intentional (makes the shunt actually
-  measure current instead of being bypassed). Note: R3 in the same sheet is an
-  unrelated 150Ω inter-cell balance resistor — verify by net, not just by
+  sense resistor R13 (0.0025Ω shunt, in `battery_18650_input.kicad_sch` — renumbered
+  from R4 after a re-annotation pass). Don't "fix" an apparent GND/GNDREF split —
+  it's intentional (makes the shunt actually measure current instead of being
+  bypassed). Note: R11 and R12 in the same sheet (also renumbered, were R3) are
+  two unrelated 150Ω inter-cell balance resistors — verify by net, not just by
   reference designator, since these drift after renumbering.
 - **Decoupling caps are placed at the point of use, often past an isolation
   jumper**, not on the literal named rail. An automated "rail X has no

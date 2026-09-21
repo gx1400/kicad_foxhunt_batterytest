@@ -29,6 +29,8 @@ function, a good call).
 | I2C GPIO expander | 1 | TI | PCA9555PWR | TSSOP-24 | `C2864778` | $0.73 (1pc) | 14,239 | U15 |
 | I2C EEPROM (config storage) | 1 | onsemi | CAT24C32YI-GT3 | SOIC/TSSOP-8 | `C94264` | $0.187 (1pc) | in stock | U16 |
 | RGB status LED (WS2812-class) | 1 | Worldsemi | WS2812B-B/W | SMD5050-4P | `C114586` | $0.1042 (1pc) | 351,335 | D4 |
+| GPS/GNSS module | 1 | u-blox | MAX-M10S-00B | Module | `C4153167` | $9.81 (1pc) | 763 | U18 |
+| I2S audio DAC | 1 | TI | PCM5102APWR | TSSOP-20 | `C107671` | $0.83 (1pc) | in stock | U17 |
 
 **Flag on the LDO (U8):** HANSCHIP Semiconductor is a smaller Chinese manufacturer, not in
 the same reputation tier as the rest of this list — an existing pick from before this
@@ -41,9 +43,7 @@ LM1117IMPX-3.3/NOPB.)
 
 | Function | Qty | Manufacturer | MPN | Package | LCSC Part # | LCSC Price (unit) | LCSC Stock | Notes |
 |---|---|---|---|---|---|---|---|---|
-| GPS/GNSS module | 1 | u-blox | MAX-M10S-00B | Module | `C4153167` | $9.81 (1pc) | 763 | Already the specifically-named part in `controller_platform.md`. |
 | VHF RF transceiver module | 1 (DNP) | G-NiceRF | SA818S-V | Module | — | — | — | **DNP — sourced outside LCSC**, not part of the JLCPCB assembly BOM. See below. |
-| I2S audio DAC | 1 | TI | PCM5102APWR | TSSOP-20 | `C107671` | $0.83 (1pc) | in stock | Chosen over NXP UDA1334ATS/N2,118 (~$0.70, also fine) for community/example-code support. |
 | Dual retriggerable monostable (TX-safety timeout) | 1 | Nexperia | 74HC123D,653 | SOIC-16 | `C5597` | $0.33 (5pc, MOQ 5) | 24,075 | Genuine dual-section part — needed, since one section is reserved for the hold-to-power-off hardware failsafe. |
 | Forward-power fault comparator | 1 | onsemi | LM393DR2G | SOIC-8 | `C7955` | $0.032 (1pc) | 209,190 | Cheapest, best-stocked, and a named-preferred brand — no tradeoff. |
 | PTT-keying optocoupler | 1 | *unconfirmed* | *(PC817-class, single-channel)* | SOP-4/DIP-4 | — | ~$0.02–0.06 | varies | Not finalized — see its own section below. |
@@ -205,7 +205,7 @@ I2C real-time clock/calendar, external 32.768kHz crystal, coin-cell-backed.
 
 ## GPS/GNSS Module
 
-Standard-precision GNSS, UART+I2C+PPS, external active antenna via SMA.
+Standard-precision GNSS, UART+PPS (deliberately not I2C — see `gps_path.md` § 2), external active antenna via SMA.
 
 | | Manufacturer | MPN | Package | LCSC Part # | Price | Stock | Compat. |
 |---|---|---|---|---|---|---|---|

@@ -11,7 +11,7 @@
   and then Power Regulation.
 - Same TPS2121 part (in a separate VCOMP-mode instance per rail) is reused downstream for
   USB-vs-battery priority muxing on the regulated 5V/3.3V rails — see
-  [regulation.md](regulation.md).
+  [usb_battery_power_mux.md](usb_battery_power_mux.md).
 - Extensive solder-jumper isolation points throughout this section and the regulation
   stages, letting each stage — battery branch, 12V branch, buck input, buck-to-LDO
   handoff — be bench-tested independently before trusting the full chain.

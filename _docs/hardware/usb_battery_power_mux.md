@@ -1,8 +1,10 @@
-# Battery/USB Power Mux (TPS2121) — Planning
+# Battery/USB Power Mux (TPS2121) — Implemented
 
-**Status: planning only, not yet in `.kicad_sch`.** Supersedes the LM74610-based combining
-described in [power_input_combining.md](power_input_combining.md) once implemented — that doc
-still reflects the current as-built schematic.
+**Status: implemented.** All three TPS2121s are placed and wired in `power.kicad_sch`:
+`U3` (Stage 1, VRAW combining), `U2` (Stage 2, 5V rail), `U1` (Stage 3, 3.3V rail). The
+`ST`-combiner AND gate is also placed: `U4` (74LVC1G08). See
+[power_input_combining.md](power_input_combining.md) for Stage 1's own write-up (that doc
+already reflects the current as-built schematic).
 
 ## Why replace the LM74610 pair
 
@@ -79,30 +81,20 @@ DETECT_GPIO = ST_5V AND ST_3V3
 ```
 
 Both `ST` outputs are push-pull CMOS (not open-drain), so they can't just be wired together —
-an actual gate is needed. Two options, both trivial:
+an actual gate is needed. Two options were considered:
 
-1. **Diode-AND (passive, no IC)** — a pull-up resistor (e.g. 10k to +3.3V) on the GPIO node,
-   with one small-signal diode from each `ST` pin into that node (anode at `ST`, cathode at
-   the node). If either `ST` goes low, its diode pulls the node down (~0.3–0.7V, reads as
-   logic low); the node only floats high if both diodes are reverse-biased (both `ST` high).
-   Cheapest option — a dual-diode package (e.g. BAT54C, already a known-good part family in
-   this design per the CH335 PGANG reference circuit) covers both diodes in one SOT-23.
-2. **74LVC1G08 (single 2-input AND gate, SOT-23-5)** — cleaner logic levels, marginally more
-   parts (the gate + its own decoupling cap) for a few more cents.
-
-Leaning toward the diode-AND for consistency with the project's existing preference for
-passive solutions over adding logic ICs where a couple of diodes will do — final call pending
-LCSC part selection for the dual-diode package and pull-up value.
+1. Diode-AND (passive, no IC) — a pull-up resistor with one small-signal diode from each `ST`
+   pin into the node. Cheapest option, but not what was built.
+2. **74LVC1G08 (single 2-input AND gate, SOT-23-5)** — cleaner logic levels. **This is the
+   one built**: placed as `U4` in `power.kicad_sch`.
 
 ## Open items
 
 - [ ] Resistor divider values for Stage 1's VCOMP comparator (if any biasing is needed beyond
       the default) and Stages 2/3's `PR1` battery-priority biasing — not yet calculated.
-- [ ] Confirm actual available GPIO for `DETECT_GPIO` against the current ESP32-S3 pin budget.
-- [ ] Pick the dual-diode part (or 74LVC1G08) and pull-up resistor value for the detect
-      combiner.
+- [ ] Confirm actual available GPIO for `DETECT_GPIO` against the current ESP32-S3 pin budget
+      (per `esp32s3_pinout.md`, no GPIOs are currently spare — this will need to reclaim one).
 - [ ] `ILM` current-limit resistor sizing for all three TPS2121s once real rail currents
       (SA818S TX current draw at full vs. throttled power) are known.
-- [ ] Once implemented in `.kicad_sch`, retire/rewrite
-      [power_input_combining.md](power_input_combining.md) and update the flow diagram in
-      [power_architecture.md](power_architecture.md) to show three sources and the mux stages.
+- [ ] Update the flow diagram in [power_architecture.md](power_architecture.md) to show
+      three sources and the mux stages, if it doesn't already.

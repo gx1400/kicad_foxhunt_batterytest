@@ -195,10 +195,9 @@ Real, open-source references worth reviewing before finalizing values:
 
 ## Open items
 
-- Attenuator network (`R_top`/trimmer/floor resistor + DC-block cap, § 2) for
-  `OUTL` → `MIC_IN` — values worked out, not yet placed in the schematic. Exact trimmer
-  setting needs a real bench deviation measurement once SA818S is placed, not just the
-  calculated nominal target.
+- Attenuator network (`R49`/`RV1`/`R50`/`C65`, § 2) for `OUTL` → `MIC_IN` — placed in
+  `audio.kicad_sch`. Exact trimmer setting still needs a real bench deviation measurement
+  once SA818S is placed, not just the calculated nominal target.
 - External HT jack: pick a real switched 3.5mm TRS/TRRS part (two independent NC contacts,
   one per audio/PTT conductor — see § 2) and verify it against a real datasheet, same rigor
   as this project's other connector choices. Not yet sourced.

@@ -21,16 +21,20 @@ Two **independent** buck (TPS563201) + linear-LDO cascades, rather than one shar
 
 **Note on LDO output caps:** both LM1085 and LM1117 rely on the output cap's ESR for loop stability (opposite requirement from the buck stage's low-ESR-ceramic-friendly D-CAP2 topology) — a low-ESR ceramic reused from the buck section risks oscillation. Aluminum electrolytics in the ~100–300mΩ ESR range satisfy both LDOs' requirements.
 
-**Planned addition:** optional 200mA test-load jumpers with an in-line DMM measurement header on each LDO output, for bench current verification ahead of populating the real downstream loads.
-- 5V rail: 24.9Ω, 2W
-- 3.3V rail: 16.5Ω, 1W
+**Implemented:** 200mA test-load jumpers with an in-line DMM measurement header on each
+LDO output, for bench current verification ahead of the real downstream loads reaching
+full current draw.
+- 5V rail: `R22`, 24.9Ω, 2W
+- 3.3V rail: `R23`, 16.5Ω, **2W** (corrected — an earlier version of this doc said 1W;
+  the actual placed part is rated 2W, same as the 5V rail's)
 
-## Downstream Loads (planned, not yet on this board)
+## Downstream Loads
 
-| Device | Rail | Typical | Peak |
-|---|---|---|---|
-| SA818S (2m RF module) | 5V | ~60mA RX | ~750mA TX |
-| ESP32-S3-WROOM-1-N8R8 | 3.3V | ~20–80mA | ~300–400mA (radio TX burst) |
-| u-blox MAX-M10S GPS | 3.3V | ~25–45mA | ~50–70mA (acquisition) |
+| Device | Rail | Typical | Peak | Placement status |
+|---|---|---|---|---|
+| SA818S (2m RF module) | 5V | ~60mA RX | ~750mA TX | DNP — see `ic_inventory.md` |
+| ESP32-S3-WROOM-1-N8R8 | 3.3V | ~20–80mA | ~300–400mA (radio TX burst) | Placed (`mcu-esp32.kicad_sch`) |
+| u-blox MAX-M10S GPS | 3.3V | ~25–45mA | ~50–70mA (acquisition) | Placed (`gps.kicad_sch`) |
+| PCM5102A I2S audio DAC | 3.3V | low-mA class | — | Placed (`audio.kicad_sch`) |
 
 Controller-section peripherals (RTC, GPS, EEPROM, SD card, audio DAC, status LEDs, 74HC123) are all low-current (µA–low-mA class) individually; a full current budget for the controller section is still TBD once that schematic exists and real component picks are finalized. See [Open Items](open_items.md).

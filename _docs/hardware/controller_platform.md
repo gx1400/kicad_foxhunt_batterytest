@@ -1,11 +1,13 @@
 # Controller & Peripheral Platform
 
 Design decisions for the controller section. **Power sequencing, Timekeeping, status
-indication (I2C GPIO expander + WS2812 status LED), and the EEPROM (storage) are now
-implemented in the schematic** (`power.kicad_sch`'s soft-latch stage; the `Peripherals`
-sheet's PCF8563 RTC, PCA9555 expander, and CAT24C32YI-GT3 EEPROM circuits; the WS2812 LED
-on `mcu-esp32.kicad_sch`; the SD card interface, also on `mcu-esp32.kicad_sch`); GPS,
-audio/PTT path, RF power sensing, and TX-safety timeout are still planning-only. See [Open Items](open_items.md) for what's left. Target
+indication (I2C GPIO expander + WS2812 status LED), the EEPROM (storage), GPS, and the
+audio/PTT DAC path are now implemented in the schematic** (`power.kicad_sch`'s soft-latch
+stage; the `Peripherals` sheet's PCF8563 RTC, PCA9555 expander, and CAT24C32YI-GT3 EEPROM
+circuits; the WS2812 LED on `mcu-esp32.kicad_sch`; the SD card interface, also on
+`mcu-esp32.kicad_sch`; the `GPS` sheet's MAX-M10S + backup network + bias-tee; the `Audio`
+sheet's PCM5102A + attenuator); the SA818S footprint, the external-HT jack, RF power
+sensing, and TX-safety timeout are still planning-only. See [Open Items](open_items.md) for what's left. Target
 capabilities:
 audio/voice TX, CW ID keying, variable-duration/interval blipping, variable TX power, APRS
 TX with GPS (dithered position optional), randomized CTCSS tone, frequency hopping, a
@@ -21,7 +23,10 @@ MAX17320 protects/fuel-gauges the battery but doesn't gate system power — that
 - **Hold-to-power-off detection — implemented.** SW3 needed its own isolated read of "is the button physically being held," independent of whatever else is currently asserting the shared wake node (RTC INT, or the MCU's own self-latch above) — reading the wake node directly would have made "button held" indistinguishable from "system is just normally running." Solved the same way as the RTC INT path: SW3's pin 2 now lands on its own node (`POWER_PB_SIGNAL`), pulled up to VRAW through R45 (1MΩ, same standby-current reasoning as R29) instead of tying directly to the wake node. D5 (BAS116LT1G, anode on the wake-node side / `PWR_LATCH`, cathode on `POWER_PB_SIGNAL`) diode-ORs SW3's press back into the wake node so it still asserts power-on as before, while blocking the reverse path — so nothing else asserting the wake node can pull `POWER_PB_SIGNAL` down. That isolated signal crosses the hierarchy (`POWER_PB_SIGNAL` → `MCU_IN_PWR_BTN`) to a BSS138 stage (Q9) on the `mcu-esp32` sheet, which level-shifts it into GPIO38 (R44, 10k pull-up) for firmware to poll. Verified: idle → GPIO38 low; SW3 held → GPIO38 high (active-high on this pin specifically, opposite the passive-pull-up-active-low convention used elsewhere — worth flagging clearly in firmware).
 - **Still open:** the firmware itself (polling GPIO38, timing the hold, releasing GPIO48) hasn't been written — schematic only exposes the signal. And a **firmware-independent hardware force-off** is still unbuilt — see [Open Items](open_items.md) for the leading option (spare half of the TX-safety 74HC123).
 - **RTC wake path:** PCF8563's `INT` is open-drain **active-low**, not active-high, and its own absolute max voltage rating (6.5V) is well under VRAW's range — so it can't be wired to the wake node directly either. The actual chain is `INT` → Q8 (AO3407A, a small 3.3V-domain inverter so the *sense* comes out right — INT low asserts, not releases) → Q7 (BSS138, the same voltage-isolating role as Q6) → wake node. R30 (10k) is INT's own pull-up; R31 (100k) holds Q7's gate at a defined low/off state whenever Q8 isn't actively driving it. This is more circuitry than "diode-ORed" implies, but the earlier plan's instinct was right — INT genuinely can't touch the high-voltage node without protection.
-- Bench-test provision: JP24 (`usbc-programming-uart.kicad_sch`) can exclude USB from both TPS2121 rail muxes, so the whole sleep/wake cycle is testable on the bench with a debug USB cable still attached (see [regulation.md](regulation.md) for why gating downstream of the muxes instead was rejected — it would leave the bucks/LDOs always powered, defeating the standby-current point).
+- Bench-test provision: JP24 (`usbc-programming-uart.kicad_sch`) can exclude USB from both TPS2121 rail muxes, so the whole sleep/wake cycle is testable on the bench with a debug USB cable still attached — gating downstream of the muxes instead was rejected because it would leave the
+bucks/LDOs always powered, defeating the standby-current point (this reasoning isn't
+separately written up in [usb_battery_power_mux.md](usb_battery_power_mux.md), noting
+here in case that doc is ever restructured).
 
 ## Timekeeping — PCF8563 RTC (implemented)
 
@@ -31,11 +36,11 @@ Backup: **coin cell** (CR2032, BT3), diode-ORed at VDD with the main 3.3V rail (
 
 **Firmware note:** `CLKOUT` defaults to *enabled* (32.768kHz) at power-on per the register reset table (`CLKOUT_control`, address `0Dh`, bit `FE`) — unused in this design (left unconnected), but firmware must explicitly disable it (`FE=0`) or the RTC's backup current roughly doubles (500–750nA → 950–1700nA per the datasheet) for a pin nothing listens to.
 
-I2C bus (`PERIPH_SDA`/`PERIPH_SCL`, shared with the MAX17320 fuel gauge and — once built — the EEPROM) has its one pull-up pair (R32/R33, 10k to 3.3V) on the `mcu-esp32` sheet, not duplicated per device.
+I2C bus (`PERIPH_SDA`/`PERIPH_SCL`, shared with the MAX17320 fuel gauge and the EEPROM) has its one pull-up pair (R32/R33, 10k to 3.3V) on the `mcu-esp32` sheet, not duplicated per device.
 
-## GPS — u-blox MAX-M10S
+## GPS — u-blox MAX-M10S (implemented)
 
-UART+I2C, PPS output, external active antenna via **SMA connector** (not an integrated patch). Backup power kept **separate from the RTC's coin cell** — its own backup domain with both a coin-cell holder and a supercap footprint, user populates either/neither/both at assembly (same low-leakage diode-OR pattern as the RTC), feeding VBACKUP so ephemeris/RTC survive short sleeps for a fast warm-start instead of a full cold-start reacquisition.
+UART+PPS (not I2C — see `gps_path.md`'s judgment call #1), external active antenna via **SMA connector** (not an integrated patch). Backup power kept **separate from the RTC's coin cell** — its own backup domain with a coin-cell holder (`BT4`) and a real supercapacitor (Cornell Dubilier/Knowles EDC474Z5R5V), a 3-diode network (not a straight mirror of the RTC's 2-diode pattern — the supercap needs to charge, so it can't share the coin cell's blocking diode), feeding `V_BCKP` so ephemeris/RTC survive short sleeps for a fast warm-start instead of a full cold-start reacquisition. Now placed and wired in `gps.kicad_sch`.
 
 Full pin-by-pin interconnect plan (real pin table, backup-power sizing math, antenna
 bias-tee reference circuit): [gps_path.md](gps_path.md).
@@ -60,7 +65,7 @@ isolation, reference schematics): [audio_ptt_path.md](audio_ptt_path.md).
 
 The SA818S has **no digital baseband input** — its UART is control-only (frequency, squelch, volume, CTCSS/DCS). Voice, CW tone, and AFSK for APRS all have to arrive as analog audio on its MIC pin, so an audio DAC (I2S DAC → RC filter, or PWM+filter) is required regardless of "digital vs. analog" framing.
 
-This is one shared subsystem serving two destinations, not two separate designs: the same DAC output and PTT-keying circuit (optocoupler) route to *both* the onboard SA818S footprint (populated later for eval, unlikely at initial fab per original scope) *and* a 3.5mm jack for an external HT, switchable/jumpered between the two.
+This is one shared subsystem serving two destinations, not two separate designs: the same DAC output and PTT-keying circuit (optocoupler) route to *both* the onboard SA818S footprint (populated later for eval, unlikely at initial fab per original scope) *and* a 3.5mm jack for an external HT — not jumper-switched as originally planned, but via a jack with two independent normally-closed switch contacts that mechanically disconnect the SA818S's audio and PTT feeds the instant something is plugged in (see `audio_ptt_path.md` § 2 for the real K1-pinout-informed plan; PCM5102A + attenuator are placed in `audio.kicad_sch`, the jack itself is not yet sourced).
 
 ## Storage — SD card + EEPROM
 

@@ -12,10 +12,10 @@ drill into whichever subsystem you need.
 - [Battery protection & fuel gauge (MAX17320)](hardware/battery_protection.md)
 - [Dual-input power combining](hardware/power_input_combining.md)
 - [Regulation — VRAW → 5V/3.3V rails, downstream loads](hardware/regulation.md)
-- [Controller & peripheral platform](hardware/controller_platform.md) — VRAW soft-latch, PCF8563 RTC, PCA9555 I2C GPIO expander, WS2812 status LED, CAT24C32YI-GT3 EEPROM, SD card (SPI), MCU (ESP32-S3 + dual-USB), and USB power path implemented; GPS, audio/PTT, RF sensing, TX safety, frequency/tone plan, LoRa (skipped), enclosure still planned, not yet in the schematic
+- [Controller & peripheral platform](hardware/controller_platform.md) — VRAW soft-latch, PCF8563 RTC, PCA9555 I2C GPIO expander, WS2812 status LED, CAT24C32YI-GT3 EEPROM, SD card (SPI), MCU (ESP32-S3 + dual-USB), USB power path, GPS, and audio/PTT DAC path implemented; SA818S itself, the external-HT jack, RF sensing, TX safety, frequency/tone plan, LoRa (skipped), enclosure still planned
 - [ESP32-S3 pinout & interconnect plan](hardware/esp32s3_pinout.md)
-- [Audio / PTT path — I2S DAC, ESP32-S3, SA818S, external HT](hardware/audio_ptt_path.md) — interconnect plan, not yet in the schematic
-- [GPS — u-blox MAX-M10S, ESP32-S3, backup power, SMA antenna](hardware/gps_path.md) — interconnect plan, not yet in the schematic
+- [Audio / PTT path — I2S DAC, ESP32-S3, SA818S, external HT](hardware/audio_ptt_path.md) — PCM5102A DAC + attenuator implemented; SA818S and the external-HT jack itself still planning-only
+- [GPS — u-blox MAX-M10S, ESP32-S3, backup power, SMA antenna](hardware/gps_path.md) — implemented, including the CR2032/supercap backup network and RF bias-tee
 - [I2C bus — devices & addresses](hardware/i2c_bus.md)
 - [IC inventory & alternatives](hardware/ic_inventory.md) — every IC/module used or planned, LCSC MPN/price/stock, and 1-4 scored alternates per chip
 - [Open items / next steps](hardware/open_items.md) — living checklist
