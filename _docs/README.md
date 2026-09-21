@@ -16,6 +16,7 @@ drill into whichever subsystem you need.
 - [ESP32-S3 pinout & interconnect plan](hardware/esp32s3_pinout.md)
 - [Audio / PTT path — I2S DAC, ESP32-S3, SA818S, external HT](hardware/audio_ptt_path.md) — PCM5102A DAC + attenuator + switched external-HT jack (J11) + PTT FET (Q10) implemented
 - [SA818S-V pinout & interconnect plan](hardware/sa818_pinout.md) — module placed with UART/PTT/MIC_IN wired; VBAT, ANT, PD, H/L still open
+- [VHF matching network & RF forward-power detector](hardware/vhf_matching_detector.md) — parts, layout, and sourcing for the antenna matching ladder and diode-detector power-sensing tap; not yet in the schematic
 - [GPS — u-blox MAX-M10S, ESP32-S3, backup power, SMA antenna](hardware/gps_path.md) — implemented, including the CR2032/supercap backup network and RF bias-tee
 - [I2C bus — devices & addresses](hardware/i2c_bus.md)
 - [IC inventory & alternatives](hardware/ic_inventory.md) — every IC/module used or planned, LCSC MPN/price/stock, and 1-4 scored alternates per chip

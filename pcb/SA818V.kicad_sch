@@ -2026,7 +2026,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 80.01) (xy 82.55 81.28)
+			(xy 44.45 80.01) (xy 44.45 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2166,7 +2166,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 74.93) (xy 128.27 74.93)
+			(xy 49.53 74.93) (xy 128.27 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2294,6 +2294,17 @@
 		)
 		(uuid "fb465e1b-3f55-4428-8d25-98d4e4b0b612")
 	)
+	(hierarchical_label "SA818_OUT_ANALOG_RF_DET"
+		(shape output)
+		(at 54.61 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "24f608b4-331d-4e8e-ac70-d5c8532d997e")
+	)
 	(hierarchical_label "SA818_UART_TXD"
 		(shape output)
 		(at 128.27 92.71 180)
@@ -2359,6 +2370,17 @@
 			(justify right)
 		)
 		(uuid "f526797b-cee5-4c14-9af5-052bf6364c4f")
+	)
+	(hierarchical_label "SA818_OUT_DIG_RF_DET"
+		(shape output)
+		(at 54.61 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f6f40229-b737-4cec-b945-4af9dfc601f0")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
@@ -2841,7 +2863,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 82.55 74.93 0)
+		(at 44.45 74.93 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2852,7 +2874,7 @@
 		(dnp no)
 		(uuid "311f4402-32f6-4142-993d-16b6ee667e4f")
 		(property "Reference" "J12"
-			(at 78.74 73.9531 0)
+			(at 40.64 73.9531 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2863,7 +2885,7 @@
 			)
 		)
 		(property "Value" "RF_SMA"
-			(at 78.74 76.4931 0)
+			(at 40.64 76.4931 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2874,7 +2896,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
-			(at 82.55 74.93 0)
+			(at 44.45 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2885,7 +2907,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C3174425.pdf"
-			(at 82.55 74.93 0)
+			(at 44.45 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2896,7 +2918,7 @@
 			)
 		)
 		(property "Description" "CONN SMA 50Ω TH"
-			(at 82.55 74.93 0)
+			(at 44.45 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2907,7 +2929,7 @@
 			)
 		)
 		(property "Manf" "Amphenol"
-			(at 82.55 74.93 0)
+			(at 44.45 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2918,7 +2940,7 @@
 			)
 		)
 		(property "MPN" "132289"
-			(at 82.55 74.93 0)
+			(at 44.45 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2929,7 +2951,7 @@
 			)
 		)
 		(property "LCSC Part #" "C3172723"
-			(at 82.55 74.93 0)
+			(at 44.45 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2940,7 +2962,7 @@
 			)
 		)
 		(property "Package" "SMA"
-			(at 82.55 74.93 0)
+			(at 44.45 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3699,7 +3721,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 82.55 81.28 0)
+		(at 44.45 81.28 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3711,7 +3733,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee6714ae-ee6b-4c8c-b577-714d7fde6a25")
 		(property "Reference" "#PWR0163"
-			(at 82.55 87.63 0)
+			(at 44.45 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3722,7 +3744,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 82.55 85.09 0)
+			(at 44.45 85.09 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3732,7 +3754,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 81.28 0)
+			(at 44.45 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3743,7 +3765,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 81.28 0)
+			(at 44.45 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3754,7 +3776,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 90.17 0)
+			(at 44.45 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

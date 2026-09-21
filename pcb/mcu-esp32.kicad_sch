@@ -2592,6 +2592,10 @@
 		(uuid "3cffb2e3-1662-4417-bc40-46aaa52d9a8f")
 	)
 	(no_connect
+		(at 194.31 147.32)
+		(uuid "3ff675fc-6eec-4f0f-8d44-40e3f74d6827")
+	)
+	(no_connect
 		(at 96.52 147.32)
 		(uuid "9b169420-87cd-42a1-9962-a2b5fe12b8da")
 	)
@@ -2680,6 +2684,16 @@
 			(type default)
 		)
 		(uuid "0ef06a19-6f5f-4ef2-9d32-9738c6d6c1e9")
+	)
+	(wire
+		(pts
+			(xy 191.77 147.32) (xy 194.31 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f0b92fe-c51e-4acb-a76f-78125a26ab93")
 	)
 	(wire
 		(pts
@@ -2810,6 +2824,16 @@
 			(type default)
 		)
 		(uuid "375972ae-313f-4c11-bc9a-e173b4a5c3b4")
+	)
+	(wire
+		(pts
+			(xy 90.17 101.6) (xy 100.33 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b952b99-5cd7-4800-b990-e5abd5488894")
 	)
 	(wire
 		(pts
@@ -3413,6 +3437,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 106.68) (xy 191.77 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3adcf6d-1711-47a6-a025-699d45f4d092")
+	)
+	(wire
+		(pts
 			(xy 168.91 167.64) (xy 172.72 167.64)
 		)
 		(stroke
@@ -3554,6 +3588,17 @@
 		)
 		(uuid "223db2f2-4210-41ec-b31a-c125739d961c")
 	)
+	(hierarchical_label "MCU_ANALOG_RF_DET"
+		(shape input)
+		(at 201.93 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3886a703-1a98-4193-9024-24639610235b")
+	)
 	(hierarchical_label "MCU_SA818_UART_RXD"
 		(shape input)
 		(at 195.58 114.3 0)
@@ -3663,6 +3708,17 @@
 			(justify left)
 		)
 		(uuid "aad10624-12c8-4add-b31f-13efa8b34152")
+	)
+	(hierarchical_label "MCU_IN_DIG_RF_DET"
+		(shape input)
+		(at 90.17 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ac21ae30-88e1-4696-a78b-510508d3877b")
 	)
 	(hierarchical_label "I2S_LRCK"
 		(shape output)
