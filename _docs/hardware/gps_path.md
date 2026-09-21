@@ -64,50 +64,50 @@ than assuming "anything works":
   cell's capacity — `Q = I×t` ≈ 0.0576–0.115 C; using the ~1.3V usable swing between a
   topped-up ~3.0V (after diode drop) and the datasheet's V_BCKP minimum (1.65V), that's
   **C ≈ Q/ΔV ≈ 0.04–0.09F**.
-- **Supercap chosen: Eaton KR-5R5V224-R** — 0.22F, 5.5V, coin-cell through-hole (5mm lead
-  spacing, PC pins), ESR 75Ω, 11.5mm dia × 12.7mm height. **DNP / not LCSC-sourced** — using
-  a part already on hand rather than ordering through LCSC. 0.22F is ~2.5–5× the calculated
-  0.04–0.09F target, which just means a longer bridge time for free (no downside).
-  Voltage rating (5.5V) is well above anything this part will actually see (see topology
-  below) — no risk of exceeding it.
-- **Backup network topology — final, settled design** (superseding an earlier version of
-  this doc that both mis-stated the diode arrangement and assumed a 5V charge source before
-  the overvoltage risk was caught):
-  - `+3.3V` → **diode A** (anode on `+3.3V`, cathode on the shared node) — same role as the
-    RTC's `D2`.
-  - `CR2032` (`BT4`) → **diode B** (anode on `BT4`, cathode on the shared node) — same role
-    as the RTC's `D3`.
-  - `+3.3V` → **diode C** → **R (1kΩ)** → **supercap** — a dedicated charge branch, *not*
-    off the 5V rail. Charging from 3.3V (not 5V) is the key safety decision: `V_BCKP`'s
-    absolute max is **3.6V** with **zero margin** above its own normal operating max (same
-    value, per the real datasheet — "product is not protected against overvoltage... voltage
-    spikes must be limited"), so charging from 5V and relying on a diode's forward-voltage
-    drop to claw the excess back off is unreliable — Vf is current-dependent, not a fixed
-    clamp, and at this circuit's ~32µA backup current a diode's Vf is far too small (and too
-    variable) to guarantee staying under 3.6V. Charging from 3.3V removes the problem
-    entirely: the cap settles at ~3.3V minus a diode drop, safely clear of 3.6V regardless of
-    the exact Vf.
-  - **Supercap → diode D → shared node** — the discharge-out path, one-way (blocks the node
-    from charging the cap through this branch, keeping the charge and discharge paths
-    independent, matching the isolation already used for the coin cell).
-  - `V_BCKP` (U18 pin 6) ties directly to the shared node — no additional diode or resistor
-    between the node and the pin itself (only diode C's resistor is in the cap's own charge
-    branch, off to the side, per the integration manual's "avoid high resistance on the
-    V_BCKP line" warning).
-  - **All four diodes: Nexperia BAS116LT1G** (reuse the same part already verified and used
+- **Supercap chosen: Cornell Dubilier / Knowles EDC474Z5R5V** (DigiKey `338-EDC474Z5R5V-ND`)
+  — 0.47F, 5.5V, ESR 50Ω @ 1kHz, through-hole coin-type (~5mm lead spacing), per CDE's own
+  catalog (`cde.com/resources/catalogs/EDC.pdf`). **DNP / not LCSC-sourced** — hand
+  inventory. 0.47F is ~5–10× the calculated 0.04–0.09F target — longer bridge time for free.
+  Custom KiCad footprint made to match: `CP_Supercap_EDC474Z5R5V_0.2x5mm`.
+- **Backup network — built as placed, 2026-09-21, verified by tracing `gps.kicad_sch`
+  directly.** Simpler than my original 4-diode plan (below), and still correct:
+  - **D6**: anode on `BT4` (CR2032), cathode on the shared `V_BCKP` node — same role as the
+    RTC's `D3`.
+  - **D11**: anode on `+3.3V`, cathode → `R52` (10Ω) → `C68` (supercap +) — the charge
+    branch. Charging from 3.3V (not 5V) was the key safety decision here: `V_BCKP`'s
+    absolute max is **3.6V** with **zero margin** above its own normal operating max (per the
+    real datasheet — "product is not protected against overvoltage... voltage spikes must be
+    limited"), so charging from 5V and relying on a diode's forward-voltage drop to claw the
+    excess back off would have been unreliable (Vf is current-dependent, not a fixed clamp).
+    Charging from 3.3V removes the problem entirely.
+  - **D12**: anode on `C68` (supercap +), cathode on the shared node — the discharge branch.
+  - `V_BCKP` (U18 pin 6) ties directly to the shared node.
+  - **No separate "diode A"** (a direct `+3.3V`→node branch, independent of the charge
+    resistor) — this was in my original plan but wasn't built, and it isn't actually needed:
+    the charge branch (`D11`→`R52`→cap→`D12`→node) already gives the main rail a path into
+    the node, just two Vf drops deep instead of one. Two minor, harmless consequences: (a)
+    `V_BCKP` settles ~2 diode-drops below 3.3V during normal operation (~2.3–2.6V) instead of
+    ~1 drop (~2.9–3.0V) — still well above the 1.65V minimum, and the module's own internal
+    supervisor disconnects `V_BCKP` from real loading whenever `VCC` is present anyway, so
+    this costs nothing functionally; (b) `V_BCKP` ramps up on power-up over the same ~28s RC
+    time constant as the supercap charge (gated through `R52`) rather than snapping up
+    instantly. One fewer component, same coin-cell protection, no spec violation — a valid
+    simplification, not a gap.
+  - **All three diodes: Nexperia BAS116LT1G** (reuse the same part already verified and used
     for the RTC's `D2`/`D3`) — **not** a Schottky or fast-recovery part, despite its higher
     forward drop (~0.4–0.5V at this circuit's actual 32µA, per the real datasheet's Figure 2
     curve — not the 0.9V-at-1mA table spec, and not as low as a rough sub-mA extrapolation
     either). A Schottky's lower Vf comes from a lower junction barrier, which also means
     meaningfully higher reverse leakage (often nA–µA class vs. this part's verified ~3pA) —
     exactly the tradeoff this project already rejected once for the RTC's own backup diodes.
-    Trading leakage for a few hundred mV of headroom this circuit doesn't need would be a
-    bad trade for a domain whose whole point is lasting months on a coin cell.
+  - **R52**: 10Ω, 0603 (YAGEO `RC0603FR-0710RL`, `C109318`) — reused the same value already
+    on this sheet (`R51`, the bias-tee current limiter) rather than introducing a second
+    low-value resistor line item. Sized for fast bring-up readiness (not the gentler 1kΩ
+    first floated): τ = (10Ω+50Ω ESR)×0.47F ≈ 28s, giving ~65% charge in 30s at ~55mA peak
+    inrush — safely under `BAS116LT1G`'s 200mA/500mA ratings.
 - **Coin cell holder**: reuse the same part already placed for the RTC (`BS-08-B2AA020-R`,
-  kicad_gx_library) rather than sourcing a second holder family, unless a different
-  footprint is wanted for layout reasons. Already placed as `BT4`, currently wired directly
-  to `V_BCKP` with no diode yet — matches the "not wired in yet" state confirmed this
-  review; needs diode B inserted between them per the topology above.
+  kicad_gx_library). Placed as `BT4`. Backup network now fully wired and verified — no
+  longer an open item.
 
 ## 4. RF input — SMA connector + active antenna bias-tee
 
@@ -138,6 +138,25 @@ own reference circuit (§ 4.3.4, Figure 28) and its appendix component table:
 | R51 | Short-circuit current limiter, in series with `VCC_RF` | 10Ω, 5%, 0.25W |
 | L3 | Bias-tee feed inductor, `VCC_RF`(via R51) → antenna/RF-line node | 27nH, 5% — high impedance at GNSS L1 (1.575GHz) so RF energy doesn't leak back into the 3.3V-derived supply; needs ≥300mA current rating (Murata LQG15H/LQW15A or Johanson L-07W series, per u-blox's own recommendation) |
 | C67 | Series DC-block, antenna/RF-line node → `RF_IN` | 10nF, 10%, 16V, X7R — negligible reactance at L1 (~0.01Ω), so it's electrically transparent to the RF signal while blocking the DC bias from ever reaching `RF_IN` |
+
+**Controlled-impedance netclass — added.** The two RF-carrying net segments now have real
+net labels (`GPS_RF_ANT`: `J10`↔`L3` DC-feed node↔`C67`; `GPS_RF_IN`: `C67`↔`RF_IN`) and are
+assigned to a new `GPS_RF_50R` netclass in `foxhunt1.kicad_pro`, sized for 50Ω on this
+board's real stackup.
+
+**Board is now 4-layer, not 2-layer** — stackup imported from
+`pcb/libs/jlcpcb_autogenerated_stackups` (new submodule), specifically
+`jlcpcb_4L_1.6mm_outer1oz_inner0.5oz_JLC04161H-7628` — JLCPCB's default no-extra-cost
+4-layer construction (confirmed identical to their `NOREQ` file; material is real Nan Ya
+NP-155F 7628 prepreg/core, matching JLCPCB's own published spec). Verified in
+`foxhunt1.kicad_pcb`: 0.2104mm prepreg (εr 4.4) from `F.Cu` to `In1.Cu`, 1.065mm core
+(εr 4.43) between the inner layers, 1oz outer / 0.5oz inner copper.
+
+Trace width recalculated for this real stackup (assuming `In1.Cu` is used as the ground
+reference plane directly under the top signal layer — a layout decision to confirm, not yet
+made): **~0.35mm** for 50Ω, vs. the ~2.75mm that would have been needed on the original
+2-layer board. `GPS_RF_50R` is currently set to the 2-layer-derived 2.75mm value — **needs
+updating to ~0.35mm once the plane assignment is confirmed** (see Open items).
 
 **Correction from an earlier version of this doc**: C67 (labeled C14 in u-blox's reference)
 is a **series** DC-blocking cap on the main antenna-to-`RF_IN` trace, not a shunt filter cap
@@ -174,17 +193,23 @@ return for the GPIO budget it costs.
 - **[u-blox M10 antenna list](https://cdn.sparkfun.com/assets/5/c/a/0/b/MAX-M10S_IntegrationManual_UBX-20053088.pdf)**
   (Integration Manual Appendix C.1) — example passive/active L1 GNSS antennas (Taoglas,
   Amotech, INPAQ) if a specific model needs picking for the external SMA antenna.
+- **[gsuberland/jlcpcb_autogenerated_stackups](https://github.com/gsuberland/jlcpcb_autogenerated_stackups)**
+  (vendored as `pcb/libs/jlcpcb_autogenerated_stackups`) — source of the real 4-layer
+  stackup imported into `foxhunt1.kicad_pcb`. Community-generated from JLCPCB's own
+  published specs, not officially maintained by JLCPCB — not manually verified by the repo
+  author, worth spot-checking against JLCPCB's own impedance calculator before final fab.
+- **[CDE EDC series catalog](https://www.cde.com/resources/catalogs/EDC.pdf)** — source for
+  the EDC474Z5R5V supercap's real capacitance/voltage/ESR/dimensions used in § 3.
 
 ## Open items
 
-- **V_BCKP backup network not wired yet** — `BT4` (CR2032) is placed but tied directly to
-  `V_BCKP` with no diode; still need diode A (`+3.3V`→node), diode B (`BT4`→node), diode C
-  (`+3.3V`→R→supercap charge branch), diode D (supercap→node), the supercap (chosen: Eaton
-  `KR-5R5V224-R`, 0.22F/5.5V through-hole, DNP/not LCSC), and the ~1kΩ charge-limiting
-  resistor. All four diodes: `BAS116LT1G`. See § 3 for the full topology and reasoning.
+- **`GPS_RF_50R` netclass trace width needs updating** from the 2-layer-derived 2.75mm to
+  the real 4-layer value (~0.35mm) once the ground-plane layer assignment (`In1.Cu` vs.
+  `In2.Cu`) is confirmed for this board's stackup.
 - **`J10`'s footprint needs swapping** from the through-hole `SMA_Amphenol_132134_Vertical`
   to the SMD `SMA_Wurth_60312102114405_Vertical` (or whatever footprint matches the final
   chosen SMD SMA part) — land-pattern match not yet cross-checked against a real datasheet.
+  Deliberate for now — using inventory on hand for bring-up.
 - Antenna supervisor (open/short detection) explicitly not built this pass — revisit only if
   a GPIO frees up (none currently spare — see `esp32s3_pinout.md`) and antenna-fault
   detection becomes worth the cost.
@@ -193,3 +218,6 @@ return for the GPIO budget it costs.
 - `EXTINT`, `RESET_N`, `LNA_EN`, `VIO_SEL`, `SDA`, `SCL`, `SAFEBOOT_N` — all correctly left
   open with `no_connect` markers (7 total), matching the plan. `VCC_RF` and `RF_IN` are
   correctly wired through the bias-tee, not left open.
+- **Done, no longer open**: V_BCKP backup network (3-diode topology, real supercap, real
+  charge resistor — all verified wired 2026-09-21); 4-layer stackup import; RF net
+  labels/netclass.
