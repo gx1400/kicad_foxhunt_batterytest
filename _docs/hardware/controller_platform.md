@@ -37,6 +37,9 @@ I2C bus (`PERIPH_SDA`/`PERIPH_SCL`, shared with the MAX17320 fuel gauge and — 
 
 UART+I2C, PPS output, external active antenna via **SMA connector** (not an integrated patch). Backup power kept **separate from the RTC's coin cell** — its own backup domain with both a coin-cell holder and a supercap footprint, user populates either/neither/both at assembly (same low-leakage diode-OR pattern as the RTC), feeding VBACKUP so ephemeris/RTC survive short sleeps for a fast warm-start instead of a full cold-start reacquisition.
 
+Full pin-by-pin interconnect plan (real pin table, backup-power sizing math, antenna
+bias-tee reference circuit): [gps_path.md](gps_path.md).
+
 ## MCU — ESP32-S3-WROOM-1-N8R8
 
 Module (not bare chip) — this board already has one RF section to get right (SA818S); a second self-laid-out antenna-matching problem on the MCU's WiFi/BLE radio isn't worth it for this revision. N8R8 (8MB flash + 8MB PSRAM) — PSRAM matters more than extra flash for the concurrent WiFi + audio buffering + SD card workload. **BLE enabled** alongside WiFi — free with the same radio, gives a lower-power/faster-handshake alternative to the WiFi captive portal for the "found" log.
@@ -51,6 +54,9 @@ Full pin-by-pin plan: [esp32s3_pinout.md](esp32s3_pinout.md).
 - **USB-UART bridge (CP2102N-class), own connector** — solves two real annoyances with native-USB-only boards during active firmware iteration: (1) the native USB CDC device re-enumerates on every reset/flash cycle, which drops/delays the serial monitor and can eat early boot log lines; a UART bridge's virtual COM port stays enumerated across ESP32-S3 resets. (2) auto-reset-into-bootloader over native USB has known version-dependent quirks (esptool/OS-driver dependent) — a real bridge's DTR/RTS auto-reset into EN/IO0 (the standard two-transistor circuit) is reliable and well-established. Manual BOOT/RESET buttons remain as the ultimate fallback either way (e.g. no bridge cable plugged in).
 
 ## Audio / PTT path (shared by onboard SA818S and external HT)
+
+Full pin-by-pin interconnect plan (DAC↔ESP32-S3, DAC↔SA818S/HT level matching, PTT
+isolation, reference schematics): [audio_ptt_path.md](audio_ptt_path.md).
 
 The SA818S has **no digital baseband input** — its UART is control-only (frequency, squelch, volume, CTCSS/DCS). Voice, CW tone, and AFSK for APRS all have to arrive as analog audio on its MIC pin, so an audio DAC (I2S DAC → RC filter, or PWM+filter) is required regardless of "digital vs. analog" framing.
 
