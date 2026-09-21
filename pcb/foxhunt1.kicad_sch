@@ -23,6 +23,10 @@
 		(color 0 0 0 0)
 		(uuid "d6c8347e-6a31-4f33-8d62-2fcaf1385a23")
 	)
+	(no_connect
+		(at 223.52 53.34)
+		(uuid "5303a52f-63ee-43b5-9d53-029b95d98961")
+	)
 	(wire
 		(pts
 			(xy 135.89 60.96) (xy 166.37 60.96)
@@ -55,6 +59,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 132.08) (xy 229.87 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0deeeb29-cacb-49c0-aa29-0a0f097cf8c9")
+	)
+	(wire
+		(pts
 			(xy 88.9 91.44) (xy 166.37 91.44)
 		)
 		(stroke
@@ -62,6 +76,16 @@
 			(type default)
 		)
 		(uuid "1462a18d-5d09-4e17-90a5-76563cb0e618")
+	)
+	(wire
+		(pts
+			(xy 210.82 40.64) (xy 227.33 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17fa15e6-1e08-43b1-a10f-bdece551ed18")
 	)
 	(wire
 		(pts
@@ -82,6 +106,26 @@
 			(type default)
 		)
 		(uuid "303a55a2-3e00-452f-81e0-f3611ea7e4c2")
+	)
+	(wire
+		(pts
+			(xy 210.82 129.54) (xy 229.87 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "429e72e5-993d-44e7-a44b-3f91a9503ca7")
+	)
+	(wire
+		(pts
+			(xy 210.82 134.62) (xy 229.87 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "499c85e7-384a-4c2a-8c9a-da1e61d0c491")
 	)
 	(wire
 		(pts
@@ -165,6 +209,26 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 38.1) (xy 227.33 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b43118e-725f-49aa-8cc0-59d76550710f")
+	)
+	(wire
+		(pts
+			(xy 210.82 45.72) (xy 227.33 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a35bef62-d8e0-4dae-8cd5-46545eb849fc")
+	)
+	(wire
+		(pts
 			(xy 78.74 43.18) (xy 104.14 43.18)
 		)
 		(stroke
@@ -182,6 +246,16 @@
 			(type default)
 		)
 		(uuid "ad06a6f0-bc8a-4e1a-8e25-0cde5ad552cc")
+	)
+	(wire
+		(pts
+			(xy 223.52 53.34) (xy 227.33 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5409a1a-ac23-455f-b929-bdd572fed5ec")
 	)
 	(wire
 		(pts
@@ -225,6 +299,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 43.18) (xy 227.33 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dda8d2f0-86f8-435d-a1aa-67e439afe7d6")
+	)
+	(wire
+		(pts
 			(xy 50.8 105.41) (xy 50.8 100.33)
 		)
 		(stroke
@@ -262,6 +346,82 @@
 			(type default)
 		)
 		(uuid "f3e9048f-77ae-4738-aebc-b5b321055fa4")
+	)
+	(sheet
+		(at 229.87 124.46)
+		(size 48.26 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0c171942-64eb-4f5d-b37e-356ed65ec40c")
+		(property "Sheetname" "GPS"
+			(at 229.87 123.7484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gps.kicad_sch"
+			(at 229.87 158.0646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPS_1PPS" output
+			(at 229.87 129.54 180)
+			(uuid "1dff98c6-c264-496d-9734-310711b54538")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPS_UART_RXD" input
+			(at 229.87 134.62 180)
+			(uuid "bc33ecb9-f4ae-4c1e-81a7-4ab3877a5d92")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPS_UART_TXD" output
+			(at 229.87 132.08 180)
+			(uuid "a694e654-c520-43a0-9b69-f2ef856760ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5"
+					(page "10")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 44.45 35.56)
@@ -567,10 +727,176 @@
 				(justify left)
 			)
 		)
+		(pin "I2S_BCK" output
+			(at 210.82 38.1 0)
+			(uuid "5aa5baed-c236-472d-88a1-3ab36fc47acf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2S_DIN" output
+			(at 210.82 40.64 0)
+			(uuid "794d7675-8408-4f5a-91a3-a03873a6b986")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2S_LRCK" output
+			(at 210.82 43.18 0)
+			(uuid "e6b9ce25-b83b-4b81-b7a7-b71553cefafc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_MUTE_XSMT" output
+			(at 210.82 45.72 0)
+			(uuid "740932cf-fe78-49fa-8b60-e39fc1dc7c3a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPS_1PPS_IN" input
+			(at 210.82 129.54 0)
+			(uuid "2d1eb814-c272-44e6-b2fd-54137161a92c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MCU_GPS_RXD" input
+			(at 210.82 132.08 0)
+			(uuid "2f56c41a-141f-4fee-96fa-8ce57e35e638")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MCU_GPS_TXD" output
+			(at 210.82 134.62 0)
+			(uuid "b8a7604d-c153-4e5e-a0bc-55061ec4a504")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 227.33 31.75)
+		(size 46.99 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6e05b131-85f3-48d7-9286-60e4b02485ee")
+		(property "Sheetname" "Audio"
+			(at 227.33 31.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio.kicad_sch"
+			(at 227.33 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2S_BCK" input
+			(at 227.33 38.1 180)
+			(uuid "0ae33ea4-1c1d-4753-aca0-d5f1dcce914f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2S_DIN" input
+			(at 227.33 40.64 180)
+			(uuid "85fefc76-73ff-45a2-acca-8258402e6290")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2S_LRCK" input
+			(at 227.33 43.18 180)
+			(uuid "811061b2-d55d-4074-836e-1cf96d59f5f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_MIC_OUT" output
+			(at 227.33 53.34 180)
+			(uuid "e4215d18-1f44-425b-80be-1d2e7dbd9ea3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2S_XSMT" input
+			(at 227.33 45.72 180)
+			(uuid "0940c769-a16c-4604-8710-68aa670a57e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5"
+					(page "9")
 				)
 			)
 		)

@@ -2723,6 +2723,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 149.86) (xy 191.77 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21e9372f-7121-4c93-8c11-939b390126a1")
+	)
+	(wire
+		(pts
 			(xy 231.14 166.37) (xy 238.76 166.37)
 		)
 		(stroke
@@ -2740,6 +2750,16 @@
 			(type default)
 		)
 		(uuid "2b0c562a-b929-4697-8a9f-0ecdd3aa3faa")
+	)
+	(wire
+		(pts
+			(xy 196.85 139.7) (xy 191.77 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cafe5ac-da75-41e2-b3c1-4a6d86ffde29")
 	)
 	(wire
 		(pts
@@ -2933,6 +2953,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 109.22) (xy 201.93 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7521bbb5-9392-4b85-91be-2bca97b64996")
+	)
+	(wire
+		(pts
 			(xy 264.16 127) (xy 264.16 135.89)
 		)
 		(stroke
@@ -2973,6 +3003,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 132.08) (xy 191.77 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85959fbd-b4dc-43d4-b7d0-05ffa1746f57")
+	)
+	(wire
+		(pts
 			(xy 191.77 88.9) (xy 194.31 88.9)
 		)
 		(stroke
@@ -3003,6 +3043,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 134.62) (xy 196.85 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c8ad237-887c-4743-8a4d-aa20c1457d8e")
+	)
+	(wire
+		(pts
 			(xy 191.77 96.52) (xy 201.93 96.52)
 		)
 		(stroke
@@ -3030,6 +3080,16 @@
 			(type default)
 		)
 		(uuid "9e376f11-d278-4ae7-bb95-1fef2ff9bce0")
+	)
+	(wire
+		(pts
+			(xy 191.77 104.14) (xy 201.93 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a01642a3-f4ae-4acc-900c-53cbe8ff9980")
 	)
 	(wire
 		(pts
@@ -3130,6 +3190,16 @@
 			(type default)
 		)
 		(uuid "b0e9cff3-fcc0-445c-8669-699585deea79")
+	)
+	(wire
+		(pts
+			(xy 191.77 137.16) (xy 196.85 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ff3099-f6a2-4f30-b10a-5388e7705dea")
 	)
 	(wire
 		(pts
@@ -3454,6 +3524,28 @@
 		)
 		(uuid "223db2f2-4210-41ec-b31a-c125739d961c")
 	)
+	(hierarchical_label "GPS_1PPS_IN"
+		(shape input)
+		(at 201.93 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3cae1ca2-b222-4772-b493-08c5264acd58")
+	)
+	(hierarchical_label "I2S_BCK"
+		(shape output)
+		(at 196.85 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "51f0f005-f5a6-4dbd-a52c-9588058d646d")
+	)
 	(hierarchical_label "MCU_I2C_SDA"
 		(shape bidirectional)
 		(at 251.46 116.84 0)
@@ -3531,6 +3623,17 @@
 		)
 		(uuid "aad10624-12c8-4add-b31f-13efa8b34152")
 	)
+	(hierarchical_label "I2S_LRCK"
+		(shape output)
+		(at 196.85 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b8b9e68c-459a-4115-a092-6a817dd0676a")
+	)
 	(hierarchical_label "MCU_USB_UART_TXD"
 		(shape output)
 		(at 194.31 81.28 0)
@@ -3542,6 +3645,28 @@
 		)
 		(uuid "c59fad77-17d6-4309-9f91-4039b6b15974")
 	)
+	(hierarchical_label "MCU_GPS_RXD"
+		(shape input)
+		(at 196.85 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ca603afa-bf40-4d77-b921-d33b785e8101")
+	)
+	(hierarchical_label "I2S_DIN"
+		(shape output)
+		(at 196.85 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc1f5e3d-8cbe-41ee-9610-ccc4efa64d18")
+	)
 	(hierarchical_label "BMS_ALRT"
 		(shape input)
 		(at 201.93 101.6 0)
@@ -3552,6 +3677,17 @@
 			(justify left)
 		)
 		(uuid "e28a4b25-4a16-4d44-a753-06e7bbf61e9a")
+	)
+	(hierarchical_label "I2C_MUTE_XSMT"
+		(shape output)
+		(at 201.93 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e29bf514-f3a7-4287-bca9-944c485e075f")
 	)
 	(hierarchical_label "MCU_USB_UART_RXD"
 		(shape input)
@@ -3574,6 +3710,17 @@
 			(justify right)
 		)
 		(uuid "e719e494-b17f-49dc-b0b3-172501c4bd11")
+	)
+	(hierarchical_label "MCU_GPS_TXD"
+		(shape output)
+		(at 196.85 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef115524-66a8-4281-9b9d-2b283fe2dc6f")
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
