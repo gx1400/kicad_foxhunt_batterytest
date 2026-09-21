@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -140,7 +146,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.15,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -153,7 +159,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -203,7 +209,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +238,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -515,46 +528,6 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
-      },
-      {
-        "name": "Digital_USB",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": ""
-      },
-      {
-        "clearance": 0.2,
-        "name": "Power_3V3_1A",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.3,
-        "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3
-      },
-      {
-        "clearance": 0.2,
-        "name": "Power_5V_2A",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.8,
-        "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.4
-      },
-      {
-        "clearance": 0.2,
-        "name": "Power_Combined_3A",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.4,
-        "tuning_profile": "",
-        "via_diameter": 0.9,
-        "via_drill": 0.5
       }
     ],
     "meta": {
@@ -562,100 +535,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "+BATT"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "/Battery 18650 Input/PWR_18650"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "Net-(BT1--)"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "Net-(Q2-S1)"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "/Battery 18650 Input/BATT_PCKP"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "+12V"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "/Battery_PowerPole_Input/PWR_POWERPOLE"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "/Battery_PowerPole_Input/12V_RAW"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "Net-(JP20-A)"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "Net-(JP21-A)"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "/Power Regulation/PWR_IN_SELECT"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "Power_Combined_3A",
-        "pattern": "GNDREF"
-      },
-      {
-        "netclass": "Power_5V_2A",
-        "pattern": "+5V"
-      },
-      {
-        "netclass": "Power_5V_2A",
-        "pattern": "/Power Regulation/5V_BUCK_VIN"
-      },
-      {
-        "netclass": "Power_5V_2A",
-        "pattern": "/Power Regulation/5V_BUCK_OUT"
-      },
-      {
-        "netclass": "Power_5V_2A",
-        "pattern": "/Power Regulation/5V_LDO_VIN"
-      },
-      {
-        "netclass": "Power_5V_2A",
-        "pattern": "/Power Regulation/5V_LDO_OUT"
-      },
-      {
-        "netclass": "Power_3V3_1A",
-        "pattern": "+3.3V"
-      },
-      {
-        "netclass": "Power_3V3_1A",
-        "pattern": "/Power Regulation/3V3_BUCK_VIN"
-      },
-      {
-        "netclass": "Power_3V3_1A",
-        "pattern": "/Power Regulation/3V3_BUCK_OUT"
-      },
-      {
-        "netclass": "Power_3V3_1A",
-        "pattern": "/Power Regulation/3V3_LDO_VIN"
-      },
-      {
-        "netclass": "Power_3V3_1A",
-        "pattern": "/Power Regulation/3V3_LDO_OUT"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -900,7 +780,7 @@
         "uuid": "8399ba4b-9428-480d-8b65-76cf154b97a5"
       }
     ],
-    "used_designators": "D1-10,U1-18,F1-7,Q1-13,SW1-10,TH1-3,#FLG1-42,BT1-6,C1-67,Card1,R1-51,TP1-8,JP1-41,J1-10,#PWR1-154,Y1-2,RV1,L1-3,L5-8",
+    "used_designators": "U1-18,D1-12,Card1,C1-68,J1-10,TH1-3,#FLG1-42,SW1-10,Q1-13,F1-7,JP1-41,TP1-8,R1-52,BT1-6,L1-3,L5-8,RV1,Y1-2,#PWR1-156",
     "variants": []
   },
   "sheets": [
