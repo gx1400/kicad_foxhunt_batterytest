@@ -1,15 +1,12 @@
 # Open Items / Next Steps
 
-- [ ] Confirm GNDPWR solder-jumper flags are wired to the intended nets (not accidentally re-merging GND/GNDREF) — likely a KiCad global GND power-symbol mixup if it recurs.
+- [ ] 
 - [ ] Populate downstream loads (SA818S, ESP32-S3, GPS) and re-verify rail current budgets against real hardware.
 - [ ] First board bring-up: isolate each stage via the power-section jumpers, verify independently, then re-bridge for full-system test.
-- [ ] Continue schematic capture for the [controller/peripheral platform](controller_platform.md) — the VRAW soft-latch, PCF8563 RTC, PCA9555 I2C GPIO expander, CAT24C32YI-GT3 EEPROM, WS2812 status LED, SD card (SPI), GPS, and audio/PTT DAC path are done; the SA818S footprint itself, the external-HT jack, RF power sensing, and TX-safety timeout are still planning-only.
-- [ ] Add a 10kΩ pull-up on the SD card's CS line (`CD/DAT3`, IO10) to `+3.3V` — matches Espressif's own SD pull-up spec for SPI mode and every other control-line pull-up already on this board. Not strictly required (bus isn't shared with anything else) but recommended before final layout.
+
 - [ ] Once the controller section has real current draws, re-verify the existing 5V/2A and 3.3V/1A [regulation](regulation.md) budget still covers it.
-- [x] Hold-to-power-off detection hardware — done. SW3 stayed a plain SPST button; its own node is isolated from the shared wake node via a pull-up (R45) + diode-OR (D5) back into `PWR_LATCH`, then level-shifted (Q9, BSS138) into GPIO38 (R44 pull-up) — see § Power sequencing in `controller_platform.md`. GPIO38 is active-high on this pin specifically.
+
 - [ ] Firmware for hold-to-power-off — poll GPIO38, time the hold, release GPIO48 when the threshold is met. Nothing here is schematic work; this is a firmware dependency on the hardware above.
 - [ ] Firmware-independent hardware force-off — still open, no hardware built yet. If firmware hangs while GPIO48 is asserted, nothing currently overrides it. Leading option: reuse the *spare half* of the 74HC123 dual monostable already planned for TX-safety timeout (§ TX safety in `controller_platform.md`), triggered directly by SW3 (or its isolated `POWER_PB_SIGNAL` node), RC-timed longer than the software hold threshold — zero added GPIO, and the 74HC123 isn't placed in the schematic yet either way. Next thing being worked on.
-- [ ] The PCA9555 I2C GPIO expander is now placed (U15, `0x20`) with 4 general-purpose LEDs and 8 general-purpose switch inputs behind it, but none are hardware-committed to specific roles — firmware needs to assign which output drives TX-active vs. heartbeat vs. anything else, and what each switch input means (see `controller_platform.md` § Status indication). The WS2812/RGB status LED (D4) is now placed and wired (IO40) — firmware still needs to define its actual GPS-lock/fault/found-log color encoding.
-- [ ] **Swap `J10` (GPS RF connector) from through-hole to SMD** — currently placed as `Connector_Coaxial:SMA_Amphenol_132134_Vertical` (through-hole) deliberately, using a part already on hand for bring-up. Follow-up: swap to a vertical SMD SMA — candidate researched: MyAntenna A-SMA-KE-16.5A (`C22467617`) with KiCad footprint `Connector_Coaxial:SMA_Wurth_60312102114405_Vertical` (only genuinely-SMD vertical SMA footprint in KiCad's stock library) — land-pattern match not yet cross-checked against a real datasheet, see `gps_path.md` § 4.
 
 See also: [`_docs/sourcing/task1_lcsc_crossreference.md`](../sourcing/task1_lcsc_crossreference.md) for the BOM-verification checklist (blank Value fields, footprint/manufacturer mismatches, missing LCSC data, and the per-sheet capacitor-voltage-is-a-minimum documentation task).
