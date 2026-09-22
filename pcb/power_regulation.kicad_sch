@@ -4005,7 +4005,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00082c9a-d077-4c3f-9fe0-0a6b3342c0f7")
-		(property "Reference" "R23"
+		(property "Reference" "R25"
 			(at 256.032 152.908 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4069,6 +4069,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 256.54 154.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a3b64394-7439-4d9c-b640-4b587a7582b5")
 		)
@@ -4078,7 +4089,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "R23")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -4096,7 +4107,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "019f5ea7-bb3b-4283-bd26-748fd1ccb110")
-		(property "Reference" "C21"
+		(property "Reference" "C23"
 			(at 152.4 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4195,6 +4206,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 149.86 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5bfee6f5-f5ff-4f76-97e1-b25820f80f8c")
 		)
@@ -4204,7 +4226,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C21")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -4222,7 +4244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "026de4f8-0a2c-48b5-b753-4de9e248bb96")
-		(property "Reference" "R19"
+		(property "Reference" "R21"
 			(at 110.49 152.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4321,6 +4343,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 107.95 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9499c9ad-c6be-42f1-b909-f49a950bd22d")
 		)
@@ -4330,7 +4363,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "R19")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -4348,7 +4381,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06176510-bb33-4b12-bedc-9edf51694472")
-		(property "Reference" "JP10"
+		(property "Reference" "JP13"
 			(at 26.67 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4401,6 +4434,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 26.67 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a1693da6-cd49-43c2-881a-4cd930a6af1f")
 		)
@@ -4410,7 +4454,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP10")
+					(reference "JP13")
 					(unit 1)
 				)
 			)
@@ -4428,7 +4472,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0789a2a5-c0ba-4346-836f-b7e148568baf")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR058"
 			(at 208.28 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -4488,7 +4532,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR055")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -4505,7 +4549,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "083c5ac5-3599-4d06-b7dd-74ed76fb61d8")
-		(property "Reference" "R20"
+		(property "Reference" "R22"
 			(at 121.92 69.342 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4602,6 +4646,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 121.92 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2172235e-9f94-477f-b564-62fef47f150c")
 		)
@@ -4611,131 +4666,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 76.2 167.64 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "08e3fbb4-e8a2-4a37-9ebc-22afbb562e9a")
-		(property "Reference" "R17"
-			(at 76.2 161.29 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 76.2 163.83 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 75.946 168.656 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0710KL.pdf"
-			(at 76.2 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 76.2 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805"
-			(at 76.2 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "YAGEO"
-			(at 76.2 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C84376"
-			(at 76.2 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0805FR-0710KL"
-			(at 76.2 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0a81fe02-c1c7-4d38-a7ba-a8397f093c7b")
-		)
-		(pin "2"
-			(uuid "b02c9870-e640-4b0a-9f97-671deeca303b")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "R17")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -4909,7 +4840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f11c57a-1d6a-4b88-9c37-3d00ea3bc1a2")
-		(property "Reference" "JP16"
+		(property "Reference" "JP19"
 			(at 177.8 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4962,6 +4893,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 177.8 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "875dbca6-8285-45f4-bb82-859ddc50c01d")
 		)
@@ -4971,7 +4913,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP16")
+					(reference "JP19")
 					(unit 1)
 				)
 			)
@@ -4989,7 +4931,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "104c8003-bba1-4df3-8c3e-3376fd731f00")
-		(property "Reference" "JP18"
+		(property "Reference" "JP21"
 			(at 252.73 143.5099 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5044,6 +4986,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 251.46 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b1141f69-293a-4600-967b-f71301aa3238")
 		)
@@ -5053,7 +5006,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP18")
+					(reference "JP21")
 					(unit 1)
 				)
 			)
@@ -5071,7 +5024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1252ccd5-3985-4a76-a19f-1f6f560d162d")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR043"
 			(at 38.1 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5131,7 +5084,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR040")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5149,7 +5102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18edfc50-0c24-4117-8bd9-e0daf9c083f6")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR049"
 			(at 90.17 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -5209,7 +5162,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR046")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -5227,7 +5180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f1208c0-7eb9-4b2f-b39c-49865b76d615")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR056"
 			(at 194.31 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -5287,7 +5240,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR053")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -5305,7 +5258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20b5d58e-a3e4-4ab3-a00b-72ec07c75835")
-		(property "Reference" "JP22"
+		(property "Reference" "JP25"
 			(at 261.62 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5358,6 +5311,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 261.62 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e7e1b4f4-4624-4180-af0a-be09125677ff")
 		)
@@ -5367,7 +5331,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP22")
+					(reference "JP25")
 					(unit 1)
 				)
 			)
@@ -5385,7 +5349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2238ffd3-9670-43cd-a3a4-2c19b9396393")
-		(property "Reference" "C27"
+		(property "Reference" "C29"
 			(at 220.98 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5484,6 +5448,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 218.44 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ebd1ebf9-5acd-49a8-a29d-c90f29247d2f")
 		)
@@ -5493,7 +5468,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C27")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -5511,7 +5486,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "223bea76-1845-45ed-9bda-ca3d6e0f8e56")
-		(property "Reference" "C23"
+		(property "Reference" "C25"
 			(at 167.64 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5610,6 +5585,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 165.1 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5909c89e-a312-4c30-be7a-14f5bf7eab96")
 		)
@@ -5619,7 +5605,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C23")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -5637,7 +5623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26ddd714-6b20-47bd-9666-7aee0753606c")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR062"
 			(at 231.14 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -5697,7 +5683,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR059")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -5715,7 +5701,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27c59997-a85c-4e40-95ad-ed6a281a1837")
-		(property "Reference" "C18"
+		(property "Reference" "C20"
 			(at 115.57 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5814,6 +5800,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 113.03 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7c901329-53ee-4e41-90f6-6d032f9ae325")
 		)
@@ -5823,15 +5820,15 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C18")
+					(reference "C20")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 74.93 93.98 90)
+		(lib_id "Device:C_Small")
+		(at 38.1 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5840,29 +5837,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "28800d2b-0ff7-4b3e-a27b-76b56778095c")
-		(property "Reference" "R16"
-			(at 74.93 87.63 90)
+		(uuid "2b8be627-6e0f-468e-8ec7-86ffac86787e")
+		(property "Reference" "C14"
+			(at 40.64 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 74.93 90.17 90)
+		(property "Value" "0.1u/25V"
+			(at 40.64 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 75.184 92.964 90)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 38.1 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5872,8 +5871,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0710KL.pdf"
-			(at 74.93 93.98 0)
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
+			(at 38.1 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5883,8 +5882,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 74.93 93.98 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 38.1 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5894,8 +5893,8 @@
 				)
 			)
 		)
-		(property "Package" "0805"
-			(at 74.93 93.98 90)
+		(property "Manf" "muRata"
+			(at 38.1 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5905,8 +5904,8 @@
 				)
 			)
 		)
-		(property "Manf" "YAGEO"
-			(at 74.93 93.98 90)
+		(property "MPN" "GRM188R71H104KA93D"
+			(at 38.1 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5916,8 +5915,8 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C84376"
-			(at 74.93 93.98 90)
+		(property "LCSC Part #" "C77055"
+			(at 38.1 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5927,8 +5926,19 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-0710KL"
-			(at 74.93 93.98 90)
+		(property "Package" "0603"
+			(at 38.1 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
+			(at 38.1 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5939,15 +5949,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "35d16bdd-5d6e-490e-ad83-de5f9d60d63e")
+			(uuid "52dc2ca8-8908-41d2-927d-20892cb44721")
 		)
 		(pin "2"
-			(uuid "41703218-7d1f-443e-b2ed-80f0925867f5")
+			(uuid "c777dc3f-529f-4795-a763-9d33845aea61")
 		)
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "R16")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -5965,7 +5975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f02900b-f49e-4e10-9e82-4f8f4ee34b03")
-		(property "Reference" "R18"
+		(property "Reference" "R20"
 			(at 109.22 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6064,6 +6074,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 106.68 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b95f71d4-d0f8-4b3d-8ef8-81f2f38fafb2")
 		)
@@ -6073,7 +6094,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "R18")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -6091,7 +6112,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "339640e9-2bf8-4dc2-ac8f-f1ff75a437fa")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR052"
 			(at 149.86 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -6151,7 +6172,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR049")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -6257,6 +6278,17 @@
 			)
 		)
 		(property "Package" "SOT-23-THIN-6"
+			(at 91.44 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
 			(at 91.44 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6434,6 +6466,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 208.28 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4d8fca04-8c92-444d-94c7-86f22b8a3e78")
 		)
@@ -6464,7 +6507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c4dfe3c-9ca2-4e79-b3ae-11620196c75d")
-		(property "Reference" "JP15"
+		(property "Reference" "JP18"
 			(at 177.8 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6517,6 +6560,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 177.8 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c15f9b2a-88d2-4594-80a7-4cee4bcc8662")
 		)
@@ -6526,7 +6580,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP15")
+					(reference "JP18")
 					(unit 1)
 				)
 			)
@@ -6544,7 +6598,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d88a0d4-18c9-4e27-bece-6824b32e74f2")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR061"
 			(at 228.6 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6604,7 +6658,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR058")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -6622,7 +6676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41e842b3-21e4-4cc4-8a96-6f73750e02f9")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR060"
 			(at 218.44 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -6682,7 +6736,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR057")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -6768,132 +6822,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 38.1 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ca0a788-8c5b-4522-a49c-85dfc5b295bc")
-		(property "Reference" "C12"
-			(at 40.64 71.1199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1u/25V"
-			(at 40.64 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 38.1 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
-			(at 38.1 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 38.1 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "muRata"
-			(at 38.1 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRM188R71H104KA93D"
-			(at 38.1 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C77055"
-			(at 38.1 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0603"
-			(at 38.1 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8a810cb8-3132-4604-a81d-f27c82dc33c2")
-		)
-		(pin "2"
-			(uuid "f63a3bfd-e854-4117-a7d0-7d1e456036cb")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 231.14 143.51 0)
 		(unit 1)
 		(body_style 1)
@@ -6904,7 +6832,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e1c5e5a-4edc-4990-b281-78b655815004")
-		(property "Reference" "C29"
+		(property "Reference" "C31"
 			(at 233.68 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7003,6 +6931,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 231.14 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a0bcdc8f-7277-4a30-84b9-33c334b4816c")
 		)
@@ -7012,7 +6951,133 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C29")
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 68.58 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f572872-3466-4c68-843c-5e2043c4eceb")
+		(property "Reference" "C19"
+			(at 71.12 148.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u/25V"
+			(at 71.12 151.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 68.58 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C344022.pdf"
+			(at 68.58 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 10uF 25V X5R 0603"
+			(at 68.58 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manf" "muRata"
+			(at 68.58 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM188R61E106KA73D"
+			(at 68.58 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C344022"
+			(at 68.58 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805"
+			(at 68.58 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "875a6955-33c8-4439-b95b-df83704aeb70")
+		)
+		(pin "2"
+			(uuid "ef568a5f-8aef-4192-b732-bd2cf4d573de")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -7030,7 +7095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5088f223-c582-44b0-83a4-f146e0916b47")
-		(property "Reference" "JP20"
+		(property "Reference" "JP23"
 			(at 257.81 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7083,6 +7148,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "79ff6a74-d857-4b62-bc20-8c1ab35bdaa2")
 		)
@@ -7092,7 +7168,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP20")
+					(reference "JP23")
 					(unit 1)
 				)
 			)
@@ -7110,7 +7186,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "555cc7cc-4a19-4ad2-a371-077d219ee9c2")
-		(property "Reference" "JP11"
+		(property "Reference" "JP14"
 			(at 27.94 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7163,6 +7239,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 27.94 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "41e336c8-d933-4109-b7d7-2c6a91828881")
 		)
@@ -7172,7 +7259,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP11")
+					(reference "JP14")
 					(unit 1)
 				)
 			)
@@ -7288,6 +7375,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 90.17 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5c6cc7c4-4161-4b13-bd55-273f1744e94e")
 		)
@@ -7316,132 +7414,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 67.31 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64051929-fcb5-45f4-9471-77fa18b0595e")
-		(property "Reference" "C16"
-			(at 69.85 71.1199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u/25V"
-			(at 69.85 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 67.31 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM21BZ71E106KE15L.pdf"
-			(at 67.31 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 67.31 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "muRata"
-			(at 67.31 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRM21BZ71E106KE15L"
-			(at 67.31 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C237493"
-			(at 67.31 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805"
-			(at 67.31 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f7bec2b4-a133-4708-85a6-2820bb669398")
-		)
-		(pin "2"
-			(uuid "48f22e81-1a92-4f23-9b85-2ca7a96f858c")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 254 78.74 90)
 		(unit 1)
@@ -7452,7 +7424,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "65fd8aec-059e-466d-ac63-3938c7d2577d")
-		(property "Reference" "R22"
+		(property "Reference" "R24"
 			(at 252.984 76.708 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7516,6 +7488,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 254 78.74 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2861eae1-7359-40ff-9e11-62b7e8b23b0b")
 		)
@@ -7525,7 +7508,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "R22")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -7640,6 +7623,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 138.43 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "da980d8c-d5a2-4597-bc42-07847fb1b184")
 		)
@@ -7667,7 +7661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74be53a2-8717-496f-a2b6-c97a629cec9c")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR047"
 			(at 67.31 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7727,7 +7721,133 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR044")
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 67.31 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74e54899-debd-4bfb-9997-76829d600d2c")
+		(property "Reference" "C18"
+			(at 69.85 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u/25V"
+			(at 69.85 73.6599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 67.31 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C344022.pdf"
+			(at 67.31 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 10uF 25V X5R 0603"
+			(at 67.31 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manf" "muRata"
+			(at 67.31 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM188R61E106KA73D"
+			(at 67.31 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C344022"
+			(at 67.31 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805"
+			(at 67.31 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c8cb7e9b-c458-47db-ab10-7d022098d811")
+		)
+		(pin "2"
+			(uuid "f764b4fb-afe2-4269-941b-5c845101188f")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -7745,7 +7865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74f4004e-7ffb-476c-983b-8bca97fd1336")
-		(property "Reference" "C26"
+		(property "Reference" "C28"
 			(at 217.17 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7844,6 +7964,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 214.63 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7c636655-36c4-4c5a-b1df-4402191f45e3")
 		)
@@ -7853,7 +7984,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C26")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -7871,7 +8002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76202f50-e99e-43d8-9f3e-bfb153b2268d")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR053"
 			(at 163.83 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -7931,7 +8062,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR050")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -7949,7 +8080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7af0db3f-c400-4b02-80fd-fca01e8b9107")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR045"
 			(at 54.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8009,7 +8140,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR042")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -8027,7 +8158,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8104dd7a-8cf1-4be1-892d-3f335e508435")
-		(property "Reference" "C25"
+		(property "Reference" "C27"
 			(at 196.85 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8126,6 +8257,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 194.31 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a4372df1-d2b0-4bd6-87b0-924e1179ae68")
 		)
@@ -8135,7 +8277,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C25")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -8153,7 +8295,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8979ba2a-110b-4a1c-8f8f-c8929ae7b94c")
-		(property "Reference" "JP14"
+		(property "Reference" "JP17"
 			(at 176.53 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8206,6 +8348,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 176.53 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "45be0c85-acad-4034-aa3f-9f599400d4b4")
 		)
@@ -8215,133 +8368,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 39.37 149.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "89bec5c1-4168-4541-a3ed-9052d7856b0c")
-		(property "Reference" "C13"
-			(at 41.91 148.5899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1u/25V"
-			(at 41.91 151.1299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 39.37 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
-			(at 39.37 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 39.37 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "muRata"
-			(at 39.37 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRM188R71H104KA93D"
-			(at 39.37 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C77055"
-			(at 39.37 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0603"
-			(at 39.37 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "68bb1143-fbdc-4b41-bf61-c4c344b47aaa")
-		)
-		(pin "2"
-			(uuid "5c3f0a12-fd1b-4a45-86bb-0597c2d6aff1")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C13")
+					(reference "JP17")
 					(unit 1)
 				)
 			)
@@ -8457,6 +8484,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 205.74 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "ca73056b-2267-4ec2-b59e-c09c9662986d")
 		)
@@ -8487,7 +8525,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fc6275a-8057-4803-8f06-e790a154dd26")
-		(property "Reference" "JP12"
+		(property "Reference" "JP15"
 			(at 27.94 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8540,6 +8578,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 27.94 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c63e8d43-e09c-42b5-aaaf-50c606acd044")
 		)
@@ -8549,7 +8598,144 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP12")
+					(reference "JP15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 39.37 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90cf7cb3-1a1f-419b-9720-3632d2818255")
+		(property "Reference" "C15"
+			(at 41.91 148.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u/25V"
+			(at 41.91 151.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 39.37 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
+			(at 39.37 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 39.37 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manf" "muRata"
+			(at 39.37 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM188R71H104KA93D"
+			(at 39.37 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C77055"
+			(at 39.37 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 39.37 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
+			(at 39.37 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ae05686-9bc5-4e26-8ccf-7eb6c8e26bbc")
+		)
+		(pin "2"
+			(uuid "38f8c37c-e112-42a3-b9fe-d3bd3e71ae93")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -8567,7 +8753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9258af5a-78a1-4560-91b2-6dc060dd28ac")
-		(property "Reference" "C19"
+		(property "Reference" "C21"
 			(at 116.84 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8666,6 +8852,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 114.3 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "37f9d821-54fb-44d8-bf55-bb2e7e3680d4")
 		)
@@ -8675,7 +8872,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C19")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -8693,7 +8890,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94062283-d724-4a6d-8315-c64ae18f161e")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR046"
 			(at 55.88 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -8753,7 +8950,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR043")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -8771,7 +8968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "941ea94f-e244-4a77-bbf4-70a552f17565")
-		(property "Reference" "JP13"
+		(property "Reference" "JP16"
 			(at 176.53 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8824,6 +9021,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 176.53 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "25f1775b-e22f-484e-98a7-727d55fb1be5")
 		)
@@ -8833,7 +9041,142 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP13")
+					(reference "JP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 74.93 93.98 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b6a531e-ad59-4b1a-a6da-7271ee0b1679")
+		(property "Reference" "R18"
+			(at 74.93 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 74.93 90.17 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.676 94.996 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RT0603BRD0710KL.pdf"
+			(at 74.93 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
+			(at 74.93 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 74.93 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manf" "YAGEO"
+			(at 74.93 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C95204"
+			(at 74.93 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RT0603BRD0710KL"
+			(at 74.93 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
+			(at 74.93 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae898d51-f03e-435c-aac9-3e4bc31df47f")
+		)
+		(pin "2"
+			(uuid "b5a1536b-e58f-4427-8cc5-44f245a913a9")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -8851,7 +9194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b86b089-fcc0-4007-be58-cf9836958327")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR064"
 			(at 265.43 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -8911,7 +9254,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR061")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -8929,7 +9272,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c16e656-4cd8-4957-921f-c153f137bfed")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR051"
 			(at 148.59 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -8989,7 +9332,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR048")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -9007,7 +9350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0076619-7d53-4756-b96c-483bc2ef5177")
-		(property "Reference" "JP19"
+		(property "Reference" "JP22"
 			(at 257.81 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9060,6 +9403,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 257.81 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "079c12a0-7e97-410b-abe8-a8f55430725e")
 		)
@@ -9069,7 +9423,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP19")
+					(reference "JP22")
 					(unit 1)
 				)
 			)
@@ -9087,7 +9441,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a037da07-cd8d-4c6c-8838-4f8b0952050a")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR063"
 			(at 262.89 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -9147,7 +9501,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR060")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -9165,7 +9519,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0a0ed1e-440b-404d-b606-ca8a7a045bb0")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR044"
 			(at 39.37 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -9225,7 +9579,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR041")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -9243,7 +9597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2d895e4-df0d-40f8-b6ba-fcca6fe5419c")
-		(property "Reference" "C24"
+		(property "Reference" "C26"
 			(at 195.58 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9342,6 +9696,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 193.04 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a3f40069-7f61-4174-8b89-0ebc99ed8cc3")
 		)
@@ -9351,7 +9716,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C24")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -9369,7 +9734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a66d9ec8-075a-4083-a1e4-2ca522e6bd2b")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR050"
 			(at 91.44 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -9429,7 +9794,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR047")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -9534,6 +9899,17 @@
 			)
 		)
 		(property "Package" "SMD,7.3x6.6mm"
+			(at 137.16 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
 			(at 137.16 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -9649,7 +10025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5f9dbd9-b53e-4f48-827f-1fe7d0a1405c")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR059"
 			(at 214.63 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -9709,7 +10085,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR056")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -9727,7 +10103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2166c64-a363-4a75-b3b1-e2844bbbef2f")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR057"
 			(at 205.74 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -9787,133 +10163,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR054")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 55.88 149.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c54a2e7c-a213-4d43-8ea6-5d5ff3635f9e")
-		(property "Reference" "C15"
-			(at 58.42 148.5899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u/25V"
-			(at 58.42 151.1299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 55.88 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM21BZ71E106KE15L.pdf"
-			(at 55.88 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 55.88 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "muRata"
-			(at 55.88 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRM21BZ71E106KE15L"
-			(at 55.88 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C237493"
-			(at 55.88 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805"
-			(at 55.88 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4033ec97-2502-4bdb-8ef8-9971b0771acb")
-		)
-		(pin "2"
-			(uuid "5656df65-05c1-46ba-8d75-43e249ad5084")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C15")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -9930,7 +10180,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cdec43e8-b870-4a34-a830-d2cb613a3c33")
-		(property "Reference" "R21"
+		(property "Reference" "R23"
 			(at 122.682 146.558 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10027,6 +10277,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 123.19 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "99f003a6-adfb-4b67-bf2c-9de5eb498708")
 		)
@@ -10036,7 +10297,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "R21")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -10054,7 +10315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0b1958a-3b2a-4b16-ba45-878032ba46cb")
-		(property "Reference" "C28"
+		(property "Reference" "C30"
 			(at 231.14 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10153,6 +10414,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 228.6 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c2ae01c4-8c6f-40ed-b475-8246c1d0f9f1")
 		)
@@ -10162,7 +10434,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C28")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -10180,7 +10452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d400c534-ce64-4b58-9b90-c88d80ba1759")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR048"
 			(at 68.58 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -10240,7 +10512,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR045")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -10258,7 +10530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4012a9d-4b7d-437e-9695-c5663041fdbd")
-		(property "Reference" "JP17"
+		(property "Reference" "JP20"
 			(at 248.92 68.5799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10313,6 +10585,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 247.65 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "93d867e5-bfc0-4c29-bd00-4e2a681d9e9c")
 		)
@@ -10322,7 +10605,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP17")
+					(reference "JP20")
 					(unit 1)
 				)
 			)
@@ -10340,7 +10623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e179f6c3-6587-483a-8e86-ffc206e6184a")
-		(property "Reference" "C22"
+		(property "Reference" "C24"
 			(at 166.37 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10439,6 +10722,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 163.83 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "03058349-f253-41c5-83ba-d982bd12bf90")
 		)
@@ -10448,7 +10742,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C22")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -10456,7 +10750,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 68.58 149.86 0)
+		(at 55.88 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10465,9 +10759,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e435c6c1-03f3-4ae5-8276-0f7d9c85ab45")
+		(uuid "e2a85189-85d2-420f-9321-f595dd77bde3")
 		(property "Reference" "C17"
-			(at 71.12 148.5899 0)
+			(at 58.42 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10478,7 +10772,7 @@
 			)
 		)
 		(property "Value" "10u/25V"
-			(at 71.12 151.1299 0)
+			(at 58.42 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10488,8 +10782,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 68.58 149.86 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10499,8 +10793,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM21BZ71E106KE15L.pdf"
-			(at 68.58 149.86 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C344022.pdf"
+			(at 55.88 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10510,8 +10804,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 68.58 160.02 0)
+		(property "Description" "CAP CER 10uF 25V X5R 0603"
+			(at 55.88 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10522,7 +10816,7 @@
 			)
 		)
 		(property "Manf" "muRata"
-			(at 68.58 149.86 0)
+			(at 55.88 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10532,8 +10826,8 @@
 				)
 			)
 		)
-		(property "MPN" "GRM21BZ71E106KE15L"
-			(at 68.58 149.86 0)
+		(property "MPN" "GRM188R61E106KA73D"
+			(at 55.88 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10543,8 +10837,8 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C237493"
-			(at 68.58 149.86 0)
+		(property "LCSC Part #" "C344022"
+			(at 55.88 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10555,7 +10849,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 68.58 149.86 0)
+			(at 55.88 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10566,10 +10860,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f41f64c-d458-4779-9541-9a1cf47e70a1")
+			(uuid "fa79356b-1895-4095-a2ac-31cb02678a0a")
 		)
 		(pin "2"
-			(uuid "a1406859-19b0-44d3-b6a4-fe289297941e")
+			(uuid "e74fea38-a1da-415d-bdec-89541af5b29e")
 		)
 		(instances
 			(project "foxhunt1"
@@ -10592,7 +10886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e54012b6-138e-4d65-8c5c-0fd2d32c9cc2")
-		(property "Reference" "C14"
+		(property "Reference" "C16"
 			(at 57.15 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10614,7 +10908,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 54.61 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -10625,7 +10919,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM21BZ71E106KE15L.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C344022.pdf"
 			(at 54.61 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -10636,7 +10930,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 10uF 25V X5R 0603"
 			(at 54.61 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -10658,7 +10952,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM21BZ71E106KE15L"
+		(property "MPN" "GRM188R61E106KA73D"
 			(at 54.61 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -10669,7 +10963,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C237493"
+		(property "LCSC Part #" "C344022"
 			(at 54.61 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -10700,7 +10994,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C14")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -10718,7 +11012,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8815a1e-5fd1-46d1-b188-f51dea79b456")
-		(property "Reference" "JP9"
+		(property "Reference" "JP12"
 			(at 26.67 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10771,6 +11065,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 26.67 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ead959ef-54ee-4e6e-ab74-eff1fd5334b5")
 		)
@@ -10780,7 +11085,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP9")
+					(reference "JP12")
 					(unit 1)
 				)
 			)
@@ -10798,7 +11103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb18f2f4-eef1-4487-bb75-fc7630f77f47")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR055"
 			(at 193.04 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -10858,7 +11163,142 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR052")
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 76.2 167.64 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec356225-ae63-44b7-b17e-6f057d2e0a30")
+		(property "Reference" "R19"
+			(at 76.2 161.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 76.2 163.83 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 75.946 168.656 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RT0603BRD0710KL.pdf"
+			(at 76.2 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
+			(at 76.2 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 76.2 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manf" "YAGEO"
+			(at 76.2 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C95204"
+			(at 76.2 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RT0603BRD0710KL"
+			(at 76.2 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
+			(at 76.2 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d9ba951a-e8bc-4cff-99b7-6954f4499ea4")
+		)
+		(pin "2"
+			(uuid "14f4a5b5-f117-4172-8e72-d4121ad494c7")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -10876,7 +11316,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f50066a7-db57-4c81-8f43-8aa07ad450b8")
-		(property "Reference" "C20"
+		(property "Reference" "C22"
 			(at 151.13 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10975,6 +11415,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 148.59 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a7268a6b-ef33-4753-b3fb-dfadd76dd0ab")
 		)
@@ -10984,7 +11435,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "C20")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -11002,7 +11453,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb20c08b-d642-4d96-99fb-34d3077d2c05")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR054"
 			(at 165.1 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -11062,7 +11513,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "#PWR051")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -11080,7 +11531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ffb4f7c4-b15d-4490-8115-4c8104391e5c")
-		(property "Reference" "JP21"
+		(property "Reference" "JP24"
 			(at 261.62 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11133,6 +11584,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 261.62 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6da71b59-eaaf-42a0-b27c-06b9cd6a1703")
 		)
@@ -11142,7 +11604,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c018545d-e009-44ea-af7b-4949ceaf3d2e"
-					(reference "JP21")
+					(reference "JP24")
 					(unit 1)
 				)
 			)

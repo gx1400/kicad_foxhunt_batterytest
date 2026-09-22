@@ -4378,7 +4378,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01581dda-1f24-4bad-8126-51f747f6b5a6")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR035"
 			(at 180.34 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -4438,7 +4438,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR032")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -4456,7 +4456,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07d9d87a-c19c-401c-bba2-74ce632c29b8")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR031"
 			(at 113.03 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -4516,7 +4516,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR028")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -4708,6 +4708,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 111.76 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "2f282db0-5c42-49cf-ac31-ef835fd50d70")
 		)
@@ -4738,7 +4749,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19c5f934-d140-4802-ba7c-bd8300dc14a4")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR034"
 			(at 139.7 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -4798,7 +4809,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR031")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -4937,6 +4948,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 72.39 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f27e6f31-1e64-4a74-b26f-b9b9217095d3")
 		)
@@ -4964,7 +4986,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2aa0c480-b68e-4315-b486-0e9c2debcd52")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR036"
 			(at 187.96 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5024,7 +5046,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR033")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5119,7 +5141,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "379a1760-912f-4e90-b0f5-125abebb6650")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR032"
 			(at 118.11 127 0)
 			(hide yes)
 			(show_name no)
@@ -5179,7 +5201,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR029")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -5197,7 +5219,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44b4d5c3-9cf9-4055-b2e8-15897164d28f")
-		(property "Reference" "R15"
+		(property "Reference" "R17"
 			(at 185.42 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5296,6 +5318,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 182.88 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4ba66a4f-210f-43c8-92b2-251ba94ea7b0")
 		)
@@ -5305,7 +5338,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R15")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -5323,7 +5356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45fd0067-9d18-46b8-8187-c661c8cb129a")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR038"
 			(at 208.28 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5383,7 +5416,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR035")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -5401,7 +5434,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "526153eb-32d2-483c-bcdf-9633c6bd7ded")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR030"
 			(at 72.39 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -5461,7 +5494,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR027")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -5524,6 +5557,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 54.61 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
 			(at 54.61 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -5657,6 +5701,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 118.11 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cc1c257a-2ceb-4c05-bc6a-7911a9e7514b")
 		)
@@ -5684,7 +5739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62295567-2498-4cbc-9468-7b95df3b804a")
-		(property "Reference" "C8"
+		(property "Reference" "C10"
 			(at 196.85 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5783,6 +5838,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 194.31 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "40df354d-bd22-484f-951d-8131ddc15cdf")
 		)
@@ -5792,7 +5858,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C8")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -5810,7 +5876,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6429a143-5008-469b-bbc6-05af49d9fa44")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 210.82 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5909,6 +5975,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 208.28 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3ab72b75-492d-4224-9cfa-a5aea11a4ef0")
 		)
@@ -5918,7 +5995,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5936,7 +6013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "651664b5-7232-43cb-8f4a-be555606c2c5")
-		(property "Reference" "C7"
+		(property "Reference" "C9"
 			(at 182.88 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6035,6 +6112,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 180.34 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b76d711c-8b8c-4325-86bd-dde1288a3dc4")
 		)
@@ -6044,7 +6132,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C7")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -6061,7 +6149,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66603f86-58c2-447d-9066-06466209894c")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR033"
 			(at 125.73 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6121,7 +6209,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR030")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -6260,6 +6348,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 72.39 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5a0225b1-4206-4d22-a3ad-c747f6c509d2")
 		)
@@ -6286,7 +6385,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e9c8778-3f26-4b41-9ea1-daae5c25a0fa")
-		(property "Reference" "R10"
+		(property "Reference" "R12"
 			(at 87.63 70.866 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6394,6 +6493,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 87.63 72.39 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "366eafaf-c264-45c6-b06a-039fc0b9a319")
 		)
@@ -6403,7 +6513,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R10")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6421,7 +6531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b33a567-4dff-44f9-8cb9-6e146ac5d828")
-		(property "Reference" "C6"
+		(property "Reference" "C8"
 			(at 118.11 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6520,6 +6630,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ed324d9d-90e8-471e-abd8-923450fdef48")
 		)
@@ -6529,7 +6650,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C6")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -6624,7 +6745,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9dc0a79e-cbef-4de7-b42b-3b9426107086")
-		(property "Reference" "R13"
+		(property "Reference" "R15"
 			(at 152.146 124.968 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6710,6 +6831,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 152.4 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "085380ba-b105-404a-9fde-e012ca46a126")
 		)
@@ -6725,7 +6857,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R13")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -6743,7 +6875,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a016f800-b025-4084-b273-135d86ef8bbf")
-		(property "Reference" "C4"
+		(property "Reference" "C6"
 			(at 105.41 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6842,6 +6974,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 102.87 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c1d85b53-e3b5-46c3-baa8-77c5f23e5534")
 		)
@@ -6851,7 +6994,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C4")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6870,7 +7013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2407590-934c-4adc-8e6d-79643ee2cd54")
-		(property "Reference" "Q1"
+		(property "Reference" "Q2"
 			(at 127 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6961,6 +7104,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 133.35 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a55bb04e-b4f0-4f5c-bbe1-eae831d9fc24")
 		)
@@ -6973,7 +7127,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "Q1")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -6991,7 +7145,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7f4508a-467e-4ce1-8c6e-cddb47a7b97f")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR037"
 			(at 194.31 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7051,7 +7205,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR034")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -7157,6 +7311,17 @@
 			)
 		)
 		(property "Manf" "MAXIM"
+			(at 133.35 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
 			(at 133.35 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -7318,6 +7483,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 54.61 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "386787ad-2f41-4d65-b483-c6e350493991")
 		)
@@ -7341,7 +7517,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b4127902-8017-495f-b1bc-4afa45d349d2")
-		(property "Reference" "R11"
+		(property "Reference" "R13"
 			(at 87.63 78.486 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7427,6 +7603,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 87.63 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a2f590dc-5642-474a-9906-d5e036de8879")
 		)
@@ -7436,7 +7623,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R11")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -7453,7 +7640,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cde6bfbf-925a-4796-9409-f099fc1b68a8")
-		(property "Reference" "R12"
+		(property "Reference" "R14"
 			(at 89.916 96.012 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7550,6 +7737,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 90.17 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5b338ff3-4244-4876-bae3-5a02272222a4")
 		)
@@ -7559,7 +7757,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R12")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -7577,7 +7775,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0e7b0b4-67c3-439b-9086-55eba4020a20")
-		(property "Reference" "Q2"
+		(property "Reference" "Q3"
 			(at 144.78 55.8799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7675,6 +7873,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 143.51 55.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "61cc3155-fac7-4ad0-a853-b1c882b4476b")
 		)
@@ -7696,7 +7905,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "Q2")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -7714,7 +7923,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e57ca0b0-eae3-4851-9c03-61319f2e9383")
-		(property "Reference" "R14"
+		(property "Reference" "R16"
 			(at 173.99 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7813,6 +8022,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 171.45 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c1ca5406-0f7c-4600-a59c-605af843aac2")
 		)
@@ -7822,7 +8042,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "R14")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -7918,7 +8138,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e769c4d8-5455-48ec-aeff-a6192a0c957d")
-		(property "Reference" "C5"
+		(property "Reference" "C7"
 			(at 115.57 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8017,6 +8237,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 113.03 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "932fa43a-4a08-4da6-9bfb-b2d9286c3e6b")
 		)
@@ -8026,7 +8257,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "C5")
+					(reference "C7")
 					(unit 1)
 				)
 			)

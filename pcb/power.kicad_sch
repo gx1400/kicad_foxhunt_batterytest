@@ -5179,6 +5179,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 107.95 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "46c21aac-91e1-4d44-b949-b90256a79601")
 		)
@@ -5380,6 +5391,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 97.79 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1151a529-6e41-4f93-94b2-868580b1154c")
 		)
@@ -5451,6 +5473,17 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 71.12 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
+			(at 71.12 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5585,6 +5618,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 138.43 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cc80b4ca-1872-44a8-9c40-0a1413797ed2")
 		)
@@ -5655,6 +5699,17 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
+			(at 71.12 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
 			(at 71.12 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -5846,7 +5901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e4ce04e-091f-47d1-8a5d-d07a5c1edf20")
-		(property "Reference" "JP5"
+		(property "Reference" "JP6"
 			(at 113.03 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5899,6 +5954,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 113.03 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c59a83bd-bfb9-432a-ac04-c066a978c4ef")
 		)
@@ -5908,7 +5974,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP5")
+					(reference "JP6")
 					(unit 1)
 				)
 			)
@@ -6178,6 +6244,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 129.54 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "40a8f82b-09e1-46fd-aaae-9cd8c08d96ee")
 		)
@@ -6206,7 +6283,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "464c017b-bd62-4143-b7db-448f374c521c")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR028"
 			(at 229.87 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -6266,7 +6343,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR0127")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -6502,6 +6579,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 127 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "9"
 			(uuid "dd793b38-9294-4dc8-9cfd-5dd8778d0acc")
 		)
@@ -6626,6 +6714,143 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
+		(at 152.4 116.84 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5db39dc9-b831-4e04-97e8-f9765d382f46")
+		(property "Reference" "R9"
+			(at 154.94 115.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 154.94 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 151.384 116.586 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RT0603BRD0710KL.pdf"
+			(at 152.4 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
+			(at 152.4 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 152.4 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manf" "YAGEO"
+			(at 152.4 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C95204"
+			(at 152.4 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RT0603BRD0710KL"
+			(at 152.4 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
+			(at 152.4 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c38e88ae-6ba9-4eb9-b305-f7ae16a1a878")
+		)
+		(pin "2"
+			(uuid "66fcc101-aa44-4a16-afc9-a3c519636ef1")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
 		(at 184.15 55.88 180)
 		(unit 1)
 		(body_style 1)
@@ -6635,7 +6860,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ece1a71-c025-46d5-a307-28a67f1155c9")
-		(property "Reference" "R29"
+		(property "Reference" "R10"
 			(at 187.452 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6732,6 +6957,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 184.15 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "71266ca9-15e3-4a7f-9a48-eed64b2add0c")
 		)
@@ -6741,7 +6977,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R29")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6838,7 +7074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6597e81d-4789-4fe7-bf34-c5ce939dba9e")
-		(property "Reference" "C42"
+		(property "Reference" "C5"
 			(at 232.41 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6935,6 +7171,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 232.41 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2c54448d-6117-4bd1-91a4-eab1eade2f9b")
 		)
@@ -6944,7 +7191,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "C42")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -7117,7 +7364,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7449818b-3a01-4822-86a5-e65c09f69d46")
-		(property "Reference" "Q5"
+		(property "Reference" "Q1"
 			(at 171.45 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7219,6 +7466,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 177.8 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "148c1305-70fa-4715-860f-7856d634f604")
 		)
@@ -7231,133 +7489,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 135.89 167.64 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "754548a1-6b13-4212-b2ac-48b3df056d35")
-		(property "Reference" "R6"
-			(at 138.43 166.3699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 138.43 168.9099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 134.874 167.386 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0710KL.pdf"
-			(at 135.89 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 135.89 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805"
-			(at 135.89 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "YAGEO"
-			(at 135.89 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C84376"
-			(at 135.89 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0805FR-0710KL"
-			(at 135.89 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e1124495-57c1-4578-abaf-6a99e1b57851")
-		)
-		(pin "2"
-			(uuid "802266b8-3790-41fe-a5f9-12adb152f58e")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R6")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -7419,6 +7551,17 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 72.39 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
+			(at 72.39 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7553,6 +7696,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 120.65 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "245ce8b9-1969-442e-bb04-fe2cc439986b")
 		)
@@ -7657,7 +7811,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7b531daa-3f20-4a79-b53a-3b5e3020699b")
-		(property "Reference" "R45"
+		(property "Reference" "R11"
 			(at 221.742 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7754,6 +7908,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 218.44 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "baf10ee5-2688-461d-a2c4-43a0a7f11d7d")
 		)
@@ -7763,7 +7928,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R45")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -8034,6 +8199,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 207.01 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d2804506-418f-4486-b6f5-9d8fa39e9c5d")
 		)
@@ -8070,7 +8246,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85a585ca-bdbc-425a-ab5c-b20538758b22")
-		(property "Reference" "JP6"
+		(property "Reference" "JP7"
 			(at 113.03 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8123,6 +8299,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 113.03 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0a2fd6a3-d8c9-49fe-be1e-0abe277004b4")
 		)
@@ -8132,7 +8319,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP6")
+					(reference "JP7")
 					(unit 1)
 				)
 			)
@@ -8281,6 +8468,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 72.39 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "868b532b-9a58-4fee-b7fe-0c8125840e3e")
 		)
@@ -8386,7 +8584,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91332206-005a-4006-90e2-e95e7762f671")
-		(property "Reference" "JP26"
+		(property "Reference" "JP8"
 			(at 123.19 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8439,6 +8637,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 123.19 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f95e0ece-31e2-4c6f-940e-2d81d214479d")
 		)
@@ -8448,7 +8657,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP26")
+					(reference "JP8")
 					(unit 1)
 				)
 			)
@@ -8562,6 +8771,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 107.95 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "690b02ea-7cb7-470d-9901-f80006975ae0")
 		)
@@ -8590,7 +8810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93ec395f-41a8-4318-820c-beb272ee1947")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR029"
 			(at 238.76 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -8650,7 +8870,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR083")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -8667,7 +8887,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9a8f773e-1b59-412f-b37c-e655e2e38b34")
-		(property "Reference" "C50"
+		(property "Reference" "C4"
 			(at 222.504 123.952 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8766,6 +8986,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 228.6 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "14b3dc8b-1133-4f95-9eee-d11b62c1d7de")
 		)
@@ -8775,7 +9006,144 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "C50")
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 135.89 167.64 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c72acf3-a737-4965-bc0c-d4ea2af7f520")
+		(property "Reference" "R6"
+			(at 138.43 166.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 138.43 168.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 134.874 167.386 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RT0603BRD0710KL.pdf"
+			(at 135.89 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
+			(at 135.89 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 135.89 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manf" "YAGEO"
+			(at 135.89 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C95204"
+			(at 135.89 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RT0603BRD0710KL"
+			(at 135.89 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
+			(at 135.89 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d07d74df-3ff8-478e-a100-3889e08df3c5")
+		)
+		(pin "2"
+			(uuid "6b4137db-1b00-42e4-8b8e-73843ff35da9")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8879,6 +9247,17 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 151.13 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
 			(at 151.13 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9070,7 +9449,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad3ff1da-371b-4759-8db4-265524420642")
-		(property "Reference" "J8"
+		(property "Reference" "J1"
 			(at 240.03 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9167,6 +9546,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 240.03 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "db785684-facb-4b16-a9f3-6e6da71c7650")
 		)
@@ -9179,7 +9569,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "J8")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -9275,7 +9665,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b169cdc3-fd55-46d5-aa34-9dea18e9ea67")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR027"
 			(at 228.6 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -9335,7 +9725,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "#PWR0113")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -9441,6 +9831,17 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 142.24 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
 			(at 142.24 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9866,7 +10267,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca1e67d0-335f-4788-8f87-7b84e3e79c26")
-		(property "Reference" "JP23"
+		(property "Reference" "JP9"
 			(at 213.36 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9919,6 +10320,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 213.36 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ff698cc9-0f44-46b9-a36d-44ee37b9e7aa")
 		)
@@ -9928,7 +10340,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP23")
+					(reference "JP9")
 					(unit 1)
 				)
 			)
@@ -10629,6 +11041,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 123.19 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "9"
 			(uuid "76ae17c5-660d-466f-ac78-bfeafe126d15")
 		)
@@ -10685,7 +11108,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e9680d92-bfb0-4eb5-8368-d06120dcfd74")
-		(property "Reference" "JP25"
+		(property "Reference" "JP5"
 			(at 104.902 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10738,6 +11161,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 105.41 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d960d22e-0387-4c4e-b6ab-44d9c23b7763")
 		)
@@ -10747,7 +11181,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "JP25")
+					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -10851,6 +11285,17 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 147.32 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
 			(at 147.32 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11062,6 +11507,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 104.14 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b976fe69-c762-431d-a830-7f11acbbe9e0")
 		)
@@ -11072,132 +11528,6 @@
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 152.4 116.84 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f255c100-9832-4790-8071-95b869913917")
-		(property "Reference" "R9"
-			(at 154.94 115.5699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 154.94 118.1099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 151.384 116.586 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/YAGEO/RC0805FR-0710KL.pdf"
-			(at 152.4 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 152.4 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805"
-			(at 152.4 116.84 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "YAGEO"
-			(at 152.4 116.84 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C84376"
-			(at 152.4 116.84 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0805FR-0710KL"
-			(at 152.4 116.84 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2ef535d4-198f-483b-af7b-8468a41acf85")
-		)
-		(pin "2"
-			(uuid "1b3a4fd1-c7be-48d1-ba27-b9684c76dcdc")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -11215,7 +11545,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6f6a3b6-c64d-470b-8631-91d1e9354ace")
-		(property "Reference" "D5"
+		(property "Reference" "D1"
 			(at 212.09 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11378,6 +11708,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 212.09 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b246ae2f-6b07-4642-bb53-1871387a52e7")
 		)
@@ -11390,7 +11731,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "D5")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -11549,6 +11890,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 105.41 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "9"
 			(uuid "259c3dd0-b19f-4c03-af0c-549f1d24471f")
 		)
@@ -11607,7 +11959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fdb0da67-be5d-4a93-a3c9-94f1659fd712")
-		(property "Reference" "SW3"
+		(property "Reference" "SW1"
 			(at 232.41 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11704,6 +12056,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 232.41 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0f21a918-a48e-4ab2-990a-0f0a639da7eb")
 		)
@@ -11713,7 +12076,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4"
-					(reference "SW3")
+					(reference "SW1")
 					(unit 1)
 				)
 			)

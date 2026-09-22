@@ -3853,7 +3853,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "057d960d-da8a-477f-9906-ca5aa5b0dec7")
-		(property "Reference" "D4"
+		(property "Reference" "D3"
 			(at 29.21 92.6398 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3952,6 +3952,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 40.64 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2bbafed6-d47a-4239-88bd-992c3eabd0f1")
 		)
@@ -3967,7 +3978,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "D4")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -3985,7 +3996,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0df1bf6c-89fc-4ce2-a971-5564423b109a")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR069"
 			(at 146.05 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -4045,7 +4056,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR063")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -4063,7 +4074,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21b8a40b-1da1-4e87-8037-29b3c30e219a")
-		(property "Reference" "R32"
+		(property "Reference" "R28"
 			(at 241.3 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4107,7 +4118,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
 			(at 243.84 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -4162,6 +4173,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 243.84 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a84ea5b2-a193-42a0-8cfc-f8623ba91f94")
 		)
@@ -4171,7 +4193,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "R32")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -4278,6 +4300,17 @@
 			)
 		)
 		(property "Package" "SMD,25.5x18mm"
+			(at 146.05 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
 			(at 146.05 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4432,7 +4465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36b42f52-8a04-43f2-b897-1c5672e733fa")
-		(property "Reference" "R33"
+		(property "Reference" "R29"
 			(at 250.19 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4476,7 +4509,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
 			(at 247.65 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -4531,6 +4564,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 247.65 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a1daab97-7104-47eb-9907-ec1ff1185e7b")
 		)
@@ -4540,7 +4584,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "R33")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -4558,7 +4602,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47ade5fc-3af4-4eca-96fe-edc727116b43")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR071"
 			(at 154.94 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -4618,7 +4662,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR084")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -4636,7 +4680,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47e5cdba-33cb-4948-816f-4434ff33093c")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR068"
 			(at 146.05 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -4696,7 +4740,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR062")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -4792,7 +4836,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "581c575b-c250-4ae1-b351-24e50e20ada0")
-		(property "Reference" "C53"
+		(property "Reference" "C34"
 			(at 254 123.952 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4889,6 +4933,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 254 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8bf0b5e3-09b1-496a-8c61-f5fa8b419a27")
 		)
@@ -4898,7 +4953,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "C53")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -4915,7 +4970,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7186cd48-3936-4506-8a24-29589ee5f028")
-		(property "Reference" "Q6"
+		(property "Reference" "Q4"
 			(at 160.02 163.576 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4971,6 +5026,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 163.83 165.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "4e3216ee-429b-40cb-84af-f80d1a6052cf")
 		)
@@ -4983,7 +5049,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "Q6")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -5000,7 +5066,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "726f1241-2315-41e1-bcce-23954ae0efa3")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR073"
 			(at 233.68 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -5060,7 +5126,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR0125")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -5079,7 +5145,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76b0ac08-1e15-4f58-92d4-5ca8f8aaf971")
-		(property "Reference" "C52"
+		(property "Reference" "C32"
 			(at 31.75 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5178,6 +5244,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 34.29 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7719a3bb-9387-4773-8701-7c58f3179578")
 		)
@@ -5187,7 +5264,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "C52")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -5204,7 +5281,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "796e4183-e07a-4fd4-ba55-781a6e8f06cc")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR076"
 			(at 243.84 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -5264,7 +5341,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR092")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -5282,7 +5359,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f3d55d6-6e31-46d8-8622-cb850203cfa5")
-		(property "Reference" "#PWR0126"
+		(property "Reference" "#PWR072"
 			(at 219.71 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5342,7 +5419,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR0126")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -5500,6 +5577,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 251.46 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "26b35340-f153-497b-9154-472e313ad1a5")
 		)
@@ -5556,7 +5644,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "852b5d6b-e7ef-41ef-b9aa-f939d36cc4f3")
-		(property "Reference" "R43"
+		(property "Reference" "R27"
 			(at 238.76 130.302 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5655,6 +5743,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 237.49 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e1b4bc73-c62f-4fab-bd96-b5ac42673983")
 		)
@@ -5664,7 +5763,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "R43")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -5682,7 +5781,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87d31140-7027-47d8-9da0-cd4ae43c7784")
-		(property "Reference" "R44"
+		(property "Reference" "R26"
 			(at 232.41 106.172 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5726,7 +5825,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 10kΩ ±0.1% 100mW 0603"
 			(at 233.68 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5781,6 +5880,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 233.68 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "71cf3b40-6958-473a-be11-b755c23090dc")
 		)
@@ -5790,7 +5900,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "R44")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -5808,7 +5918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f3410d2-76ee-469d-a8df-d8005311bba6")
-		(property "Reference" "C30"
+		(property "Reference" "C33"
 			(at 154.94 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5907,6 +6017,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 152.4 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d70429c3-78aa-4cb0-ac07-0ed1238c8b84")
 		)
@@ -5916,7 +6037,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "C30")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -5933,7 +6054,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a45b4cb3-a890-4ddd-850e-119d9cfa8b18")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR074"
 			(at 234.95 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5993,7 +6114,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR0123")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -6010,7 +6131,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5b6f25c-0026-4f9d-b99d-837830d02b1e")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR077"
 			(at 247.65 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -6070,7 +6191,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR093")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -6089,7 +6210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa8fb8db-6387-4003-a98b-495ee2e7c79c")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR066"
 			(at 40.64 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6149,7 +6270,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR0118")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -6167,7 +6288,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b137bc49-385d-4ee3-b972-a71579187ba3")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR075"
 			(at 234.95 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -6227,7 +6348,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR0122")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -6245,7 +6366,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be1ef350-3fe7-4e94-96bd-73bcebecf8a4")
-		(property "Reference" "#PWR0120"
+		(property "Reference" "#PWR065"
 			(at 34.29 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6305,7 +6426,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR0120")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -6323,7 +6444,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d70ae266-03d0-4d7a-8ac0-bb62a2c0496a")
-		(property "Reference" "Q9"
+		(property "Reference" "Q5"
 			(at 224.282 156.972 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6379,6 +6500,17 @@
 				)
 			)
 		)
+		(property "Field10" ""
+			(at 222.25 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "ef790bf7-d446-4798-b779-e7d4b10a1002")
 		)
@@ -6391,7 +6523,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "Q9")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -6409,7 +6541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dafdfeca-3057-40ef-bcc7-083cd39d6e88")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR079"
 			(at 264.16 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -6469,7 +6601,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR0121")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -6487,7 +6619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0222efe-7d91-4a0e-a524-cca5f97b017e")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR070"
 			(at 152.4 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -6547,7 +6679,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR064")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -6565,7 +6697,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb5a24de-4561-4a0b-99d8-09faedea2930")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR078"
 			(at 264.16 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -6625,7 +6757,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR0124")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -6643,7 +6775,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f111854d-cffd-497a-a860-599a122b597e")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR067"
 			(at 40.64 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6703,7 +6835,7 @@
 		(instances
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/617e4003-f89e-4d51-9dfb-cf31f0818925"
-					(reference "#PWR0119")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)

@@ -554,7 +554,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "../../../Downloads/foxhunt1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -678,10 +678,10 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Packaging",
           "name": "Packaging",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -729,6 +729,54 @@
           "group_by": false,
           "label": "Digikey PN",
           "name": "Digikey PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "VMax",
+          "name": "VMax",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Vfwd",
+          "name": "Vfwd",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Imported",
+          "name": "Imported",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "IMax",
+          "name": "IMax",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Modified",
+          "name": "Modified",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Source",
+          "name": "Source",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
           "show": false
         }
       ],
@@ -780,7 +828,7 @@
         "uuid": "8399ba4b-9428-480d-8b65-76cf154b97a5"
       }
     ],
-    "used_designators": "R1-57,TP1-8,JP1-41,J1-12,#FLG1-42,TH1-3,Y1-2,#PWR1-171,FL1,RV1,L1-9,SW1-10,Card1,C1-79,D1-12,U1-20,Q1-13,F1-7,BT1-6",
+    "used_designators": "JP1-41,TP1-8,R1-61,U1-20,D1-12,Q1-13,TH1-3,#FLG1-42,J1-12,FL1,Y1-2,#PWR1-171,Card1,C1-79,SW1-10,L1-9,RV1,BT1-6,F1-7",
     "variants": []
   },
   "sheets": [
