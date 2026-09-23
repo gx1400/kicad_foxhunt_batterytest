@@ -8,14 +8,17 @@ this board**: one section as the TX-safety PTT hardware timeout (`controller_pla
 `Package_SO:SOIC-16_3.9x9.9mm_P1.27mm` (stock libraries, both pin-verified against
 Nexperia's own datasheet — no library fix needed).
 
-**This part is not placed in the schematic yet** (`open_items.md`: "the 74HC123 isn't
-placed in the schematic either way"). Everything below is a planning document, same rigor
-level as `vhf_matching_detector.md` before that ladder existed: real pin functions from the
-datasheet, but "planned tie/connection" is intent pulled from `controller_platform.md` /
-`open_items.md` / `audio_ptt_path.md`, not something to treat as already wired. Two of the
-four trigger nets involved (the retrigger source for the TX-timeout half, and the level of
-`POWER_PB_SIGNAL` feeding the force-off half) depend on design decisions that aren't made
-yet either — flagged individually below, and again in § 4.
+**Placement status, corrected 2026-09-23:** the part (`U21`) is now placed and substantially
+wired on `SA818V.kicad_sch` — the note below about this being purely a planning document is
+stale for unit A specifically (RC timing, power-up circuit, and the NAND/switch output chain
+are built — see § 3 and the pin table). Still genuinely unbuilt: unit B (force-off failsafe)
+entirely, and unit A's MCU-retrigger path (§ 3's open item). Everything else below retains
+its original framing: real pin functions from the datasheet, but "planned tie/connection" is
+intent pulled from `controller_platform.md` / `open_items.md` / `audio_ptt_path.md` except
+where a section explicitly says otherwise. Two of the four trigger nets involved (the
+retrigger source for the TX-timeout half, and the level of `POWER_PB_SIGNAL` feeding the
+force-off half) depend on design decisions that aren't made yet either — flagged
+individually below, and again in § 4.
 
 ## 1. Full pin table
 
@@ -26,7 +29,7 @@ description) and Table 3 (function table), SO16/SOT109-1 pinout.
 |---|---|---|---|---|
 | 1 | 1A | I | Negative-edge triggered input, unit A (Schmitt) | **Unit A = TX-safety timeout.** Not yet decided whether A or B is the active retrigger input for this half — see § 3. If unused, tie to the level the function table calls for with the other input active (function table: triggering needs `nRD`=H; with `nB`=H, a falling edge on `nA` triggers — so if B is the active input instead, tie `1A` low). |
 | 2 | 1B | I | Positive-edge triggered input, unit A (Schmitt) | Mutual with `1A` above — whichever of A/B carries the periodic MCU "keep transmitting" pulse from the PTT-intent path; the other ties to its inactive level. |
-| 3 | 1R̄D | I | Direct reset LOW (async, overrides everything) + positive-edge triggered input | Planned: pulled to VCC (inactive) unless a system-level "kill PTT now" reset source is defined. Also see the datasheet's own power-up-glitch note (§ Application information, Fig. 12) — an R̄D-side RC network held low briefly after power-up avoids a spurious startup pulse, which here would mean a spurious momentary PTT key. Not yet designed. |
+| 3 | 1R̄D | I | Direct reset LOW (async, overrides everything) + positive-edge triggered input | **Built** (2026-09-23): Nexperia's own Fig. 12 power-up circuit, plus a fast-discharge diode — see § 3.1. No "kill PTT now" system-level reset source feeds this pin; it's purely the power-up-glitch guard. |
 | 4 | 1Q̄ | O | Active-LOW output, unit A | Planned, with `13`/`1Q`: series-gates the existing PTT path (`IO16` → `Q10` → `J11` → SA818S/HT `PTT`, see `sa818_pinout.md`/`audio_ptt_path.md`) per `controller_platform.md` § TX safety — "gates the PTT line in series with the MCU's own PTT-intent GPIO." Exact insertion point (ahead of `Q10`'s gate, in series with its drain, or ahead of the still-unselected PTT-keying optocoupler) is undecided — open item. |
 | 13 | 1Q | O | Active-HIGH output, unit A | See `1Q̄` above — whichever polarity fits the eventual gate implementation. |
 | 14 | 1CEXT | — | External timing capacitor connection, unit A | RC timing network for the **10-second hard TX ceiling** — see § 3 for the populated values (`C80`). Per the datasheet's own app-note (Fig. 11): cap goes between this pin and `15`/`1REXT/CEXT`. |
@@ -37,7 +40,7 @@ description) and Table 3 (function table), SO16/SOT109-1 pinout.
 | 8 | GND | — | Ground | Planned: `GND`. |
 | 9 | 2A | I | Negative-edge triggered input, unit B (Schmitt) | Planned force-off trigger, per `open_items.md`'s leading option: "triggered directly by SW3 (or its isolated `POWER_PB_SIGNAL` node)." **See the voltage-domain flag in § 4 — this can't actually be direct.** |
 | 10 | 2B | I | Positive-edge triggered input, unit B (Schmitt) | Mutual with `2A` — same flag applies. |
-| 11 | 2R̄D | I | Direct reset LOW (async) + positive-edge triggered input, unit B | Same treatment as `1R̄D` (tie inactive, consider the Fig. 12 power-up RC). Also the natural place to let firmware abort the hardware failsafe once a normal software power-off succeeds in time, if that's ever wanted — not yet decided. |
+| 11 | 2R̄D | I | Direct reset LOW (async) + positive-edge triggered input, unit B | **Currently hard-tied to `GND`** (confirmed against the live schematic, 2026-09-22 circuit review) — the opposite of `1R̄D`'s "inactive" tie: this holds unit B in permanent reset, a safe placeholder since it isn't built yet, not a step toward the Fig. 12 power-up RC. Once unit B's design is real, this should get its own copy of `1R̄D`'s power-up-RC + diode treatment (§ 3.1) instead of the hard GND tie. Also the natural place to let firmware abort the hardware failsafe once a normal software power-off succeeds in time, if that's ever wanted — not yet decided. |
 | 12 | 2Q̄ | O | Active-LOW output, unit B | See `2Q` above. |
 | 16 | VCC | — | Supply, 2.0–6.0V (74HC) | Planned: not yet decided which rail — see § 4. |
 
@@ -96,6 +99,42 @@ is currently floating — two wire stubs run toward a nearby `+3.3V` symbol and 
 Both need to be finished before this matches the retriggerable-watchdog design intent
 described in `controller_platform.md` § TX safety.
 
+### 3.1. Unit A — power-up glitch guard on `1R̄D` (pin 3) — built, 2026-09-23
+
+Nexperia's own datasheet, §11.2 "Power-up considerations," Fig. 12: *"When the monostable is
+powered-up it may produce an output pulse... This output pulse can be eliminated using the
+circuit shown in Fig. 12."* That figure's topology — `R` from `VCC` to `nR̄D`, `C` from
+`nR̄D` to `GND` — replaces what used to be a hard `+3.3V` tie on pin 3, so a spurious edge on
+`1A`/`1B` right at power-up (rail still settling) can't produce a spurious `1Q` pulse, which
+for this unit would mean a momentary unwanted PTT key at boot.
+
+**Populated** (confirmed against the live schematic):
+- **`R67`** = 10kΩ, `+3.3V` → pin 3 — matches the resistor value already standardized
+  elsewhere on this sheet (`R44`/`R45`/`R59`/`R61`/`R64`/`R65`/`R66`)
+- **`C83`** = 0.1µF/25V, pin 3 → `GND`
+- τ = R×C = 10kΩ × 0.1µF = **1ms**; `1R̄D` crosses the input threshold roughly **0.7–2.3ms**
+  after power-up (0.69τ at a 50%·V_CC threshold, up to ~2.3τ at a conservative 90%·V_CC
+  threshold) — comfortably longer than a typical LDO's turn-on transient, and negligible
+  next to the 10s main TX-timeout pulse (§ 3), so it doesn't delay real operation.
+
+**Fast-discharge diode — `D13` (`BAS116`, LCSC `C232527`, onsemi, SOT-23)**, in parallel with
+`R67`: cathode → `+3.3V`, anode → pin 3/`C83` node (same reference design as this board's
+`D2`/`D3`/`D5`, reused rather than adding a new diode part). Without it, `C83` can only bleed
+down through `R67` back into a *collapsing* `+3.3V` rail — no faster than the rail itself
+decays, and not at all if power drops only briefly. On a fast power-cycle, `C83` could still
+be partially charged when `+3.3V` returns, giving a shorter (or missing) reset pulse on the
+very next power-up — the scenario this circuit exists to handle. `D13` fixes that: reverse
+biased (inert, zero loading) during normal charge-up, forward biased the instant pin 3's
+node voltage exceeds the decaying rail, dumping `C83`'s charge back into `+3.3V` and letting
+`C83` track the rail down to ~0V every time. Same technique the datasheet itself uses one
+section later (§11.3, Fig. 13, `D_EXT` across `R_EXT`) for the `CEXT`/`REXT` timing network,
+though that one's sized for large surge current (a 47µF `CEXT`); `BAS116` is plenty for this
+much smaller 0.1µF node.
+
+**Still open**: unit B (`2R̄D`, pin 11) doesn't have this treatment — it's hard-tied to `GND`
+instead (see pin table above), a safe placeholder since unit B isn't designed yet, not a
+power-up guard.
+
 ## 4. Open design questions (nothing here is schematic yet)
 
 - **`POWER_PB_SIGNAL` can't feed unit B directly, despite how `open_items.md` phrases it.**
@@ -123,10 +162,12 @@ described in `controller_platform.md` § TX safety.
 - **Exact force-off override mechanism** (unit B) — how the output edge actually forces
   `PWR_LATCH` low against a possibly-still-asserting `Q6` — undecided; flagged in
   `open_items.md` as "next thing being worked on," not yet started.
-- **Power-up glitch handling** (both halves) — the datasheet's own Fig. 12 circuit (an RC
-  network holding `nR̄D` low briefly after power-up) prevents a spurious pulse at boot; for
-  unit A that would mean a spurious momentary PTT key, for unit B a spurious force-off
-  assertion. Not yet designed either.
+- **Power-up glitch handling — resolved for unit A, still open for unit B.** Unit A now has
+  the datasheet's Fig. 12 RC network plus a fast-discharge diode on `1R̄D` (pin 3) — see
+  § 3.1 (`R67`/`C83`/`D13`). Unit B's `2R̄D` (pin 11) is still just hard-tied to `GND`
+  (permanent reset, a safe placeholder) — it'll need the same treatment once unit B's
+  design (force-off override mechanism, trigger source) is actually decided, to avoid a
+  spurious force-off assertion at boot once it's live.
 
 ## 5. Reference documents
 
