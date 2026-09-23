@@ -109,33 +109,71 @@ datasheet-derived guess.
 Earlier framing (jumper vs. PCA9555-controlled switch) is replaced by a simpler mechanical
 approach using the external jack itself:
 
-**External jack connector plan.** One standard 3.5mm TRS/TRRS jack (not the K1 module's own
-2-jack 3.5mm+2.5mm split — that split exists on the *radio* side; off-the-shelf "K1 to
-3.5mm" adapter cables, e.g. the BTECH one sold for Baofeng/Kenwood-style radios, bridge
-between a standard PC/phone-style 3.5mm plug and the radio's actual K1 socket, so this
-board only needs the standard-headset side). Real K1 pinout for reference (Wildtalk's
-documented reference; clone radios vary): radio's own 3.5mm jack is Tip=PTT (short to
-ground to transmit), Ring=Mic (radio provides phantom power), Sleeve=5V tap; radio's 2.5mm
-jack is Ground/Program/Speaker-out — not replicated here since this design doesn't need the
-speaker/program functions.
+**External jack connector plan — revised to TRRS, matching the Digirig pinout, 2026-09-22.**
+Superseding the TRS (3-conductor) plan below it: the board is moving to a **4-conductor
+TRRS jack**, pinned to match [Digirig's Baofeng HT cable set](https://digirig.net/product/baofeng-cables/)
+so that cable — the actual one planned for bench testing — can plug in directly rather than
+needing a K1 adapter cable. That cable's radio-side end still terminates in the same K1
+connector referenced below; only the *this-board-side* pinout convention changes, to match
+Digirig's own 3.5mm TRRS port instead of a generic PC-headset TRS jack.
 
-**Planned wiring**: Tip = attenuated mic-level audio (shared with SA818S `MIC_IN`), Ring =
-PTT (shared with SA818S `PTT`), Sleeve = `GND`.
+**Planned wiring (Digirig convention)**:
+- **Tip** = `MIC_OUT` — attenuated mic-level audio out (shared with SA818S `MIC_IN`, same
+  signal as the old TRS plan's Tip, just renamed to match Digirig's own labeling)
+- **Ring 1** = `AUDIO_IN` — **unused**. This is where Digirig's own RX-audio-in would land;
+  this design still doesn't route SA818S `AF_OUT` back into the MCU (no onboard speaker amp
+  chosen — see the RX-audio note below), so this pin is left unconnected for now
+- **Ring 2** = `PTT` (shared with SA818S `PTT`, moved from plain "Ring" in the TRS plan to
+  "Ring 2" now that there's a Ring 1 ahead of it)
+- **Shield/Sleeve** = `GND`
 
-**Switching mechanism: a jack with two independent normally-closed switch contacts**, not
-a jumper. Plugging in disconnects the SA818S from *both* the audio feed and the PTT feed
-simultaneously (one NC contact per conductor) — important because PTT is otherwise wired
-in parallel to both destinations, and without this, keying PTT while something's plugged in
-would transmit on both the SA818S and the external radio at once (harmless if the SA818S
-has no antenna connected, a real mutual-interference risk if it does). Look for a switched
-3.5mm jack part (e.g. Cliff/CUI parts marketed with "SW"/detect contacts) with enough
-independent switch poles for this. PTT is a direct short-to-ground per the real K1 spec —
-compatible with the already-planned optocoupler/relay-style PTT output (not a raw GPIO
-logic level), so the same PTT-keying hardware likely drives both destinations unmodified.
+**Part change required.** The currently-populated `J6` (`SJ2-3593D-SMT-TR`, `C4991621`) is a
+**3-conductor TRS** part — physically incompatible with this 4-conductor pinout. It needs
+replacing with a real TRRS part before this wiring can be built. Whatever switch-disconnect
+mechanism replaces the current one (see next paragraph and the live-circuit notes below)
+also needs re-terminating: the existing `J6` wiring puts the switch-disconnect throws on
+`R`/`RN` (old "Ring") — the new part's equivalent throw needs to land on `Ring 2`'s contact
+instead, and `Ring 1` (unused) needs no switch at all.
+
+**Separate open item, 2026-09-22: cable-insertion detection to a discrete GPIO.** Independent
+of the SA818S-disconnect switching above — no need to gate anything on the SA818S side for
+this — also look for a TRRS part with an additional **electrically isolated** detect-switch
+pin (not in series with Tip/Ring1/Ring2/Shield) so firmware can read cable-present/absent
+directly. Planned to land on a spare digital input rather than adding a new GPIO: reassign
+one of the PCA9555 expander's existing external JST breakout button inputs (`U15`, 4x
+currently wired as generic-purpose spares — see `controller_platform.md` § I2C GPIO
+expander) to this signal instead of a physical button. Not yet sourced — see the earlier
+session's LCSC search for candidates in this space (Same Sky's `SJ3-3509X` series has an
+"isolated switch" option, though only in combination with a single tip switch, not the
+tip+ring2 pairing this design now needs; keep looking for a closer match).
+
+**Switching mechanism (SA818S-disconnect): a jack with independent normally-closed switch
+contacts**, not a jumper. Plugging in disconnects the SA818S from *both* the audio feed and
+the PTT feed simultaneously (one NC contact per conductor) — important because PTT is
+otherwise wired in parallel to both destinations, and without this, keying PTT while
+something's plugged in would transmit on both the SA818S and the external radio at once
+(harmless if the SA818S has no antenna connected, a real mutual-interference risk if it
+does). PTT is a direct short-to-ground per the real K1 spec — compatible with the
+already-planned optocoupler/relay-style PTT output (not a raw GPIO logic level), so the
+same PTT-keying hardware likely drives both destinations unmodified.
 
 **Open assumption**: routing the SA818S-tuned attenuator output to an arbitrary external
 radio assumes similar mic sensitivity — reasonable for most cheap HTs (similar electret-
 level inputs) but not verified against a specific target radio.
+
+---
+
+**Original TRS plan, 2026-09-21 (superseded above, kept for the K1-pinout reference and
+switch-contact rationale, both still relevant).** One standard 3.5mm TRS/TRRS jack (not the
+K1 module's own 2-jack 3.5mm+2.5mm split — that split exists on the *radio* side;
+off-the-shelf "K1 to 3.5mm" adapter cables, e.g. the BTECH one sold for Baofeng/Kenwood-style
+radios, bridge between a standard PC/phone-style 3.5mm plug and the radio's actual K1 socket,
+so this board only needs the standard-headset side). Real K1 pinout for reference (Wildtalk's
+documented reference; clone radios vary): radio's own 3.5mm jack is Tip=PTT (short to
+ground to transmit), Ring=Mic (radio provides phantom power), Sleeve=5V tap; radio's 2.5mm
+jack is Ground/Program/Speaker-out — not replicated here since this design doesn't need the
+speaker/program functions. Look for a switched 3.5mm jack part (e.g. Cliff/CUI parts
+marketed with "SW"/detect contacts) with enough independent switch poles for this.
 
 **RX audio (the other direction)**: SA818S `AF_OUT` (pin 3) — typical 700mV amplitude,
 200Ω output impedance per its own datasheet — feeds an external amplifier (SA818S's
@@ -198,9 +236,12 @@ Real, open-source references worth reviewing before finalizing values:
 - Attenuator network (`R49`/`RV1`/`R50`/`C65`, § 2) for `OUTL` → `MIC_IN` — placed in
   `audio.kicad_sch`. Exact trimmer setting still needs a real bench deviation measurement
   once SA818S is placed, not just the calculated nominal target.
-- External HT jack: pick a real switched 3.5mm TRS/TRRS part (two independent NC contacts,
-  one per audio/PTT conductor — see § 2) and verify it against a real datasheet, same rigor
-  as this project's other connector choices. Not yet sourced.
+- External HT jack: **now a TRRS part** (Digirig-pinout, see § 2) needing (a) switch-disconnect
+  NC contacts on Tip and Ring 2 (not Ring 1, which is unused) and (b) a separate electrically
+  isolated detect-switch pin for cable-present sensing to a spare PCA9555 GPIO — verify
+  whatever's chosen against a real datasheet, same rigor as this project's other connector
+  choices. Not yet sourced; replaces the currently-populated 3-conductor `J6`
+  (`SJ2-3593D-SMT-TR`).
 - Confirm which ESP32-S3 GPIO drives `I2S_XSMT` (wired as a live net, not hard-tied —
   tie-off decision is resolved, just needs the specific pin documented here and in
   `esp32s3_pinout.md`).

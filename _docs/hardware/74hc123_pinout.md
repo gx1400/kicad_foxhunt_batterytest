@@ -29,7 +29,7 @@ description) and Table 3 (function table), SO16/SOT109-1 pinout.
 | 3 | 1R̄D | I | Direct reset LOW (async, overrides everything) + positive-edge triggered input | Planned: pulled to VCC (inactive) unless a system-level "kill PTT now" reset source is defined. Also see the datasheet's own power-up-glitch note (§ Application information, Fig. 12) — an R̄D-side RC network held low briefly after power-up avoids a spurious startup pulse, which here would mean a spurious momentary PTT key. Not yet designed. |
 | 4 | 1Q̄ | O | Active-LOW output, unit A | Planned, with `13`/`1Q`: series-gates the existing PTT path (`IO16` → `Q10` → `J11` → SA818S/HT `PTT`, see `sa818_pinout.md`/`audio_ptt_path.md`) per `controller_platform.md` § TX safety — "gates the PTT line in series with the MCU's own PTT-intent GPIO." Exact insertion point (ahead of `Q10`'s gate, in series with its drain, or ahead of the still-unselected PTT-keying optocoupler) is undecided — open item. |
 | 13 | 1Q | O | Active-HIGH output, unit A | See `1Q̄` above — whichever polarity fits the eventual gate implementation. |
-| 14 | 1CEXT | — | External timing capacitor connection, unit A | Planned RC timing network for the **2-minute hard TX ceiling** — see § 3 for calculated starting values. Per the datasheet's own app-note (Fig. 11): cap goes between this pin and `15`/`1REXT/CEXT`. |
+| 14 | 1CEXT | — | External timing capacitor connection, unit A | RC timing network for the **10-second hard TX ceiling** — see § 3 for the populated values (`C80`). Per the datasheet's own app-note (Fig. 11): cap goes between this pin and `15`/`1REXT/CEXT`. |
 | 15 | 1REXT/CEXT | — | External timing resistor+capacitor connection, unit A | Resistor to VCC, per the same app-note figure. See § 3 for values. |
 | 5 | 2Q | O | Active-HIGH output, unit B | **Unit B = spare-half hardware force-off failsafe** (`open_items.md`). Planned to assert an override of `PWR_LATCH`/`Q6`'s hold (`controller_platform.md` § Power sequencing) if the software hold-to-power-off timeout is exceeded. The actual override mechanism — how a one-shot output edge forces `PWR_LATCH` low against a possibly-still-asserting `Q6` — is the main undecided piece here, not just an RC value. |
 | 6 | 2CEXT | — | External timing capacitor connection, unit B | RC target: "longer than the software hold threshold" (`open_items.md`). That firmware threshold isn't documented yet (hold-to-power-off firmware is itself still TBD per the same doc), so no concrete value can be calculated for this half yet — blocked on a firmware constant, unlike unit A's timing. |
@@ -52,9 +52,10 @@ the RC-timed pulse would otherwise end, the output stays asserted indefinitely �
 the property the TX-safety design in `controller_platform.md` depends on ("the MCU must
 periodically retrigger it during a legitimate transmission").
 
-## 3. Unit A — TX-safety timeout: starting RC values
+## 3. Unit A — TX-safety timeout: RC values
 
-Target: **2-minute (120s) hard ceiling** per `controller_platform.md` § TX safety.
+Target: **10-second hard ceiling** per `controller_platform.md` § TX safety (revised down
+from an earlier 2-minute target — 2026-09-22).
 
 Datasheet's own pulse-width formula (§10, footnote [2], valid for `CEXT` > 10nF):
 
@@ -63,28 +64,37 @@ tW (ns) = K × REXT (kΩ) × CEXT (pF)
 K ≈ 0.45 at VCC = 5.0V, ≈ 0.55 at VCC = 2.0V (Fig. 6 — K drifts with VCC, "typical" only)
 ```
 
-Recommended `REXT` range per the datasheet's own dynamic-characteristics table: 2kΩ–1000kΩ
-at VCC = 5.0V. Solving for `tW` = 120s = 1.2×10¹¹ ns at K = 0.45:
-
-| REXT | Required CEXT | Notes |
-|---|---|---|
-| 470kΩ | ≈ 560µF | Mid-range R, needs a real electrolytic/tantalum at this value — not a ceramic. |
-| 1MΩ (datasheet's own max) | ≈ 270µF | Smaller, cheaper cap; R right at the recommended ceiling. |
+**Populated**: `R60` = 470kΩ (`REXT`), `C80` = 47µF (`CEXT`) — confirmed against the live
+`SA818V.kicad_sch`. At K = 0.45: `tW ≈ 0.45 × 470 × 47,000,000 ns ≈ 9.94s`, close enough to
+the 10s target given `K`'s own typical-only characterization (see rigor note below).
 
 **Rigor note, same as this board's other tuned RC/LC values (matching network, mic
-attenuator):** this is a calculated starting point from the datasheet's typical-K formula,
-not a bench-verified number — `K` itself is only characterized at the 2V/6V endpoints in
-the datasheet (Fig. 6), and electrolytic/tantalum tolerance at these values is loose.
-Populate one of the pairs above, then verify the actual timeout against a bench timer
-before trusting it for the real 2-minute ceiling. Per the datasheet's own app-note (Fig.
-11): `CEXT` connects between pins 14/6 and 15/7, `REXT` from pin 15/7 to VCC.
+attenuator):** this is a calculated figure from the datasheet's typical-K formula, not a
+bench-verified number — `K` itself is only characterized at the 2V/6V endpoints in the
+datasheet (Fig. 6), and electrolytic/tantalum tolerance at these values is loose. Verify
+the actual timeout against a bench timer before trusting it for the real 10s ceiling. Per
+the datasheet's own app-note (Fig. 11): `CEXT` connects between pins 14/6 and 15/7, `REXT`
+from pin 15/7 to VCC — here `C80` bridges pin 14's own GND tie back up to the `RCEXT` (pin
+15) node rather than running point-to-point between the two pins directly; electrically
+equivalent since pin 14 has no other component between it and that GND tie.
 
 Also relevant to the retrigger-pulse firmware: the datasheet gives a **minimum retrigger
 interval** formula (§10, footnote [3]) — `t_rtrig ≈ 30 + 0.19×REXT×CEXT^0.9 +
 13×REXT^1.05` ns (REXT in kΩ, CEXT in pF) — the MCU's periodic "still transmitting" pulses
 need to be spaced at least this far apart to reliably retrigger rather than being missed;
-at the values above this works out to a floor far below any sane firmware polling
-interval, but it's a real constraint worth having in the design record.
+at the populated values this works out to roughly **0.7s**, still far below any sane
+firmware polling interval, but it's a real constraint worth having in the design record.
+
+**Open item, not yet wired:** despite the values above being populated, the actual
+retrigger path isn't built yet — see § 4's stale-cross-reference note and the live-wiring
+caveat below. `1A` (pin 1) is currently driven by an inverted, un-pulsed `SA818_IN_PTT`
+(via `U23`, a NAND-as-inverter), so the timeout is really a one-shot hard-cutoff from
+key-down rather than an MCU-retriggered watchdog — the periodic heartbeat this section's
+`t_rtrig` figure is meant to bound (`MCU_OUT_PTT_HB` → `SA818_IN_PTT_HB`) reaches this
+sheet but dead-ends at its own pull-down (`R65`), never reaching `U21`. Also, `1B` (pin 2)
+is currently floating — two wire stubs run toward a nearby `+3.3V` symbol and stop short.
+Both need to be finished before this matches the retriggerable-watchdog design intent
+described in `controller_platform.md` § TX safety.
 
 ## 4. Open design questions (nothing here is schematic yet)
 
