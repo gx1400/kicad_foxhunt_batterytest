@@ -5439,7 +5439,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
+		(property "Value" "BATT IN ISO"
 			(at 71.12 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5666,8 +5666,9 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
+		(property "Value" "BATT IN ISO"
 			(at 71.12 21.59 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5911,8 +5912,9 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
+		(property "Value" "PWR ISO"
 			(at 113.03 85.09 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7517,7 +7519,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
+		(property "Value" "12V IN ISO"
 			(at 72.39 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8256,7 +8258,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
+		(property "Value" "PWR ISO"
 			(at 113.03 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8425,8 +8427,9 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
+		(property "Value" "12V IN ISO"
 			(at 72.39 54.61 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8594,7 +8597,7 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
+		(property "Value" "3.3V SEL BYPASS"
 			(at 123.19 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10277,7 +10280,7 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
+		(property "Value" "MAIN SW BYPASS"
 			(at 213.36 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11118,7 +11121,7 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
+		(property "Value" "5V SEL BYPASS"
 			(at 105.41 152.654 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -3656,7 +3656,7 @@
 		)
 		(uuid "fb8957d7-7e09-4de6-bcd8-e35fe07421e3")
 	)
-	(hierarchical_label "PERIPH_OUT_GPS_PWRON"
+	(hierarchical_label "GPS_IN_PWRON"
 		(shape input)
 		(at 78.74 57.15 180)
 		(effects
@@ -3678,7 +3678,7 @@
 		)
 		(uuid "346712a0-8a4a-4cf1-a900-3b8c5cde06e2")
 	)
-	(hierarchical_label "PERIPH_OUT_GPS_EXTINT"
+	(hierarchical_label "GPS_IN_EXTINT"
 		(shape input)
 		(at 93.98 93.98 180)
 		(effects
@@ -5211,8 +5211,8 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
-			(at 134.62 35.814 0)
+		(property "Value" "Bypass PWR SW"
+			(at 135.636 36.068 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

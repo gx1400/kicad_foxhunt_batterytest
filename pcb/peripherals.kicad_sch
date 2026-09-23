@@ -9989,7 +9989,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
+		(property "Value" "Write Protect"
 			(at 83.82 163.068 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -7230,7 +7230,7 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
+		(property "Value" "USB Power Enable"
 			(at 179.07 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)

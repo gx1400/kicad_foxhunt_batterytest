@@ -3403,6 +3403,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 62.23) (xy 78.74 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcdc2e2a-23e0-4c7e-8614-6e2891eb0db3")
+	)
+	(wire
+		(pts
 			(xy 236.22 87.63) (xy 236.22 92.71)
 		)
 		(stroke
@@ -3758,6 +3768,17 @@
 			(justify left)
 		)
 		(uuid "ca603afa-bf40-4d77-b921-d33b785e8101")
+	)
+	(hierarchical_label "MCU_OUT_PTT_HB"
+		(shape output)
+		(at 68.58 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d15a9027-4fde-4ee4-84f3-249434323a01")
 	)
 	(hierarchical_label "I2S_DIN"
 		(shape output)
