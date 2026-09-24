@@ -3013,6 +3013,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 80.01) (xy 180.34 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7761e07b-d65a-4334-a40f-1ceb0321abb5")
+	)
+	(wire
+		(pts
 			(xy 256.54 100.33) (xy 256.54 109.22)
 		)
 		(stroke
@@ -3443,16 +3453,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 80.01) (xy 170.18 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3adcf6d-1711-47a6-a025-699d45f4d092")
-	)
-	(wire
-		(pts
 			(xy 173.99 146.05) (xy 173.99 148.59)
 		)
 		(stroke
@@ -3604,8 +3604,8 @@
 		)
 		(uuid "223db2f2-4210-41ec-b31a-c125739d961c")
 	)
-	(hierarchical_label "MCU_ANALOG_RF_DET"
-		(shape input)
+	(hierarchical_label "MCU_OUT_GPS_EXTINT"
+		(shape output)
 		(at 180.34 80.01 0)
 		(effects
 			(font
@@ -3613,7 +3613,7 @@
 			)
 			(justify left)
 		)
-		(uuid "3886a703-1a98-4193-9024-24639610235b")
+		(uuid "2e13db91-0b11-436b-a4ab-1ed0a347e7e0")
 	)
 	(hierarchical_label "MCU_SA818_UART_RXD"
 		(shape input)
@@ -3725,7 +3725,7 @@
 		)
 		(uuid "aad10624-12c8-4add-b31f-13efa8b34152")
 	)
-	(hierarchical_label "MCU_IN_DIG_RF_DET"
+	(hierarchical_label "MCU_IN_EXT_RADIO"
 		(shape input)
 		(at 68.58 74.93 180)
 		(effects

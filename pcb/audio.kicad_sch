@@ -1590,6 +1590,16 @@
 		)
 		(uuid "c8256ae8-1c64-4280-8b7f-c225f8f720a7")
 	)
+	(text "I2S AUDIO"
+		(exclude_from_sim no)
+		(at 29.464 17.272 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "d8f292c0-4f5e-4876-978d-b545a14a1f11")
+	)
 	(junction
 		(at 83.82 110.49)
 		(diameter 0)

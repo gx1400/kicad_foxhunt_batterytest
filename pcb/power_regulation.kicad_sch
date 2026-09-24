@@ -4697,6 +4697,7 @@
 		)
 		(property "Value" "PWR_FLAG"
 			(at 195.58 55.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4775,6 +4776,7 @@
 		)
 		(property "Value" "PWR_FLAG"
 			(at 66.04 138.43 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6768,6 +6770,7 @@
 		)
 		(property "Value" "PWR_FLAG"
 			(at 64.77 60.96 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9964,6 +9967,7 @@
 		)
 		(property "Value" "PWR_FLAG"
 			(at 198.12 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

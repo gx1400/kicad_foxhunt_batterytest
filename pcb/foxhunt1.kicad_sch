@@ -18,10 +18,20 @@
 		(uuid "755332e0-8540-44d0-ba6d-fe36b1c957f4")
 	)
 	(junction
-		(at 160.02 105.41)
+		(at 160.02 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84149a3d-8180-45ce-9d42-fc640080eaf0")
+	)
+	(wire
+		(pts
+			(xy 160.02 96.52) (xy 160.02 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "069a1d11-5234-4c0f-8dd5-c443b1a20cab")
 	)
 	(wire
 		(pts
@@ -105,16 +115,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 97.79) (xy 227.33 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ab6a9d3-e15b-4921-aca2-730ded17b11b")
-	)
-	(wire
-		(pts
 			(xy 137.16 152.4) (xy 227.33 152.4)
 		)
 		(stroke
@@ -195,16 +195,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 105.41) (xy 217.17 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c7d7526-c460-43a9-b990-dad95c221b0d")
-	)
-	(wire
-		(pts
 			(xy 78.74 87.63) (xy 166.37 87.63)
 		)
 		(stroke
@@ -232,26 +222,6 @@
 			(type default)
 		)
 		(uuid "6d7aedf8-1b68-459d-90c1-7934f3ea45ec")
-	)
-	(wire
-		(pts
-			(xy 160.02 96.52) (xy 160.02 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ab69dd9-9c3d-42fe-87bf-897818de6ee5")
-	)
-	(wire
-		(pts
-			(xy 137.16 154.94) (xy 227.33 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80fecfef-782e-4dfa-9d52-5866f59fdc86")
 	)
 	(wire
 		(pts
@@ -305,7 +275,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 105.41) (xy 166.37 105.41)
+			(xy 160.02 109.22) (xy 166.37 109.22)
 		)
 		(stroke
 			(width 0)
@@ -322,16 +292,6 @@
 			(type default)
 		)
 		(uuid "9b43118e-725f-49aa-8cc0-59d76550710f")
-	)
-	(wire
-		(pts
-			(xy 217.17 142.24) (xy 137.16 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f488974-909e-40c5-88f0-1deef99e268c")
 	)
 	(wire
 		(pts
@@ -355,13 +315,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 105.41) (xy 160.02 125.73)
+			(xy 210.82 127) (xy 227.33 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "afb824e9-af29-4e25-a825-1823398839e4")
+		(uuid "b709442e-4fa3-4d3a-b71f-ad7d7c5e1991")
 	)
 	(wire
 		(pts
@@ -405,6 +365,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 105.41) (xy 227.33 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8d271ea-fefc-4c43-8921-151d27a7ab51")
+	)
+	(wire
+		(pts
 			(xy 78.74 83.82) (xy 166.37 83.82)
 		)
 		(stroke
@@ -442,26 +412,6 @@
 			(type default)
 		)
 		(uuid "de475d6a-99ec-4fb9-9e0e-f07efef82f53")
-	)
-	(wire
-		(pts
-			(xy 227.33 105.41) (xy 217.17 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "def9a4bb-901d-4e80-9269-e3201f016f27")
-	)
-	(wire
-		(pts
-			(xy 210.82 100.33) (xy 227.33 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3eea839-897e-4b7d-b2da-e98fbfe26d09")
 	)
 	(wire
 		(pts
@@ -612,7 +562,7 @@
 			)
 		)
 		(pin "GPS_IN_EXTINT" input
-			(at 227.33 154.94 180)
+			(at 227.33 127 180)
 			(uuid "90323b70-d7ee-43ab-8c93-d59f2598a43b")
 			(effects
 				(font
@@ -710,26 +660,6 @@
 		(pin "SA818_IN_PD" input
 			(at 227.33 113.03 180)
 			(uuid "2ab31e41-1a9d-4116-9876-8e21e7252022")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SA818_OUT_ANALOG_RF_DET" output
-			(at 227.33 100.33 180)
-			(uuid "212b40b3-88a2-4707-b956-9b9a6aa1b09a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SA818_OUT_DIG_RF_DET" output
-			(at 227.33 97.79 180)
-			(uuid "18cb047b-51f2-481f-9b4b-c1fa7344e829")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1050,7 +980,7 @@
 			)
 		)
 		(pin "MCU_OUT_LATCH_EN_OUTPUT" output
-			(at 166.37 105.41 180)
+			(at 166.37 109.22 180)
 			(uuid "61807c81-7c83-4d7e-8c34-13358887c38d")
 			(effects
 				(font
@@ -1179,29 +1109,29 @@
 				(justify right)
 			)
 		)
-		(pin "MCU_ANALOG_RF_DET" input
-			(at 210.82 100.33 0)
-			(uuid "ad6b20a3-5f48-4af6-ac36-eece64b7d524")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MCU_IN_DIG_RF_DET" input
-			(at 210.82 97.79 0)
-			(uuid "fd17d4e1-44c5-41d7-a55c-5e18deea374c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "MCU_OUT_PTT_HB" output
 			(at 210.82 87.63 0)
 			(uuid "07a0a00e-8c2a-4bce-92b8-ee348af99577")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MCU_IN_EXT_RADIO" input
+			(at 210.82 105.41 0)
+			(uuid "fbf73a30-8fd6-44d8-9e8f-8ace9f2a390a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MCU_OUT_GPS_EXTINT" output
+			(at 210.82 127 0)
+			(uuid "b7585a36-319b-41a5-b4d3-f50f3053e642")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1550,26 +1480,6 @@
 		(pin "PERIPH_OUT_GPS_PWRON" output
 			(at 137.16 152.4 0)
 			(uuid "ed8bcb49-fdcb-4391-9a5d-946812fe9385")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "PERIPH_OUT_GPS_EXTINT" output
-			(at 137.16 154.94 0)
-			(uuid "fd50e5b5-8f87-4e29-a2ce-77cb4eb658f9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "PERIPH_IN_EXT_RADIO" input
-			(at 137.16 142.24 0)
-			(uuid "c02e8ca2-9498-4808-b538-15077c008bb1")
 			(effects
 				(font
 					(size 1.27 1.27)

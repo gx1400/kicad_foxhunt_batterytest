@@ -3935,6 +3935,16 @@
 		)
 		(uuid "11c1bb6a-af6a-4f08-a8d6-461c7a5a64d8")
 	)
+	(text "EXTERNAL\nRADIO"
+		(exclude_from_sim no)
+		(at 264.922 103.886 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "4a56f070-caf8-4e70-a6ef-bbddf9cbef1c")
+	)
 	(text "Tpw = K * Cext * Rext\n    = (0.45)(47uF)(470k)\n    = 9.45sec"
 		(exclude_from_sim no)
 		(at 115.316 111.506 0)
@@ -3954,6 +3964,26 @@
 			)
 		)
 		(uuid "59413891-0d1e-493e-9ecb-1c534aca8ad1")
+	)
+	(text "RADIO"
+		(exclude_from_sim no)
+		(at 22.352 16.256 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "6cf96a71-4d5b-48e9-a287-2355e2a4dc4e")
+	)
+	(text "PTT TX LOCKUP WATCHDOG"
+		(exclude_from_sim no)
+		(at 102.87 95.758 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "7091f4f1-169a-463d-824b-17b92ff79891")
 	)
 	(text "Concern: MCU lock up leads to TX being held on\n\nTheory of Op:\n- After asserting PTT the MCU starts to send a 1Hz heartbeat\n- PTT starts a monostable pulse ~9s long\n- Each heartbeat rising edge resets the timer to 0\n- If PTT locks up and heartbeat stops, the timer will deassert after 10 sec\n- NAND gate inputs will not both be high, so output PTT will deassert"
 		(exclude_from_sim no)
@@ -4057,7 +4087,7 @@
 		(uuid "6372975e-6802-41d1-a48d-ce90945213ed")
 	)
 	(junction
-		(at 33.02 26.67)
+		(at 49.53 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e4a5b2c-558f-4b16-bcd4-49771e55c4d3")
@@ -4217,6 +4247,14 @@
 		(uuid "09c2f0cc-a2b0-45f1-a5a4-61a4831d9083")
 	)
 	(no_connect
+		(at 25.4 83.82)
+		(uuid "21b0dd8b-95da-4731-b27c-59796aac44ef")
+	)
+	(no_connect
+		(at 50.8 86.36)
+		(uuid "2def5123-84e6-4a10-a9aa-e20c953facf3")
+	)
+	(no_connect
 		(at 161.29 135.89)
 		(uuid "714b5545-675f-40dc-a0af-b75af90765a3")
 	)
@@ -4225,8 +4263,16 @@
 		(uuid "9fe54da8-5bdb-455f-b502-d06100521845")
 	)
 	(no_connect
+		(at 25.4 86.36)
+		(uuid "ad9c1c4a-e884-4982-9e2e-ff19c240d949")
+	)
+	(no_connect
 		(at 255.27 118.11)
 		(uuid "afd1d171-1459-4428-9dfa-49fd1854d54f")
+	)
+	(no_connect
+		(at 50.8 76.2)
+		(uuid "b72ccd22-cf68-4032-9e18-1f418315e2e3")
 	)
 	(no_connect
 		(at 233.68 50.8)
@@ -4348,7 +4394,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 53.34) (xy 33.02 57.15)
+			(xy 49.53 59.69) (xy 49.53 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4738,7 +4784,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 26.67) (xy 33.02 27.94)
+			(xy 49.53 33.02) (xy 49.53 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4778,7 +4824,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 24.13) (xy 33.02 26.67)
+			(xy 49.53 30.48) (xy 49.53 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5488,7 +5534,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 30.48) (xy 22.86 26.67)
+			(xy 39.37 36.83) (xy 39.37 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5588,7 +5634,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 26.67) (xy 33.02 26.67)
+			(xy 39.37 33.02) (xy 49.53 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5968,7 +6014,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 35.56) (xy 22.86 36.83)
+			(xy 39.37 41.91) (xy 39.37 43.18)
 		)
 		(stroke
 			(width 0)
@@ -6628,17 +6674,6 @@
 		)
 		(uuid "00b53d6e-9cae-45f3-bfa2-8c439b16467f")
 	)
-	(hierarchical_label "SA818_OUT_ANALOG_RF_DET"
-		(shape output)
-		(at 88.9 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "24f608b4-331d-4e8e-ac70-d5c8532d997e")
-	)
 	(hierarchical_label "SA818_IN_PTT_HB"
 		(shape input)
 		(at 88.9 148.59 180)
@@ -6715,17 +6750,6 @@
 			(justify right)
 		)
 		(uuid "ad200709-a6a9-455a-8362-22cb1edc5562")
-	)
-	(hierarchical_label "SA818_OUT_DIG_RF_DET"
-		(shape output)
-		(at 88.9 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f6f40229-b737-4cec-b945-4af9dfc601f0")
 	)
 	(symbol
 		(lib_id "kicad_gx_library:BAS116LT1G")
@@ -8326,7 +8350,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 33.02 24.13 0)
+		(at 49.53 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8337,7 +8361,7 @@
 		(fields_autoplaced yes)
 		(uuid "27a27635-39dc-4134-a7f5-bb9301df2f44")
 		(property "Reference" "#PWR0169"
-			(at 33.02 27.94 0)
+			(at 49.53 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8348,7 +8372,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 33.02 19.05 0)
+			(at 49.53 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8358,7 +8382,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 24.13 0)
+			(at 49.53 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8369,7 +8393,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 24.13 0)
+			(at 49.53 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8380,7 +8404,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 33.02 24.13 0)
+			(at 49.53 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8500,7 +8524,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC123")
-		(at 33.02 40.64 0)
+		(at 49.53 46.99 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8511,7 +8535,7 @@
 		(fields_autoplaced yes)
 		(uuid "2fc564cd-1f44-41da-99c6-3db82a289c76")
 		(property "Reference" "U21"
-			(at 39.37 39.3699 0)
+			(at 55.88 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8522,7 +8546,7 @@
 			)
 		)
 		(property "Value" "74HC123"
-			(at 39.37 41.9099 0)
+			(at 55.88 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8533,7 +8557,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 33.02 40.64 0)
+			(at 49.53 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8544,7 +8568,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT123.pdf"
-			(at 33.02 40.64 0)
+			(at 49.53 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8555,7 +8579,7 @@
 			)
 		)
 		(property "Description" "Dual retriggerable monostable multivibrator with reset"
-			(at 33.02 40.64 0)
+			(at 49.53 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8566,7 +8590,7 @@
 			)
 		)
 		(property "Manf" "Nexperia"
-			(at 33.02 40.64 0)
+			(at 49.53 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8577,7 +8601,7 @@
 			)
 		)
 		(property "MPN" "74HC123D,653"
-			(at 33.02 40.64 0)
+			(at 49.53 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8588,7 +8612,7 @@
 			)
 		)
 		(property "LCSC Part #" "C5597"
-			(at 33.02 40.64 0)
+			(at 49.53 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8599,7 +8623,7 @@
 			)
 		)
 		(property "Package" "SOIC-16"
-			(at 33.02 40.64 0)
+			(at 49.53 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9145,7 +9169,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 22.86 33.02 0)
+		(at 39.37 39.37 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -9157,7 +9181,7 @@
 		(fields_autoplaced yes)
 		(uuid "409316c4-6c7e-4cd8-88e5-88a33d480019")
 		(property "Reference" "C79"
-			(at 20.32 31.7499 0)
+			(at 36.83 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9168,7 +9192,7 @@
 			)
 		)
 		(property "Value" "1u/25V"
-			(at 20.32 34.2899 0)
+			(at 36.83 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9179,7 +9203,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 22.86 33.02 0)
+			(at 39.37 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9190,7 +9214,7 @@
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM21BR71H105KA12L.pdf"
-			(at 22.86 33.02 0)
+			(at 39.37 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9201,7 +9225,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 22.86 43.18 0)
+			(at 39.37 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9212,7 +9236,7 @@
 			)
 		)
 		(property "Manf" "muRata"
-			(at 22.86 33.02 0)
+			(at 39.37 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9223,7 +9247,7 @@
 			)
 		)
 		(property "MPN" "GRM21BR71H105KA12L"
-			(at 22.86 33.02 0)
+			(at 39.37 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9234,7 +9258,7 @@
 			)
 		)
 		(property "LCSC Part #" "C77083"
-			(at 22.86 33.02 0)
+			(at 39.37 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9245,7 +9269,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 22.86 33.02 0)
+			(at 39.37 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9256,7 +9280,7 @@
 			)
 		)
 		(property "Field10" ""
-			(at 22.86 33.02 0)
+			(at 39.37 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15641,7 +15665,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 22.86 36.83 0)
+		(at 39.37 43.18 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -15653,7 +15677,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9d4bdbb-4180-45a7-b937-42d3040079e8")
 		(property "Reference" "#PWR0171"
-			(at 22.86 43.18 0)
+			(at 39.37 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15664,7 +15688,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 22.86 40.64 0)
+			(at 39.37 46.99 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -15674,7 +15698,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 36.83 0)
+			(at 39.37 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15685,7 +15709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 36.83 0)
+			(at 39.37 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15696,7 +15720,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 45.72 0)
+			(at 39.37 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15798,7 +15822,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 33.02 57.15 0)
+		(at 49.53 63.5 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -15810,7 +15834,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd24f566-8a35-4d39-a352-49a9c5ce896c")
 		(property "Reference" "#PWR0170"
-			(at 33.02 63.5 0)
+			(at 49.53 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15821,7 +15845,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 33.02 60.96 0)
+			(at 49.53 67.31 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -15831,7 +15855,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 57.15 0)
+			(at 49.53 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15842,7 +15866,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 57.15 0)
+			(at 49.53 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15853,7 +15877,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 66.04 0)
+			(at 49.53 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

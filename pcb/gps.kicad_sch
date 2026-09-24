@@ -2914,6 +2914,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "GPS"
+		(exclude_from_sim no)
+		(at 28.956 17.526 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "d4f58709-0f15-4eae-9e99-ebca54ad5dd0")
+	)
 	(junction
 		(at 181.61 88.9)
 		(diameter 0)

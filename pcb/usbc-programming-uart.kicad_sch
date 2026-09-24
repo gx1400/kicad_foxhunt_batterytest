@@ -3351,6 +3351,98 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 175.26 110.49)
+		(end 246.38 163.83)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2599d1d5-3210-4397-bb32-9b5b9bb2ed67")
+	)
+	(rectangle
+		(start 76.2 20.32)
+		(end 160.02 96.52)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3caa5952-164e-44eb-969b-060acb4ad10c")
+	)
+	(rectangle
+		(start 34.29 116.84)
+		(end 173.99 194.31)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5ce0573e-154e-4bd7-9e7c-c0fdf5da1299")
+	)
+	(rectangle
+		(start 170.18 16.51)
+		(end 283.21 54.61)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "890f6f9a-4384-4394-a077-c46a57d8c824")
+	)
+	(text "USB UART"
+		(exclude_from_sim no)
+		(at 179.578 113.538 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1a5b5628-bb23-494c-85d6-c880fc87a032")
+	)
+	(text "BOOT AND RESET\n - Buttons & ESPTOOL DTR/RTS"
+		(exclude_from_sim no)
+		(at 36.068 120.142 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5b5ca889-cbe1-452d-9760-15bc18297e4e")
+	)
+	(text "USB HUB"
+		(exclude_from_sim no)
+		(at 78.994 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "68da0127-5acf-4016-a003-6cb67bce0975")
+	)
+	(text "USB POWER w/ SWITCH"
+		(exclude_from_sim no)
+		(at 174.498 19.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92e2051c-6306-4960-b72e-a45e6fb86c1c")
+	)
 	(junction
 		(at 100.33 167.64)
 		(diameter 0)
@@ -3376,13 +3468,13 @@
 		(uuid "46b2e2c9-4379-4e53-948a-9cf65b7afc23")
 	)
 	(junction
-		(at 215.9 25.4)
+		(at 215.9 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "52e09117-459f-444b-a556-2b710705c474")
 	)
 	(junction
-		(at 195.58 25.4)
+		(at 195.58 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "580333cc-5b0f-4447-8d32-6a7514084bb1")
@@ -3400,7 +3492,7 @@
 		(uuid "690bec78-08b8-4573-b2e6-677c36243db3")
 	)
 	(junction
-		(at 166.37 22.86)
+		(at 166.37 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74e92317-8532-4140-8b03-31f23e93a439")
@@ -3412,7 +3504,7 @@
 		(uuid "844901d0-3e88-413b-8beb-75b8010bb78d")
 	)
 	(junction
-		(at 247.65 25.4)
+		(at 247.65 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8716a88c-1595-40f2-aa39-4e211a1f25cb")
@@ -3424,7 +3516,7 @@
 		(uuid "8916f344-ed04-44cf-b9f5-a6635d20081a")
 	)
 	(junction
-		(at 260.35 25.4)
+		(at 260.35 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "94e82986-04e8-430a-ab2c-1f6de29aab1e")
@@ -3436,7 +3528,7 @@
 		(uuid "9b6f1a58-9a14-40fc-9483-2de2ef639b2e")
 	)
 	(junction
-		(at 223.52 25.4)
+		(at 223.52 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9aa57cc-6e24-44f3-99e0-c5e001383817")
@@ -3448,7 +3540,7 @@
 		(uuid "ae3d6f69-1548-4479-bca1-888db11a36f9")
 	)
 	(junction
-		(at 119.38 22.86)
+		(at 119.38 16.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4f0c87e-738f-4db0-8ace-2aabbbd4fac9")
@@ -3522,7 +3614,7 @@
 		(uuid "92e9ce01-18a7-4bf0-878b-f7e5baa59167")
 	)
 	(no_connect
-		(at 184.15 20.32)
+		(at 184.15 30.48)
 		(uuid "a2f8d146-cdba-48f9-9302-76b5372bbdf1")
 	)
 	(no_connect
@@ -3555,7 +3647,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 27.94) (xy 247.65 25.4)
+			(xy 247.65 38.1) (xy 247.65 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3655,7 +3747,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 25.4) (xy 195.58 25.4)
+			(xy 184.15 35.56) (xy 195.58 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3765,7 +3857,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 19.05) (xy 195.58 25.4)
+			(xy 195.58 29.21) (xy 195.58 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3815,7 +3907,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 25.4) (xy 269.24 25.4)
+			(xy 260.35 35.56) (xy 269.24 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3885,7 +3977,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 46.99) (xy 214.63 121.92)
+			(xy 214.63 58.42) (xy 214.63 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3935,7 +4027,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 33.02) (xy 260.35 34.29)
+			(xy 260.35 43.18) (xy 260.35 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3995,7 +4087,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 46.99) (xy 166.37 46.99)
+			(xy 214.63 58.42) (xy 166.37 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4025,7 +4117,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 21.59) (xy 119.38 21.59)
+			(xy 69.85 16.51) (xy 119.38 16.51)
 		)
 		(stroke
 			(width 0)
@@ -4105,7 +4197,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 46.99) (xy 166.37 22.86)
+			(xy 166.37 16.51) (xy 166.37 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4135,7 +4227,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 25.4) (xy 260.35 25.4)
+			(xy 245.11 35.56) (xy 260.35 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4165,7 +4257,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 25.4) (xy 223.52 27.94)
+			(xy 223.52 35.56) (xy 223.52 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4185,7 +4277,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 25.4) (xy 260.35 27.94)
+			(xy 260.35 35.56) (xy 260.35 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4245,7 +4337,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 25.4) (xy 229.87 25.4)
+			(xy 223.52 35.56) (xy 229.87 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4265,7 +4357,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 22.86) (xy 173.99 22.86)
+			(xy 166.37 33.02) (xy 173.99 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4295,7 +4387,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 21.59) (xy 69.85 24.13)
+			(xy 69.85 16.51) (xy 69.85 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4355,7 +4447,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 19.05) (xy 195.58 19.05)
+			(xy 200.66 29.21) (xy 195.58 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4395,7 +4487,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 25.4) (xy 215.9 25.4)
+			(xy 195.58 35.56) (xy 215.9 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4535,7 +4627,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 21.59) (xy 119.38 35.56)
+			(xy 119.38 16.51) (xy 119.38 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4595,7 +4687,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 22.86) (xy 166.37 22.86)
+			(xy 119.38 16.51) (xy 166.37 16.51)
 		)
 		(stroke
 			(width 0)
@@ -4735,7 +4827,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 33.02) (xy 223.52 34.29)
+			(xy 223.52 43.18) (xy 223.52 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4755,7 +4847,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 25.4) (xy 223.52 25.4)
+			(xy 215.9 35.56) (xy 223.52 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4785,7 +4877,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 33.02) (xy 247.65 34.29)
+			(xy 247.65 43.18) (xy 247.65 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4825,7 +4917,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 33.02) (xy 237.49 36.83)
+			(xy 237.49 43.18) (xy 237.49 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4877,7 +4969,7 @@
 	)
 	(hierarchical_label "USB_3.3V"
 		(shape output)
-		(at 269.24 25.4 0)
+		(at 269.24 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4888,7 +4980,7 @@
 	)
 	(hierarchical_label "USB_5V"
 		(shape output)
-		(at 200.66 19.05 0)
+		(at 200.66 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5676,7 +5768,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 260.35 34.29 0)
+		(at 260.35 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5687,7 +5779,7 @@
 		(fields_autoplaced yes)
 		(uuid "2210f850-88b6-4288-81b0-6bf14dabdef7")
 		(property "Reference" "#PWR097"
-			(at 260.35 40.64 0)
+			(at 260.35 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5698,7 +5790,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 38.1 0)
+			(at 260.35 48.26 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5708,7 +5800,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 260.35 34.29 0)
+			(at 260.35 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5719,7 +5811,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 34.29 0)
+			(at 260.35 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5730,7 +5822,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 260.35 43.18 0)
+			(at 260.35 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6550,7 +6642,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 223.52 34.29 0)
+		(at 223.52 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6561,7 +6653,7 @@
 		(fields_autoplaced yes)
 		(uuid "3ff236fa-3798-4383-8bb8-98e3a3b7f732")
 		(property "Reference" "#PWR093"
-			(at 223.52 40.64 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6572,7 +6664,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.52 38.1 0)
+			(at 223.52 48.26 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6582,7 +6674,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 223.52 34.29 0)
+			(at 223.52 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6593,7 +6685,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 34.29 0)
+			(at 223.52 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6604,7 +6696,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 223.52 43.18 0)
+			(at 223.52 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6628,7 +6720,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 247.65 30.48 0)
+		(at 247.65 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6639,7 +6731,7 @@
 		(fields_autoplaced yes)
 		(uuid "44d16125-f505-419e-b5c2-fb57f44297c7")
 		(property "Reference" "C44"
-			(at 250.19 29.2099 0)
+			(at 250.19 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6650,7 +6742,7 @@
 			)
 		)
 		(property "Value" "0.1u/25V"
-			(at 250.19 31.7499 0)
+			(at 250.19 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6661,28 +6753,6 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 247.65 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
-			(at 247.65 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 247.65 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6693,8 +6763,30 @@
 				)
 			)
 		)
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
+			(at 247.65 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 247.65 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Manf" "muRata"
-			(at 247.65 30.48 0)
+			(at 247.65 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6705,7 +6797,7 @@
 			)
 		)
 		(property "MPN" "GRM188R71H104KA93D"
-			(at 247.65 30.48 0)
+			(at 247.65 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6716,7 +6808,7 @@
 			)
 		)
 		(property "LCSC Part #" "C77055"
-			(at 247.65 30.48 0)
+			(at 247.65 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6727,7 +6819,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 247.65 30.48 0)
+			(at 247.65 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6738,7 +6830,7 @@
 			)
 		)
 		(property "Field10" ""
-			(at 247.65 30.48 0)
+			(at 247.65 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6900,7 +6992,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Regulator:LM1117-3.3")
-		(at 237.49 25.4 0)
+		(at 237.49 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6911,7 +7003,7 @@
 		(fields_autoplaced yes)
 		(uuid "48311b80-87fa-4a44-828c-28a6bf646965")
 		(property "Reference" "U13"
-			(at 237.49 13.97 0)
+			(at 237.49 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6921,7 +7013,7 @@
 			)
 		)
 		(property "Value" "LM1117IMPX-3.3"
-			(at 237.49 16.51 0)
+			(at 237.49 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6931,7 +7023,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
-			(at 237.49 45.72 0)
+			(at 237.49 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6942,7 +7034,7 @@
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/TI/LM1117IMPX-3.3_NOPB.pdf"
-			(at 237.49 40.64 0)
+			(at 237.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6953,7 +7045,7 @@
 			)
 		)
 		(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, SOT-223"
-			(at 237.49 43.18 0)
+			(at 237.49 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6964,7 +7056,7 @@
 			)
 		)
 		(property "MPN" "LM1117IMPX-3.3/NOPB"
-			(at 237.49 25.4 0)
+			(at 237.49 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6975,7 +7067,7 @@
 			)
 		)
 		(property "Manf" "TI"
-			(at 237.49 25.4 0)
+			(at 237.49 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6986,7 +7078,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23984"
-			(at 237.49 25.4 0)
+			(at 237.49 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6997,7 +7089,7 @@
 			)
 		)
 		(property "Package" "SOT-223"
-			(at 237.49 25.4 0)
+			(at 237.49 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7008,7 +7100,7 @@
 			)
 		)
 		(property "VMax" "15V"
-			(at 237.49 19.05 0)
+			(at 237.49 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7018,7 +7110,7 @@
 			)
 		)
 		(property "IMax" "800mA"
-			(at 237.49 21.59 0)
+			(at 237.49 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7028,7 +7120,7 @@
 			)
 		)
 		(property "PROD_ID" "IC-26292"
-			(at 237.49 48.26 0)
+			(at 237.49 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7039,7 +7131,7 @@
 			)
 		)
 		(property "Field10" ""
-			(at 237.49 25.4 0)
+			(at 237.49 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7147,7 +7239,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 237.49 36.83 0)
+		(at 237.49 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7158,7 +7250,7 @@
 		(fields_autoplaced yes)
 		(uuid "5154cfb7-27fa-4918-9db3-db49260adbd8")
 		(property "Reference" "#PWR095"
-			(at 237.49 43.18 0)
+			(at 237.49 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7169,7 +7261,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 40.64 0)
+			(at 237.49 50.8 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7179,7 +7271,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 237.49 36.83 0)
+			(at 237.49 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7190,7 +7282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 36.83 0)
+			(at 237.49 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7201,7 +7293,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 45.72 0)
+			(at 237.49 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7304,7 +7396,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 247.65 34.29 0)
+		(at 247.65 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7315,7 +7407,7 @@
 		(fields_autoplaced yes)
 		(uuid "5a92ef4a-8f78-499b-916d-ba5bb899fdd4")
 		(property "Reference" "#PWR096"
-			(at 247.65 40.64 0)
+			(at 247.65 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7326,7 +7418,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 247.65 38.1 0)
+			(at 247.65 48.26 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7336,7 +7428,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 247.65 34.29 0)
+			(at 247.65 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7347,7 +7439,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 247.65 34.29 0)
+			(at 247.65 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7358,7 +7450,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 247.65 43.18 0)
+			(at 247.65 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7586,6 +7678,7 @@
 		)
 		(property "Value" "PWR_FLAG"
 			(at 128.27 30.48 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8343,7 +8436,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 223.52 30.48 0)
+		(at 223.52 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8354,7 +8447,7 @@
 		(fields_autoplaced yes)
 		(uuid "834adac4-ad64-42d8-8499-544c11eec1a9")
 		(property "Reference" "C43"
-			(at 226.06 29.2099 0)
+			(at 226.06 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8365,7 +8458,7 @@
 			)
 		)
 		(property "Value" "0.1u/25V"
-			(at 226.06 31.7499 0)
+			(at 226.06 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8376,28 +8469,6 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 223.52 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
-			(at 223.52 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 223.52 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8408,8 +8479,30 @@
 				)
 			)
 		)
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Murata_Electronics/GRM188R71H104KA93D.pdf"
+			(at 223.52 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 223.52 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Manf" "muRata"
-			(at 223.52 30.48 0)
+			(at 223.52 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8420,7 +8513,7 @@
 			)
 		)
 		(property "MPN" "GRM188R71H104KA93D"
-			(at 223.52 30.48 0)
+			(at 223.52 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8431,7 +8524,7 @@
 			)
 		)
 		(property "LCSC Part #" "C77055"
-			(at 223.52 30.48 0)
+			(at 223.52 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8442,7 +8535,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 223.52 30.48 0)
+			(at 223.52 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8453,7 +8546,7 @@
 			)
 		)
 		(property "Field10" ""
-			(at 223.52 30.48 0)
+			(at 223.52 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9028,7 +9121,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 260.35 30.48 0)
+		(at 260.35 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9039,7 +9132,7 @@
 		(fields_autoplaced yes)
 		(uuid "b68ee87b-df13-4d0d-83f4-f70ef2169e0c")
 		(property "Reference" "C45"
-			(at 262.89 29.2099 0)
+			(at 262.89 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9050,7 +9143,7 @@
 			)
 		)
 		(property "Value" "22u/16V Elec"
-			(at 262.89 31.7499 0)
+			(at 262.89 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9061,28 +9154,6 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_Elec_5x5.8"
-			(at 260.35 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/JARSON/XT1C220M0506.pdf"
-			(at 260.35 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 260.35 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -9093,8 +9164,30 @@
 				)
 			)
 		)
+		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/JARSON/XT1C220M0506.pdf"
+			(at 260.35 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 260.35 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Manf" "JARSON"
-			(at 260.35 30.48 0)
+			(at 260.35 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9105,7 +9198,7 @@
 			)
 		)
 		(property "MPN" "XT1C220M0506"
-			(at 260.35 30.48 0)
+			(at 260.35 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9116,7 +9209,7 @@
 			)
 		)
 		(property "LCSC Part #" "C5260805"
-			(at 260.35 30.48 0)
+			(at 260.35 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9127,7 +9220,7 @@
 			)
 		)
 		(property "Package" "SMD,D5xL5.7mm "
-			(at 260.35 30.48 0)
+			(at 260.35 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9138,7 +9231,7 @@
 			)
 		)
 		(property "Field10" ""
-			(at 260.35 30.48 0)
+			(at 260.35 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9725,7 +9818,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 215.9 25.4 0)
+		(at 215.9 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9736,7 +9829,7 @@
 		(fields_autoplaced yes)
 		(uuid "e069f9fd-78f9-4922-bb3c-d8d8e6e53208")
 		(property "Reference" "#FLG020"
-			(at 215.9 23.495 0)
+			(at 215.9 33.655 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9747,7 +9840,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 215.9 20.32 0)
+			(at 215.9 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9757,7 +9850,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 25.4 0)
+			(at 215.9 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9768,7 +9861,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 25.4 0)
+			(at 215.9 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9779,7 +9872,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 215.9 25.4 0)
+			(at 215.9 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9803,7 +9896,7 @@
 	)
 	(symbol
 		(lib_id "kicad_gx_library:NSI-10S")
-		(at 179.07 24.13 90)
+		(at 179.07 34.29 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9814,7 +9907,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6b7d4b6-83f9-43c3-b70d-3d1d7ae1e97f")
 		(property "Reference" "SW9"
-			(at 179.07 15.24 90)
+			(at 179.07 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9824,7 +9917,7 @@
 			)
 		)
 		(property "Value" "NSI-10S"
-			(at 179.07 17.78 90)
+			(at 179.07 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9834,7 +9927,7 @@
 			)
 		)
 		(property "Footprint" "kicad_gx_library:SW-SMD_NSI-10S"
-			(at 191.77 24.13 0)
+			(at 191.77 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9845,7 +9938,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C515802.pdf"
-			(at 194.31 24.13 0)
+			(at 194.31 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9856,7 +9949,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 179.07 24.13 0)
+			(at 179.07 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9867,7 +9960,7 @@
 			)
 		)
 		(property "Manufacturer" "SUNGMUN(韩国星炆电子)"
-			(at 196.85 24.13 0)
+			(at 196.85 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9878,7 +9971,7 @@
 			)
 		)
 		(property "MPN" "NSI-10S"
-			(at 199.39 24.13 0)
+			(at 199.39 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9889,7 +9982,7 @@
 			)
 		)
 		(property "LCSC Part" "C515802"
-			(at 201.93 24.13 0)
+			(at 201.93 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9900,7 +9993,7 @@
 			)
 		)
 		(property "Source" "easyeda2kicad"
-			(at 207.01 24.13 0)
+			(at 207.01 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9911,7 +10004,7 @@
 			)
 		)
 		(property "Imported" "2026-09-23"
-			(at 209.55 24.13 0)
+			(at 209.55 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
