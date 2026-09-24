@@ -845,289 +845,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:AudioJack3_SwitchTR"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AudioJack3_SwitchTR"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Jack*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AudioJack3_SwitchTR_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end -6.35 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -5.08) (xy -1.27 -5.715) (xy -0.635 -5.08) (xy -0.635 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.08) (xy 0.635 -5.715) (xy 1.27 -5.08) (xy 2.54 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 -0.254) (xy 0.762 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.778 -5.334) (xy 2.032 -5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 3.81)
-					(end -5.08 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 0.508 -2.54) (xy 0.508 -0.254) (xy 0.254 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -7.62) (xy 1.778 -7.62) (xy 1.778 -5.334) (xy 1.524 -5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "AudioJack3_SwitchTR_1_1"
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "RN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "T"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "TN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Polarized_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -2592,6 +2309,495 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "kicad_gx_library:AudioJack4_TRRS_SJ-43617-SMT-TR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AudioJack4_TRRS_SJ-43617-SMT-TR"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "kicad_gx_library:Jack_SJ-43617-SMT-TR"
+				(at -1.27 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.cuidevices.com/product/resource/sj-4361x-smt.pdf"
+				(at -1.27 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "CONN JACK 4COND 3.5MM SMD R/A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manf" "Same Sky (Formerly CUI Devices)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SJ-43617-SMT-TR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Digikey" "CP-43617SJTR-ND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" "N/A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jack_SJ-43617-SMT-TR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AudioJack4_TRRS_SJ-43617-SMT-TR_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 1.27 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -7.62 -8.89)
+					(end -8.89 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -8.89) (xy 2.54 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -3.81) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.667 3.81) (xy 1.397 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AudioJack4_TRRS_SJ-43617-SMT-TR_1_1"
+				(polyline
+					(pts
+						(xy -3.175 -8.89) (xy -2.54 -9.525) (xy -1.905 -8.89) (xy -1.905 -3.81) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -8.89) (xy -0.635 -9.525) (xy 0 -8.89) (xy 1.27 -8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 4.064) (xy -0.508 4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.508 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -4.064) (xy -0.508 -4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -9.144) (xy 0.762 -9.652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.81) (xy -5.842 3.81) (xy -5.715 -8.89) (xy -6.35 -9.525) (xy -6.985 -8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -3.81 -1.27) (xy -3.81 -8.89) (xy -4.445 -9.525) (xy -5.08 -8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 6.35) (xy -0.762 6.35) (xy -0.762 4.064) (xy -1.016 4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -0.762 1.27) (xy -0.762 -1.016) (xy -1.016 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -6.35) (xy -0.762 -6.35) (xy -0.762 -4.064) (xy -1.016 -4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -11.43) (xy 0.508 -11.43) (xy 0.508 -9.144) (xy 0.254 -9.652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 -3.81 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -6.35 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R1N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -1.27 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 1.27 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R2N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 3.81 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 6.35 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -8.89 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -11.43 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "TN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "kicad_gx_library:BAS116LT1G"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3719,9 +3925,9 @@
 		)
 		(uuid "0810f371-f6d0-471c-b4e9-ce147777b309")
 	)
-	(text "Tip = MIC Audio\nRing = PTT\nShield = GND\n\nTN = To SA818 MIC\nRN = To SA818 PTT"
+	(text "Tip = MIC Audio\nRing 1 = Audio In (not used)\nRing 2 = PTT\nShield = GND\n\nTN = To SA818 MIC\nR1N = Not used\nR2N = To SA818 PTT\nSN = to Peripheral GPIO"
 		(exclude_from_sim no)
-		(at 270.256 122.936 0)
+		(at 258.826 144.526 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3749,15 +3955,16 @@
 		)
 		(uuid "59413891-0d1e-493e-9ecb-1c534aca8ad1")
 	)
-	(text "TODO: RC CIRCUIT"
+	(text "Concern: MCU lock up leads to TX being held on\n\nTheory of Op:\n- After asserting PTT the MCU starts to send a 1Hz heartbeat\n- PTT starts a monostable pulse ~9s long\n- Each heartbeat rising edge resets the timer to 0\n- If PTT locks up and heartbeat stops, the timer will deassert after 10 sec\n- NAND gate inputs will not both be high, so output PTT will deassert"
 		(exclude_from_sim no)
-		(at 137.922 172.212 0)
+		(at 89.408 176.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(uuid "6dfc9374-fd75-4b53-a17d-cb133b9c4c81")
+		(uuid "efefa24e-9b05-4430-94fb-0d6d88b05e93")
 	)
 	(junction
 		(at 49.53 133.35)
@@ -4006,12 +4213,20 @@
 		(uuid "ff478bb8-635c-46c0-9544-a20ad8502467")
 	)
 	(no_connect
+		(at 255.27 120.65)
+		(uuid "09c2f0cc-a2b0-45f1-a5a4-61a4831d9083")
+	)
+	(no_connect
 		(at 161.29 135.89)
 		(uuid "714b5545-675f-40dc-a0af-b75af90765a3")
 	)
 	(no_connect
 		(at 25.4 76.2)
 		(uuid "9fe54da8-5bdb-455f-b502-d06100521845")
+	)
+	(no_connect
+		(at 255.27 118.11)
+		(uuid "afd1d171-1459-4428-9dfa-49fd1854d54f")
 	)
 	(no_connect
 		(at 233.68 50.8)
@@ -4073,7 +4288,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 119.38) (xy 248.92 119.38)
+			(xy 238.76 128.27) (xy 256.54 128.27)
 		)
 		(stroke
 			(width 0)
@@ -4293,7 +4508,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 114.3) (xy 212.09 114.3)
+			(xy 212.09 125.73) (xy 256.54 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4320,6 +4535,16 @@
 			(type default)
 		)
 		(uuid "2ccc89f9-5408-4896-826b-95e584ae5ef6")
+	)
+	(wire
+		(pts
+			(xy 255.27 118.11) (xy 256.54 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cfe1575-f2a1-4c5c-b2dd-ea09afb16048")
 	)
 	(wire
 		(pts
@@ -4393,7 +4618,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 109.22) (xy 215.9 66.04)
+			(xy 215.9 113.03) (xy 215.9 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4413,7 +4638,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 109.22) (xy 248.92 109.22)
+			(xy 215.9 113.03) (xy 256.54 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4423,7 +4648,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 119.38) (xy 245.11 125.73)
+			(xy 238.76 128.27) (xy 238.76 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4483,6 +4708,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 130.81) (xy 256.54 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45f74dd1-258d-4f38-bc0b-43401cc4fb0b")
+	)
+	(wire
+		(pts
 			(xy 99.06 33.02) (xy 96.52 33.02)
 		)
 		(stroke
@@ -4523,7 +4758,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 43.18) (xy 212.09 114.3)
+			(xy 212.09 43.18) (xy 212.09 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5163,6 +5398,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 120.65) (xy 256.54 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b08acecc-6327-4f54-b6e7-196a76739ef0")
+	)
+	(wire
+		(pts
 			(xy 128.27 43.18) (xy 130.81 43.18)
 		)
 		(stroke
@@ -5353,7 +5598,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 111.76) (xy 248.92 111.76)
+			(xy 245.11 115.57) (xy 256.54 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5413,7 +5658,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 123.19) (xy 236.22 123.19)
+			(xy 199.39 123.19) (xy 256.54 123.19)
 		)
 		(stroke
 			(width 0)
@@ -5460,16 +5705,6 @@
 			(type default)
 		)
 		(uuid "d2031cd2-0a72-4f2a-8c8c-c4573badb473")
-	)
-	(wire
-		(pts
-			(xy 236.22 116.84) (xy 236.22 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5e84633-9547-4e39-8929-977babc6fe69")
 	)
 	(wire
 		(pts
@@ -5780,16 +6015,6 @@
 			(type default)
 		)
 		(uuid "fc48fe78-768b-4604-bc93-cc0435d70535")
-	)
-	(wire
-		(pts
-			(xy 236.22 116.84) (xy 248.92 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff3d96b0-7ed2-486e-893b-7c6acffeddad")
 	)
 	(image
 		(at 50.8 181.61)
@@ -6449,7 +6674,7 @@
 	)
 	(hierarchical_label "SA818_IN_MIC"
 		(shape input)
-		(at 245.11 111.76 180)
+		(at 245.11 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6479,6 +6704,17 @@
 			(justify right)
 		)
 		(uuid "9711d326-2796-4a24-a58d-3b937cdb9f8f")
+	)
+	(hierarchical_label "EXT_RADIO"
+		(shape output)
+		(at 252.73 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ad200709-a6a9-455a-8362-22cb1edc5562")
 	)
 	(hierarchical_label "SA818_OUT_DIG_RF_DET"
 		(shape output)
@@ -9169,140 +9405,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack3_SwitchTR")
-		(at 254 116.84 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "438dd8fc-3956-40ce-802d-ce794c909aa0")
-		(property "Reference" "J6"
-			(at 261.62 114.9351 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SJ2-3593D-SMT-TR"
-			(at 261.62 112.3951 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_Audio:Jack_3.5mm_CUI_SJ2-3593D-SMT_Horizontal"
-			(at 254 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.cuidevices.com/product/resource/sj2-359x-smt.pdf"
-			(at 254 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "AUDIO JACK, 3.5 MM, RT, 3 CONDUC"
-			(at 254 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "Same Sky (Formerly CUI Devices)"
-			(at 254 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "SJ2-3593D-SMT-TR"
-			(at 254 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C4991621"
-			(at 254 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "AUDIO JACK, 3.5 MM, RT, 3 CONDUC"
-			(at 254 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "RN"
-			(uuid "b12102e1-ad5c-4199-a49a-e9f870e00f46")
-		)
-		(pin "TN"
-			(uuid "2cdbbb85-a9f6-4519-8f9f-f48bfb6a6e48")
-		)
-		(pin "R"
-			(uuid "60978673-a3fa-4bd0-b0ce-f49ba7e77186")
-		)
-		(pin "T"
-			(uuid "eca904cb-21b7-4a3b-9cca-f73935a7658c")
-		)
-		(pin "S"
-			(uuid "8af628e4-7d94-4204-a14a-8d6e4cf6eb28")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/249b6a5a-61a6-4c99-988d-ce75c47d35df"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 59.69 121.92 270)
 		(mirror x)
@@ -10517,6 +10619,149 @@
 		)
 	)
 	(symbol
+		(lib_id "kicad_gx_library:AudioJack4_TRRS_SJ-43617-SMT-TR")
+		(at 261.62 124.46 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6a04fc5d-4c42-4732-b9e1-01a139a30ad8")
+		(property "Reference" "J9"
+			(at 263.398 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "AudioJack"
+			(at 260.096 110.236 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "kicad_gx_library:Jack_SJ-43617-SMT-TR"
+			(at 262.89 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.cuidevices.com/product/resource/sj-4361x-smt.pdf"
+			(at 262.89 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CONN JACK 4COND 3.5MM SMD R/A"
+			(at 261.62 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manf" "Same Sky (Formerly CUI Devices)"
+			(at 261.62 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SJ-43617-SMT-TR"
+			(at 261.62 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CP-43617SJTR-ND"
+			(at 261.62 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "N/A"
+			(at 261.62 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "TN"
+			(uuid "6b0e6d73-d093-479d-a7d4-44f987cc9a54")
+		)
+		(pin "S"
+			(uuid "f8240e49-f503-4fdd-9f3d-711c22c32dff")
+		)
+		(pin "R2N"
+			(uuid "7506d787-93b2-4934-84dd-fe3caf78b0b2")
+		)
+		(pin "R2"
+			(uuid "306803e6-fdde-4939-8f0b-1c91a924ed38")
+		)
+		(pin "SN"
+			(uuid "975acd2a-feac-46ef-9992-c798cf502562")
+		)
+		(pin "R1N"
+			(uuid "e03e091e-b27a-4cbf-ab51-32a8edbfed65")
+		)
+		(pin "R1"
+			(uuid "04feccb7-0ec3-4b39-97bb-ab317ad86781")
+		)
+		(pin "T"
+			(uuid "ca6129a7-930b-41ec-9da2-31d74d41c18f")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/249b6a5a-61a6-4c99-988d-ce75c47d35df"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
 		(at 38.1 95.25 0)
 		(mirror y)
@@ -10800,7 +11045,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 245.11 125.73 0)
+		(at 238.76 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10811,7 +11056,7 @@
 		(fields_autoplaced yes)
 		(uuid "75b705c3-5512-432b-a895-c92d4c040d17")
 		(property "Reference" "#PWR0145"
-			(at 245.11 132.08 0)
+			(at 238.76 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10822,7 +11067,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 245.11 130.81 0)
+			(at 238.76 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10833,7 +11078,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 125.73 0)
+			(at 238.76 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10844,7 +11089,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 125.73 0)
+			(at 238.76 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10855,7 +11100,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 245.11 125.73 0)
+			(at 238.76 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
