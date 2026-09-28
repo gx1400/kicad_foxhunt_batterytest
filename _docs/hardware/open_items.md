@@ -1,6 +1,5 @@
 # Open Items / Next Steps
 
-- [ ] 
 - [ ] Populate downstream loads (SA818S, ESP32-S3, GPS) and re-verify rail current budgets against real hardware.
 - [ ] First board bring-up: isolate each stage via the power-section jumpers, verify independently, then re-bridge for full-system test.
 

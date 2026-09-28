@@ -5,129 +5,6 @@
 	(uuid "251bbd2a-32c1-4356-8065-6c931dc52747")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -424,158 +301,6 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Fuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "F"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fuse"
-				(at -1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Fuse"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "fuse"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "*Fuse*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Fuse_0_1"
-				(rectangle
-					(start -0.762 -2.54)
-					(end 0.762 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fuse_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -1004,22 +729,10 @@
 		(uuid "65eae40d-d764-440b-a4ff-77069e357684")
 	)
 	(junction
-		(at 67.31 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "67cb99c2-65b0-4758-ae12-c96f6659fadf")
-	)
-	(junction
 		(at 130.81 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6855691a-0b29-43f7-9967-f8fcf725878d")
-	)
-	(junction
-		(at 74.93 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a1a5dc45-99d7-4e3f-b10f-89413246e44e")
 	)
 	(junction
 		(at 63.5 82.55)
@@ -1036,16 +749,6 @@
 			(type default)
 		)
 		(uuid "06670218-f0b4-4288-a49e-09b740d2efef")
-	)
-	(wire
-		(pts
-			(xy 95.25 80.01) (xy 100.33 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f3453ea-5fc7-46d7-901a-ed4f21fe63a5")
 	)
 	(wire
 		(pts
@@ -1159,16 +862,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 80.01) (xy 67.31 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c04a324f-0682-4b76-a8dd-8b550c4488a3")
-	)
-	(wire
-		(pts
 			(xy 158.75 78.74) (xy 158.75 80.01)
 		)
 		(stroke
@@ -1199,7 +892,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 80.01) (xy 74.93 80.01)
+			(xy 64.77 80.01) (xy 100.33 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1229,16 +922,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 80.01) (xy 87.63 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da36bc46-ec19-4cbc-b5e6-5a91c69dff9b")
-	)
-	(wire
-		(pts
 			(xy 100.33 80.01) (xy 130.81 80.01)
 		)
 		(stroke
@@ -1246,16 +929,6 @@
 			(type default)
 		)
 		(uuid "fe95fd73-d6a4-4584-880b-ce9985ffc7e5")
-	)
-	(label "12V_RAW"
-		(at 62.23 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a847b670-d03a-4a2d-a0bb-9585e9bbc854")
 	)
 	(hierarchical_label "PWR_POWERPOLE"
 		(shape output)
@@ -1419,84 +1092,6 @@
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/03f120c0-b388-4d10-bf8a-03d14068a336"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 67.31 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5073cbb3-bf2e-4f07-86b8-a702caa747f0")
-		(property "Reference" "#FLG012"
-			(at 67.31 78.105 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 67.31 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 67.31 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a11db3d2-957a-415b-aee0-a3c1a40f2777")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/03f120c0-b388-4d10-bf8a-03d14068a336"
-					(reference "#FLG012")
 					(unit 1)
 				)
 			)
@@ -1728,7 +1323,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6d67bc41-2ae8-4ca5-a8cd-124741b6e4b6")
 		(property "Reference" "J3"
@@ -1741,7 +1336,7 @@
 				)
 			)
 		)
-		(property "Value" "MCV 1,5/ 2-GF-3,81"
+		(property "Value" "236-102"
 			(at 57.15 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1751,7 +1346,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-GF-3.81_1x02_P3.81mm_Vertical_ThreadedFlange_MountHole"
+		(property "Footprint" "kicad_gx_library:TerminalBlock_WAGO_236-102_1x02_P5.00mm_45Degree"
 			(at 57.15 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1762,7 +1357,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/PHOENIX_CONTACT/MCV_1_5__2-GF-3_81.pdf"
+		(property "Datasheet" "https://wago.priintcloud.com/datasheets/236-102/en/"
 			(at 57.15 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1773,7 +1368,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "2 Position Wire to Board Terminal Block 45° (135°) Angle with Board 0.200\" (5.08mm) Through Hole"
 			(at 57.15 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1784,7 +1379,7 @@
 				)
 			)
 		)
-		(property "Manf" "PHOENIX CONTACT"
+		(property "Manf" "WAGO Corporation"
 			(at 57.15 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1795,29 +1390,7 @@
 				)
 			)
 		)
-		(property "MPN" "MCV 1,5/ 2-GF-3,81"
-			(at 57.15 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Newark PN" "69R9760"
-			(at 57.15 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mating MPN" "1851232"
+		(property "MPN" "236-102"
 			(at 57.15 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1849,96 +1422,6 @@
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/03f120c0-b388-4d10-bf8a-03d14068a336"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 74.93 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "71798f8f-42c0-4c13-aa1f-10007be56540")
-		(property "Reference" "TP3"
-			(at 77.47 75.4379 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 77.47 77.9779 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 80.01 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 74.93 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field10" ""
-			(at 74.93 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "022a8a63-fc3a-40be-9e13-3ce208184291")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/03f120c0-b388-4d10-bf8a-03d14068a336"
-					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -2043,17 +1526,6 @@
 				)
 			)
 		)
-		(property "Field10" ""
-			(at 57.15 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "b15417d7-8a6c-4920-b791-61053d05970a")
 		)
@@ -2064,141 +1536,6 @@
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/03f120c0-b388-4d10-bf8a-03d14068a336"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 91.44 80.01 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92416764-7f49-4812-a940-9e5cf4d62647")
-		(property "Reference" "F2"
-			(at 91.44 73.66 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse 2A"
-			(at 91.44 76.2 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "kicad_gx_library:Fuse_MCCQ-122"
-			(at 91.44 81.788 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/MULTICOMP_PRO/MCCQ-122.pdf"
-			(at 91.44 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 91.44 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "MCCQ-122"
-			(at 91.44 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "MULTICOMP PRO"
-			(at 91.44 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Newark PN" "MCCQ-122"
-			(at 91.44 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Newark URL" "https://www.newark.com/multicomp-pro/mccq-122/fuseholder-pcb-mount-mini-blade/dp/08N2503"
-			(at 91.44 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field10" ""
-			(at 91.44 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b1f6955a-5476-4320-ba1e-b13a58c1d886")
-		)
-		(pin "2"
-			(uuid "96c46e18-b25f-4c0b-878b-15129850a945")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/03f120c0-b388-4d10-bf8a-03d14068a336"
-					(reference "F2")
 					(unit 1)
 				)
 			)

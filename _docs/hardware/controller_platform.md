@@ -24,9 +24,9 @@ MAX17320 protects/fuel-gauges the battery but doesn't gate system power — that
 - **Still open:** the firmware itself (polling GPIO38, timing the hold, releasing GPIO48) hasn't been written — schematic only exposes the signal. And a **firmware-independent hardware force-off** is still unbuilt — see [Open Items](open_items.md) for the leading option (spare half of the TX-safety 74HC123).
 - **RTC wake path:** PCF8563's `INT` is open-drain **active-low**, not active-high, and its own absolute max voltage rating (6.5V) is well under VRAW's range — so it can't be wired to the wake node directly either. The actual chain is `INT` → Q8 (AO3407A, a small 3.3V-domain inverter so the *sense* comes out right — INT low asserts, not releases) → Q7 (BSS138, the same voltage-isolating role as Q6) → wake node. R30 (10k) is INT's own pull-up; R31 (100k) holds Q7's gate at a defined low/off state whenever Q8 isn't actively driving it. This is more circuitry than "diode-ORed" implies, but the earlier plan's instinct was right — INT genuinely can't touch the high-voltage node without protection.
 - Bench-test provision: JP24 (`usbc-programming-uart.kicad_sch`) can exclude USB from both TPS2121 rail muxes, so the whole sleep/wake cycle is testable on the bench with a debug USB cable still attached — gating downstream of the muxes instead was rejected because it would leave the
-bucks/LDOs always powered, defeating the standby-current point (this reasoning isn't
-separately written up in [usb_battery_power_mux.md](usb_battery_power_mux.md), noting
-here in case that doc is ever restructured).
+  bucks/LDOs always powered, defeating the standby-current point (this reasoning isn't
+  separately written up in [usb_battery_power_mux.md](usb_battery_power_mux.md), noting
+  here in case that doc is ever restructured).
 
 ## Timekeeping — PCF8563 RTC (implemented)
 
@@ -105,7 +105,7 @@ This is the same pattern used in commercial RF gear: fast comparator trip for fa
 ESP32-S3's internal watchdog timers cover general firmware-hang protection — no separate general-purpose supervisor IC needed. **But** a stuck-transmitter fault (firmware hang *or* a logic bug that keeps PTT asserted while the CPU is otherwise fine) needs its own independent layer, since an MCU reset doesn't guarantee the PTT line de-asserts, and a pure software watchdog can't catch "firmware is running but wrongly still keying."
 
 - **PTT line defaults to released** whenever its driving GPIO is undriven/in reset (pull resistor sized accordingly), so a reset transient can't leave the radio keyed.
-- **Independent hardware TX-timeout:** a 74HC123 dual retriggerable monostable (RC-timed for a **10-second hard ceiling**, revised down from an earlier 2-minute target — 2026-09-22, see `74hc123_pinout.md` § 3 for the populated `R60`/`C80` values) gates the PTT line in series with the MCU's own PTT-intent GPIO. The MCU must periodically retrigger it during a legitimate transmission; if it stops (hang or logic bug), the 74HC123's timeout forces PTT release after 10 seconds regardless of MCU state — independent of whether the MCU's own watchdog even fires. **Not yet fully wired**: the retrigger path from the MCU's periodic heartbeat (`MCU_OUT_PTT_HB`) doesn't reach the monostable yet — see `74hc123_pinout.md` § 3's open item.
+- **Independent hardware TX-timeout:** a 74HC123 dual retriggerable monostable (RC-timed for a **2-minute hard ceiling**) gates the PTT line in series with the MCU's own PTT-intent GPIO. The MCU must periodically retrigger it during a legitimate transmission; if it stops (hang or logic bug), the 74HC123's timeout forces PTT release after 2 minutes regardless of MCU state — independent of whether the MCU's own watchdog even fires.
 
 ## Frequency / tone plan
 

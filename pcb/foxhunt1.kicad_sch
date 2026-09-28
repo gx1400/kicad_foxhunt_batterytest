@@ -311,7 +311,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ac40b10a-e8e6-4a42-ac70-3bcaef81744c")
+		(uuid "a8c7c1d4-c901-4f85-8ffe-d0ea97f5216f")
 	)
 	(wire
 		(pts
@@ -783,16 +783,6 @@
 				(justify right)
 			)
 		)
-		(pin "USB_5V_IN" input
-			(at 78.74 43.18 0)
-			(uuid "95a149db-12d5-4542-9ac4-e3c7d214f90b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "PWR_ON_BATTERY" output
 			(at 78.74 80.01 0)
 			(uuid "7962ccc0-2477-477b-bea5-22fe8444c8ae")
@@ -816,6 +806,16 @@
 		(pin "POWER_PB_SIGNAL" output
 			(at 78.74 74.93 0)
 			(uuid "701e60d3-b302-474e-98f2-bf0591ec686a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_5V_SW" input
+			(at 78.74 43.18 0)
+			(uuid "2ed7d8a0-5bdd-458c-ba94-80537f3ca4b5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1331,16 +1331,6 @@
 				(justify left)
 			)
 		)
-		(pin "USB_5V" output
-			(at 104.14 43.18 180)
-			(uuid "78f66add-5835-483f-a55a-8e0187e1fd35")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "USB_MCU_D+" bidirectional
 			(at 135.89 60.96 0)
 			(uuid "0cbbff65-14a9-400e-8ffc-54e424ca5061")
@@ -1359,6 +1349,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "USB_5V_SW" output
+			(at 104.14 43.18 180)
+			(uuid "d8a25945-ae55-477d-8591-9da559301e1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

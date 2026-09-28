@@ -2385,145 +2385,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+BATT"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+BATT"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+BATT\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power battery"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+BATT_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+BATT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -3070,12 +2931,6 @@
 		(uuid "f1c24fa1-e674-4303-b528-bc9871e3ae5b")
 	)
 	(junction
-		(at 72.39 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f9a5a3f4-470f-4bda-b642-07f9d0692d31")
-	)
-	(junction
 		(at 128.27 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3103,7 +2958,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 59.69) (xy 72.39 87.63)
+			(xy 72.39 46.99) (xy 72.39 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3227,16 +3082,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 46.99) (xy 87.63 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18574fa8-c69c-41d8-bcd0-79921e2c7679")
-	)
-	(wire
-		(pts
 			(xy 187.96 128.27) (xy 187.96 130.81)
 		)
 		(stroke
@@ -3324,16 +3169,6 @@
 			(type default)
 		)
 		(uuid "3055edae-587b-4031-b588-b4407f5fa01a")
-	)
-	(wire
-		(pts
-			(xy 72.39 55.88) (xy 72.39 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3182d44e-87e9-4e21-9341-737623719dbe")
 	)
 	(wire
 		(pts
@@ -3714,16 +3549,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 46.99) (xy 87.63 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8da33be1-6073-486c-b29f-93b059ef580a")
-	)
-	(wire
-		(pts
 			(xy 130.81 90.17) (xy 121.92 90.17)
 		)
 		(stroke
@@ -3815,7 +3640,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 59.69) (xy 72.39 59.69)
+			(xy 72.39 46.99) (xy 110.49 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4118,6 +3943,36 @@
 			(type default)
 		)
 		(uuid "fee28086-d469-4c01-859e-f5bf1b0b23d8")
+	)
+	(label "BATT_Plus_to_Minus"
+		(at 73.66 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c643de9d-cd48-4698-a5cc-1733a15cdba5")
+	)
+	(label "PolyFuseOut"
+		(at 120.65 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c993a0e1-bf93-4cf7-b1a0-ec0563d8630f")
+	)
+	(label "BATT+"
+		(at 80.01 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df8d42c0-3cd6-4c25-9c20-dc915b3facd5")
 	)
 	(hierarchical_label "BMS_SDA"
 		(shape bidirectional)
@@ -4647,7 +4502,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Battery:BatteryHolder_MPD_BH-18650-PC"
+		(property "Footprint" "kicad_gx_library:BatteryHolder_MPD_BH-18650-PC"
 			(at 72.39 91.186 90)
 			(hide yes)
 			(show_name no)
@@ -5216,84 +5071,6 @@
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 72.39 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "526153eb-32d2-483c-bcdf-9633c6bd7ded")
-		(property "Reference" "#PWR030"
-			(at 72.39 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 72.39 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 72.39 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7b174a4f-d730-4c77-a603-7398061364e3")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/37ac1273-0b70-4a42-ac28-8e382584c4a4/c9765cc1-b0b1-40a4-af82-69bea9af9891"
-					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -5958,7 +5735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Battery:BatteryHolder_MPD_BH-18650-PC"
+		(property "Footprint" "kicad_gx_library:BatteryHolder_MPD_BH-18650-PC"
 			(at 72.39 105.156 90)
 			(hide yes)
 			(show_name no)

@@ -1951,182 +1951,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_SparkFun-Clock:Crystal"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Y"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Crystal"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "PCM_SparkFun-Clock:Crystal-SMD-5x3.2mm"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Crystal"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "PROD_ID" "XTAL-"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "SparkFun quartz ceramic resonator oscillator"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Crystal*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Crystal_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -0.762) (xy -1.27 0.762)
-					)
-					(stroke
-						(width 0.381)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -0.762 -1.524)
-					(end 0.762 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.762) (xy 1.27 0.762)
-					)
-					(stroke
-						(width 0.381)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Crystal_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PCM_SparkFun-PowerSymbol:GND"
 			(power global)
 			(pin_names
@@ -3096,6 +2920,328 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "kicad_gx_library:TXM12M0004252DBCEO00T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "X"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TXM12M0004252DBCEO00T"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "kicad_gx_library:CRYSTAL-SMD_4P-L2.5-W2.0-BL"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Others_Zhejiang-Abel-Elec-TXM12M0004252DBCEO00T_C284154.html"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "YJX(雅晶鑫)"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "TXM12M0004252DBCEO00T"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C284154"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Source" "easyeda2kicad"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Imported" "2026-09-25"
+				(at 0 -27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Crystals"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TXM12M0004252DBCEO00T_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -2.54 -2.54) (xy -2.54 0) (xy -1.52 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.02) (xy -1.27 1.02)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.78) (xy -1.27 1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.76 -1.78) (xy -0.76 1.78) (xy 0.76 1.78) (xy 0.76 -1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.76 1.78) (xy 0.76 -1.78) (xy -0.76 -1.78) (xy -0.76 1.78) (xy 0.76 1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.76 -1.78) (xy -0.76 -1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.02) (xy 1.27 1.02)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.78) (xy 1.27 1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 2.54 2.54) (xy 2.54 0) (xy 1.52 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TXM12M0004252DBCEO00T_1_1"
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -3647,6 +3793,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 77.47) (xy 106.68 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01a6c0fd-516a-43ac-bf9e-39f8e27dc1f7")
+	)
+	(wire
+		(pts
 			(xy 247.65 38.1) (xy 247.65 35.56)
 		)
 		(stroke
@@ -3674,6 +3830,16 @@
 			(type default)
 		)
 		(uuid "058e5f51-ad89-4858-9288-7b4bf8cf921a")
+	)
+	(wire
+		(pts
+			(xy 96.52 68.58) (xy 102.87 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "071f6784-37cb-42bc-bd7f-a64b628c6aaa")
 	)
 	(wire
 		(pts
@@ -3847,6 +4013,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 72.39) (xy 106.68 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20194f77-819a-4f0d-9812-ddac1ded290c")
+	)
+	(wire
+		(pts
 			(xy 85.09 127) (xy 78.74 127)
 		)
 		(stroke
@@ -3914,16 +4090,6 @@
 			(type default)
 		)
 		(uuid "2e83b18e-8a6e-4ca7-997c-8a2a977d252f")
-	)
-	(wire
-		(pts
-			(xy 87.63 77.47) (xy 87.63 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34f1b3d7-96cc-4736-99c5-1817e03b8d94")
 	)
 	(wire
 		(pts
@@ -4067,7 +4233,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 24.13) (xy 52.07 24.13)
+			(xy 46.99 24.13) (xy 58.42 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4174,16 +4340,6 @@
 			(type default)
 		)
 		(uuid "6c65cd7c-dd6c-421d-a0fa-9559533e65c1")
-	)
-	(wire
-		(pts
-			(xy 106.68 77.47) (xy 87.63 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70deeefc-7953-4885-a5ec-aa3afc4d7001")
 	)
 	(wire
 		(pts
@@ -4357,6 +4513,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 77.47) (xy 78.74 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c79a4be-8c99-43bf-9d0c-7489c65a0f87")
+	)
+	(wire
+		(pts
 			(xy 166.37 33.02) (xy 173.99 33.02)
 		)
 		(stroke
@@ -4364,6 +4530,16 @@
 			(type default)
 		)
 		(uuid "9e936076-11e2-44d0-ab22-51c5135b6740")
+	)
+	(wire
+		(pts
+			(xy 78.74 73.66) (xy 81.28 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f13850b-dcec-4a5b-aa5b-796a09e6e70e")
 	)
 	(wire
 		(pts
@@ -4484,6 +4660,16 @@
 			(type default)
 		)
 		(uuid "afa8b524-c2e7-4297-b1c5-268ab51edb97")
+	)
+	(wire
+		(pts
+			(xy 102.87 68.58) (xy 102.87 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0440072-de05-4343-b7c4-3b584acfe9c9")
 	)
 	(wire
 		(pts
@@ -4647,16 +4833,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 72.39) (xy 106.68 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0637899-a698-45e2-b494-1942744c15ff")
-	)
-	(wire
-		(pts
 			(xy 171.45 147.32) (xy 171.45 137.16)
 		)
 		(stroke
@@ -4737,16 +4913,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 72.39) (xy 91.44 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc680134-711e-4d24-907a-3b1ea40ce434")
-	)
-	(wire
-		(pts
 			(xy 171.45 147.32) (xy 201.93 147.32)
 		)
 		(stroke
@@ -4807,7 +4973,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 24.13) (xy 69.85 24.13)
+			(xy 66.04 24.13) (xy 69.85 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4925,6 +5091,16 @@
 		)
 		(uuid "fca735b1-48ee-4588-9faf-50cf6a9fb6a1")
 	)
+	(label "USB_5V_Fused"
+		(at 74.93 16.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05c6e6a1-70d4-48c9-9092-d459c1d5388a")
+	)
 	(label "~DTR"
 		(at 166.37 137.16 0)
 		(effects
@@ -4934,6 +5110,16 @@
 			(justify left bottom)
 		)
 		(uuid "20b588d1-dc5d-4e10-a90c-c6550831a332")
+	)
+	(label "USB_5V"
+		(at 46.99 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2438469a-c006-48c2-95f9-0e5763ca4840")
 	)
 	(label "~RTS"
 		(at 167.64 162.56 0)
@@ -4978,7 +5164,7 @@
 		)
 		(uuid "6fada5b5-da66-47ed-97ee-596c6d7dd2e9")
 	)
-	(hierarchical_label "USB_5V"
+	(hierarchical_label "USB_5V_SW"
 		(shape output)
 		(at 200.66 29.21 0)
 		(effects
@@ -5431,7 +5617,7 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse")
-		(at 55.88 24.13 90)
+		(at 62.23 24.13 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5442,7 +5628,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e13d481-438b-4b91-9d5e-15acea37721e")
 		(property "Reference" "F3"
-			(at 55.88 17.78 90)
+			(at 62.23 17.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5452,7 +5638,7 @@
 			)
 		)
 		(property "Value" "16V/500mA"
-			(at 55.88 20.32 90)
+			(at 62.23 20.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5462,7 +5648,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
-			(at 60.96 22.86 0)
+			(at 67.31 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5474,7 +5660,7 @@
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/LUTE/0805L050_16XR.pdf"
-			(at 55.88 24.13 0)
+			(at 62.23 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5485,7 +5671,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 55.88 24.13 0)
+			(at 62.23 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5496,7 +5682,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 55.88 24.13 90)
+			(at 62.23 24.13 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5507,7 +5693,7 @@
 			)
 		)
 		(property "Manf" "LUTE"
-			(at 55.88 24.13 90)
+			(at 62.23 24.13 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5518,7 +5704,7 @@
 			)
 		)
 		(property "MPN" "0805L050/16XR"
-			(at 55.88 24.13 90)
+			(at 62.23 24.13 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5529,7 +5715,7 @@
 			)
 		)
 		(property "LCSC Part #" "C22435898"
-			(at 55.88 24.13 90)
+			(at 62.23 24.13 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5540,7 +5726,7 @@
 			)
 		)
 		(property "Field10" ""
-			(at 55.88 24.13 90)
+			(at 62.23 24.13 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6224,152 +6410,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_SparkFun-Clock:Crystal")
-		(at 93.98 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3407d6b6-cf9e-4b44-870d-a0f4a3786db5")
-		(property "Reference" "Y1"
-			(at 93.98 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "12MHz"
-			(at 93.98 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm"
-			(at 93.98 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${KIPRJMOD}/project_library/datasheets/Yajingxin/TXM12M0004252DBCEO00T.pdf"
-			(at 93.98 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CRYSTAL 12MHz 10pF SMD"
-			(at 93.98 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manf" "Yajingxin"
-			(at 93.98 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TXM12M0004252DBCEO00T"
-			(at 93.98 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C284154"
-			(at 93.98 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "SMD2520-4P"
-			(at 93.98 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PROD_ID" "XTAL-"
-			(at 93.98 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field10" ""
-			(at 93.98 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b4461643-7c62-4147-b496-189455435ba8")
-		)
-		(pin "1"
-			(uuid "505df616-da25-4803-904a-9549606490e8")
-		)
-		(instances
-			(project "foxhunt1"
-				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/97991d87-aeba-471b-8b55-fc9d012290ca"
-					(reference "Y1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 203.2 121.92 90)
 		(mirror x)
@@ -7022,7 +7062,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 			(at 237.49 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10027,6 +10067,147 @@
 			(project "foxhunt1"
 				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/97991d87-aeba-471b-8b55-fc9d012290ca"
 					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kicad_gx_library:TXM12M0004252DBCEO00T")
+		(at 88.9 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f7460e76-8307-4746-9f47-16a8ac7e6e8c")
+		(property "Reference" "X1"
+			(at 88.9 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12MHz 10pF"
+			(at 88.9 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "kicad_gx_library:CRYSTAL-SMD_4P-L2.5-W2.0-BL"
+			(at 88.9 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Others_Zhejiang-Abel-Elec-TXM12M0004252DBCEO00T_C284154.html"
+			(at 88.9 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CRYSTAL 12MHz 10pF SMD"
+			(at 88.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YJX(雅晶鑫)"
+			(at 88.9 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TXM12M0004252DBCEO00T"
+			(at 88.9 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C284154"
+			(at 88.9 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "easyeda2kicad"
+			(at 88.9 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Imported" "2026-09-25"
+			(at 88.9 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "62541f1d-b7e9-4fcb-b5bf-e18d90f08729")
+		)
+		(pin "2"
+			(uuid "b814e49f-d886-420a-a303-eb1c86608571")
+		)
+		(pin "3"
+			(uuid "fa08e451-f0d0-4b75-8a4b-7f20b2209eb0")
+		)
+		(pin "4"
+			(uuid "4c44d942-b25d-4509-9930-d81dd3be3f94")
+		)
+		(instances
+			(project "foxhunt1"
+				(path "/8399ba4b-9428-480d-8b65-76cf154b97a5/97991d87-aeba-471b-8b55-fc9d012290ca"
+					(reference "X1")
 					(unit 1)
 				)
 			)
