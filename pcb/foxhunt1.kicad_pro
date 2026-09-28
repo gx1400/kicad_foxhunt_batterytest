@@ -60,13 +60,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.1,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_thickness": 0.1,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.05,
+          "thermal_relief_spoke_width": 1.0
         }
       },
       "diff_pair_dimensions": [
@@ -146,7 +146,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -159,7 +159,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -528,6 +528,56 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 14,
+        "clearance": 0.2,
+        "line_style": 0,
+        "name": "Power_3V3_1A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 164, 0)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 8
+      },
+      {
+        "bus_width": 16,
+        "clearance": 0.2,
+        "line_style": 0,
+        "name": "Power_5V_2A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 106, 0)",
+        "track_width": 0.8,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 10
+      },
+      {
+        "bus_width": 18,
+        "clearance": 0.2,
+        "line_style": 0,
+        "name": "Power_Combined_3A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(255, 21, 0)",
+        "track_width": 1.4,
+        "tuning_profile": "",
+        "via_diameter": 0.9,
+        "via_drill": 0.5,
+        "wire_width": 12
+      },
+      {
+        "clearance": 0.2,
+        "name": "RF_50R",
+        "priority": -1,
+        "track_width": 0.35,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -535,7 +585,200 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Battery_PowerPole_Input/12V_RAW"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Battery_PowerPole_Input/PWR_POWERPOLE"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Battery 18650 Input/BATT_Plus_to_Minus"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "+BATT"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Battery 18650 Input/PWR_18650"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Battery 18650 Input/PolyFuseOut"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/VRAW_GATED"
+      },
+      {
+        "netclass": "Power_5V_2A",
+        "pattern": "/Power/Power Regulation/5V_BUCK_VIN"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/Power/Power Regulation/3V3_BUCK_VIN"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Power Regulation/6V_intermediate"
+      },
+      {
+        "netclass": "Power_5V_2A",
+        "pattern": "/Power/Power Regulation/5V_LDO_OUT"
+      },
+      {
+        "netclass": "Power_5V_2A",
+        "pattern": "/Power/Power Regulation/BATT_5V_REG"
+      },
+      {
+        "netclass": "Power_5V_2A",
+        "pattern": "/Power/Power Regulation/5V_BUCK_OUT"
+      },
+      {
+        "netclass": "Power_5V_2A",
+        "pattern": "/Power/Power Regulation/5V_LDO_VIN"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Power Regulation/4.8V_Intermediate"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/Power/Power Regulation/3V3_BUCK_OUT"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/Power/Power Regulation/3V3_LDO_VIN"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/Power/Power Regulation/3V3_LDO_OUT"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/Power/Power Regulation/BATT_3.3V_REG"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/Power/USB_3.3V_IN"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/Power/USB_5V_IN"
+      },
+      {
+        "netclass": "Power_5V_2A",
+        "pattern": "/USB-C/USB_5V"
+      },
+      {
+        "netclass": "Power_5V_2A",
+        "pattern": "/USB-C/USB_5V_Fused"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "GNDREF"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/Power/Power Regulation/4.8V_Intermediate"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/BATT_IN1"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/BATT_IN2"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/BATT_MUX_OUT"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/BATT_SWITCHED"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Power Regulation/BATT_5V_REG"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Power_5V_2A",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Battery 18650 Input/BATT+"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/Battery 18650 Input/Q3_OUT"
+      },
+      {
+        "netclass": "Power_Combined_3A",
+        "pattern": "/Power/POWER_PRESWITCH"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/USB-C/USB_5V"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/USB-C/USB_5V_SW"
+      },
+      {
+        "netclass": "Power_3V3_1A",
+        "pattern": "/Power/USB_5V_SW"
+      },
+      {
+        "netclass": "RF_50R",
+        "pattern": "/Power/GPS_RF_ANT"
+      },
+      {
+        "netclass": "RF_50R",
+        "pattern": "/Power/GPS_RF_IN"
+      },
+      {
+        "netclass": "RF_50R",
+        "pattern": "Net-(U20-ANT)"
+      },
+      {
+        "netclass": "RF_50R",
+        "pattern": "Net-(C73-Pad2)"
+      },
+      {
+        "netclass": "RF_50R",
+        "pattern": "Net-(C72-Pad2)"
+      },
+      {
+        "netclass": "RF_50R",
+        "pattern": "Net-(J8-In)"
+      },
+      {
+        "netclass": "RF_50R",
+        "pattern": "/GPS/GPS_RF_ANT"
+      },
+      {
+        "netclass": "RF_50R",
+        "pattern": "/GPS/GPS_RF_IN"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -828,7 +1071,7 @@
         "uuid": "8399ba4b-9428-480d-8b65-76cf154b97a5"
       }
     ],
-    "used_designators": "F1-7,BT1-6,RV1,L1-10,SW1-10,C1-83,JP1-41,TP1-8,R1-71,Q1-14,U1-25,D1-13,Card1,TH1-3,#FLG1-42,J1-12,FL1,Y1-2,#PWR1-194",
+    "used_designators": "R1-71,TP1-8,JP1-41,X1,Card1,BT1-6,RV1,L1-10,Y1-2,#PWR1-194,FL1,J1-12,TH1-3,#FLG1-42,SW1-10,NT1,C1-83,D1-13,U1-25,Q1-14,F1-7",
     "variants": []
   },
   "sheets": [
